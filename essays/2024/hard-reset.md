@@ -44,7 +44,7 @@ and not worry about a looming hefty charge.
 My annoyance is that despite the fanfare of making sites, we only have options like corporations like [Glitch][] to help
 keep the Web open. I'd much rather this be in the hands of Glitch, however, than say, [Cloudflare][l1]. I really do want
 more things like [Publii][] to let people use the power of Web publishing locally and then pick their place to serve.
-Vendor lockin is never a reasonable thing to endorse and with encroaching gardens, it's the go-to method of tech
+Vendor lock in is never a reasonable thing to endorse and with encroaching gardens, it's the go-to method of tech
 corporations driven by shareholder interest to lock in the [value of the Web][l2].
 
 ## What Next?
