@@ -1,0 +1,18 @@
+{
+  "name": "my-static-site",
+  "module": "index.js",
+  "scripts": {
+    "run": "bun x @11ty/eleventy --serve"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "luxon": "^3.4.4"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "clean-css": "^5.3.3"
+  }
+}

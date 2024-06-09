@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <title>{{ title }}</title>
+  <link
+    rel="stylesheet"
+    href="/site.css"
+    type="text/css"
+  />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a
+        class="h-card"
+        href="/"
+      ><span>
+          Jacky Alciné
+        </span></a>
+      <a href="/essays/">Essays</a>
+    </nav>
+  </header>
+  <main>
+    {{- content | safe -}}
+  </main>
+  <footer>
+    <p>Site handrolled and built using <a href="https://www.11ty.dev/"></a> (for now) &mdash; <a
+        href="https://www.11ty.dev/blog/sustainability-fundraising/"
+      >support its
+        development!</a></p>
+    <p xmlns:cc="http://creativecommons.org/ns#">
+      You made it &mdash; <strong>congrats</strong>! I don't have much to tell you. Except that unless otherwise stated,
+      the content I publish is licensed under <a
+        href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1"
+        target="_blank"
+        rel="license noopener noreferrer"
+      >CC BY-NC 4.0<img
+          src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"
+          alt="CC"
+        ><img
+          src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"
+          alt="BY"
+        ><img
+          src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"
+          alt="SA"
+        ></a>.
+    </p>
+  </footer>
+</body>
+
+</html>

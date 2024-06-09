@@ -1,0 +1,118 @@
+---
+layout: page.html.njk
+title: "Jacky Alciné has a homepage."
+---
+<article>
+  <figure class="u-photo">
+    <img
+      src="/images/self-landing.png"
+      alt="Myself with a hairpick in my head wearing a necklace."
+    />
+    <figcaption>
+      <p>Jacky looking calmer than normal for a photograph taken by <a
+          class="u-author"
+          href="https://www.bugs87.com/"
+        >Joonbug</a>.</p>
+  </figure>
+  <section>
+    <h1>It's the site of Jacky Alciné.</h1>
+    <p>
+      In your Web browser, of course.
+      <a href="https://www.mozilla.org/en-US/firefox/browsers/compare/chrome/">You're using Firefox</a>, right?
+      You can catch up by <a href="https://buttondown.email/jackyalcine">email</a>, on
+      a social network like <a href="https://todon.eu/@jalcine">Mastodon</a>
+      (or any Fediverse app) or <a href="https://bsky.app/profile/jacky.wtf">BlueSky</a>.
+    </p>
+    <h2>Around the Web (and World)</h2>
+    <p>A collection of links to things I'm referenced in and/or worked on:</p>
+    <ul>
+      <li><a href="https://www.wnycstudios.org/podcasts/notetoself/episodes/deep-problem-deep-learning">Talking with
+          Manoush Zomordi</a> about algorithmic bias in Google Photos</li>
+      <li><a
+          href="https://egghead.io/podcasts/jacky-alcine-on-how-the-software-field-is-75-code-and-25-presentation">Talking
+          with Joel Hooks</a> about the software landscape</li>
+      <li>Quoted by <a
+          href="https://arstechnica.com/information-technology/2015/06/google-dev-apologizes-after-photos-app-tags-black-people-as-gorillas/"
+        >Ars
+          Technica</a> and <a href="https://www.nytimes.com/2023/05/22/technology/ai-photo-labels-google-apple.html">The
+          New York Times</a> about Google's inability to work on algorithmic bias</li>
+    </ul>
+    <p>I'm also cited and referenced in the following material:</p>
+    <ul>
+      <li><a href="https://www.penguinrandomhouse.com/books/241363/weapons-of-math-destruction-by-cathy-oneil/">Weapons
+          of Math Destruction: How Big Data Increase Inequality and Threatens Democracy</a> by <a
+          href="https://mathbabe.org/"
+        >Cathy O'Neil</a></li>
+      <li><a href="https://melaniemitchell.me/aibook/">Artifical Intelligence: A Guide for Thinking Humans</a> by <a
+          href="https://melaniemitchell.me"
+        >Melanie Mitchell</a></li>
+      <li><a href="https://bookshop.org/p/books/you-deserve-a-tech-union-ethan-marcotte/20400532">
+          You Deserve a Tech Union</a> by Ethan Marcotte</li>
+    </ul>
+    <p>I've given talks in community settings:</p>
+    <ul>
+      <li><a href="https://archive.org/details/indieweb-summit-2019-making-the-indieweb-open-to-all">Making the IndieWeb
+          Open to All</a> at <a href="https://2019.indieweb.org/summit">IndieWeb Summit 2019</a></li>
+      <li><a href="https://archive.org/details/iwc-west-2020-opening-a-restaurant">Opening a Resturant to Share Our
+          Cooking</a> at <a href="https://2020.indieweb.org/west">IndieWebCamp West 2020</a></li>
+      <li>
+        <a href="https://slides.com/jackyalcine-1/ssl-we-used-to-know-you">Slides to a talk</a> about a light history of
+        SSL, TLS and HTTP/2 given at <a href="https://wafflejs.com/">WaffleJS</a>.
+      </li>
+    </ul>
+    <h2>Work with Me</h2>
+    <p>You can find me on <a href="">LinkedIn</a> or <a href="/files/jacky-alcine-jun-2024-resume.pdf">download my
+        resume/CV</a>. Feel free to <a href="https://cal.com/jackyalcine/">schedule time on my calendar</a>, <a
+        href="tel:+19293790093"
+      >text me</a> or message me via <a href="https://matrix.to/#/#@jackyalcine:matrix.org">Matrix</a> or <a
+        href="xmpp:jackyalcine@movim.eu?message"
+      >XMPP/Jabber</a>. You could always trying sending e-mail to <kbd>ayo</kbd><kbd>@</kbd><kbd>jacky.wtf</kbd>.
+  </section>
+</article>
+<style>
+  article {
+    display: flex;
+    flex-direction: column;
+  }
+
+  article>figure,
+  article>figure>img {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 60rem) {
+    article {
+      flex-direction: row;
+    }
+
+    article>figure,
+    article>figure>img {
+      width: auto;
+      height: auto;
+    }
+
+    article>section {
+      padding: 0 1rem;
+    }
+
+
+    section>h1 {
+      margin-top: 0;
+    }
+
+    section>p {
+      max-width: 40rem;
+    }
+
+  }
+
+  @media screen and (min-width: 120rem) {
+    section>h1 {
+      font-size: 275%;
+    }
+
+    section>p:first-of-type {
+      font-size: 125%;
+    }
+  }
+</style>

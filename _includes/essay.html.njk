@@ -1,0 +1,21 @@
+---
+layout: page.html.njk
+---
+<article class="h-entry">
+  <header>
+    <time class="dt-published" datetime="{{ page.date.toUTCString() }}">{{ page.date | postDate }}</time>
+    <h1 class="p-name">{{ title }}</h1>
+    {% if byline %}<h2>{{ byline }}</h2>{% endif %}
+    <aside><small>By <a class="u-author" href="/">Jacky Alciné</a></small></aside>
+  </header>
+  <section class="e-content">
+    {{ content | safe }}
+  </section>
+</article>
+<style>
+time+h1 { margin: 0.75rem 0; margin-left: -0.25rem; }
+article>section>p,
+article>section>ul
+{ max-width: 40rem; line-height: 1.5; font-size: 120%; text-align: justify; text-align-last: left; }
+article>header { background-color: lightskyblue; max-width: 48vw; padding: 1rem; margin-left: -1rem; }
+</style>
