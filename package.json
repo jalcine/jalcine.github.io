@@ -5,14 +5,15 @@
     "run": "bun x @11ty/eleventy --serve"
   },
   "devDependencies": {
-    "@types/bun": "latest",
-    "luxon": "^3.4.4"
-  },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
+    "@types/bun": "latest"
   },
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
-    "clean-css": "^5.3.3"
+    "clean-css": "^5.3.3",
+    "luxon": "^3.4.4",
+    "markdown-it": "^14.1.0",
+    "markdown-it-anchor": "^9.0.1",
+    "markdown-it-footnote": "^4.0.0",
+    "markdown-it-smartarrows": "^1.0.1"
   }
 }

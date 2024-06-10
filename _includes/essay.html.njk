@@ -14,8 +14,15 @@ layout: page.html.njk
 </article>
 <style>
 time+h1 { margin: 0.75rem 0; margin-left: -0.25rem; }
+article { margin: 1rem; }
 article>section>p,
-article>section>ul
+article>section>ul,
+section.footnotes
 { max-width: 40rem; line-height: 1.5; font-size: 120%; text-align: justify; text-align-last: left; }
-article>header { background-color: lightskyblue; max-width: 48vw; padding: 1rem; margin-left: -1rem; }
+article>header { background-color: lightskyblue; max-width: 60rem; padding: 1rem; margin-left: -1rem; }
+p+hr { margin: 2rem 0; max-width: 60rem; }
+@media screen and (max-width: 40rem) {
+p+hr { width: 60rem; }
+article>header { max-width: inherit; width: 100%; margin: 0; }
+}
 </style>
