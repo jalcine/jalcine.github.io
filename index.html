@@ -70,8 +70,8 @@ title: "Jacky Alciné has a homepage."
         href="tel:+19293790093"
       >text me</a> or message me via <a href="https://matrix.to/#/#@jackyalcine:matrix.org">Matrix</a> or <a
         href="xmpp:jackyalcine@movim.eu?message"
-      >XMPP/Jabber</a>. You could always trying sending e-mail to <kbd>ayo</kbd><kbd>@</kbd><kbd>jacky.wtf</kbd>.</p>
-    <p>For my software, you can find my contributions at <a href="https://github.com">Microsoft's GitHub</a>, <a
+      >XMPP/Jabber</a>. You could always send e-mail to <code>yo@jacky.wtf</code>.</p>
+    <p>For my software, you can find my contributions at <a href="https://github.com/jalcine">Microsoft's GitHub</a>, <a
         href="https://gitlab.com/jackyalcine"
       >GitLab</a> and <a href="https://gitlab.gnome.org/jalcine">GNOME's Gitlab</a>.</p>
   </section>
@@ -87,6 +87,10 @@ title: "Jacky Alciné has a homepage."
     width: 100%;
   }
 
+  figure>img {
+    border-radius: 1rem;
+  }
+
   img.full-height {
     max-height: 50rem;
     display: none;
@@ -100,6 +104,7 @@ title: "Jacky Alciné has a homepage."
   @media screen and (min-width: 60rem) {
     article {
       flex-direction: row;
+      align-items: last baseline;
     }
 
     article>figure,
@@ -131,8 +136,10 @@ title: "Jacky Alciné has a homepage."
     img.full-height {
       display: block;
     }
-  }
 
+    figure+section {
+      margin-left: 2rem;
+    }
   }
 
   @media screen and (min-width: 120rem) {
