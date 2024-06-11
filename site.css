@@ -177,3 +177,8 @@ mark {
     margin: 0 auto;
   }
 }
+
+main p a:not([class]),
+main li a:not([class]) {
+  color: #0060df;
+}

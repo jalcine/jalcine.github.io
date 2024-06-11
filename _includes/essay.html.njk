@@ -8,6 +8,16 @@ layout: page.html.njk
     {% if byline %}<h2>{{ byline }}</h2>{% endif %}
     <aside><small>By <a class="u-author" href="/">Jacky Alciné</a></small></aside>
   </header>
+  {% if audio %}
+  <figure>
+    <figcaption>You can listen to me reading this post!</figcaption>
+    <audio preload="metadata" controls>
+    {% for src in audio %}
+      <source src="/files/recordings/{{ src.src }}" type="{{ src.type }}" />
+    {% endfor %}
+    </audio>
+  </figure>
+  {% endif %}
   <section class="e-content">
     {{ content | safe }}
   </section>
@@ -15,6 +25,15 @@ layout: page.html.njk
 <style>
 time+h1 { margin: 0.75rem 0; margin-left: -0.25rem; }
 article { margin: 1rem; }
+article>section>blockquote>p:first-of-type { margin: 0; }
+article>section>blockquote {
+  max-width: 55rem;
+  background: var(--header-nav-bg);
+  color: var(--header-nav-color);
+  padding: 2rem;
+  font-size: 175%;
+  margin: 1rem 0;
+}
 article>section>p,
 article>section>ul,
 section.footnotes
@@ -22,7 +41,7 @@ section.footnotes
 article>header { background-color: lightskyblue; max-width: 60rem; padding: 1rem; margin-left: -1rem; }
 p+hr { margin: 2rem 0; max-width: 60rem; }
 @media screen and (max-width: 40rem) {
-p+hr { width: 60rem; }
-article>header { max-width: inherit; width: 100%; margin: 0; }
+  p+hr { width: 60rem; }
+  article>header { max-width: inherit; width: 100%; margin: 0; }
 }
 </style>
