@@ -190,12 +190,17 @@ figure>img+figcaption {
   font-style: oblique;
 }
 
+pre[class*="language-"] {
+  width: 80vw;
+  max-width: 50rem;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
 pre>code {
   display: inline-block;
   background-color: black;
   color: white;
-  width: 80vw;
-  padding: 0.5rem;
 }
 
 video {
