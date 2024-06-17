@@ -1,0 +1,96 @@
+---
+layout: page.html.njk
+title: "Shock"
+---
+<article>
+  <header>
+    <h1>Shock</h1>
+    <p>A content management system and <a href="https://indieweb.org/reader">social reader</a>
+      designed for a portable open social Web. The source code of the project lives on <a
+        href="https://git.sr.ht/~jacky/shock"
+      >sourcehut</a>. <!--A live instance of its presentation mode is available <a href="/demo/shock">here</a>. --></p>
+  </header>
+  <section>
+    <h2>Features</h2>
+    <h3>Shared</h3>
+    <ul>
+      <li class="finished">Transport-agnostic content backing via <a href="https://opendal.apache.org/">Apache&#8482;
+          OpenDAL&#8482;</a></li>
+      <li class="planned">Collaborative management of:
+        <ul>
+          <li class="planned">pages</li>
+          <li class="planned">themes</li>
+          <li class="planned">feeds</li>
+        </ul>
+    </ul>
+    <h3>Publishing</h3>
+    <ul>
+      <li class="finished">Support for rendering and developing themed HTML using a Jinja-compatible library</li>
+      <li class="planned">Render pages in a compatible way to:
+        <ul>
+          <li class="planned">the Fediverse</li>
+          <li class="planned"><a href="https://indieweb.org/reader">social readers</a></li>
+        </ul>
+      </li>
+      <li class="planned">Render collections (feeds) compatible with:
+        <ul>
+          <li class="planned">RSS &amp; ATOM</li>
+          <li class="planned"><a href="https://www.jsonfeed.org/">JSONFeed</a></li>
+          <li class="planned">HTML (<a href="https://indieweb.org/h-feed">h-feed</a>)</li>
+        </ul>
+      </li>
+      <li class="planned">An extensible "What you see is what you get" editor</li>
+      <li class="planned">Support for backups in the <a href="https://indieweb.org/blog_archive_format">.bar</a>
+        format</a>
+    </ul>
+    <h3>Reader</h3>
+    <ul>
+      <li class="planned">Support for engaging with content from
+        <ul>
+          <li class="planned">the Fediverse</li>
+          <li class="planned"><a href="https://spec.indieweb.org/">the IndieWeb</a></li>
+          <li class="planned"><a href="https://atproto.com/">@AT</a></li>
+        </ul>
+      </li>
+      <li class="planned">
+        Optimized feed reading experience for:
+        <ul>
+          <li class="planned">video streams</li>
+          <li class="planned">netcasts</li>
+          <li class="planned">photo blogs</li>
+          <li class="planned">essays</li>
+        </ul>
+      </li>
+      <li class="planned">Import &amp; export subscription information</li>
+      <li class="planned">Paid subscription support</li>
+    </ul>
+    <h2>Goals</h2>
+    <p>TBA. Mainly working on this so I don't have to rely on too many other vendors, I have a understanding of how
+      things work and I'm less burned by <a
+        href="https://www.fastcompany.com/91119170/jack-dorsey-elon-musk-relationship-bluesky-twitter"
+      >capitalists selling
+        systems off for clout</a>.</p>
+  </section>
+</article>
+<style>
+  article {
+    font-size: larger;
+    padding-bottom: 2rem;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  li.finished::before {
+    content: "🚢 ";
+  }
+
+  li.workingOn::before {
+    content: "🫷🏾 ";
+  }
+
+  li.planned::before {
+    content: "🧠 ";
+  }
+</style>

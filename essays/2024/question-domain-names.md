@@ -8,7 +8,7 @@ audio:
     - src: question-domain-names.opus
       type: audio/opus
 ---
-One tenant of the IndieWeb is the notion that [your URL is your canonical identity][1] online. This works well enough for folks if you'd 
+One tenant[^3] of the IndieWeb is the notion that [your URL is your canonical identity][1] online. This works well enough for folks if you'd 
 like to have multiple identities, be it to separate work from life or more pointedly, [if you're plural](https://www.pluralpride.com/). Domain names 
 have an explicit cost if you're opting for a vanity address, like my current one running at USD$35 per 
 year. [As a requirement to registration](https://webmasters.stackexchange.com/questions/49107/registering-a-domain-without-an-email-address), you'd need to provide organizations like ICANN some means of physical
@@ -37,3 +37,4 @@ What am I suggesting? Frankly, nothing _immediately_. As mentioned before, becau
 [^1]: It'll also handle a means of authorization &mdash; effectively an OAuth2 provider, if you scan the Wiki.
 [^2]: I haven't found much information about getting a domain name without an e-mail address &mdash; would love a
     resource on this!
+[^3]: [An eagle eye reader](https://lobste.rs/s/bjjlu2/question_on_domain_names_indieweb#c_5yskuo) caught this word &mdash; a bit of a spoiler of how I was intended to close this post! At the end of the day, it's no to landlords.

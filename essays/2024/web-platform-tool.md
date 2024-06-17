@@ -18,12 +18,13 @@ European counterparts:
 > force in social development had not yet come about; and in the communal phase, one must look at the fundamental forces
 > of production to understand the process of change.
 
-Communalism is a practice that has loose hierachy but high levels of communication. With enough care and design, online
+Communalism is a practice that has loose hierachy but high quality communication. With enough care and design, online
 platforms can be built in such a way that both reduces bus factors and keeps people safe. My opinion is that in order to
-do this, we need to work on walking back to feudal-esque systems and consider more "village" or "town" infrastructure.
+do this, we need to work on to avoid walking back to feudal-esque systems and consider more "village" or "town" infrastructures.
 It might seem a bit _odd_ to reference this kind of material for defining and designing digital spaces. It should also
 be equally as odd that the descendants of people in these spaces have been pushed to be a bit of an afternote or a means
-of preventing ridicule later down the road[^4].
+of preventing ridicule later down the road[^4]; these practices can help guide a safer community (and even help us model
+better ones offline).
 
 ## Town Infrastructure
 The coinage isn't novel nor is the practice but the idea is sound. One of having people collectively (on an opt-in basis) be
@@ -36,7 +37,7 @@ are locked by those governing these platforms. BlueSky's final decision maker li
 and Mastodon to [Eugen][4]. It relies on external pressure to mobilize these people (or their delegated parties) to
 deploy change that community sees fit.
 
-The conversation on how to design politics for digital spaces isn't new[^5]. What's new is our ability to both design
+The conversation on how to design politics for digital spaces is blossoming[^5]. What's new is our ability to both design
 spaces _and_ bridge them to the ones that exist today at speeds _far faster than expected_. Instead of waiting for API
 access to be approved, contracts to be settled or the like, we have put forth the notion that information can be both
 structured _and_ engaging. This 

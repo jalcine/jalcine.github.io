@@ -1,21 +1,18 @@
 ---
 layout: root.html.njk
 ---
-<aside>
-  Thanks for visiting! I'm <mark>actively looking for work</mark> <a href="/files/resume.pdf">as a senior software
+<aside class="thanks">
+  Thanks for visiting! I'm <strong>actively looking for work</strong> <a href="/files/resume.pdf">as a senior software
   engineer</a>. Feel free to <a href="https://cal.com/jackyalcine">schedule some time</a> or <a href="/#contact">reach
   out</a> if you know of any opportunities. <strong>Thank you</strong>.
 </aside>
-
 {{- content | safe -}}
-
 <style>
-
-main>aside {
+aside.thanks {
   padding: 1rem;
   margin: 0.5rem 0;
-  background: var(--header-nav-bg);
-  color: var(--header-nav-color);
+  color: var(--header-nav-bg);
+  background-color: #7FDBFF;
   border-radius: 0.25rem;
 }
 </style>
