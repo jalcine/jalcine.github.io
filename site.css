@@ -190,9 +190,14 @@ figure>img+figcaption {
   font-style: oblique;
 }
 
+@media screen and (min-width: 120rem) {
+  pre[class*="language-"] {
+    max-width: 50rem;
+  }
+}
+
 pre[class*="language-"] {
-  width: 80vw;
-  max-width: 50rem;
+  width: 100%;
   padding: 1rem;
   margin: 1rem 0;
 }
@@ -204,6 +209,6 @@ pre>code {
 }
 
 video {
-  width: 100vw;
+  width: 100%;
   max-width: 60rem;
 }
