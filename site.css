@@ -33,6 +33,9 @@ p,
 figure,
 blockquote,
 dl,
+ul,
+ol,
+li,
 dd {
   margin-block-end: 0;
 }
@@ -228,4 +231,12 @@ video {
     padding: 0;
   }
 
+}
+
+iframe.mastodon-embed {
+  margin: 1rem 0;
+  width: 50%;
+  min-width: 40rem;
+  overflow: auto;
+  border: none;
 }
