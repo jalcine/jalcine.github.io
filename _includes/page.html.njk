@@ -11,10 +11,15 @@ layout: root.html.njk
 aside.thanks {
   padding: 1rem;
   margin: 0.5rem auto;
-  color: var(--header-nav-bg);
-  background-color: #7FDBFF;
+  color: var(--pull-color);
+  background-color: var(--pull-bg);
   border-radius: 0.25rem;
-  width: 90vw;
+  min-width: 60vw;
+  max-width: 95vw;
+}
+
+@media screen and (min-width: 60rem) {
+  width: max-content;
 }
 
 @media print {

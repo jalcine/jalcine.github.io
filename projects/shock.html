@@ -1,16 +1,19 @@
 ---
 layout: page.html.njk
-title: "Shock"
+title: "Shock, an experimental Website maker"
 ---
 <article>
-  <header>
-    <h1>Shock</h1>
-    <p>A content management system and <a href="https://indieweb.org/reader">social reader</a>
-      designed for a portable open social Web. The source code of the project lives on <a
-        href="https://git.sr.ht/~jacky/shock"
-      >sourcehut</a>. <!--A live instance of its presentation mode is available <a href="/demo/shock">here</a>. --></p>
-  </header>
-  <section>
+  <section id="features">
+    <header>
+      <h1>Shock</h1>
+      <p>A content management system and <a href="https://indieweb.org/reader">social reader</a>
+        designed for a portable open social Web. The source code of the project lives on <a
+          href="https://git.sr.ht/~jacky/shock"
+        >sourcehut</a>.
+        <!--A live instance of its presentation mode is available <a href="/demo/shock">here</a>. -->
+      </p>
+    </header>
+
     <h2>Features</h2>
     <h3>Shared</h3>
     <ul>
@@ -69,13 +72,47 @@ title: "Shock"
       things work and I'm less burned by <a
         href="https://www.fastcompany.com/91119170/jack-dorsey-elon-musk-relationship-bluesky-twitter"
       >capitalists selling
-        systems off for clout</a>.</p>
+        systems off for clout</a>. However, this is leaning to use <a
+        href="https://knightcolumbia.org/content/protocols-not-platforms-a-technological-approach-to-free-speech"
+      >protocols
+        versus building a platform</a>.</p>
+  </section>
+  <section id="devlog">
+    <header>
+      <h2>Devlog</h2>
+      <p>Until I get it to be self-hosting, this is where I'll put updates.</p>
+    </header>
+    <dl>
+      <dt>2024-06-30</dt>
+      <dd>Added logic to show info about peers, <a
+          href="https://git.sr.ht/~jacky/shock/tree/4158e6d6eaae6ad5ba2a9834ba548ebd3824bea9/item/editor/shell/src/routes/sites/peers/PeerCard.svelte"
+        >mainly
+          for backups</a>.</dd>
+    </dl>
+
   </section>
 </article>
 <style>
   article {
     font-size: larger;
     padding-bottom: 2rem;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  p {
+    max-width: 45vw;
+  }
+
+  @media screen and (min-width: 60rem) {
+    article {
+      flex-direction: row;
+    }
+
+    article>section {
+      width: 45vw;
+      word-wrap: break-word;
+    }
   }
 
   li {

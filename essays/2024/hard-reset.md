@@ -2,6 +2,7 @@
 layout: essay.html.njk
 title: "Hard Reset"
 tags: essay
+date: 2024-06-09
 ---
 
 If you’re reading this directly from my website, you’ll notice that it’s different. After a long of back and forth, I

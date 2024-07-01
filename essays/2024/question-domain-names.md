@@ -2,6 +2,7 @@
 title: "A Question on Domain Names in the IndieWeb"
 layout: essay.html.njk
 tags: essay
+date: 2024-06-11
 audio: 
     - src: question-domain-names.mp3
       type: audio/mpeg

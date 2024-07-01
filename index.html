@@ -1,6 +1,7 @@
 ---
 layout: page.html.njk
 title: "Jacky Alciné has a homepage."
+changeFreq: daily
 ---
 <article>
   <figure class="u-photo">
@@ -14,6 +15,10 @@ title: "Jacky Alciné has a homepage."
       src="/images/landing-bleed.png"
       alt="Myself standing in front of a wall of sticky notes."
     />
+    <figcaption>
+      It's me standing in front of a wall of sticky notes and directing a small session.
+      <a href="/work/">Maybe you'd want that as well</a>?
+    </figcaption>
   </figure>
   <section>
     <h1>It's the site of <mark>Jacky Alciné</mark>.</h1>
@@ -68,7 +73,7 @@ title: "Jacky Alciné has a homepage."
       </li>
     </ul>
     <h2 id="contact">Let's Work <mark>Together</mark></h2>
-    <p>You can find me on <a href="https://www.linkedin.com/in/jacky-alcin%C3%A9-6a9ab730a/">LinkedIn</a> or <a
+    <p>You can find me on <a href="https://www.linkedin.com/in/jacky-alcine/">LinkedIn</a> or <a
         href="/files/resume.pdf"
       >download my
         resume/CV</a>. Feel free to <a href="https://cal.com/jackyalcine/">schedule time on my calendar</a>, <a
@@ -87,12 +92,16 @@ title: "Jacky Alciné has a homepage."
     flex-direction: column;
   }
 
-  article>figure,
-  article>figure>img {
+  article>figure>figcaption {
+    max-width: 25rem;
+    margin: 0 auto;
+  }
+
+  article>figure {
     width: 100%;
   }
 
-  figure>img {
+  figure>picture {
     border-radius: 1rem;
   }
 
@@ -106,14 +115,21 @@ title: "Jacky Alciné has a homepage."
     display: block;
   }
 
+  picture>img {
+    margin: none;
+    width: initial;
+    height: initial;
+  }
+
   @media screen and (min-width: 60rem) {
     article {
       flex-direction: row;
       align-items: last baseline;
+      justify-content: center;
     }
 
     article>figure,
-    article>figure>img {
+    article>figure>picture {
       width: auto;
       height: auto;
     }

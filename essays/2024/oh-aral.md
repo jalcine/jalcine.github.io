@@ -2,6 +2,7 @@
 layout: essay.html.njk
 title: "When People with Privilege Don't Use It"
 tags: essay
+date: 2024-06-22
 ---
 
 I saw [a post from Jeremy Soller regarding Aral Balkan][1] that made me raise an eyebrow. I've had prior engagements

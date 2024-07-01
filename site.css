@@ -5,6 +5,10 @@
   --header-nav-bg: #001f3f;
   --header-nav-color: #FFFFFF;
   --link-color: #0060df;
+  --content-width: max(50rem, 40vw);
+  --pull-bg: #0074D9;
+  --pull-color: #fff;
+  --txt-line-height: 1.7;
 }
 
 /** nabbed from https://piccalil.li/blog/a-more-modern-css-reset/ */
@@ -104,8 +108,6 @@ textarea:not([rows]) {
 }
 
 figure {
-  margin-block-start: 0;
-  margin-block-end: 0;
   margin-inline-end: 0;
   margin-inline-start: 0;
 }
@@ -158,14 +160,24 @@ footer {
   align-items: center;
   background: var(--header-nav-bg);
   color: var(--header-nav-color);
+  margin-top: 2rem;
 }
 
-footer>p:nth-of-type(2) img {
+footer>p:nth-of-type(2) picture {
   width: 1.25rem;
   display: inline;
   vertical-align: middle;
   margin: 0 0.25rem;
-  margin-top: -0.5rem;
+  margin-top: -1rem;
+}
+
+footer picture>img {
+  vertical-align: middle;
+  margin: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  max-width: initial;
+  display: inline-block;
 }
 
 ul {
@@ -189,7 +201,13 @@ main li a:not([class]) {
   color: var(--link-color);
 }
 
-figure>img+figcaption {
+figure>picture,
+figure>video {
+  margin: 0 auto;
+}
+
+figure>picture+figcaption,
+figure>video+figcaption {
   text-align: center;
   font-style: oblique;
 }
@@ -239,4 +257,35 @@ iframe.mastodon-embed {
   min-width: 40rem;
   overflow: auto;
   border: none;
+}
+
+p>sup.footnote-ref,
+a.footnote-backref {
+  font-size: small;
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+figure>picture:nth-child(n+1) {
+  margin-bottom: 0.25rem;
+}
+
+picture>img {
+  margin: 0 auto;
+  height: min-content;
+}
+
+@media screen and (max-width: 40rem) {
+  :root {
+    --txt-line-height: 1.4;
+    --content-width: max(40rem, 90vw);
+  }
+
+  picture>img {
+    width: 100%;
+  }
+}
+
+p {
+  max-width: var(--content-width);
 }

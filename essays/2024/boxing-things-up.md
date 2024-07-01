@@ -2,6 +2,7 @@
 layout: essay.html.njk
 title: "Boxing Up Common Parts of an App"
 tags: essay
+date: 2024-06-13
 ---
 I've been working on [Shock][1] as I look for [work](/files/resume.pdf) to both keep my blades sharp and to try out some new
 stacks. Shock's written in Rust and JavaScript (and a _little bit_ of TypeScript)[^1] using [Tauri](https://tauri.app) to bind a system-provided Web browser
@@ -182,13 +183,13 @@ simpler (since I can isolate things a lot more).
 With that code, I'm able to present the following:
 
 <figure>
-    <img src="/images/boxing-things-up/page-listing.png" />
+    <img src="/images/boxing-things-up/page-listing.png" alt=""/>
     <figcaption>A (meager) list of pages associated to my example site. Note the "New" button to the top
     right.</figcaption>
 </figure>
 
 <figure>
-    <img src="/images/boxing-things-up/theme-listing.png" />
+    <img src="/images/boxing-things-up/theme-listing.png" alt="" />
     <figcaption>A (even more meager) list of themes associated to my example site. Note the two buttons to the top
     right.</figcaption>
 </figure>
@@ -203,7 +204,7 @@ There's also a chance for me to bring this table interface to the _first_ screen
 currently looks like:
 
 <figure>
-    <img src="/images/boxing-things-up/landing.png" />
+    <img src="/images/boxing-things-up/landing.png" alt="" />
     <figcaption>A set of testing sites made locally, all trapped in a `&lt;select&gt;`.</figcaption>
 </figure>
 

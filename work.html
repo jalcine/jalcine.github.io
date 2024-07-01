@@ -1,5 +1,6 @@
 ---
 layout: page.html.njk
+title: "Working with Jacky Alciné"
 ---
 <article class="h-resume">
   <header>
@@ -16,10 +17,10 @@ layout: page.html.njk
     <aside>
       <h2>Skill Set</h2>
       <p>Languages:
-        <strong>Proficency</strong>: <span class="p-skill">JavaScript</span>, <span class="p-skill">Ruby</span>,
-        <span class="p-skill">Python</span>; <strong>Familiarity</strong>: <span class="p-skill">PHP</span>, <span
+        <strong>Proficency</strong>: <span class="p-skill">TypeScript</span>, <span class="p-skill">JavaScript</span>,
+        <span class="p-skill">Ruby</span>, <span class="p-skill">Python</span>; <strong>Familiarity</strong>: <span
           class="p-skill"
-        >C++</span><sup>(C++11/C++14)</sup>,
+        >PHP</span>, <span class="p-skill">C++</span><sup>(C++11/C++14)</sup>,
         <span class="p-skill">Rust</span>, <span class="p-skill">Clojure</span>,
         <span class="p-skill">Elixir</span>
       </p>
@@ -56,16 +57,11 @@ layout: page.html.njk
         >May 2024</time>
       </aside>
       <ul>
-        <li>Spent time contributing to ideation on the platform in regular feature lab sessions.</li>
-        <li>Worked on assisting the migration &bull; a Hapi server to Nest.js in the act of feature development.</li>
+        <li>Spent time contributing to ideation on the conceptual platform in regular feature lab sessions.</li>
+        <li>Worked on assisting the migration of a Hapi server to Nest.js in the act of feature development.</li>
         <li>Contributed and guided code reviews for changes towards the Web platform.</li>
-        <li>Assisted in the initial onboarding of an engineer to the internal platform.</li>
+        <li>Assisted in the on-boarding of an engineer to the Node.js platform.</li>
       </ul>
-      <p>
-        <small>After discussion on the eventual growth of both the organization and my role there, Plural and I parted
-          ways on
-          31 May 2024.</small>
-      </p>
     </section>
     <section
       id="cfa"
@@ -78,7 +74,10 @@ layout: page.html.njk
         >Code for America</a>
       </h3>
       <aside>
-        <span class="p-role">Senior Software Engineer</span>
+        <a
+          class="p-role"
+          href="https://codeforamerica.org/people/jacky-alcine/"
+        >Senior Software Engineer</a>
         &bull; <time
           datetime="2022-11-02"
           class="dt-start"
@@ -98,20 +97,17 @@ layout: page.html.njk
         a means of helping people file for tax benefits.
       </p>
       <ul>
-        <li>Spent lots of time pairing on features to distribute team's understanding of the product, speeding up our
+        <li>Spent lots of time pairing on Ruby code on features to distribute team's understanding of the product,
+          speeding up our
           deployment times</li>
         <li>Wrote out documents around changes to the platform to help commodify understanding</li>
         <li>Spent time working on changes to help reduce noise of the maintaining of <a
             href="https://github.com/codeforamerica/vita-min"
-          >vita-min</a></li>
+          >vita-min</a>, written with Ruby on Rails.</li>
         <li>Held meetings explaining new changes made for support, deepening shared technical understanding.</li>
         <li>Integrated and deployed features based on feedback and inquiry &bull; meetings and other product
-          guidance.</li>
+          guidance in Ruby.</li>
       </ul>
-      <small>
-        I was <a href="https://cfaworkersunited.com/stories/2023/08/31/code-for-america-lays-off-35-colleagues">impacted
-          by layoffs</a> Code for America executed in September 2023.
-      </small>
     </section>
     <section
       id="edenHealth"
@@ -153,9 +149,6 @@ layout: page.html.njk
           cutting down sign up time.</li>
         <li>Participated in internal brown bags around my experience using Clojure and Neovim.</li>
       </ul>
-      <small>
-        I was impacted by layoffs to engineering at Eden Health in 2022.
-      </small>
     </section>
     <section
       id="navaPbc"
@@ -187,8 +180,8 @@ layout: page.html.njk
         this work was done mainly using Python and AWS services.
       </p>
       <ul>
-        <li>Worked on improving reliabiliy of benefit requests with more automated testing and metrics collection.</li>
-        <li>Contributed heavily to improving internal dev-ex for deploying PFML changes to Mass.</li>
+        <li>Worked on improving reliability of benefit requests with more automated testing and metrics collection.</li>
+        <li>Contributed heavily to improving the developer experience for deploying PFML changes to Mass.</li>
         <li>Spent a lot of time contributing to code review with other teams.</li>
       </ul>
     </section>
@@ -217,12 +210,13 @@ layout: page.html.njk
         During my time on the Platform team at Glitch, I contributed to:
       </p>
       <ul>
-        <li>Refactoring endpoints in the existing API system to support product development and stability</li>
+        <li>Refactoring endpoints in the existing API system in TypeScript to support product development and stability
+        </li>
         <li>Adding tooling to make internal project development easier</li>
-        <li>Updated internal tools to make use of the newer API</li>
+        <li>Updated internal tools to make use of the newer API endpoints, powered by Node</li>
         <li>Extended how application placements from Glitch's internal mappings worked to the benefit of
           maintainability.</li>
-        <li>Made changes to the frontend for listing projects for users, namely around how boosted apps were
+        <li>Made changes to the React-based frontend for listing projects for users, namely around how boosted apps were
           presented.</li>
       </ul>
       <small>
@@ -255,9 +249,10 @@ layout: page.html.njk
       </aside>
       <ul>
         <li>Improved PDF rendering of invoices for the billing system, long-requested feature of clients.</li>
-        <li>Extended the capabilities of account adminstrations around configuring their billing options.</li>
+        <li>Extended the capabilities of account administrations around configuring their billing options in the React
+          frontend and Flask backend.</li>
         <li>Improved how integrations and the internal system were reconciled as part of a move to a different approach
-          to billing.
+          to billing (from an explicit tier-based system to a hybrid tier/usage-based one with grandparenting support).
         </li>
       </ul>
     </section>
@@ -284,7 +279,7 @@ layout: page.html.njk
       </aside>
       <ul>
         <li>
-          Working on implementing a message templating system to replace explicit
+          Working on implementing a message templating system in Python and React to replace explicit
           calls to vendors to reach users, dramatically improving support's ability to help customers
         </li>
         <li>
@@ -293,10 +288,9 @@ layout: page.html.njk
         </li>
         <li>
           Added adaptivity to said tooling to allow for users to adjust their
-          channels for receiving information, increasing user privacy and control.
-        </li>
-        <li>
-          Added logic to help use less numbers when routing calls between users, saving Lyft money on routing costs
+          channels for receiving information, increasing user privacy and control by also proxying messages and calls
+          with the newly built service dubbed Switchboard. This added logic to help use less numbers when routing calls
+          between users, saving Lyft money on routing costs
           across vendors.
         </li>
       </ul>
@@ -324,7 +318,7 @@ layout: page.html.njk
       </aside>
       <ul>
         <li>Maintained the Android SDK and Cordova SDK for mobile developers</li>
-        <li>Improved in-flight requests by cutting down unhit paths for users in authentication requests</li>
+        <li>Improved in-flight requests by cutting down paths for users in authentication requests</li>
         <li>Moved our development environment to use more virtualization to speed up feature releases.</li>
         <li>Worked on the cross-platform mobile SDK for a new product feature, Instant 2FA</li>
       </ul>
@@ -351,11 +345,11 @@ layout: page.html.njk
         >Dec 2014</time>
       </aside>
       <ul>
-        <li>Was taught Perl to work with the legacy platform and contributed immediately.</li>
+        <li>Was taught Perl to work and immediately contribute with the legacy platform.</li>
         <li>Contributed in the API migration from the legacy Perl stack to the Node platform.</li>
         <li>Maintained the acceptance suite for the newer Contributor product.</li>
-        <li>Worked on a in-house CMS that drove the content marketing of the public facing Contributor site, reducing
-          the need for a redeploy.</li>
+        <li>Worked on extending a in-house CMS that drove the content marketing of the public facing Contributor site,
+          reducing the need for a redeploy each time.</li>
       </ul>
     </section>
   </main>
@@ -363,11 +357,10 @@ layout: page.html.njk
     <h2 class="heading">Consulting</h2>
     <p>
       I've worked with a range of clients on different kinds of software needs,
-      stacks, languages and with different responbilities. My ability to jump in
-      and get going is one that's kept me going and interesting in consulting. I
-      begun my career consutling and always found it to be a good and exhilarating
-      way to help people build the things they're envisioning and fix the problems
-      that's been ailing them.
+      stacks, languages and with different responsibilities - from fractional principal DevOps engineer to contract
+      video system developer. My ability to jump in and get going is one that's kept me going and interesting in
+      consulting. I begun my career consulting and always found it to be a good and exhilarating
+      way to help people build the things they're envisioning and fix the problems that's been ailing them.
     </p>
     <p>
       Companies I've consulted include
@@ -503,7 +496,7 @@ layout: page.html.njk
       const deltaInMonths = Math.ceil((endExpDate - startExpDate) / monthInSeconds);
 
       const estTimeNode = document.createElement("small");
-      estTimeNode.innerText = `(+/- ${deltaInMonths} months)`;
+      estTimeNode.innerText = `(${deltaInMonths} months)`;
       estTimeNode.style.color = getComputedStyle(experience).getPropertyValue('--color-primary');
 
       experience.querySelector("aside:first-of-type").appendChild(estTimeNode);

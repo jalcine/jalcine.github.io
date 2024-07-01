@@ -2,6 +2,18 @@
 <html lang="en">
 
 <head>
+  <link
+    rel="me"
+    href="https://github.com/jalcine"
+  />
+  <link
+    rel="webmention"
+    href="https://webmention.io/jacky.wtf/webmention"
+  />
+  <link
+    rel="pingback"
+    href="https://webmention.io/jacky.wtf/xmlrpc"
+  />
   <meta charset="utf-8">
   <meta
     name="viewport"
@@ -11,6 +23,28 @@
     name="theme-color"
     content="#001f3f"
   />
+  <meta
+    name="author"
+    content="Jacky Alciné"
+  />
+  <meta
+    name="generator"
+    content="Eleventy v3.0.0"
+  >
+  {% if og %}
+  {% if og.image %}
+  <meta
+    property="og:image"
+    content="{{ og.image }}"
+  />{% endif %}
+  {% if og.title %}
+  <meta
+    property="og:title"
+    content="{{ title }}"
+  />
+  {% endif %}
+  {% endif %}
+
   <title>{{ title }}</title>
   <link
     rel="stylesheet"
@@ -40,7 +74,7 @@
           Jacky Alciné
         </span></a>
       <a href="/essays/">Essays</a>
-      <a href="/report/visitors.html">Web Traffic</a>
+      <a href="/report/visitors.html">Traffic</a>
       <a href="/support/">Support</a>
       <a href="https://plausible.io/jacky.wtf">Analytics</a>
     </nav>
@@ -49,7 +83,7 @@
     {{- content | safe -}}
   </main>
   <footer>
-    <p>Site handrolled and built using <a href="https://www.11ty.dev/">11ty</a> (for now) &mdash; <a
+    <p>Site handrolled at {{ generated }} and built using <a href="https://www.11ty.dev/">11ty</a> (for now) &mdash; <a
         href="https://www.11ty.dev/blog/sustainability-fundraising/"
       >support its
         development!</a>.</p>
