@@ -5,10 +5,26 @@
   --header-nav-bg: #001f3f;
   --header-nav-color: #FFFFFF;
   --link-color: #0060df;
+  --visited-link-color: #B10DC9;
   --content-width: max(50rem, 40vw);
   --pull-bg: #0074D9;
   --pull-color: #fff;
   --txt-line-height: 1.7;
+  --background-color: #fff;
+  --color: #000;
+  --mark-background-color: #7FDBFF;
+  --mark-color: #000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color: #fff;
+    --background-color: #000;
+    --link-color: #7FDBFF;
+    --visited-link-color: #F012BE;
+    --header-nav-bg: #7FDBFF;
+    --header-nav-color: #000;
+  }
 }
 
 /** nabbed from https://piccalil.li/blog/a-more-modern-css-reset/ */
@@ -25,6 +41,8 @@ html {
   -moz-text-size-adjust: none;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
+  color: var(--color);
+  background-color: var(--background-color);
 }
 
 /* Remove default margin in favour of better control in authored CSS */
@@ -141,12 +159,17 @@ header>nav {
   border-radius: 0.25rem;
 }
 
+
 header>nav a {
-  color: lightblue;
+  color: var(--header-nav-color);
   vertical-align: middle;
   display: inline-flex;
   align-items: center;
   padding: 0.5rem;
+}
+
+header>nav a:visited {
+  color: var(--header-nav-color);
 }
 
 main {
@@ -185,7 +208,8 @@ ul {
 }
 
 mark {
-  background-color: #FFDC00;
+  background-color: var(--mark-background-color);
+  color: var(--mark-color);
   padding: 0.125rem;
 }
 
@@ -288,4 +312,12 @@ picture>img {
 
 p {
   max-width: var(--content-width);
+}
+
+a {
+  color: var(--link-color);
+}
+
+a:visited {
+  color: var(--visited-link-color);
 }
