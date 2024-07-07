@@ -12,7 +12,7 @@
   --txt-line-height: 1.7;
   --background-color: #fff;
   --color: #000;
-  --mark-background-color: #7FDBFF;
+  --mark-background-color: #FFDC00;
   --mark-color: #000;
 }
 
@@ -24,6 +24,7 @@
     --visited-link-color: #F012BE;
     --header-nav-bg: #7FDBFF;
     --header-nav-color: #000;
+    --mark-background-color: #FFDC00
   }
 }
 
@@ -43,6 +44,7 @@ html {
   text-size-adjust: none;
   color: var(--color);
   background-color: var(--background-color);
+  border-top: 0.25rem solid var(--header-nav-bg);
 }
 
 /* Remove default margin in favour of better control in authored CSS */
@@ -186,6 +188,10 @@ footer {
   margin-top: 2rem;
 }
 
+footer a:visited {
+  color: inherit;
+}
+
 footer>p:nth-of-type(2) picture {
   width: 1.25rem;
   display: inline;
@@ -236,17 +242,18 @@ figure>video+figcaption {
   font-style: oblique;
 }
 
-@media screen and (min-width: 120rem) {
-  pre[class*="language-"] {
-    max-width: 50rem;
-  }
-}
-
 pre[class*="language-"] {
   width: 100%;
   padding: 1rem;
   margin: 1rem 0;
 }
+
+@media screen and (min-width: 120rem) {
+  pre[class*="language-"] {
+    max-width: var(--content-width);
+  }
+}
+
 
 pre>code {
   display: inline-block;

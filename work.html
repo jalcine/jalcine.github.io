@@ -1,6 +1,25 @@
 ---
 layout: page.html.njk
 title: "Working with Jacky Alciné"
+skills:
+  - name: Terraform
+    url: https://www.terraform.io/
+  - name: Debian
+    url: https://debian.org/
+  - name: CSS
+    url: https://w3.org/TR/CSS/#css
+  - name: HTML
+    url:  https://html.spec.whatwg.org/
+  - name: Postgres
+    url: https://www.postgresql.org/
+  - name: SQLite
+    url: https://sqlite.org/
+  - name: React 
+    url: https://react.dev/
+  - name: Svelte
+    url: https://svelte.dev/
+  - name: Docker
+    url: https://www.docker.com/
 ---
 <article class="h-resume">
   <header>
@@ -10,9 +29,10 @@ title: "Working with Jacky Alciné"
         rel="me"
         href="https://linkedin.com/in/jacky-alcine"
       >Microsoft's LinkedIn</a> or download my <a href="/files/resume.pdf">
-        resume</a>. With both technical acumen and strong communication skills, I'm eager to expand a team or
+        resume</a>. With both technical acumen and strong communication skills, I'm eager to expand an
       organization's ambitions using technology in a holistic, transparent and transformative way. <strong>I'm
-        immediately available for work</strong> in various capacities &mdash; even <a href="#consulting">consulting</a>.
+        immediately available for work</strong> in various capacities &mdash; including <a
+        href="#consulting">consulting</a>.
     </p>
     <aside>
       <h2>Skill Set</h2>
@@ -27,6 +47,17 @@ title: "Working with Jacky Alciné"
       <p>Technologies:
         <strong>Proficient</strong>: Express, Ruby on Rails;
         <strong>Familiarity</strong>: Hapi, Nest.js, Phoenix
+      </p>
+      <p>
+        Other obligatory frameworks, toolchains and resources of notes include
+        {% for skill in skills %}
+          <a
+            class="p-skill"
+            href="{{ skill.url }}"
+            >{{ skill.name }}</a>
+          {{ loop }}
+          {%- if loop.revindex == 1 %} and {% else %},{% endif %}
+        {% endfor %}
       </p>
     </aside>
 
@@ -378,15 +409,15 @@ title: "Working with Jacky Alciné"
     </p>
     <ul>
       <li>
-        Include my daily rate of <strong>USD $500</strong> or hourly rate of <strong>$60</strong>.
+        Include my daily rate of <strong>USD $360</strong> or hourly rate of <strong>USD $45</strong>.
       </li>
       <li>A maximum of <strong>four days worked per week</strong> (for <a
           href="https://www.wsj.com/articles/the-four-day-workweek-gets-shorter-with-practice-companies-find-edc9eb2f"
         >work-life balance</a>).</li>
     </ul>
     <p>
-      The conditions above can be flexible provided good reason, market stability and personal welfare.
-      <strong>Please <a href="mailto:yo@jacky.wtf">reach out</a></strong> if you'd like me to
+      The conditions above are flexible provided good reason, market stability and personal welfare.
+      <strong>Please <a href="mailto:yo@jacky.wtf?subject=On+Consulting">reach out</a></strong> if you'd like me to
       work with you (or your organization).
     </p>
   </footer>
@@ -402,6 +433,7 @@ title: "Working with Jacky Alciné"
     display: flex;
     width: 100%;
     max-width: 80rem;
+
     margin: 0 auto;
     flex-direction: column;
     flex-grow: 3;
@@ -437,8 +469,10 @@ title: "Working with Jacky Alciné"
   article.h-resume>footer {
     width: inherit;
     border-radius: 0.25rem;
-    padding: 1.25rem;
+    padding: 2rem;
     font-size: larger;
+    max-width: 60rem;
+    margin: 0 auto;
   }
 
   article.h-resume>footer a {
@@ -483,21 +517,25 @@ title: "Working with Jacky Alciné"
 <script>
   window.addEventListener('load', () => {
     const months = new Array();
-    const monthInSeconds = (1000 * 60 * 60 * 24 * 30);
+    const approxMonthInSeconds = (1000 * 60 * 60 * 24 * 30);
 
     document.querySelectorAll(".p-experience").forEach((experience) => {
       const startExpDate = new Date(experience.querySelector("time.dt-start").getAttribute("datetime"));
       const endExpDate = new Date(experience.querySelector("time.dt-end").getAttribute("datetime"));
-      const deltaInMonths = Math.ceil((endExpDate - startExpDate) / monthInSeconds);
+      const deltaInMonths = Math.ceil((endExpDate - startExpDate) / approxMonthInSeconds);
 
-      const estTimeNode = document.createElement("small");
-      estTimeNode.innerText = `(${deltaInMonths} months)`;
-      estTimeNode.style.color = getComputedStyle(experience).getPropertyValue('--color-primary');
+      if (deltaInMonths >= 6) {
+        const estTimeNode = document.createElement("small");
+        estTimeNode.innerText = `(${deltaInMonths} months)`;
+        estTimeNode.style.color = getComputedStyle(experience).getPropertyValue('--color-primary');
 
-      experience.querySelector("aside:first-of-type").appendChild(estTimeNode);
+        experience.querySelector("aside:first-of-type").appendChild(estTimeNode);
+      }
+
       months.push(deltaInMonths);
     });
 
     const totalCount = months.reduce((a, b) => a + b);
+    console.log(totalCount);
   });
 </script>

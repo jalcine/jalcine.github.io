@@ -1,8 +1,6 @@
 ---
 layout: essay.html.njk
 title: "A Web as a Platform and a Tool"
-tags: essay
-eleventyExcludeFromCollections: true
 ---
 
 The open social Web is rife with thoughts, opinions - _lots of opinions_ - and work from its advocates to push folks into a

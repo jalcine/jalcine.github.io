@@ -1,8 +1,6 @@
 ---
 layout: essay.html.njk
 title: "A Follow-up to the Point on Accessiblity"
-tags: essay
-eleventyExcludeFromCollections: true
 ---
 
 As per usual, someone mentioned that Aral's written a catch-up of their perspective on both how the Fedora/IBM

@@ -1,8 +1,7 @@
 ---
 layout: essay.html.njk
 title: "Regarding 'A Question on Domain Names in the IndieWeb'"
-tags: essay
-eleventyExcludeFromCollections: true
+# tags: essay
 ---
 With the feedback to [the question I made the other day][1], I've decided to address some points and give a potential
 answer to the (potentiality of) the domain name problem.

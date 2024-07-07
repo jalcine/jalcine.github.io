@@ -1,8 +1,6 @@
 ---
 layout: essay.html.njk
 title: "A Lunge Into A Project"
-tags: essay
-eleventyExcludeFromCollections: true
 ---
 
 My [last post][1] was the christening of this site. Done in the thick of the night with a lot of thought 

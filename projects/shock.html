@@ -67,6 +67,25 @@ title: "Shock, an experimental Website maker"
       <li class="planned">Import &amp; export subscription information</li>
       <li class="planned">Paid subscription support</li>
     </ul>
+    <h2>Glossary</h2>
+    <dl>
+      <dt id="destination">destination</dt>
+      <dd>
+        A URN or URL defining how a resource is intended to be referenced. It can
+        also be accompied by a name by the owner to help with discovery.
+      </dd>
+      <dt id="site">site</dt>
+      <dd>
+        A defined location of files with a configuration file defining
+        the intended <a href="#destination">destination</a> of the
+        content (be it over HTTP or usable as a lookup moniker for the site).
+      </dd>
+      <dt id="peer">peer</dt>
+      <dd>
+        A definition to the location of a <a href="#site">site</a> that's intended to have
+        the same contents of the currently stored site.
+      </dd>
+    </dl>
     <h2>Goals</h2>
     <p>TBA. Mainly working on this so I don't have to rely on too many other vendors, I have a understanding of how
       things work and I'm less burned by <a
