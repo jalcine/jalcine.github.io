@@ -9,12 +9,12 @@ skills:
   - name: CSS
     url: https://w3.org/TR/CSS/#css
   - name: HTML
-    url:  https://html.spec.whatwg.org/
+    url: https://html.spec.whatwg.org/
   - name: Postgres
     url: https://www.postgresql.org/
   - name: SQLite
     url: https://sqlite.org/
-  - name: React 
+  - name: React
     url: https://react.dev/
   - name: Svelte
     url: https://svelte.dev/
@@ -51,13 +51,12 @@ skills:
       <p>
         Other obligatory frameworks, toolchains and resources of notes include
         {% for skill in skills %}
-          <a
-            class="p-skill"
-            href="{{ skill.url }}"
-            >{{ skill.name }}</a>
-          {{ loop }}
-          {%- if loop.revindex == 1 %} and {% else %},{% endif %}
-        {% endfor %}
+        <a
+          class="p-skill"
+          href="{{ skill.url }}"
+        >{{ skill.name }}</a>,
+        {%- endfor %}
+        and of course, lots of notes.
       </p>
     </aside>
 
@@ -250,12 +249,6 @@ skills:
         <li>Made changes to the React-based frontend for listing projects for users, namely around how boosted apps were
           presented.</li>
       </ul>
-      <small>
-        I was <a
-          href="https://www.theverge.com/2020/5/22/21268007/glitch-layoffs-substantial-number-coding-platform-union"
-        >impacted
-          by layoffs</a> at Glitch in 2020.
-      </small>
     </section>
     <section
       id="lob"
@@ -514,28 +507,3 @@ skills:
   }
   }
 </style>
-<script>
-  window.addEventListener('load', () => {
-    const months = new Array();
-    const approxMonthInSeconds = (1000 * 60 * 60 * 24 * 30);
-
-    document.querySelectorAll(".p-experience").forEach((experience) => {
-      const startExpDate = new Date(experience.querySelector("time.dt-start").getAttribute("datetime"));
-      const endExpDate = new Date(experience.querySelector("time.dt-end").getAttribute("datetime"));
-      const deltaInMonths = Math.ceil((endExpDate - startExpDate) / approxMonthInSeconds);
-
-      if (deltaInMonths >= 6) {
-        const estTimeNode = document.createElement("small");
-        estTimeNode.innerText = `(${deltaInMonths} months)`;
-        estTimeNode.style.color = getComputedStyle(experience).getPropertyValue('--color-primary');
-
-        experience.querySelector("aside:first-of-type").appendChild(estTimeNode);
-      }
-
-      months.push(deltaInMonths);
-    });
-
-    const totalCount = months.reduce((a, b) => a + b);
-    console.log(totalCount);
-  });
-</script>
