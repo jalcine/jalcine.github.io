@@ -26,7 +26,7 @@ has a [manual setup block][2]. I noticed that Veilid wants to write directly to 
 I've tweaked it to write into the directory for this application's storage as to not clutter the filesystem. I did
 notice some issues when trying to bootstrap with `bootstrap.veilid.net` so I decided to spin up a node on my own server.
 Veilid makes this pretty easy for [those comfortable with command-line package management][3]. I imagine someone out there 
-is looking to make something similar to [IPFS Desktop][4][^1].
+is looking to make something similar to [IPFS Desktop][4][^1] to help folks make this run nicely at home.
 
 Now that it can connect, what's needed is a way to "attach" to a document. We'll call things we can edit here documents.
 

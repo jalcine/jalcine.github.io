@@ -1,0 +1,25 @@
+---
+layout: page.html.njk
+changeFreq: weekly
+---
+{% set regExpCode = r/<pre class=(.|\n)*?<\/pre>/gm %}
+{% set fixedContent = content | replace(regExpCode, "") | striptags %}
+{% set wordCount = fixedContent | wordcount %}
+<article class="h-entry">
+  <header>
+    <h2 class="p-name">Weeknotes for {{ page.date | postDate }}</h2>
+  </header>
+  {% if audio %}
+  <figure id="audio">
+    <figcaption>You can listen to me reading this post!</figcaption>
+    <audio preload="metadata" controls>
+    {% for src in audio %}
+      <source src="/files/recordings/{{ src.src }}" type="{{ src.type }}" />
+    {% endfor %}
+    </audio>
+  </figure>
+  {% endif %}
+  <section class="e-content">
+    {{ content | safe }}
+  </section>
+</article>

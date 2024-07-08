@@ -26,7 +26,9 @@ export default function(eleventyConfig) {
   eleventyConfig.setLibrary("md", md);
 
   eleventyConfig.addFilter("postDate", (dateObj) => {
-    return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
+    let date = DateTime.fromJSDate(dateObj, { zone: 'America/New_York' });
+    console.log(date);
+    return date.toLocaleString(DateTime.DATE_FULL);
   });
 
   eleventyConfig.addPassthroughCopy("site.css");
