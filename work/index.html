@@ -20,36 +20,42 @@ skills:
   url: https://svelte.dev/
 - name: Docker
   url: https://www.docker.com/
+- name: Node.js
+  url: https://nodejs.org/en
+- name: TypeScript
+  url: https://www.typescriptlang.org/
+- name: JavaScript
+  url: https://ecma-international.org/publications-and-standards/standards/ecma-262/
+- name: Python
+  url: https://www.python.org/
+- name: Ruby
+  url: https://www.ruby-lang.org/en/
+- name: Rust
+  url: https://www.rust-lang.org/
+- name: Elixir
+  url: https://elixir-lang.org/
 ---
 <article class="h-resume">
-  <header>
-    <p><a href="/">Jacky Alciné</a> is a seasoned software engineer with a penchant towards the use and support of
+  <header class="p-summary">
+    <h1 class="p-name"><a href="/">Jacky Alciné</a></h1>
+    <p><a href="mailto:yo@jacky.wtf">yo@jacky.wtf</a> &bull; <a href="tel:+19293790093">+19293790093</a> &bull; <a
+      href="https://en.wikipedia.org/wiki/Florida">Florida, United States of America</a></p>
+    <p>A seasoned software engineer with a penchant towards the use and support of
       <a href="https://en.wikipedia.org/wiki/Free_and_open-source_software">F/LOSS</a> across one's working
       environments. You can view my profile on <a
         rel="me"
         href="https://linkedin.com/in/jacky-alcine"
       >Microsoft's LinkedIn</a> or download my <a href="/files/resume.pdf">
         resume</a>. With both technical acumen and strong communication skills, I'm eager to expand an
-      organization's ambitions using technology in a holistic, transparent and transformative way. <strong>I'm
+      organization's ambitions using technology in a holistic, transparent and transformative way. 
+      <span class="print-hide"><strong>I'm
         immediately available for work</strong> in various capacities &mdash; including <a
-        href="#consulting">consulting</a>.
+        href="#consulting">consulting</a>.</span>
     </p>
     <aside>
       <h2>Skill Set</h2>
-      <p>Languages:
-        <strong>Proficency</strong>: <span class="p-skill">TypeScript</span>, <span class="p-skill">JavaScript</span>,
-        <span class="p-skill">Ruby</span>, <span class="p-skill">Python</span>; <strong>Familiarity</strong>: <span
-          class="p-skill"
-        >PHP</span>, <span class="p-skill">C++</span><sup>(C++11/C++14)</sup>,
-        <span class="p-skill">Rust</span>, <span class="p-skill">Clojure</span>,
-        <span class="p-skill">Elixir</span>
-      </p>
-      <p>Technologies:
-        <strong>Proficient</strong>: Express, Ruby on Rails;
-        <strong>Familiarity</strong>: Hapi, Nest.js, Phoenix
-      </p>
       <p>
-        Other obligatory frameworks, toolchains and resources of notes include
+        Obligatory frameworks, toolchains and resources of notes include
         {% for skill in skills %}
         <a
           class="p-skill"
@@ -90,7 +96,8 @@ skills:
         <li>Spent time contributing to ideation on the conceptual platform in regular feature lab sessions.</li>
         <li>Worked on assisting the migration of a Hapi server to Nest.js in the act of feature development.</li>
         <li>Contributed and guided code reviews for changes towards the Web platform.</li>
-        <li>Assisted in the on-boarding of an engineer to the Node.js platform.</li>
+        <li>Assisted in the on-boarding of an engineer to the platform, written in TypeScript with Next.js and Hapi
+          concurrently.</li>
       </ul>
     </section>
     <section
@@ -127,16 +134,16 @@ skills:
         a means of helping people file for tax benefits.
       </p>
       <ul>
-        <li>Spent lots of time pairing on Ruby code on features to distribute team's understanding of the product,
-          speeding up our
+        <li>Spent time pair programming on features to distribute team's understanding of the product, speeding up our
           deployment times</li>
-        <li>Wrote out documents around changes to the platform to help commodify understanding</li>
+        <li>Wrote several documents around changes to the platform to help commodify understanding of the services the
+          platform used, new and old</li>
         <li>Spent time working on changes to help reduce noise of the maintaining of <a
             href="https://github.com/codeforamerica/vita-min"
           >vita-min</a>, written with Ruby on Rails.</li>
-        <li>Held meetings explaining new changes made for support, deepening shared technical understanding.</li>
-        <li>Integrated and deployed features based on feedback and inquiry &bull; meetings and other product
+        <li>Deployed features based on feedback and inquiry meetings and other product
           guidance in Ruby.</li>
+        <li>Held meetings explaining new changes made for support, deepening shared technical understanding.</li>
       </ul>
     </section>
     <section
@@ -171,7 +178,7 @@ skills:
       </p>
       <ul>
         <li>
-          Learned a working capacity of Clojure to immediately contribute to the core platform.
+          Learned a working capacity of Clojure to immediately contribute to the core Clojure platform.
         </li>
         <li>Contributed core database alignment in the Python stack as it was kept separate from the core Clojure
           stack.</li>
@@ -211,8 +218,11 @@ skills:
       </p>
       <ul>
         <li>Worked on improving reliability of benefit requests with more automated testing and metrics collection.</li>
-        <li>Contributed heavily to improving the developer experience for deploying PFML changes to Mass.</li>
-        <li>Spent a lot of time contributing to code review with other teams.</li>
+        <li>Contributed heavily to improving the developer experience for deploying <a
+            href="https://www.mass.gov/info-details/paid-family-and-medical-leave-pfml-overview-and-benefits">PFML
+            changes to Massachusetts</a>.</li>
+        <li>Spent a lot of time contributing to code review with other teams, helping reduce blockers and increase
+          deployment times.</li>
       </ul>
     </section>
     <section
@@ -243,9 +253,9 @@ skills:
         <li>Refactoring endpoints in the existing API system in TypeScript to support product development and stability
         </li>
         <li>Adding tooling to make internal project development easier</li>
-        <li>Updated internal tools to make use of the newer API endpoints, powered by Node</li>
-        <li>Extended how application placements from Glitch's internal mappings worked to the benefit of
-          maintainability.</li>
+        <li>Updated internal tools to make use of the newer API endpoints, running on Node.js in TypeScript</li>
+        <li>Extended how dynamic application placements from Glitch's internal mappings worked to the benefit of
+          maintainability in our AWS cluster.</li>
         <li>Made changes to the React-based frontend for listing projects for users, namely around how boosted apps were
           presented.</li>
       </ul>
@@ -272,7 +282,8 @@ skills:
         >July 2018</time>
       </aside>
       <ul>
-        <li>Improved PDF rendering of invoices for the billing system, long-requested feature of clients.</li>
+        <li>Improved PDF rendering of invoices for the billing system, a long-requested feature of clients; increasing
+          retention and bringing down customer support requests.</li>
         <li>Extended the capabilities of account administrations around configuring their billing options in the React
           frontend and Flask backend.</li>
         <li>Improved how integrations and the internal system were reconciled as part of a move to a different approach
@@ -398,13 +409,11 @@ skills:
       <a href="https://www.horizonmedia.com/">Horizon Media</a>.
     </p>
     <h3>Testimonials</h3>
-    <dl>
-      <dt>Jacky provided insight to our project that helped accelerate our release cycles. A strong addition to any team</dt>
-      <dd><a href="https://zeespencer.com/">Zee Spencer</a>, CoHere & Zinc</dd>
-
-      <dt>Jacky takes problems we introduce, breaks them down with his experience and guides our teams to usable and immediate solutions</dt>
-      <dd><a href="https://markhudnall.com/">Mark Hudnall</a>, former CTO of Clef & Engineering Manager at Coinbase</dd>
-    </dl>
+    <p>Jacky provided insight to our project that helped accelerate our release cycles. A strong addition to any team
+      &mdash; <a href="https://zeespencer.com/">Zee Spencer</a>, CoHere & Zinc</p>
+    <p>Jacky takes problems we introduce, breaks them down with his experience and guides our teams to usable and
+        immediate solutions &mdash; <a href="https://markhudnall.com/">Mark Hudnall</a>, former CTO of Clef &
+        Engineering Manager at Coinbase</p>
     <h3>Rates and Windows</h3>
     <p>
       My preferred working conditions for proposals and contracts:
@@ -429,6 +438,15 @@ skills:
   body>main {
     display: flex;
     flex-direction: column;
+  }
+
+  h3.p-org>a, a.p-role, h1.p-name>a {
+    color: inherit;
+  }
+
+  .p-summary { 
+    margin: 0 auto;
+    max-width: calc(var(--content-width) * 1.25);
   }
 
   article.h-resume {
@@ -499,6 +517,7 @@ skills:
   }
 
   @media print {
+    body { font-size: 12pt; }
 
     article.h-resume>footer,
     article.h-resume>main,
