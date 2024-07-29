@@ -1,13 +1,22 @@
----
-layout: page.html.njk
-changeFreq: weekly
+---js
+{
+  layout: "page.html.njk",
+  changeFreq: "weekly",
+  eleventyComputed: {
+    title: function(data) { 
+      const { DateTime } = require("luxon");
+      let date = data.date.toLocaleString(DateTime.DATE_FULL).split(",")[0];
+      return `Weeknotes for ${date}`;
+    }
+  }
+}
 ---
 {% set regExpCode = r/<pre class=(.|\n)*?<\/pre>/gm %}
 {% set fixedContent = content | replace(regExpCode, "") | striptags %}
 {% set wordCount = fixedContent | wordcount %}
 <article class="h-entry">
   <header>
-    <h2 class="p-name">Weeknotes for {{ page.date | postDate }}</h2>
+    <h1 class="p-name">{{ title }}</h1>
   </header>
   {% if audio %}
   <figure id="audio">
@@ -15,11 +24,11 @@ changeFreq: weekly
     <audio preload="metadata" controls>
     {% for src in audio %}
       <source src="/files/recordings/{{ src.src }}" type="{{ src.type }}" />
-    {% endfor %}
-    </audio>
-  </figure>
-  {% endif %}
-  <section class="e-content">
-    {{ content | safe }}
-  </section>
+      {% endfor %}
+      </audio>
+      </figure>
+      {% endif %}
+      <section class="e-content">
+        {{ content | safe }}
+      </section>
 </article>

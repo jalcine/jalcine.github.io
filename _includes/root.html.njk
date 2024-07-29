@@ -23,20 +23,17 @@
     name="generator"
     content="Eleventy v3.0.0"
   >
-  {% if og %}
   {% if og.image %}
   <meta
     property="og:image"
     content="{{ og.image }}"
-  />{% endif %}
-  {% if og.title %}
+  />
+  {% endif %}
+  {% set og_title = og.title | title %}
   <meta
     property="og:title"
     content="{{ title }}"
   />
-  {% endif %}
-  {% endif %}
-
   <title>{{ title }}</title>
   <link
     rel="stylesheet"
@@ -48,11 +45,6 @@
     href="/images/self.jpg"
     type="images/jpeg"
   />
-  <script
-    defer
-    data-domain="jacky.wtf"
-    src="https://plausible.io/js/script.js"
-  ></script>
   {% block head %}{% endblock head %}
 </head>
 
@@ -62,6 +54,7 @@
       <a
         class="h-card"
         href="/"
+        rel="me"
       ><span>
           Jacky Alciné
         </span></a>
@@ -79,9 +72,7 @@
         href="https://www.11ty.dev/blog/sustainability-fundraising/"
       >support its
         development</a>!
-      Check out who's visited this site via <a href="https://plausible.io/jacky.wtf">Plausible</a> or <a
-        href="/report/visitors.html"
-      >my own logs</a>.
+      Check out <a href="/report/visitors.html">my access logs</a>.
     </p>
     <p xmlns:cc="http://creativecommons.org/ns#">
       You made it &mdash; <strong>congrats</strong>! I don't have much to tell you. Except that unless otherwise stated,

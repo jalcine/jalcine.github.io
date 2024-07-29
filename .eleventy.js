@@ -26,8 +26,7 @@ export default function(eleventyConfig) {
   eleventyConfig.setLibrary("md", md);
 
   eleventyConfig.addFilter("postDate", (dateObj) => {
-    let date = DateTime.fromJSDate(dateObj, { zone: 'America/New_York' });
-    console.log(date);
+    let date = DateTime.fromJSDate(dateObj).setZone('America/New_York');
     return date.toLocaleString(DateTime.DATE_FULL);
   });
 
@@ -52,11 +51,12 @@ export default function(eleventyConfig) {
     },
   });
 
+  eleventyConfig.addPlugin(compress);
+
   eleventyConfig.addGlobalData('generated', () => {
     let now = new Date();
     return new Intl.DateTimeFormat(
       'en-US', { dateStyle: 'full', timeStyle: 'long' }
     ).format(now);
   });
-  eleventyConfig.addPlugin(compress);
 };

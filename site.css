@@ -189,7 +189,8 @@ footer {
   margin-top: 2rem;
 }
 
-main+footer, header>nav {
+main+footer,
+header>nav {
   border-top: 0.5rem solid var(--pull-bg);
 }
 
@@ -249,8 +250,7 @@ figure>video+figcaption {
 
 pre[class*="language-"] {
   width: 100%;
-  padding: 1rem;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
 }
 
 @media screen and (min-width: 120rem) {
@@ -264,6 +264,8 @@ pre>code {
   display: inline-block;
   background-color: black;
   color: white;
+  width: 100%;
+  padding: 0.5rem;
 }
 
 video {
@@ -354,6 +356,7 @@ article.h-entry>header {
 }
 
 article.h-entry>header>aside {
+  margin-top: 1rem;
   display: block;
   text-align: center;
 }
@@ -375,17 +378,18 @@ article.h-entry>section>blockquote>p:first-of-type {
   margin: 0;
 }
 
-article.h-entry picture>img {
-  max-width: var(--content-width);
-}
-
 article.h-entry>section>blockquote {
   max-width: var(--content-width);
-  padding: 1rem;
-  font-size: 150%;
+  line-height: var(--txt-line-height);
+  padding: 1.5rem;
+  font-size: 125%;
   background: var(--pull-bg);
   color: var(--pull-color);
   margin: 1rem 0;
+}
+
+article.h-entry>section>blockquote a {
+  color: var(--pull-color);
 }
 
 #audio {
@@ -426,10 +430,17 @@ artice.h-entry section.footnotes {
   #audio>audio {
     width: 100%;
   }
+
+  article.h-entry picture>img {
+    max-width: var(--content-width);
+    width: 100%;
+  }
 }
 
 @import url("./prism.css");
 
 @media print {
-  .print-hide { display: none; }
+  .print-hide {
+    display: none;
+  }
 }
