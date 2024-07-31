@@ -4,7 +4,7 @@ date: 2024-07-30
 tags: weeknote
 ---
 Finally got around to reading some comics this week. I decided to restart my collection of the space opera [Saga][1] -
-it fails to disappoint! I didn't capture any photos this week so today's photo is from this morning.
+it fails to disappoint!
 
 # Reading
 I finished a book and am still working through a few others!

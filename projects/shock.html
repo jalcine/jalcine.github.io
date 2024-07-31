@@ -119,42 +119,8 @@ title: "Shock, an experimental Website maker"
 
   </section>
 </article>
-<style>
-  article {
-    font-size: larger;
-    padding-bottom: 2rem;
-    display: flex;
-    justify-content: space-around;
-  }
-
-  p {
-    max-width: 45vw;
-  }
-
-  @media screen and (min-width: 60rem) {
-    article {
-      flex-direction: row;
-    }
-
-    article>section {
-      width: 45vw;
-      word-wrap: break-word;
-    }
-  }
-
-  li {
-    list-style: none;
-  }
-
-  li.finished::before {
-    content: "🚢 ";
-  }
-
-  li.workingOn::before {
-    content: "🫷🏾 ";
-  }
-
-  li.planned::before {
-    content: "🧠 ";
-  }
-</style>
+<link
+  href="/project.css"
+  rel="stylesheet"
+  type="text/css"
+/>

@@ -30,8 +30,7 @@ export default function(eleventyConfig) {
     return date.toLocaleString(DateTime.DATE_FULL);
   });
 
-  eleventyConfig.addPassthroughCopy("site.css");
-  eleventyConfig.addPassthroughCopy("prism.css");
+  eleventyConfig.addPassthroughCopy("*.css");
   eleventyConfig.addPassthroughCopy("images");
   eleventyConfig.addPassthroughCopy("videos");
   eleventyConfig.addPassthroughCopy("files");
