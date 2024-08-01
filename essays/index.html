@@ -3,17 +3,29 @@ layout: page.html.njk
 title: "My long-form writings"
 changeFreq: "daily"
 ---
-<h1>Essays</h1>
-<p>I keep my long-form writing here &mdash; ideally. Some other forms of it end up on <a
-    href="https://buttondown.email/jackyalcine"
-  >my newsletter</a> or in its own <a
-    rel="feed"
-    href="feed.atom"
-  >feed</a>.</p>
-<ul>
-  {%- for post in collections.essay -%}
-  {%if not post.draft %}
-  <li><em>{{ post.date | postDate }}</em>: <a href="{{ post.url }}">{{ post.data.title }}</a></li>
-  {% endif %}
-  {%- endfor -%}
-</ul>
+<article class="h-feed">
+  <header>
+    <h1 class="p-name">Essays</h1>
+    <p class="e-content">I keep my long-form writing here &mdash; ideally. Some other forms of it end up on <a
+        href="https://buttondown.email/jackyalcine"
+      >my newsletter</a> or in its own <a
+        rel="feed"
+        href="feed.atom"
+      >feed</a>.</p>
+  </header>
+  <section>
+    <ul>
+      {%- for post in collections.essay -%}
+      {%if not post.draft %}
+      <li class="h-entry"><time
+          datetime="{{ post.date}}"
+          class="dt-published"
+        >{{ post.date | postDate }}</time>: <a
+          class="u-url p-name"
+          href="{{ post.url }}"
+        >{{ post.data.title }}</a></li>
+      {% endif %}
+      {%- endfor -%}
+    </ul>
+  </section>
+</article>

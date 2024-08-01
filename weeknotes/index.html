@@ -3,10 +3,17 @@ layout: page.html.njk
 title: "My weekly updates"
 changeFreq: "weekly"
 ---
-<h1>Weeknotes</h1>
-<p>A collection of things I try to keep track of during the week that I find interesting and noteworthy.</p>
-<ul>
-  {%- for post in collections.weeknote -%}
-  <li><a href="{{ post.url }}">{{ post.date | postDate }}</a></li>
-  {%- endfor -%}
-</ul>
+<article class="h-feed">
+  <header>
+    <h1 class="p-name">Weeknotes</h1>
+    <p class="e-content">A collection of things I try to keep track of during the week that I find interesting and
+      noteworthy.</p>
+  </header>
+  <section>
+    <ul>
+      {%- for post in collections.weeknote -%}
+      <li><a href="{{ post.url }}">{{ post.date | postDate }}</a></li>
+      {%- endfor -%}
+    </ul>
+  </section>
+</article>

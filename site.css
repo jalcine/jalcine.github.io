@@ -347,11 +347,13 @@ p+hr {
   max-width: var(--content-width);
 }
 
-article.h-entry {
+article.h-entry,
+article.h-feed {
   margin: 1rem auto;
 }
 
-article.h-entry>header {
+article.h-entry>header,
+article.h-feed>header {
   margin: 0 auto;
   width: 100%;
   max-width: 50rem;
@@ -363,7 +365,7 @@ article.h-entry>header>aside {
   text-align: center;
 }
 
-article.h-enty>header>h1 {
+article.h-enty>header>h1 article.h-feed>header>h1 {
   margin-bottom: 1rem;
 }
 
@@ -371,7 +373,8 @@ article.h-enty>header>h1+h2 {
   margin-bottom: 1rem;
 }
 
-.h-entry .e-content {
+.h-entry .e-content,
+.h-feed>section {
   max-width: var(--content-width);
   margin: 0 auto;
 }
