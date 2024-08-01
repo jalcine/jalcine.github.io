@@ -23,16 +23,61 @@
     name="generator"
     content="Eleventy v3.0.0"
   >
-  {% if og.image %}
+  {% if og.type -%}
+  <meta
+    property="og:type"
+    content="{{ og.type}}"
+  />
+  {%- endif %}
+  {% if og.image -%}
+  <meta
+    name="twitter:image"
+    content="{{ og.image | url }}"
+  />
   <meta
     property="og:image"
-    content="{{ og.image }}"
+    content="{{ og.image | url }}"
   />
-  {% endif %}
-  {% set og_title = og.title | title %}
+  {%- endif %}
+  {% if description -%}
+  <meta
+    name="twitter:description"
+    content="{{ description }}"
+  />
+
+  <meta
+    property="og:description"
+    content="{{ description }}"
+  />
+  <meta
+    property="description"
+    content="{{ description }}"
+  />
+  {%- endif %}
+  {% set og_title = og.title | title -%}
   <meta
     property="og:title"
     content="{{ title }}"
+  />
+  <meta
+    name="twitter:title"
+    content="{{ title }}"
+  />
+  <meta
+    name="twitter:card"
+    content="summary_large_image"
+  >
+  <meta
+    property="og:site_name"
+    content="Jacky Alciné's website"
+  />
+  <meta
+    name="twitter:site"
+    content="Jacky Alciné's website"
+  />
+  <meta
+    name="twitter:creator"
+    content="@jackyalcine"
   />
   <title>{{ title }}</title>
   <link
@@ -42,7 +87,7 @@
   />
   <link
     rel="icon"
-    href="/images/self.jpg"
+    href="{{ '/images/self.jpg' | url }}"
     type="images/jpeg"
   />
   {% block head %}{% endblock head %}

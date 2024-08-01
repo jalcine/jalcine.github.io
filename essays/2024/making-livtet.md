@@ -2,7 +2,7 @@
 layout: essay.html.njk
 title: "Making Livtet: A Project for Book Lovers"
 date: 2024-08-05 09:00:00 -05:00
-tags: essay
+# tags: essay
 ---
 I wrote a bit about my goal with [a project for books][1] and the things that led to its inspiration. Now I'd like to
 share it with you all. In short, it's a project that's meant to replace my use of [Calibre][2], a venerable solution for

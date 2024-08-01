@@ -1,6 +1,8 @@
 ---
 layout: page.html.njk
 changeFreq: monthly
+og:
+  type: article
 ---
 {% set regExpCode = r/<pre class=(.|\n)*?<\/pre>/gm %}
 {% set fixedContent = content | replace(regExpCode, "") | striptags %}
