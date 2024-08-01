@@ -203,6 +203,7 @@ footer>p:nth-of-type(2) picture {
   vertical-align: middle;
   margin: 0 0.25rem;
   margin-top: -1rem;
+  overflow: auto;
 }
 
 footer picture>img {

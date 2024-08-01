@@ -2,6 +2,7 @@
 layout: essay.html.njk
 title: "Making Livtet: A Project for Book Lovers"
 date: 2024-08-05 09:00:00 -05:00
+tags: essay
 ---
 I wrote a bit about my goal with [a project for books][1] and the things that led to its inspiration. Now I'd like to
 share it with you all. In short, it's a project that's meant to replace my use of [Calibre][2], a venerable solution for
@@ -12,17 +13,20 @@ can pull in the books I have in my Calibre collection. That led me to [develop a
 What I have built so far is what I'm hoping will encourage folks to noodle around the code to help flesh things out.
 
 ## What there's now
-Here's some videos of progress I've posted on my Mastodon account[^3].
+You might have seen this video of a former demo:[^3].
 <iframe src="https://todon.eu/@jalcine/112819470763301355/embed" class="mastodon-embed" allowfullscreen="allowfullscreen"></iframe>
-<iframe src="https://todon.eu/@jalcine/112809626875243324/embed" class="mastodon-embed" allowfullscreen="allowfullscreen"></iframe>
-<!--
- TODO: Mention how to make a local library.
- TODO: Show simple search support.
- TODO: Mention how to import books from Calibre.
--->
 
-If you've been following along on the Fediverse, you've seen some of these examples. If not, 🫢 now you've seen them!
-But here's what it looks like today; with some changes I've made.
+Or this one!
+
+<iframe src="https://todon.eu/@jalcine/112809626875243324/embed" class="mastodon-embed" allowfullscreen="allowfullscreen"></iframe>
+
+Here's what it looks like today; with some changes I've made:
+
+<figure>
+    <video poster="/images/video-screencast-livtet-intro.png" controls loop>
+        <source src="/videos/livtet-intro.mp4" />
+    </video>
+</figure>
 
 ## What I'm working on
 <!--
@@ -50,5 +54,6 @@ I'm open to feedback about this and would like to hear your thoughts! Feel free 
     working on my own solution!
 [^2]: I _might_ publish this one day because Calibre's API is interesting (using things like Digest Auth, not really
     following a convention for paths, etc). Ideally, I'd want to make it a bit more like other content pagination APIs.
-    But "dumb" in the sense that it doesn't provide async support, no caching, etc - _you_ can figure that out!
+    But "dumb" in the sense that it doesn't provide async support, no caching, etc - _you_ can figure that out! Hazel's
+    described this a [lot more explictly](https://hachyderm.io/@hazelweakly/112536923490036820).
 [^3]: You can view the source of them at <https://todon.eu/@jalcine/112819470763301355> and <https://todon.eu/@jalcine/112809626875243324>.

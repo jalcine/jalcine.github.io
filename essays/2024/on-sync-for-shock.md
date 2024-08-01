@@ -16,7 +16,7 @@ to be able to do the following:
 An existing project that came to mind for this was [rsync][]; it's actually how I have this site updated from my laptop
 to my little DigitalOcean droplet. Dropbox has released [an open source library][1] that I can see myself integrating
 into Shock but this library only serves to give an partial answer for #3 and #4 of that list. Shock has a generic means
-of [finding files in storage][2] that match a particular storage format[^1] but this has to be done on-demand and very
+of [finding files in storage][2] that match a particular storage format[^1] but this has to be done on-demand and is very
 IO-heavy; that's something I'll figure out how to build backpressure around. That method call gives me part of #1. Here
 I am, with parts of a solution to a problem of my own making, heh.
 
@@ -80,7 +80,7 @@ Granted, there's a library that gives [the plumbing for parsing torrents][6] whi
 holding this in the back of my mind as it's something I can still see myself using.
 
 ### Veilid
-A project from Cult of the Dead Cow, [Veilid][7] provides some of the things I want,  removing both the need for 
+A project from the [Cult of the Dead Cow][cdc], [Veilid][7] provides some of the things I want,  removing both the need for 
 relying on `rsync` on a transfer protocol level and not needing to implement something like  the Bittorrent approach 
 to per-file batching. If you're not familiar with things like Tor or [DHT][8], I'd recommend checking [the overview][9]
 they've worked on. I have to admit that attempting to integrate Veilid into a project required more knowledge 
@@ -104,6 +104,7 @@ To try this out in "hard mode", I wrote something to [try out librecast on a mob
 
 [shock]: /projects/shock/
 [rsync]: https://en.wikipedia.org/wiki/Rsync
+[cdc]: https://en.wikipedia.org/wiki/Cult_of_the_Dead_Cow
 [1]: https://lib.rs/crates/fast_rsync
 [2]: https://git.sr.ht/~jacky/shock/tree/2011b6cc3cb30b5699ae1b1dde4d604d89103f65/item/impl/src/lib.rs#L1212-1271
 [3]: https://en.wikipedia.org/wiki/Torrent_file#References

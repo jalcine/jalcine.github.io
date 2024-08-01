@@ -22,7 +22,13 @@ Web (and beyond it) that is partially reliant on me (and can be delegated when I
 up running on here but that was the great follow up experience to what even provoked me to [cut down on my server
 size][1].
 
+---
+
+It took a bit of searching but [I found the status page for todon.eu][2]. It looks like the server was taken down for a
+migration by the hosting provider. This doesn't change my sentiment above.
+
 [1]: /essays/2024/hard-reset
+[2]: https://status.todon.eu/
 [^1]: Running something like [Litestream](https://litestream.io/) at home and using it whenever I'm on the road with
     whatever projects come to mind, or if I'm using my laptop from a different place and want to quickly adjust
     something on the lab.
