@@ -7,6 +7,12 @@ description: My plans for observing Black August this year.
 tags: 
     - essay
     - black august
+audio: 
+    - src: black-august-2024.mp3
+      type: audio/mpeg
+    - src: black-august-2024.opus
+      type: audio/opus
+
 date: 2024-08-01 11:00:00 -05:00
 ---
 [Black August][ba] is a month of remembrance and restoration for those who honor the memory of [George Jackson][gj], his

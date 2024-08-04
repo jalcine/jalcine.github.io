@@ -4,15 +4,25 @@
   --header-nav-color: #FFFFFF;
   --link-color: #0060df;
   --visited-link-color: #B10DC9;
-  --content-width: max(50rem, 40vw);
   --pull-bg: #0074D9;
   --pull-color: #fff;
-  --txt-line-height: 1.7;
+  --content-width: max(50rem, 40vw);
+  --txt-line-height: 1.5;
+  --text-size: 120%;
   --background-color: #fff;
   --color: #000;
   --mark-background-color: #FFDC00;
   --mark-color: #000;
+  --heading-size: 3rem;
 }
+
+@media screen and (min-width: 60rem) {
+  :root {
+    --content-width: max(60rem, 40vw);
+    --text-size: 140%;
+  }
+}
+
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -131,7 +141,9 @@ figure {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: var(--heading-size);
+  letter-spacing: -0.1rem;
+  ;
 }
 
 body {
@@ -217,6 +229,8 @@ footer picture>img {
 
 ul {
   list-style: square;
+  max-width: calc(var(--content-width) * 0.9);
+  margin: 1rem auto;
 }
 
 mark {
@@ -338,18 +352,16 @@ a:visited {
   color: var(--visited-link-color);
 }
 
-li {
-  padding: 0 0.5rem;
-}
-
 p+hr {
   margin: 2rem 0;
   max-width: var(--content-width);
 }
 
 article.h-entry,
+article.h-resume,
 article.h-feed {
   margin: 1rem auto;
+  padding: 0 1rem;
 }
 
 article.h-entry>header,
@@ -365,12 +377,15 @@ article.h-entry>header>aside {
   text-align: center;
 }
 
-article.h-enty>header>h1 article.h-feed>header>h1 {
+article.h-entry h1.p-name,
+article.h-feed h1.p-name {
   margin-bottom: 1rem;
+  font-size: calc(var(--heading-size) * 1.2);
 }
 
-article.h-enty>header>h1+h2 {
+article.h-entry>header>h1+h2 {
   margin-bottom: 1rem;
+  letter-spacing: -0.2rem;
 }
 
 .h-entry .e-content,
@@ -415,8 +430,7 @@ article.h-entry>section>ol,
 artice.h-entry section.footnotes {
   max-width: var(--content-width);
   line-height: var(--txt-line-height);
-  font-size: 120%;
-  text-align: justify;
+  font-size: var(--text-size);
   text-align-last: left;
   word-wrap: break-word;
 }

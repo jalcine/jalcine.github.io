@@ -9,6 +9,12 @@ og:
 {% set wordCount = fixedContent | wordcount %}
 {% set readTime = fixedContent | readingTime %}
 <article class="h-entry">
+  {% if masthead %}
+    <figure>
+        <img src="{{ masthead.src | url }}" alt="{{ masthead.alt }}"/>
+        <figcaption>{{ masthead.title }}</figcaption>
+    </figure>
+  {% endif %}
   <header>
     <h1 class="p-name">{{ title }}</h1>
     {% if byline %}<h2>{{ byline }}</h2>{% endif %}

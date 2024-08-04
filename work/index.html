@@ -34,6 +34,8 @@ skills:
   url: https://www.rust-lang.org/
 - name: Elixir
   url: https://elixir-lang.org/
+- name: AWS SQS, ECS, EC2, EKS, WAF
+  url: https://aws.amazon.com/
 ---
 <article class="h-resume">
   <header class="p-summary">
@@ -44,25 +46,24 @@ skills:
       <a href="https://en.wikipedia.org/wiki/Tampa_Bay">Tampa Bay</a>,
       <a href="https://en.wikipedia.org/wiki/Florida" >Florida</a>, 
         United States of America</p>
-    <p>A seasoned software engineer with a penchant towards the use of
-      <a href="https://en.wikipedia.org/wiki/Free_and_open-source_software">F/LOSS</a> across one's working
-      environments. You can view my profile on <a
-        rel="me"
-        href="https://linkedin.com/in/jacky-alcine"
-        >Microsoft's LinkedIn</a> <span class="print-hide">or download my <a href="/files/resume.pdf">
-          resume</a></span>. With technical acumen and strong communication skills, I'm able to expand an
+    <p>A software engineer eager to use
+      <a href="https://en.wikipedia.org/wiki/Free_and_open-source_software">F/LOSS</a> across one's
+      environments. With technical acumen and strong communication skills, I'm able to expand an
       organization's ambitions using technology in a holistic and transformative way.
-      <span class="print-hide"><strong>I'm
-          immediately available for work</strong> in various capacities &mdash; including <a
-          href="#consulting">consulting</a>.</span>
+      <span class="print-hide">
+        <strong>I'm available for work</strong> in various capacities &mdash; including <a href="#consulting">consulting</a>.
+        You can view my <a rel="me" href="https://linkedin.com/in/jacky-alcine">LinkedIn profile</a> or download this page as a
+        <a href="/files/resume.pdf">optimized PDF</a>.
+      </span>
     </p>
     <p>
-      Frameworks, toolchains and resources of notes include
+      Frameworks, toolchains and resources that I have experienced with include
       {% for skill in skills %}
       <a
         class="p-skill"
         href="{{ skill.url }}"
-      >{{ skill.name }}</a>,
+      >{{ skill.name }}</a>
+      {%- if forloop.last == false -%},{%- endif -%}
       {%- endfor %}.
     </p>
 
@@ -464,8 +465,6 @@ skills:
     display: flex;
     width: 100%;
     max-width: 80rem;
-
-    margin: 0 auto;
     flex-direction: column;
     flex-grow: 3;
   }
@@ -486,8 +485,7 @@ skills:
     font-size: larger;
     max-width: 60rem;
     line-height: 1.5;
-    text-align: justify;
-    text-align-last: left;
+    text-align: left;
   }
 
   article.h-resume>main {

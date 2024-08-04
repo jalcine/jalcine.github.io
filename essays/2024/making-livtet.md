@@ -2,7 +2,6 @@
 layout: essay.html.njk
 title: "Making Livtet: A Project for Book Lovers"
 date: 2024-08-05 09:00:00 -05:00
-# tags: essay
 ---
 I wrote a bit about my goal with [a project for books][1] and the things that led to its inspiration. Now I'd like to
 share it with you all. In short, it's a project that's meant to replace my use of [Calibre][2], a venerable solution for
@@ -28,6 +27,9 @@ Here's what it looks like today; with some changes I've made:
     </video>
 </figure>
 
+The most notable changes include the use of [`cacache`][6] to store information from Calibre; it doesn't seem to allow
+for fetching individual information about books so this avoids that by storing the main index to disk. [^4].
+
 ## What I'm working on
 <!--
  TODO: Mention logic for building out the Lua runtime.
@@ -49,11 +51,15 @@ I'm open to feedback about this and would like to hear your thoughts! Feel free 
 [3]: https://calibre-ebook.com/about#history
 [4]: /projects/livtet/
 [5]: https://git.sr.ht/~jacky/livtet/tree/next/item/calibre-content-server-api
+[6]: https://lib.rs/cacache
 [^1]: Truthfully, it was either I work on making a super advanced plugin for my needs into the Calibre ecosystem _or_ I
-    work on something to replace it altogether. I host my own website and use a vanity e-mail address; _of course_ I'm
+    work on something to replace it altogether. I host my own website and use a vanity e-mail address; I'm
     working on my own solution!
 [^2]: I _might_ publish this one day because Calibre's API is interesting (using things like Digest Auth, not really
-    following a convention for paths, etc). Ideally, I'd want to make it a bit more like other content pagination APIs.
-    But "dumb" in the sense that it doesn't provide async support, no caching, etc - _you_ can figure that out! Hazel's
+    following a convention for paths, etc). Ideally, I'd want to make it a bit more like other content pagination APIs;
+    in the sense that it doesn't provide async support, no caching, etc - _you_ can figure that out! Hazel's
     described this a [lot more explictly](https://hachyderm.io/@hazelweakly/112536923490036820).
 [^3]: You can view the source of them at <https://todon.eu/@jalcine/112819470763301355> and <https://todon.eu/@jalcine/112809626875243324>.
+[^4]:  There's a small issue with this that I'm okay with (for now). While this decreases the response time, the cache
+    gets thrashed when a new book is added (as well as the search index being updated). Since this is all local, this is
+    fine but will love to hear reports about this on other peoples' systems.
