@@ -1,6 +1,9 @@
 ---
 layout: page.html.njk
 title: "Working with Jacky Alciné"
+rate:
+  daily: 480
+  hourly: 60
 skills:
 - name: Terraform
   url: https://www.terraform.io/
@@ -53,7 +56,7 @@ skills:
       <span class="print-hide">
         <strong>I'm available for work</strong> in various capacities &mdash; including <a href="#consulting">consulting</a>.
         You can view my <a rel="me" href="https://linkedin.com/in/jacky-alcine">LinkedIn profile</a> or download this page as a
-        <a href="/files/resume.pdf">optimized PDF</a>.
+        <a href="/files/Jacky_Alcine-resume.pdf">optimized PDF</a>.
       </span>
     </p>
     <p>
@@ -66,7 +69,6 @@ skills:
       {%- if forloop.last == false -%},{%- endif -%}
       {%- endfor %}.
     </p>
-
   </header>
   <main>
     <h2>Experience</h2>
@@ -86,12 +88,12 @@ skills:
           title="14 Feb 2024"
           datetime="2024-02-14"
           class="dt-start"
-        >Feb 2024</time>
+        >Febuary 2024</time>
         to <time
           title="31 May 2024"
           datetime="2024-05-31"
           class="dt-end"
-        >May 2024</time>
+        >June 2024</time>
       </aside>
       <ul>
         <li>Spent time contributing to ideation on the conceptual platform in regular feature lab sessions.</li>
@@ -119,11 +121,11 @@ skills:
         &bull; <time
           datetime="2022-11-02"
           class="dt-start"
-        >Nov 2022</time>
+        >November 2022</time>
         to <time
           datetime="2023-09-01"
           class="dt-end"
-        >Sept 2023</time>
+        >September 2023</time>
       </aside>
       <p>
         I joined the <strong>Tax Benefits</strong> team in order to help the effort of
@@ -162,11 +164,11 @@ skills:
         &bull; <time
           datetime="2022-01-28"
           class="dt-start"
-        >Jan 2022</time>
+        >January 2022</time>
         to <time
           datetime="2022-08-02"
           class="dt-end"
-        >Aug 2022</time>
+        >August 2022</time>
       </aside>
       <p>
         After learning Clojure on the job, my main role was working on feature
@@ -203,7 +205,7 @@ skills:
         &bull; <time
           datetime="2020-12-01"
           class="dt-start"
-        >Dec 2020</time>
+        >December 2020</time>
         to <time
           datetime="2021-06-01"
           class="dt-end"
@@ -242,7 +244,7 @@ skills:
         from <time
           datetime="2019-08-01"
           class="dt-start"
-        >Aug 2019</time>
+        >August 2019</time>
         to <time
           datetime="2020-05-01"
           class="dt-end"
@@ -277,7 +279,7 @@ skills:
         from <time
           datetime="2017-11-01"
           class="dt-start"
-        >Nov 2017</time>
+        >November 2017</time>
         to <time
           datetime="2018-07-01"
           class="dt-end"
@@ -308,7 +310,7 @@ skills:
         from <time
           datetime="2017-01-01"
           class="dt-start"
-        >Jan 2017</time>
+        >January 2017</time>
         to <time
           datetime="2017-09-01"
           class="dt-end"
@@ -374,11 +376,11 @@ skills:
         from <time
           datetime="2014-04-01"
           class="dt-start"
-        >Apr 2014</time>
+        >April 2014</time>
         to <time
           datetime="2014-12-01"
           class="dt-end"
-        >Dec 2014</time>
+        >December 2014</time>
       </aside>
       <ul>
         <li>Was taught Perl to work and immediately contribute with the legacy platform.</li>
@@ -421,7 +423,7 @@ skills:
     </p>
     <ul>
       <li>
-        Include my daily rate of <strong>USD $360</strong> or hourly rate of <strong>USD $45</strong>.
+        Include my daily rate of <strong>USD ${{ rate.daily }} </strong> or hourly rate of <strong>USD ${{ rate.hourly }}</strong>.
       </li>
       <li>A maximum of <strong>four days worked per week</strong> (for <a
           href="https://www.wsj.com/articles/the-four-day-workweek-gets-shorter-with-practice-companies-find-edc9eb2f"
@@ -481,7 +483,7 @@ skills:
     font-size: larger;
   }
 
-  article.h-resume>header>p:nth-of-type(2) {
+  article.h-resume>header>p:nth-of-type(n+2) {
     font-size: larger;
     max-width: 60rem;
     line-height: 1.5;

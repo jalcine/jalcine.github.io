@@ -4,7 +4,7 @@ title: "Boxing Up Common Parts of an App"
 tags: essay
 date: 2024-06-13
 ---
-I've been working on [Shock][1] as I look for [work](/files/resume.pdf) to both keep my blades sharp and to try out some new
+I've been working on [Shock][1] as I look for [work](/work/) to both keep my blades sharp and to try out some new
 stacks. Shock's written in Rust and JavaScript (and a _little bit_ of TypeScript)[^1] using [Tauri](https://tauri.app) to bind a system-provided Web browser
 view to a Rust library that provides IPC to a JavaScript "frontend"[^2]. I had two moments where I could have kept
 things simple but wanted to experiment.

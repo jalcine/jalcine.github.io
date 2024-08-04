@@ -381,11 +381,11 @@ article.h-entry h1.p-name,
 article.h-feed h1.p-name {
   margin-bottom: 1rem;
   font-size: calc(var(--heading-size) * 1.2);
+  letter-spacing: -0.2rem;
 }
 
 article.h-entry>header>h1+h2 {
   margin-bottom: 1rem;
-  letter-spacing: -0.2rem;
 }
 
 .h-entry .e-content,
