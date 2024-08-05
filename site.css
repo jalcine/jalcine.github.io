@@ -257,6 +257,7 @@ figure>video {
 }
 
 figure>picture+figcaption,
+figure>.embed+figcaption,
 figure>video+figcaption {
   text-align: center;
   font-style: oblique;

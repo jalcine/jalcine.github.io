@@ -1,0 +1,526 @@
+---
+layout: page.html.njk
+title: "Working with Jacky Alciné"
+rate:
+  daily: 480
+  hourly: 60
+skills:
+- name: CSS
+  url: https://w3.org/TR/CSS/#css
+- name: HTML
+  url: https://html.spec.whatwg.org/
+- name: Postgres
+  url: https://www.postgresql.org/
+- name: React
+  url: https://react.dev/
+- name: TypeScript
+  url: https://www.typescriptlang.org/
+- name: JavaScript
+  url: https://ecma-international.org/publications-and-standards/standards/ecma-262/
+- name: Python
+  url: https://www.python.org/
+- name: Ruby
+  url: https://www.ruby-lang.org/en/
+- name: the AWS Cloud
+  url: https://aws.amazon.com/
+---
+<article class="h-resume">
+  <header class="p-summary">
+    <h1 class="p-name"><a href="https://jacky.wtf/">Jacky Alciné</a></h1>
+    <p>
+      <a href="mailto:jackyalcine@fastmail.com">jackyalcine@fastmail.com</a> 
+      <a href="tel:+19293790093">+19293790093</a> 
+      <a href="https://en.wikipedia.org/wiki/Sarasota,_Florida">Sarasota, Florida</a>,
+        United States of America
+      <span class="print-hide">&bull;
+        <a href="/files/Jacky_Alcine-resume.pdf">download as PDF</a>
+      </span>
+    </p>
+    <p>
+      A talented and collaborative software engineer that revels in being in high-impact environments and teams.
+      I'm looking for roles as a full-stack or backend engineer using Ruby, Python or JavaScript. My recent
+      experiences and ambition align with the civic and government technologies space; working in remote
+      and hybrid environments.
+    </p>
+    <p>
+      <strong>Languages, technologies, systems and frameworks</strong> I'm familiar with include
+      {% for skill in skills %}
+      {%- if forloop.last == true %} and {% endif -%}
+      <a
+        class="p-skill"
+        href="{{ skill.url }}"
+      >{{ skill.name }}</a>
+      {%- if forloop.last == false %}, {% endif -%}
+      {%- endfor %}.
+    </p>
+  </header>
+  <main>
+    <h2>Work Experience</h2>
+    <section
+      id="pluralpolicy"
+      class="p-experience"
+    >
+      <h3 class="p-org h-card">
+        <a
+          class="u-url p-name"
+          href="https://pluralpolicy.com/"
+        >Plural Policy</a>
+      </h3>
+      <aside>
+        <span class="p-role">Senior Fullstack Web Engineer</span>
+        <span>
+          <time
+            title="14 Feb 2024"
+            datetime="2024-02-14"
+            class="dt-start"
+          >February 2024</time>
+          to <time
+            title="31 May 2024"
+            datetime="2024-05-31"
+            class="dt-end"
+          >June 2024</time>
+        </span>
+      </aside>
+      <ul>
+        <li>Drove the on-going migration of a Hapi server to Nest.js, improving developer productivity and increasing
+        feature development speeds.</li>
+        <li>Guided code reviews (around ~3x weekly) for changes towards the Web platform on a tight knit team.</li>
+        <li>Onboarded an engineer to the platform, written in TypeScript with Next.js and Hapi concurrently.</li>
+        <li>Contributed logic to the <a href="https://pluralpolicy.com/app/legislative-tracking">bill search view</a> across jurisdictions, improving response times.</li>
+      </ul>
+    </section>
+    <section
+      id="cfa"
+      class="p-experience"
+    >
+      <h3 class="p-org h-card">
+        <a
+          class="u-url p-name"
+          href="https://codeforamerica.org/"
+        >Code for America</a>
+      </h3>
+      <aside>
+        <a
+          class="p-role"
+          href="https://codeforamerica.org/people/jacky-alcine/"
+        >Senior Software Engineer</a>
+        <span>
+          <time
+            datetime="2022-11-02"
+            class="dt-start"
+          >November 2022</time>
+          to <time
+            datetime="2023-09-01"
+            class="dt-end"
+          >September 2023</time>
+        </span>
+      </aside>
+      <ul>
+        <li>Worked with teammates on multiple features of the product, speeding up our deployment times in the Ruby on
+          Rails monorepo.</li>
+        <li>Produced documents about the platform to commodify understanding of the services the platform used, new and old</li>
+        <li>Mentored junior developers on the team to help accelerate their growth, using pair programming to build
+          confidence.</li>
+        <li>Deployed changes to help reduce noise of the maintaining of <a href="https://github.com/codeforamerica/vita-min" >vita-min</a>, written with Ruby on Rails.</li>
+        <li>Implemented features based on feedback, inquiry meetings and other product guidance in Ruby, Python and JavaScript.</li>
+      </ul>
+    </section>
+    <section
+      id="edenHealth"
+      class="p-experience"
+    >
+      <h3 class="p-org h-card">
+        <a
+          class="u-url p-name"
+          href="https://edenhealth.com/"
+        >Eden Health</a>
+      </h3>
+      <aside>
+        <span class="p-role">Senior Software Engineer</span>
+        <span>
+          <time
+            datetime="2022-01-28"
+            class="dt-start"
+          >January 2022</time>
+          to <time
+            datetime="2022-08-02"
+            class="dt-end"
+          >August 2022</time>
+        </span>
+      </aside>
+      <ul>
+        <li>Introduced new logic for business data alignment between the Python and Clojure stacks, deployed to our AWS
+          cluster.</li>
+        <li>Added documentation and guidelines for updating how patients were intending to register at portals, cutting down sign up time.</li>
+        <li>Ran internal brown bag meeting around my experience using Clojure and Neovim; helping improve the developer experience for those using these two together and sharing knowledge.</li>
+      </ul>
+    </section>
+    <section
+      id="navaPbc"
+      class="p-experience"
+    >
+      <h3 class="p-org h-card">
+        <a
+          class="u-url p-name"
+          href="https://navapbc.com/"
+        >Nava PBC</a>
+      </h3>
+      <aside>
+        <span class="p-role">Software Engineer</span>
+        <span>
+          <time
+            datetime="2020-12-01"
+            class="dt-start"
+          >2020</time>
+          to <time
+            datetime="2021-06-01"
+            class="dt-end"
+          >June 2021</time>
+        </span>
+      </aside>
+      <ul>
+        <li>Led reliability efforts of benefit requests with more automated testing and metrics collection.</li>
+        <li>Expanded the developer experience for deploying 
+          <a href="https://www.mass.gov/info-details/paid-family-and-medical-leave-pfml-overview-and-benefits" >PFML changes to Massachusetts</a>.
+        </li>
+        <li>Decreased deployment times by reviewing code of my teammates and provided real-time feedback.</li>
+      </ul>
+    </section>
+    <section
+      id="glitch"
+      class="p-experience"
+    >
+      <h3 class="p-org h-card">
+        <a
+          class="u-url p-name"
+          href="https://glitch.com/"
+        >Glitch</a>
+      </h3>
+      <aside>
+        <span class="p-role">Software Engineer</span>
+        <span>
+          <time
+            datetime="2019-08-01"
+            class="dt-start"
+          >2019</time>
+          to <time
+            datetime="2020-05-01"
+            class="dt-end"
+          >2020</time>
+        </span>
+      </aside>
+      <ul>
+        <li>Increased stability of the Glitch API by refactoring endpoints in the TypeScript stack</li>
+        <li>Updated internal tools to make use of the newer API endpoints, running on Node.js in TypeScript</li>
+        <li>Extended dynamic application placements from Glitch's internal mappings worked to the benefit of maintainability in the AWS ECS cluster.</li>
+        <li>Improved the React frontend for listing projects for users, increasing adoption of paid app services.</li>
+      </ul>
+    </section>
+    <section
+      id="lob"
+      class="p-experience"
+    >
+      <h3 class="p-org h-card">
+        <a
+          class="u-url p-name"
+          href="https://lob.com/"
+        >Lob</a>
+      </h3>
+      <aside>
+        <span class="p-role">Senior Software Engineer</span>
+        <span>
+          <time
+            datetime="2017-11-01"
+            class="dt-start"
+          >2017</time>
+          to <time
+            datetime="2018-07-01"
+            class="dt-end"
+          >2018</time>
+        </span>
+      </aside>
+      <ul>
+        <li>Created improvements for PDF rendering of invoices for the billing system, a long-requested feature of clients; increasing
+          retention and cutting customer support requests in half in the Python stack.</li>
+        <li>Extended capabilities of account administrations around configuring their billing options in the React
+          frontend and Flask backend.</li>
+        <li>Improved how integrations and the internal system were reconciled as part of a move to a different approach
+          to billing (from an explicit tier-based system to a hybrid tier/usage-based one with grandparenting support).
+        </li>
+      </ul>
+    </section>
+    <section
+      id="lyft"
+      class="p-experience"
+    >
+      <h3 class="p-org h-card">
+        <a
+          class="u-url p-name"
+          href="https://lyft.com/"
+        >Lyft</a>
+      </h3>
+      <aside>
+        <span class="p-role">Software Engineer</span>
+        <span>
+          <time
+            datetime="2017-01-01"
+            class="dt-start"
+          >2017</time>
+          <time
+            datetime="2017-09-01"
+            class="dt-end"
+          ></time>
+        </span>
+      </aside>
+      <ul>
+        <li>
+          Implemented a message templating system in Python and React to replace explicit
+          calls to vendors to reach users, dramatically improving support's ability to help customers
+        </li>
+        <li>
+          Added adaptivity to said tooling to allow for users to adjust their
+          channels for receiving information, increasing user privacy and control by also proxying messages and calls
+          with the newly built service dubbed Switchboard. This added logic to help use less numbers when routing calls
+          between users, saving Lyft money on routing costs across vendors.
+        </li>
+      </ul>
+    </section>
+    <section
+      id="clef"
+      class="p-experience"
+    >
+      <h3 class="p-org h-card">
+        <a
+          class="u-url p-name"
+          href="https://lyft.com/"
+        >Clef</a>
+      </h3>
+      <aside>
+        <span class="p-role">Software Engineer</span>
+        <span>
+          <time
+            datetime="2015-11-01"
+            class="dt-start"
+          >2015</time>
+          to <time
+            datetime="2016-09-01"
+            class="dt-end"
+          >2016</time>
+        </span>
+      </aside>
+      <ul>
+        <li>Maintained the Android and Cordova SDKs for mobile developers; improving adoption</li>
+        <li>Improved in-flight requests by cutting down paths for users in authentication requests</li>
+      </ul>
+    </section>
+    <section
+      id="shutterstock"
+      class="p-experience"
+    >
+      <h3 class="p-org h-card">
+        <a
+          class="u-url p-name"
+          href="https://shutterstock.com/"
+        >Shutterstock</a>
+      </h3>
+      <aside>
+        <span class="p-role">Junior Software Engineer</span>
+        <span>
+          <time
+            datetime="2014-04-01"
+            class="dt-start"
+          >2014</time>
+          <time
+            datetime="2014-12-01"
+            class="dt-end"
+          ></time>
+        </span>
+      </aside>
+      <ul>
+        <li>Maintained the acceptance suite for the newer Contributor product.</li>
+        <li>Worked on extending a in-house CMS that drove the content marketing of the public facing Contributor site,
+          reducing the need for a redeploy each time.</li>
+      </ul>
+    </section>
+  </main>
+  <footer id="consulting" class="print-hide">
+    <h2 class="heading">Consulting</h2>
+    <p>
+      I've worked with a range of clients on different kinds of software needs,
+      stacks, languages and with different responsibilities - from fractional principal DevOps engineer to contract
+      video system developer. My ability to jump in and get going is one that's kept me going and interesting in
+      consulting. I begun my career consulting and always found it to be a good and exhilarating
+      way to help people build the things they're envisioning and fix the problems that's been ailing them.
+    </p>
+    <p>
+      Companies I've consulted with include
+      the <a href="https://eff.org">Electronic Frontier Foundation</a>,
+      <a href="https://colorofchange.org/">Color of Change</a>,
+      <a href="https://en.wikipedia.org/wiki/Paddle8">Paddle8</a>,
+      <a href="https://wyl.co/">Whose Your Landlord</a>,
+      <a href="https://web.archive.org/web/20170709141420/http://www.theblsgroup.com/">BLS</a>,
+      <a href="https://www.crunchbase.com/organization/viridis-learning">Viridis Learning</a>,
+      <a href="https://www.bareburger.com/">Bareburger</a> and
+      <a href="https://www.horizonmedia.com/">Horizon Media</a>.
+    </p>
+    <h3>Testimonials</h3>
+    <p>Jacky provided insight to our project that helped accelerate our release cycles. A strong addition to any team
+      &mdash; <a href="https://zeespencer.com/">Zee Spencer</a>, CoHere & Zinc</p>
+    <p>Jacky takes problems we introduce, breaks them down with his experience and guides our teams to usable and
+      immediate solutions &mdash; <a href="https://markhudnall.com/">Mark Hudnall</a>, former CTO of Clef &
+      Engineering Manager at Coinbase</p>
+    <h3>Rates and Windows</h3>
+    <p>
+      My preferred working conditions for proposals and contracts:
+    </p>
+    <ul>
+      <li>
+        Include my daily rate of <strong>USD ${{ rate.daily }} </strong> or hourly rate of <strong>USD ${{ rate.hourly }}</strong>.
+      </li>
+      <li>A maximum of <strong>four days worked per week</strong> (for <a
+          href="https://www.wsj.com/articles/the-four-day-workweek-gets-shorter-with-practice-companies-find-edc9eb2f"
+        >work-life balance</a>).</li>
+    </ul>
+    <p>
+      The conditions above are flexible provided good reason, market stability and personal welfare.
+      <strong>Please <a href="mailto:yo@jacky.wtf?subject=On+Consulting">reach out</a></strong> if you'd like me to
+      work with you (or your organization).
+    </p>
+  </footer>
+</article>
+<style>
+  body>main {
+    display: flex;
+    flex-direction: column;
+  }
+  main>h2 { margin-top: 0; }
+
+  h1.p-name { margin-top: 0; width: 100%; }
+
+  a.p-role,
+  h1.p-name>a {
+    color: inherit;
+  }
+
+  .p-org + aside {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .p-summary {
+    margin: 0 auto;
+    max-width: calc(var(--content-width) * 1.25);
+  }
+  .p-summary .p-name { 
+    text-align: center;
+  }
+  .p-summary .p-name+p {
+    text-align: center;
+    margin: 0.5rem auto 0;
+  }
+
+  article.h-resume {
+    display: flex;
+    width: 100%;
+    max-width: 80rem;
+    flex-direction: column;
+    flex-grow: 3;
+  }
+
+  article.h-resume>header {
+    display: flex;
+    flex-direction: row;
+    font-size: large;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
+    max-width: var(--content-width);
+  }
+
+  article.h-resume>header>p:nth-of-type(n+2) {
+    max-width: 60rem;
+    text-align: left;
+  }
+
+  article.h-resume>main {
+    flex-grow: 3;
+    margin: 1rem auto 2rem;
+    max-width: 60rem;
+    font-size: large;
+  }
+
+  article.h-resume>footer {
+    width: inherit;
+    border-radius: 1rem;
+    padding: 2rem;
+    font-size: larger;
+    max-width: 60rem;
+    margin: 0 auto;
+  }
+
+  article.h-resume>footer a {
+    color: inherit;
+  }
+
+  article.h-resume>footer>h2 {
+    margin-top: 0;
+  }
+
+  .p-role {
+    font-style: oblique;
+  }
+
+  .p-experience>h3 {
+    font-size: larger;
+    margin: 1.5rem 0 0;
+  }
+
+  .p-experience>h3+aside time {
+    font-weight: bold;
+  }
+
+  @media print {
+    body {
+      font-size: 10pt;
+    }
+
+    h1, ul { margin: 0; }
+
+    article.h-resume>footer,
+    article.h-resume>main,
+    article.h-resume>header p:first-of-type {
+      font-size: inherit;
+    }
+    main { margin: 0; padding: 0; }
+    .p-summary p {
+      font-size: 10pt;
+    }
+
+    article.h-resume>header {
+      display: block;
+    }
+
+    footer {
+      border-top: none;
+    }
+
+    article.h-resume>header>p:first-of-type {
+      max-width: inherit;
+    }
+
+    .p-experience>h3 { 
+      margin: 0;
+      margin-top: 0.5rem;
+    }
+
+    aside>h2 { display: none; }
+
+    a, a:link, a:visited {
+      color: #000!important;
+      text-decoration: underline;
+    }
+  }
+
+  aside.thanks { display: none; }
+</style>

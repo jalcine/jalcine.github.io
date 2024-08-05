@@ -60,6 +60,10 @@ I'm going to try something a bit new! Here's some things I've read that were inf
   example of the over-indexing for the wealthy communities in Haiti contributing to inequality; this time in sanitation.
   It's escalated to a point where Japan, on behalf of the United Nations, is willing to spend USD $2 million dollars on
   it. Note that nearly $35 million has been allegedly spent already &mdash; with nothing to show.
+* [The Guardian: Antarctic temperatures rise 10C above average in near record heatwave][17]: Well. This feels like the
+  new normal. The predator class is trying to play chicken with the planet and it's going to be at the cost of everyone
+  else.
+* [The Washington Post: How the Montgomery Riverfront brawl sparked an unofficial holiday][18]: What a time to be alive, ha.
 * [Hyperallergic: Tracing James Baldwin's Legacy Through His Friendships on His 100th Birthday][15]: <-- TODO: Read and recap -->
 * [Mariame Kaba: Prisons, Prose & Protest #18][13]: <-- TODO: Read and recap -->
 
@@ -103,6 +107,20 @@ more relevant than I expected and this panel really stuck out to me.
     <figcaption>Truer words couldn't have been <strike>spoken</strike> written.</figcaption>
 </figure>
 
+On top of everything else, this is the song of last week:
+<figure>
+    <div style="max-width:100%;" class="embed">
+        <div style="position:relative;padding-bottom:calc(56.25% + 52px);height: 0;">
+        <iframe style="position:absolute;top:0;left:0;" 
+                width="100%" height="100%" src="https://odesli.co/embed/?url=https%3A%2F%2Fsong.link%2Fi%2F1493469521&theme=light" 
+                frameborder="0" allowfullscreen 
+                sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox"
+                allow="clipboard-read; clipboard-write"></iframe>
+        </div>
+    </div>
+    <figcaption>Apologies for the aggressive permissions; still working on improving my music embeds.</figcaption>
+</figure>
+
 [1]: https://bookwyrm.social/book/642590/s/prisons-make-us-safer
 [2]: /essays/2024/black-august
 [3]: /essays/2024/find-me-at-home/
@@ -119,3 +137,5 @@ more relevant than I expected and this panel really stuck out to me.
 [14]: https://haitiantimes.com/2024/08/02/pile-of-trash-near-cap-haitien-indoor-market/
 [15]: https://hyperallergic.com/939722/tracing-james-baldwin-legacy-through-his-friendships-on-his-100th-birthday/
 [16]: https://www.linkedin.com/posts/jacky-alcine_the-tech-resume-inside-out-activity-7219807326927519744-h-gx
+[17]: https://www.theguardian.com/world/article/2024/aug/01/antarctic-temperatures-rise-10c-above-average-in-near-record-heatwave
+[18]: https://archive.ph/WDF1x

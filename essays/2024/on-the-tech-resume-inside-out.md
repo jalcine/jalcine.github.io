@@ -5,6 +5,7 @@ description: |
     After getting a free copy of the book for laid off folks, I decided to write about what I learned, my findings and
     what I managed to take away from the book.
 tags: essay
+date: 2024-08-05 15:00:00 -05:00
 ---
 After [posting a request][1] for [Gergely][3]'s book on [the tech resume][2], I decided to try to write what I learned
 from it to both demonstrate what it's helped me with and to help other folks who are in a similar position as me:
@@ -13,20 +14,20 @@ Indeed) and wanting to [eject from the industry][4] as a whole. I'll go through 
 process, writing the resume and reflecting on examples and inspiration.
 
 # Part I: The Hiring Process
-Off rip, what I've known to be true is mentioned earlier, that "the average recruiter spends around _7 seconds_ to scan a
-resume and decide if it’s a reject, or if they'll read further". This knowledge made me _not want_ to spend so much time
-on something that's treated very cheaply[^1]. It continues noting the differences between a journeyman, good and great
-resume. The resume I had prior to this book could definitely be classed as that of a journeyman; listing the things I've
-done at different organizations, not explicitly signaling any sort of growth outside of job titles-based promotion
-through company transferals. What I do appreciate mentioned is something that only a few folks and friends that I've
-spoke on to about this process can admit to be a factor, one I think that contributes the most to it: _luck_. I got
-_lucky_ to get a job at Lyft while living in the Bay during its phase of high growth. Having visibility in the scene as
-well helped me nudge past my skillset as I wasn't the strongest Python developer _before_ joining[^2] but working there
-shot my aptitude up because of the ability to both see more production use of the language _and_ being able to work with
-folks who contributed heavily to that. Luck also means that there's no magic behind this; it's being at the right place
-at the right time[^3]. Something that I found interesting was his note that "as much as both the resume screening and
-the interview process can seem like a black box, it’s run by people who try and do their best". This is something that
-I've noticed to _not_ be true in some cases[^4]; I assume good faith until you give me _no_ reason to.
+Off rip, what I've known to be true is mentioned earlier, that "the average recruiter spends around _7 seconds_ to scan
+a resume and decide if it’s a reject, or if they'll read further". This knowledge made me _not want_ to spend so much
+time on something that's treated very cheaply[^1]. It continues noting the differences between a journeyman, good and
+great resume. The resume I had prior to this book could definitely be classed as that of a journeyman; listing the
+things I've done at different organizations, not explicitly signaling any sort of growth outside of job title-based
+promotions through company transferals. What I do appreciate mentioned is something that only a few folks and friends
+that I've spoke to about this process can admit to be a factor; one I think that contributes the most to it: _luck_. I
+got _lucky_ to get a job at Lyft while living in the Bay during its phase of high growth. Having visibility in the scene
+as well helped me nudge past my skillset as I wasn't the strongest Python developer _before_ joining[^2] but working
+there shot my aptitude up because of the ability to both see more production use of the language _and_ being able to
+work with folks who contributed heavily to that. Luck also means that there's no precise formula behind this; it's being
+at the right place at the right time[^3]. Something that I found interesting was his note that "as much as both the
+resume screening and the interview process can seem like a black box, it’s run by people who try and do their best".
+This is something that I've noticed to _not_ be true in some very few cases[^4].
 
 <figure>
     <img src="/images/read-the-tech-resume/app-funnel.jpg" alt="" />
@@ -36,15 +37,68 @@ I've noticed to _not_ be true in some cases[^4]; I assume good faith until you g
 What I did find refreshing was this graphic of the application funnel. But it also reminds me of the chances to just
 make it to an offer reflect the _difficulty_ of landing a job _anywhere_. The chances of getting a job here are lower
 than being killed by a car in the United States[^5], though coming from a smaller sample size. That aside, apparently
-the notion that ATSs are _not_ automatically rejecting folks is true? Perhaps the use of mainly four of five of them by
+the notion that ATSs are _not_ automatically rejecting folks is true. Perhaps the use of mainly four of five of them by
 many of the companies I applied and [the lack of the change of language in rejection messages][4] has contributed to the
 mass idea of this.
 
-# Part 2: Writing the (Damned) Resume
+# Part II: Writing the (Damned) Resume
 So, the thing to challenge is making sure that we as job hunters pass "the first glance". Remember, we're only given
 less than 25% of a minute to determine if we're worthy of a callback. Keeping skill-based relevancy after tenures is
 important as these are seemingly the two things that can make or break it for a candidate. Outside of that, everything
-else fights against me; a lack of an academic background, no _huge_ open source contributions of note[^
+else fights against me; a lack of an academic background, no _huge_ open source contributions of note[^6], for example.
+One thing I'm calling _bullshit_ on is this advice that a recruiter mentioned that says:
+
+> I’d stress how what really makes you stand out is having a tailored CV for the position. If you are applying for 20
+> different jobs, you should have _20 different CVs_. Each one should be different and specific for that role. And while
+> this might sound a “bad” thing to do, it’s not. It’s a necessary thing to do.
+
+What I've done instead is lean on soft "keyword stuffing" with skills adjusted to be the most relevant to that role.
+Having to rewrite _each_ region after optimizing it runs the high risk of making my resume sound less useful and wastes
+the effort of editing that I've gotten from many people. I asked folks on Mastodon about this:
+
+<iframe 
+    src="https://todon.eu/@jalcine/112904701881211814/embed" class="mastodon-embed" 
+    style="max-width: 100%; border: 0" width="400" allowfullscreen="allowfullscreen"></iframe>
+
+<script src="https://todon.eu/embed.js" async="async"></script>
+
+The methods that felt the most sustainable were the following:
+
+<iframe 
+    src="https://hachyderm.io/@haydencodes/112904730560839292/embed" class="mastodon-embed" 
+    style="max-width: 100%; border: 0" width="400" allowfullscreen="allowfullscreen"></iframe>
+
+<iframe 
+    src="https://stefanbohacek.online/@stefan/112904718907055886/embed" class="mastodon-embed" 
+    style="max-width: 100%; border: 0" width="400" allowfullscreen="allowfullscreen"></iframe>
+
+This recruiter's advice makes _even less_ sense if I'm only applying for the same _class_ of role across different
+companies. I can see the need to adjust the technologies, perhaps, but a _different_ resume? 🚫 Tangentially, this makes
+me feel like I don't have _much_ to say that doesn't seem applicable in a super-specialized context. I keep work
+journals and those help contribute to my resume building. One thing that people have mentioned is the split of a resume
+across industries or roles. Gergely links to [Charity Majors' blog about the topic][6] and this makes way more sense
+than generating a new resume per role, especially if the roles are the same.
+
+Something that stuck out to me was the suggestion to _always_ have a "current" position even if you're not employed
+full-time. That led me to changing my LinkedIn profile to the such because not having it apparently [reduces your
+ranking in its algorithm][7], which seems so counter-intuitive. That's until I considered that companies are more
+willing to attempt to poach talent than work on nurturing talent[^7]. I've decided to use that to be more candid about
+the "side projects" I'm working on now, which will put some fire under my butt to even consider turning parts of it into
+a product somehow (we'll see). You'll see [my projects page][8] linked from my LinkedIn now as my "current position".
+
+Apparently, since cover letters are _so rare_ in the space, I've resigned myself to begin writing them for roles that I
+have a stronger sense of attachment to. It seems to be a chance to bolster things but I'm also treating it like buying a
+dollar scratcher; nothing's guaranteed and at worst, I lose ten minutes writing one. Ten minutes for a chance to gain
+stability sounds pretty cheap to me.
+
+# Part III: Inspiration
+My resume's format follows the recommended structure (as monochromatic as possible, top-to-bottom reading and
+prioritization of content) so I didn't have to make too many changes there. What I did do is make some parts more
+adjustable for editing so I can generate more refined forms of my resume for particular roles. This didn't take too much
+time and was easier for me in the application process from editing a "primary resume" and adjusting it accordingly. I
+did adjust some of the styling to make it more lean when it's as a PDF. One thing I'm not happy to do but willing to is
+changing my email address to _not_ be my vanity on, because of the chance of someone who's reviewing this resume to be
+more reserved.
 
 # What I've Taken Away
 After reading this book, I'm realizing that I _have_ been engaging in a bit of a scatter-shot approach to job hunting.
@@ -64,20 +118,26 @@ made to my resume that you can see now:
    funding the development of the project, you're also betting on me getting a job so you don't have to do so anymore;
    win-win!
 
-I'm also to having more conversations with folks who can't say that they have an immediate open role at their
-organization but is willing to talk to me for 30 minutes over tea virtually, just to get a better sense of connection.
-Without conferences being a binding factor for this kind of networking, this is as good as it gets for me; especially
-since the cost of travel, lodging and ticketing for conferences have _never_ been cheap.
+Here's a link to the [new resume][9] versus the [old one][10]. A bit more confidence in my skills, formatting to make it
+more friendly for scanning and the like. I spent _a lot of time_ waddling it down and adjusting the type, reviewing my
+notes from my time at each company and the like to adjust the copy.
 
----
-The use of images and content from [the book][2] are meant for educational and non-commercial purposes, as defined by
-the book's publisher.
+That said, I'm open to having more conversations with folks who can't say that they have an immediate open role at their
+organization but is [willing to talk to me for 30 minutes][11] over tea virtually, just to get a better sense of connection.
+Without conferences being a binding factor for this kind of networking, this is as good as it gets for me; especially
+since the cost of travel, lodging and ticketing for conferences have _never_ been cheap. 
 
 [1]: https://www.linkedin.com/posts/jacky-alcine_the-tech-resume-inside-out-activity-7219807326927519744-h-gx
 [2]: https://thetechresume.com/
 [3]: https://www.linkedin.com/in/gergelyorosz/
 [4]: /essays/2024/the-hunt-driving-me-mad/
 [5]: https://www.forbes.com/advisor/legal/car-accident-statistics/
+[6]: https://charity.wtf/2017/05/11/the-engineer-manager-pendulum/
+[7]: https://www.linkedin.com/pulse/unemployed-create-current-role-linkedin-kathy-bernard/
+[8]: /projects/
+[9]: /files/Jacky_Alcine-resume.pdf
+[10]: /files/old-resume.pdf
+[11]: https://cal.com/jackyalcine/
 [^1]: It's doubly upsetting since this is the screening process to get a semblance of stability. A frustration strikes
     with the notion that "if you don’t put in the time and effort, don’t be surprised if you’ll be passed over for
     someone who is just as qualified, but has a resume that sells them better for that specific position". This seems to
@@ -99,3 +159,6 @@ the book's publisher.
 [^6]: The only one is not as notable but still used by hundreds of people, <https://github.com/codeforamerica/vita-min>.
     Annoyingly so, this isn't associated to my personal GitHub account; was trying to keep work and personal life
     separate; <https://github.com/codeforamerica/vita-min/commits?author=jalcine-cfa>.
+[^7]: I remember when I was working at Lyft how many recruiting e-mails I'd get. A friend of mine who works at Nextdoor
+    for quite some time gets more inbound than he knows what to do with and ends up chucking a lot of it. I am
+    appreicative of folsk who fling these roles my way; gives me a chance to sharpen these blades.
