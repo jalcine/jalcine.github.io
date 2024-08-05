@@ -19,7 +19,7 @@ produce-resume-pdf:
     --form url=http://${LOCAL_IP}:8080/work/ \
     --form marginTop="0.2in" \
     --form marginBottom="0.2in" \
-    -o $(pwd)/files/Jacky_Alcine_resume.pdf
+    -o $(pwd)/files/Jacky_Alcine-resume.pdf
 
-deploy: clean build
+deploy: clean produce-resume-pdf build
   rsync --delete --verbose --recursive _site/* foot@jacky.wtf:/var/www/html/

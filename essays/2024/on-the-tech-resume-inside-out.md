@@ -1,6 +1,8 @@
 ---
 layout: essay.html.njk
 title: "I Read 'The Tech Resume Inside Out' and Updated My Resume"
+og:
+    image: /images/the-tech-resume.png
 description: |
     After getting a free copy of the book for laid off folks, I decided to write about what I learned, my findings and
     what I managed to take away from the book.
@@ -113,10 +115,6 @@ made to my resume that you can see now:
    this seems to be something that non-technical recruiters want to know as well.
  * Explicitly having multiple resumes: for sake of optimizing my chances, I have a resume for full-stack and back-end
    development. Those are the two spaces I thrive in the most.
- * External demonstration of skills: With me working on livtet in the open, I'm going to throw that on my resume and
-   throw my hat back into consulting. I don't necessarily have the runway to _hope_ for something to work out. So by
-   funding the development of the project, you're also betting on me getting a job so you don't have to do so anymore;
-   win-win!
 
 Here's a link to the [new resume][9] versus the [old one][10]. A bit more confidence in my skills, formatting to make it
 more friendly for scanning and the like. I spent _a lot of time_ waddling it down and adjusting the type, reviewing my
@@ -161,4 +159,4 @@ since the cost of travel, lodging and ticketing for conferences have _never_ bee
     separate; <https://github.com/codeforamerica/vita-min/commits?author=jalcine-cfa>.
 [^7]: I remember when I was working at Lyft how many recruiting e-mails I'd get. A friend of mine who works at Nextdoor
     for quite some time gets more inbound than he knows what to do with and ends up chucking a lot of it. I am
-    appreicative of folsk who fling these roles my way; gives me a chance to sharpen these blades.
+    appreciative of folks who fling these roles my way; gives me a chance to sharpen these blades.
