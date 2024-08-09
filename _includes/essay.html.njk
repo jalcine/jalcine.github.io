@@ -12,14 +12,14 @@ og:
   {% if masthead %}
     <figure>
         <img src="{{ masthead.src | url }}" alt="{{ masthead.alt }}"/>
-        <figcaption>{{ masthead.title }}</figcaption>
+        <figcaption>{{ masthead.title | safe }}</figcaption>
     </figure>
   {% endif %}
   <header>
     <h1 class="p-name">{{ title }}</h1>
     {% if byline %}<h2>{{ byline }}</h2>{% endif %}
     <aside>
-      <small>by me, <a class="u-author" href="/">Jacky Alciné</a></small>
+      by <a class="u-author" href="/">Jacky Alciné</a>
       &bull; published
       <time class="dt-published" datetime="{{ page.date.toUTCString() }}">{{ page.date | postDate }}</time>
       &bull;
@@ -39,4 +39,14 @@ og:
   <section class="e-content">
     {{- content | safe -}}
   </section>
+  <footer>
+    <p>
+      <strong>Thanks for reading</strong>! I have a quite infrequently (at most four times a month) <a
+      href="https://jacky.wtf/newsletter">newsletter</a> that you can subscribe to (<a
+      href="https://buttondown.email/jackyalcine/archive/">check the archives</a>). I'm <a href="/work">looking for
+      work</a> as a software engineer as <a href="/projects">I work on projects</a> to help bolster my work credibility
+      in the open. I'd love to chat (even if it's not about a role); you can <a href="/#contact">reach me quite
+      easily</a>.
+    </p>
+  </footer>
 </article>

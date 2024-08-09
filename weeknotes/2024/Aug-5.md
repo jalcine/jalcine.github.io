@@ -40,8 +40,7 @@ State.
 ## [The Tech Resume](https://thetechresume.com/)
 Since I can't lose anything by reading a book on how to improve my resume (I also got it [for free][16]), I've begun
 reading this book after breaking fast. I have to admit, my mobility in tech has been both through my skill and social
-relations; so a resume wasn't as necessary for me (at least for screening). I'm hoping this helps my chances. I'm
-planning on writing what I learned from the book and how I applied it.
+relations; so a resume wasn't as necessary for me (at least for screening). [I wrote about what I learned][19].
 
 ## 🔗 Around the Web
 I'm going to try something a bit new! Here's some things I've read that were informative:
@@ -64,8 +63,6 @@ I'm going to try something a bit new! Here's some things I've read that were inf
   new normal. The predator class is trying to play chicken with the planet and it's going to be at the cost of everyone
   else.
 * [The Washington Post: How the Montgomery Riverfront brawl sparked an unofficial holiday][18]: What a time to be alive, ha.
-* [Hyperallergic: Tracing James Baldwin's Legacy Through His Friendships on His 100th Birthday][15]: <-- TODO: Read and recap -->
-* [Mariame Kaba: Prisons, Prose & Protest #18][13]: <-- TODO: Read and recap -->
 
 # ✏️ Writing
 I've been picking up my blogging. I gave my roadmap for [commemorating Black August][2], a personal push to blog more in
@@ -74,13 +71,10 @@ open to thoughts on these things &mdash; expect follow ups on them soon! I've al
 optimize my writing, [vale](https://vale.sh); mainly to reduce my use of ablest terminology and guiding my writing a
 bit. I _do_ have a book on prose that [I've been meaning to reread][5]; perhaps in September.
 
-Additionally, I've made [my announcement to make Livtet a product-project][12] that I'll be working on in the public. But I
-need your help.
-
 # 🖥️ Coding
-> TODO: Write about the changes made to Livtet.
-
-> TODO: Add note about making some tweaks for Calibre.
+Livtet has gotten some improvements. I'm making use of a caching layer to pull in the book covers as well as information
+from the archive itself, which has helped increase the response times of the application. Eager to share more on this
+week!
 
 # 📸 Seeing
 I think something that'll help people read is seeing the book. I'm a very big fan of writing and sticking up a book so
@@ -132,10 +126,10 @@ On top of everything else, this is the song of last week:
 [9]: https://truthout.org/articles/bushs-infrastructure-bill-vote-criticized-by-opponent-and-amplified-by-aipac/
 [10]: https://en.wikipedia.org/wiki/Assata:_An_Autobiography
 [11]: https://en.wikipedia.org/wiki/Black_August_(commemoration)
-[12]: /essays/2024/making-livtet/
 [13]: https://prisonculture.substack.com/p/prisons-prose-and-protest-18
 [14]: https://haitiantimes.com/2024/08/02/pile-of-trash-near-cap-haitien-indoor-market/
 [15]: https://hyperallergic.com/939722/tracing-james-baldwin-legacy-through-his-friendships-on-his-100th-birthday/
 [16]: https://www.linkedin.com/posts/jacky-alcine_the-tech-resume-inside-out-activity-7219807326927519744-h-gx
 [17]: https://www.theguardian.com/world/article/2024/aug/01/antarctic-temperatures-rise-10c-above-average-in-near-record-heatwave
 [18]: https://archive.ph/WDF1x
+[19]: /essays/2024/on-the-tech-resume-inside-out/

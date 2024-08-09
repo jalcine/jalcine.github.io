@@ -163,7 +163,7 @@ header {
 header>nav {
   display: flex;
   align-items: center;
-  height: 4.5rem;
+  min-height: 4.5rem;
   background: var(--header-nav-bg);
   color: var(--header-nav-color);
   margin: 1rem;
@@ -173,6 +173,11 @@ header>nav {
 
 header>nav a:first-of-type {
   font-weight: bolder;
+  width: 100%;
+}
+
+header>nav a>span {
+  width: 100%;
 }
 
 header>nav a {
@@ -186,6 +191,20 @@ header>nav a {
 header>nav a:visited {
   color: var(--header-nav-color);
 }
+
+
+@media screen and (max-width: 40rem) {
+  header>nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  header>nav a:first-of-type {
+    font-size: larger;
+    text-align: center;
+  }
+}
+
 
 main {
   flex-grow: 3;
@@ -288,6 +307,21 @@ video {
   max-width: 60rem;
 }
 
+article.h-entry>footer {
+  width: min(var(--content-width), 80vw);
+  margin: 1rem auto;
+  padding: 2rem;
+  font-size: large;
+}
+
+article.h-entry>footer p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+article.h-entry>footer a {
+  color: inherit;
+}
 
 @media print {
 
@@ -308,8 +342,7 @@ video {
   display: block;
   border: none;
   margin: 0.5rem auto;
-  width: 35rem;
-  /* overflow: hidden; */
+  width: min(100%, 35rem);
 }
 
 p>sup.footnote-ref,
@@ -373,8 +406,6 @@ article.h-feed>header {
 }
 
 article.h-entry>header>aside {
-  margin-top: 1rem;
-  display: block;
   text-align: center;
 }
 

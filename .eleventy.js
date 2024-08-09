@@ -31,9 +31,9 @@ export default function(eleventyConfig) {
   });
 
   eleventyConfig.addPassthroughCopy("*.css");
-  eleventyConfig.addPassthroughCopy("images");
-  eleventyConfig.addPassthroughCopy("videos");
-  eleventyConfig.addPassthroughCopy("files");
+  eleventyConfig.addPassthroughCopy("images/**/*");
+  eleventyConfig.addPassthroughCopy("videos/**/*");
+  eleventyConfig.addPassthroughCopy("files/**/*");
 
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(readingTime);
