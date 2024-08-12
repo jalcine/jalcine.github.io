@@ -1,211 +1,193 @@
 ---
 layout: page.html.njk
 title: "Jacky has a homepage."
-changeFreq: daily
-og:
-type: website
+changeFreq: weekly
 ---
 <article class="h-card">
-  <figure class="u-photo">
-    <img
-      class="full-height"
-      src="/images/landing.png"
-      alt="Myself standing in front of a wall of sticky notes with my hands in a gesturing state."
-    />
-    <img
-      class="partial-height"
-      src="/images/landing-bleed.png"
-      alt="Myself standing in front of a wall of sticky notes."
-    />
-    <figcaption>
-      It's me standing in front of a wall of sticky notes and directing a small session.
-      <a href="/work/">Maybe you'd want that as well</a>?
-    </figcaption>
-  </figure>
-  <section>
-    <h1>Hey, I'm <mark class="p-name">Jacky Alciné</mark> 👋🏿‍🧑🏿‍💻 📖 </h1>
-    <p>
-      In your Web browser, of course.
-      <a href="https://www.mozilla.org/en-US/firefox/browsers/compare/chrome/">You're using Firefox</a>, right?
-      You can catch up by <a href="https://buttondown.email/jackyalcine">email</a>, on
-      a social network in the <a
-        rel="me "
-        href="https://todon.eu/@jalcine"
-      >Fediverse</a>, <a
-        rel="me"
-        href="https://bsky.app/profile/jacky.wtf"
-      >BlueSky</a> or <a
-        rel="me "
-        href="https://twitter.com/jackyalcine"
-      >X, commonly
-        known as Twitter</a> as I continue to share and work
-      on all things towards history, open digital technology, culture &mdash; and <mark>everything in between</mark>.
-      <br /><br />
-      <strong>I write <a href="/essays/">essays of varying length</a></strong>; most recently <a
-        href="{{collections.essay.last.url}}"
-      >I wrote "{{collections.essay.last.data.title}}"</a>. <strong>I'm currently working on <a
-          href="/projects/shock">Shock</a></strong>, a social reader and CMS for the open social Web and <a
-        href="/projects/livtet"
-      >Livtet</a>, my take on book management and referencing.
-      I keep <a href="/weeknotes">notes weekly</a>.
-    </p>
-    <h2>Around the Web (and World)</h2>
-    <p>An (incomplete) collection of links to things I'm referenced in or written:</p>
-    <ul>
-      <li><a href="https://www.wnycstudios.org/podcasts/notetoself/episodes/deep-problem-deep-learning">Talking with
-          Manoush Zomordi</a> about algorithmic bias in Google Photos</li>
-      <li><a
-          href="https://egghead.io/podcasts/jacky-alcine-on-how-the-software-field-is-75-code-and-25-presentation">Talking
-          with Joel Hooks</a> about the software landscape</li>
-      <li>Quoted by <a
-          href="https://arstechnica.com/information-technology/2015/06/google-dev-apologizes-after-photos-app-tags-black-people-as-gorillas/"
-        >Ars
-          Technica</a> and <a href="https://www.nytimes.com/2023/05/22/technology/ai-photo-labels-google-apple.html">The
-          New York Times</a> about Google's inability to work on algorithmic bias</li>
-      <li>My contribution to the <a href="https://shop.kernelmag.io/products/kernel-4">fourth volume of Kernel</a>, A
-        Labor of Luck detailing my experience in the midst of the
-        development of a <a href="https://www.kernelmag.io/4/labor-luck">collective bargaining agreement</a> at Code for
-        America.</li>
-    </ul>
-    <p>I'm referenced in the selected material:</p>
-    <ul>
-      <li><a href="https://www.penguinrandomhouse.com/books/241363/weapons-of-math-destruction-by-cathy-oneil/">Weapons
-          of Math Destruction: How Big Data Increase Inequality and Threatens Democracy</a> by <a
-          href="https://mathbabe.org/"
-        >Cathy O'Neil</a></li>
-      <li><a href="https://melaniemitchell.me/aibook/">Artificial Intelligence: A Guide for Thinking Humans</a> by <a
-          href="https://melaniemitchell.me"
-        >Melanie Mitchell</a></li>
-      <li><a href="https://brianchristian.org/the-alignment-problem/">The Alignment Problem: Machine Learning and
-          Human Values</a> by <a href="https://brianchristian.org">Brian Christian</a></li>
-      <li><a href="https://bookshop.org/p/books/you-deserve-a-tech-union-ethan-marcotte/20400532">
-          You Deserve a Tech Union</a> by <a href="https://ethanmarcotte.com/">Ethan Marcotte</a></li>
-    </ul>
-    <p>I've given talks in community settings:</p>
-    <ul>
-      <li><a href="https://archive.org/details/indieweb-summit-2019-making-the-indieweb-open-to-all">Making the IndieWeb
-          Open to All</a> at <a href="https://2019.indieweb.org/summit">IndieWeb Summit 2019</a></li>
-      <li><a href="https://archive.org/details/iwc-west-2020-opening-a-restaurant">Opening a Restaurant to Share Our
-          Cooking</a> at <a href="https://2020.indieweb.org/west">IndieWebCamp West 2020</a></li>
-      <li>
-        <a href="https://slides.com/jackyalcine-1/ssl-we-used-to-know-you">Slides to a talk</a> about a light history of
-        SSL, TLS and HTTP/2 given at <a href="https://wafflejs.com/">WaffleJS</a>.
-      </li>
-      <li><a href="https://www.youtube.com/watch?v=iCLNxSGWSTM">Take Down: How SMS-Based 2FA Shouldn't Be Your Angle</a>
-        for <a href="https://techqueria.org/">Techqueria</a>
-      </li>
-    </ul>
-    <h2 id="contact">Let's Work <mark>Together</mark></h2>
-    <p>You can find me on <a href="https://www.linkedin.com/in/jacky-alcine/">LinkedIn</a> or <a
-        href="/files/Jacky_Alcine-resume.pdf"
-      >download my
-        resume/CV</a>. Feel free to <a href="https://cal.com/jackyalcine/">schedule time on my calendar</a>, <a
-        rel="me"
-        href="tel:+19293790093"
-      >text me</a> or message me via <a
-        rel="me"
-        href="https://matrix.to/#/#@jackyalcine:matrix.org"
-      >Matrix</a> or <a
-        rel="me"
-        href="xmpp:jackyalcine@movim.eu?message"
-      >XMPP/Jabber</a>. You could always send e-mail to <code>yo@jacky.wtf</code>.</p>
-    <p>For my software, you can find my contributions at <a
-        rel="me"
-        href="https://github.com/jalcine"
-      >Microsoft's GitHub</a>, <a
-        rel="me"
-        href="https://gitlab.com/jackyalcine"
-      >GitLab</a>, <a
-        rel="me"
-        href="https://git.sr.ht/~jacky"
-      >sourcehut</a> and <a
-        rel="me"
-        href="https://gitlab.gnome.org/jalcine"
-      >GNOME's Gitlab</a>.</p>
-  </section>
+	<figure class="u-photo">
+		<img class="full-height" src="/images/landing.png"
+			alt="Myself standing in front of a wall of sticky notes with my hands in a gesturing state." />
+		<img class="partial-height" src="/images/landing-bleed.png"
+			alt="Myself standing in front of a wall of sticky notes." />
+		<figcaption>
+			It's me standing in front of a wall of sticky notes and directing a small session.
+			<a href="/work/">Maybe you'd want that as well</a>?
+		</figcaption>
+	</figure>
+	<section>
+		<h1>Hey, I'm <mark class="p-name">Jacky Alciné</mark> 👋🏿‍🧑🏿‍💻 📖 </h1>
+		<p>
+			In your Web browser, of course.
+			<a href="https://www.mozilla.org/en-US/firefox/browsers/compare/chrome/">You're using
+				Firefox</a>, right?
+			You can catch up by <a href="https://buttondown.email/jackyalcine">email</a>, on
+			a social network in the <a rel="me " href="https://todon.eu/@jalcine">Fediverse</a>, <a rel="me"
+				href="https://bsky.app/profile/jacky.wtf">BlueSky</a> or <a rel="me "
+				href="https://twitter.com/jackyalcine">X, commonly
+				known as Twitter</a> as I continue to share and work
+			on all things towards history, open digital technology, culture &mdash; and <mark>everything in
+				between</mark>.
+			<br /><br />
+			<strong>I write <a href="/essays/">essays of varying length</a></strong>; most recently <a
+				href="{{collections.essay.last.url}}">I wrote
+				"{{collections.essay.last.data.title}}"</a>. <strong>I'm currently working on <a
+					href="/projects/livtet">Livtet</a>, a collection of tools for managing one's
+				book collection, notes and everything in
+				between.
+				I keep <a href="/weeknotes">notes weekly</a>.
+		</p>
+		<h2>Around the Web (and World)</h2>
+		<p>An (incomplete) collection of links to things I'm referenced in or written:</p>
+		<ul>
+			<li><a href="https://www.wnycstudios.org/podcasts/notetoself/episodes/deep-problem-deep-learning">Talking
+					with
+					Manoush Zomordi</a> about algorithmic bias in Google Photos</li>
+			<li><a href="https://egghead.io/podcasts/jacky-alcine-on-how-the-software-field-is-75-code-and-25-presentation">Talking
+					with Joel Hooks</a> about the software landscape</li>
+			<li>Quoted by <a
+					href="https://arstechnica.com/information-technology/2015/06/google-dev-apologizes-after-photos-app-tags-black-people-as-gorillas/">Ars
+					Technica</a> and <a
+					href="https://www.nytimes.com/2023/05/22/technology/ai-photo-labels-google-apple.html">The
+					New York Times</a> about Google's inability to work on algorithmic bias</li>
+			<li>My contribution to the <a href="https://shop.kernelmag.io/products/kernel-4">fourth volume
+					of Kernel</a>, A
+				Labor of Luck detailing my experience in the midst of the
+				development of a <a href="https://www.kernelmag.io/4/labor-luck">collective bargaining
+					agreement</a> at Code for
+				America.</li>
+		</ul>
+		<p>I'm referenced in the selected material:</p>
+		<ul>
+			<li><a href="https://www.penguinrandomhouse.com/books/241363/weapons-of-math-destruction-by-cathy-oneil/">Weapons
+					of Math Destruction: How Big Data Increase Inequality and Threatens
+					Democracy</a> by <a href="https://mathbabe.org/">Cathy O'Neil</a></li>
+			<li><a href="https://melaniemitchell.me/aibook/">Artificial Intelligence: A Guide for Thinking
+					Humans</a> by <a href="https://melaniemitchell.me">Melanie Mitchell</a></li>
+			<li><a href="https://brianchristian.org/the-alignment-problem/">The Alignment Problem: Machine
+					Learning and
+					Human Values</a> by <a href="https://brianchristian.org">Brian Christian</a>
+			</li>
+			<li><a href="https://bookshop.org/p/books/you-deserve-a-tech-union-ethan-marcotte/20400532">
+					You Deserve a Tech Union</a> by <a href="https://ethanmarcotte.com/">Ethan
+					Marcotte</a></li>
+		</ul>
+		<p>I've given talks in community settings:</p>
+		<ul>
+			<li><a href="https://archive.org/details/indieweb-summit-2019-making-the-indieweb-open-to-all">Making
+					the IndieWeb
+					Open to All</a> at <a href="https://2019.indieweb.org/summit">IndieWeb Summit
+					2019</a></li>
+			<li><a href="https://archive.org/details/iwc-west-2020-opening-a-restaurant">Opening a
+					Restaurant to Share Our
+					Cooking</a> at <a href="https://2020.indieweb.org/west">IndieWebCamp West
+					2020</a></li>
+			<li>
+				<a href="https://slides.com/jackyalcine-1/ssl-we-used-to-know-you">Slides to a talk</a>
+				about a light history of
+				SSL, TLS and HTTP/2 given at <a href="https://wafflejs.com/">WaffleJS</a>.
+			</li>
+			<li><a href="https://www.youtube.com/watch?v=iCLNxSGWSTM">Take Down: How SMS-Based 2FA Shouldn't
+					Be Your Angle</a>
+				for <a href="https://techqueria.org/">Techqueria</a>
+			</li>
+		</ul>
+		<h2 id="contact">Let's Work <mark>Together</mark></h2>
+		<p>You can find me on <a href="https://www.linkedin.com/in/jacky-alcine/">LinkedIn</a> or <a
+				href="/files/Jacky_Alcine-resume.pdf">download my
+				resume/CV</a>. Feel free to <a href="https://cal.com/jackyalcine/">schedule time on my
+				calendar</a>, <a rel="me" href="tel:+19293790093">text me</a> or message me via <a
+				rel="me" href="https://matrix.to/#/#@jackyalcine:matrix.org">Matrix</a> or <a rel="me"
+				href="xmpp:jackyalcine@movim.eu?message">XMPP/Jabber</a>. You could always send e-mail
+			to <code>yo@jacky.wtf</code>.</p>
+		<p>For my software, you can find my contributions at <a rel="me"
+				href="https://github.com/jalcine">Microsoft's GitHub</a>, <a rel="me"
+				href="https://gitlab.com/jackyalcine">GitLab</a>, <a rel="me"
+				href="https://git.sr.ht/~jacky">sourcehut</a> and <a rel="me"
+				href="https://gitlab.gnome.org/jalcine">GNOME's Gitlab</a>.</p>
+	</section>
 </article>
 <style>
-  article {
-    display: flex;
-    flex-direction: column;
-    padding: 0 1rem;
-  }
+	article {
+		display: flex;
+		flex-direction: column;
+		padding: 0 1rem;
+	}
 
-  article>figure>figcaption {
-    max-width: 25rem;
-    margin: 0 auto;
-  }
+	article>figure>figcaption {
+		max-width: 25rem;
+		margin: 0 auto;
+	}
 
-  article>figure {
-    width: 100%;
-  }
+	article>figure {
+		width: 100%;
+	}
 
-  figure>picture {
-    border-radius: 1rem;
-  }
+	figure>picture {
+		border-radius: 1rem;
+	}
 
-  img.full-height {
-    max-height: 50rem;
-    display: none;
-  }
+	img.full-height {
+		max-height: 50rem;
+		display: none;
+	}
 
 
-  img.partial-height {
-    display: block;
-  }
+	img.partial-height {
+		display: block;
+	}
 
-  picture>img {
-    margin: none;
-    width: initial;
-    height: initial;
-  }
+	picture>img {
+		margin: none;
+		width: initial;
+		height: initial;
+	}
 
-  @media screen and (min-width: 60rem) {
-    article {
-      flex-direction: row;
-      align-items: last baseline;
-      justify-content: center;
-    }
+	@media screen and (min-width: 60rem) {
+		article {
+			flex-direction: row;
+			align-items: last baseline;
+			justify-content: center;
+		}
 
-    article>figure,
-    article>figure>picture {
-      width: auto;
-      height: auto;
-    }
+		article>figure,
+		article>figure>picture {
+			width: auto;
+			height: auto;
+		}
 
-    article>section {
-      padding: 0 1rem;
-    }
+		article>section {
+			padding: 0 1rem;
+		}
 
-    section>h1 {
-      margin-top: 1rem;
-    }
+		section>h1 {
+			margin-top: 1rem;
+		}
 
-    section>p,
-    li {
-      max-width: var(--content-width);
-    }
+		section>p,
+		li {
+			max-width: var(--content-width);
+		}
 
-    section>p:first-of-type {
-      font-size: 125%;
-    }
+		section>p:first-of-type {
+			font-size: 125%;
+		}
 
-    img.partial-height {
-      display: none;
-    }
+		img.partial-height {
+			display: none;
+		}
 
-    img.full-height {
-      display: block;
-    }
+		img.full-height {
+			display: block;
+		}
 
-    figure+section {
-      margin-left: 2rem;
-    }
-  }
+		figure+section {
+			margin-left: 2rem;
+		}
+	}
 
-  @media screen and (min-width: 120rem) {
-    section>h1 {
-      font-size: 275%;
-    }
-  }
+	@media screen and (min-width: 120rem) {
+		section>h1 {
+			font-size: 275%;
+		}
+	}
 </style>
