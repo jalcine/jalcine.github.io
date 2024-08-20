@@ -2,160 +2,73 @@
 <html lang="en">
 
 <head>
-  <script
-    defer
-    data-domain="jacky.wtf"
-    src="https://plausible.io/js/script.js"
-  ></script>
-
-  <link
-    rel="me"
-    href="https://github.com/jalcine"
-  />
-  <meta
-    name="CCBot"
-    content="nofollow"
-  >
-  <meta
-    name="robots"
-    content="noai, noimageai"
-  >
-  <meta
-    name="tdm-reservation"
-    content="1"
-  >
-  <meta charset="utf-8">
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
-  <meta
-    name="theme-color"
-    content="#001f3f"
-  />
-  <meta
-    name="author"
-    content="Jacky Alciné"
-  />
-  <meta
-    name="generator"
-    content="Eleventy v3.0.0"
-  >
-  {% if og.type -%}
-  <meta
-    property="og:type"
-    content="{{ og.type}}"
-  />
-  {%- endif %}
-  {% if og.image -%}
-  <meta
-    name="twitter:image"
-    content="{{ og.image | url }}"
-  />
-  <meta
-    property="og:image"
-    content="{{ og.image | url }}"
-  />
-  {%- endif %}
-  {% if description -%}
-  <meta
-    name="twitter:description"
-    content="{{ description }}"
-  />
-
-  <meta
-    property="og:description"
-    content="{{ description }}"
-  />
-  <meta
-    property="description"
-    content="{{ description }}"
-  />
-  {%- endif %}
-  {% set og_title = og.title | title -%}
-  <meta
-    property="og:title"
-    content="{{ title }} - Jacky Alciné"
-  />
-  <meta
-    name="twitter:title"
-    content="{{ title }} - Jacky Alciné"
-  />
-  <meta
-    name="twitter:card"
-    content="summary_image"
-  >
-  <meta
-    property="og:site_name"
-    content="Jacky Alciné's website"
-  />
-  <meta
-    name="twitter:site"
-    content="Jacky Alciné's website"
-  />
-  <meta
-    name="twitter:creator"
-    content="@jackyalcine"
-  />
-  <title>{{ title }} - Jacky Alciné</title>
-  <link
-    rel="stylesheet"
-    href="/site.css"
-    type="text/css"
-  />
-  <link
-    rel="icon"
-    href="{{ '/images/self.jpg' | url }}"
-    type="images/jpeg"
-  />
-  {% block head %}{% endblock head %}
+	<title>{{ title }} - Jacky Alciné</title>
+	<meta name="CCBot" content="nofollow">
+	<meta name="robots" content="noai, noimageai">
+	<meta name="tdm-reservation" content="1">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#001f3f" />
+	<meta name="author" content="Jacky Alciné" />
+	<meta name="generator" content="Eleventy v3.0.0">
+	{% if og.type -%}
+	<meta property="og:type" content="{{ og.type}}" />{%- endif %}{% if og.image -%}
+	<meta name="twitter:image" content="{{ og.image | url }}" />
+	<meta property="og:image" content="{{ og.image | url }}" />{%- endif %}{% if description -%}
+	<meta name="twitter:description" content="{{ description }}" />
+	<meta property="og:description" content="{{ description }}" />
+	<meta property="description" content="{{ description }}" />
+	{%- endif %}
+	{% set og_title = og.title | title -%}
+	<meta property="og:title" content="{{ title }} - Jacky Alciné" />
+	<meta name="twitter:title" content="{{ title }} - Jacky Alciné" />
+	<meta name="twitter:card" content="summary_image">
+	<meta property="og:site_name" content="Jacky Alciné's website" />
+	<meta name="twitter:site" content="Jacky Alciné's website" />
+	<meta name="twitter:creator" content="@jackyalcine" />
+	<link rel="stylesheet" href="/site.css" type="text/css" />
+	<link rel="icon" href="{{ '/images/self.jpg' | url }}" type="images/jpeg" />
+	{% block head %}{% endblock head %}
+	<link rel="me" href="https://github.com/jalcine" />
+	<script defer data-domain="jacky.wtf" src="https://plausible.io/js/script.js"></script>
 </head>
 
 <body>
-  <header>
-    <nav>
-      <a
-        class="h-card"
-        href="/"
-        rel="me"
-      ><span>
-          Jacky Alciné
-        </span></a>
-      <a href="/essays/">Essays</a>
-      <a href="/weeknotes/">Weeknotes</a>
-      <a href="/support/">Support</a>
-      <a href="/projects/">Projects</a>
-      <a href="/work/">Work</a>
-    </nav>
-  </header>
-  <main>
-    {{- content | safe -}}
-  </main>
-  <footer>
-    <p>Site handrolled at {{ generated }} and built using <a href="https://www.11ty.dev/">11ty</a> (for now) &mdash; <a
-        href="https://www.11ty.dev/blog/sustainability-fundraising/"
-      >support its
-        development</a>!
-      Check out <a href="/report/visitors.html">my access logs</a>.
-    </p>
-    <p xmlns:cc="http://creativecommons.org/ns#">
-      You made it &mdash; <strong>congrats</strong>! I don't have much to tell you. Except that unless otherwise stated,
-      the content I publish is licensed under <a
-        href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1"
-        target="_blank"
-        rel="license noopener noreferrer"
-      >CC BY-NC 4.0<img
-          src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"
-          alt="CC"
-        ><img
-          src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"
-          alt="BY"
-        ><img
-          src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"
-          alt="SA"
-        ></a>.
-    </p>
-  </footer>
+	<header>
+		<nav>
+			<a class="h-card" href="/" rel="me"><span>
+					Jacky Alciné
+				</span></a>
+			<a href="/essays/">Essays</a>
+			<a href="/weeknotes/">Weeknotes</a>
+			<a href="/support/">Support</a>
+			<a href="/projects/">Projects</a>
+			<a href="/work/">Work</a>
+		</nav>
+	</header>
+	<main>
+		{{- content | safe -}}
+	</main>
+	<footer>
+		<p>Site handrolled at {{ generated }} and built using <a href="https://www.11ty.dev/">11ty</a> (for now)
+			&mdash; <a href="https://www.11ty.dev/blog/sustainability-fundraising/">support its
+				development</a>!
+			Check out <a href="/report/visitors.html">my access logs</a>.
+		</p>
+		<p xmlns:cc="http://creativecommons.org/ns#">
+			You made it &mdash; <strong>congrats</strong>! I don't have much to tell you. Except that unless
+			otherwise stated,
+			the content I publish is licensed under <a
+				href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank"
+				rel="license noopener noreferrer">CC BY-NC 4.0<img
+					src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"
+					alt="CC"><img
+					src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"
+					alt="BY"><img
+					src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"
+					alt="SA"></a>.
+		</p>
+	</footer>
 </body>
 
 </html>

@@ -2,6 +2,8 @@
 layout: weeknote.html.njk
 date: 2024-08-19T17:00:00.000Z
 tags: weeknote
+og:
+    image: /images/weeknotes/2024-08-19.jpg
 description: >
     Finished two fiction books I've been slowly going through, nice progress with Livtet and some
     more thoughts on what I'm currently reading.
@@ -16,11 +18,11 @@ I'm still working on my abolitionist list for this month but I took some time to
 I had hanging and hadn't finished yet.
 
 ## [Harlem Shuffle][harlem_shuffle]
-This book is one I've been reading on and off; not because I didn't enjoy it - I really did - but
-because I didn't want it to end. Big Mike's son has issue after issue crop up in his way of aiming
+This book is one I've been reading on and off; not because I didn't enjoy it but
+because the book was almost done. Big Mike's son has issue after issue crop up in his way of aiming
 to make a honest living. I got the audiobook to go with my borrowed digital copy and it felt like
 listening to a radio show; making the segmenting of the read even better. It takes place in a
-historically fictional Harlem, talking about the development of the neighborhood and New York City in the
+slightly alternate Harlem. It brings you through the development of the neighborhood and New York City in the
 1960s. From riots to robberies, heists to heartache, this book is one I'll give to folks who are curious
 about New York City.
 
@@ -35,7 +37,7 @@ Those events have reverberations in how the main character sees themselves and I
 are writing humanizing material like this.
 
 ## [Prisons By Any Other Name][pbaon]
-This book is gradually getter harder and harder to read. So far, the book's discussed the level of
+This book was getting harder and harder to read. So far, the book's discussed the level of
 violence waged by the state and private institutions against mothers who don't fit the "model" of an
 ideal parent. It also mentions the nature of the foster care system and its history as a
 religious-now-state sponsored child kidnapping program meant to force Native folks into "civil
@@ -47,23 +49,33 @@ policing and the community murdering of Native people and slave capture committe
 definitely one that'll remain in my library of recommendations and I'm hoping that we won't need an
 expanded version anytime soon.
 
-I didn't expect to finish the book yesterday but I managed to. The last chapter on imagining
-alternatives reminds me so much of a quote attributed to Sadiya Hartman, that one of the greatest
-crimes of oppression is how throughoutly it's policed our ability to imagine[^1].
+I didn't expect to finish the book this morning but I managed to. The last chapter on imagining
+alternatives reminds me so much of a quote attributed to [Sadiya Hartman][sh], that one of the greatest
+crimes of oppression is how deeply it has policed our ability to imagine[^2].
 
 ## [The Trinity of Fundamentals][ttof]
 I'm reading this as part of the book club driven by [Millennials are Killing Capitalism][makc]. I
-got this book last year when I went to 1804 Books's hub, the People's Forum, as well as a bunch of
-other books. I did not expect to be thrusted so quickly into a world that was ripe with vigor and
+got this book last year when I went to [1804 Books][1804]'s hub, [the People's Forum][tpf], as well as a bunch of
+other books. I did not expect to be thrown so quickly into a world that was ripe with vigor and
 care.
 
-For context, this book was smuggled out of the Zionist prisons set up in Palestine. It took 54
+<figure>
+    <img src="/images/weeknotes/2024-08-19-cover.jpg" alt=""/>
+    <figcaption>The cover of the book, The Trinity of Fundamentals.</figcaption>
+</figure>
+
+For context, this book was _smuggled out_ of the Zionist prisons set up in Palestine. It took 54
 capsules of physical text to get this story, written over nine years. The way the book was written,
 I'm shocked that it hasn't covered things like the New York Times bestseller list. It's a gripping
 tale of the resistance development against occupation. It starts on a campus ground, showing the
-dynamicsm of the youth to learn and hold each other in political struggle while their homeland is
-being encroached by violence pushed on by the Reagen administration and the Isreali occupation. I'm
+dynamism of the youth to learn and hold each other in political struggle while their homeland is
+being encroached by violence pushed on by the Reagan administration and the Israeli occupation. I'm
 doing my best not to run through this book because it's a page turner but it is _hard_.
+
+<figure>
+    <img src="/images/weeknotes/2024-08-19-back.jpg" alt=""/>
+    <figcaption>The back of the book with its full blurb.</figcaption>
+</figure>
 
 ## [Git Cute][git_cute]
 I can't find much to say about this book; and in this case, this isn't necessarily a good thing. I
@@ -76,7 +88,7 @@ example). I can't say this is something I'd recommend.
 
 # Writing
 I spent more time working on code this week &mdash; not much out of the blog. I did write about what
-I ended up working on; [introducing an extension system to Livtet using Lua][1]. It was really rewarding!
+I ended up working on. [An extension system to Livtet using Lua][1]; it was really rewarding!
 
 # Coding
 As mentioned above, I got Lua working with Livtet. After writing that, I did a bit
@@ -86,33 +98,33 @@ is a bit different but still has the same result. This was using another library
 is minimal but is more organized:
 
 ```diff
-local function items()
+ local function items()
 + 	local user_profile = livtet.options:get("user_profile_url")
 - 	local user_profile = livtet.options("user_profile_url")
-	local book_items = {}
-	for shelf, url in pairs(USER_URLS) do
-		local full_request_url = user_profile .. url
+ 	local book_items = {}
+ 	for shelf, url in pairs(USER_URLS) do
+ 		local full_request_url = user_profile .. url
 +		local feed_index = livtet.http:fetch_json(full_request_url)
 -		local feed_index = livtet.fetch_json(full_request_url)
-		if feed_index ~= nil then
-			local first_url = feed_index["first"]
-			if first_url ~= nil then
-				book_items[shelf] = fetch_all_from_feed(first_url)
-			end
-		end
-	end
+ 		if feed_index ~= nil then
+ 			local first_url = feed_index["first"]
+ 			if first_url ~= nil then
+ 				book_items[shelf] = fetch_all_from_feed(first_url)
+ 			end
+ 		end
+ 	end
 
-	local books = {}
+ 	local books = {}
 
-	for shelf, book_list in pairs(book_items) do
-		for _, book_info in pairs(book_list) do
-			local book = expand_book(book_info)
-			table.insert(books, book)
-		end
-	end
+ 	for shelf, book_list in pairs(book_items) do
+ 		for _, book_info in pairs(book_list) do
+ 			local book = expand_book(book_info)
+ 			table.insert(books, book)
+ 		end
+ 	end
 
-	return books
-end
+ 	return books
+ end
 ```
 
 I have yet to swap the use of things to use Teal as I'm still working on changing some things but
@@ -121,6 +133,11 @@ I'm eager to report back on it.
 # Seeing
 I spent a lot of time in my little garden. Here's some Jade that's been sprawling out more and more
 since I've brought it outside. I didn't realize how _quickly_ and _voluminous_ Jade could grow to be.
+
+<figure>
+    <img src="/images/weeknotes/2024-08-19.jpg" alt=""/>
+    <figcaption>Apparently you can just propagate jade like pothos. Very good to know!</figcaption>
+</figure>
 
 [1]: /essays/2024/using-lua-with-livtet/
 [2]: https://bookwyrm.social/user/jacky/quotation/5151393#anchor-5151393
@@ -133,6 +150,9 @@ since I've brought it outside. I didn't realize how _quickly_ and _voluminous_ J
 [pbaon]: https://openlibrary.org/books/OL32208260M/Prison_by_Any_Other_Name
 [ttof]: https://1804books.com/products/the-trinity-of-fundamentals
 [makc]: https://millennialsarekillingcapitalism.libsyn.com/
+[sh]: https://en.wikipedia.org/wiki/Saidiya_Hartman
+[1804]: https://1804books.com/
+[tpf]: https://peoplesforum.org/
 [^1]: I didn't realize that this is a [_real thing_](https://en.wikipedia.org/wiki/Love_addiction).
 [^2]: I have this quote on a print-out in my home but I can't remember exactly where I saw it. I
     found one place lined on [Goodreads](https://www.goodreads.com/quotes/11360962-so-much-of-the-work-of-oppression-is-policing-the),

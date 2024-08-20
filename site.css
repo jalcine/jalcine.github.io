@@ -1,22 +1,26 @@
+@import url("prism.css");
+
 :root {
-	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	--font-sans: 'Fira Sans', system-ui, -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, oxygen, ubuntu, cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	--header-nav-bg: #001f3f;
-	--header-nav-color: #FFFFFF;
+	--header-nav-color: #FFF;
 	--link-color: #0060df;
 	--visited-link-color: #B10DC9;
 	--pull-bg: #0074D9;
 	--pull-color: #fff;
 	--content-width: max(50rem, 40vw);
-	--txt-line-height: 1.5;
+	--txt-line-height: 1.7;
 	--text-size: 120%;
 	--background-color: #fff;
 	--color: #000;
 	--mark-background-color: #FFDC00;
 	--mark-color: #000;
 	--heading-size: 3rem;
+
+	font-family: var(--font-sans);
 }
 
-@media screen and (min-width: 60rem) {
+@media screen and (width >=60rem) {
 	:root {
 		--content-width: max(60rem, 40vw);
 		--text-size: 140%;
@@ -36,128 +40,10 @@
 	}
 }
 
-/** nabbed from https://piccalil.li/blog/a-more-modern-css-reset/ */
-
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
-}
-
-/* Prevent font size inflation */
-html {
-	-moz-text-size-adjust: none;
-	-webkit-text-size-adjust: none;
-	text-size-adjust: none;
-	color: var(--color);
-	background-color: var(--background-color);
-	border-top: 0.5rem solid var(--header-nav-bg);
-}
-
-/* Remove default margin in favour of better control in authored CSS */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-ul,
-ol,
-li,
-dd {
-	margin-block-end: 0;
-}
-
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
-	list-style: none;
-}
-
-/* Set core body defaults */
-body {
-	min-height: 100vh;
-	line-height: 1.5;
-}
-
-/* Set shorter line heights on headings and interactive elements */
-h1,
-h2,
-h3,
-h4,
-button,
-input,
-label {
-	line-height: 1.1;
-}
-
-/* Balance text wrapping on headings */
-h1,
-h2,
-h3,
-h4 {
-	text-wrap: balance;
-}
-
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-	text-decoration-skip-ink: auto;
-	color: currentColor;
-}
-
-/* Make images easier to work with */
-img,
-picture {
-	max-width: 100%;
-	display: block;
-}
-
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-	font-family: inherit;
-	font-size: inherit;
-}
-
-/* Make sure textareas without a rows attribute are not tiny */
-textarea:not([rows]) {
-	min-height: 10em;
-}
-
-/* Anything that has been anchored to should have extra scroll margin */
-:target {
-	scroll-margin-block: 5ex;
-}
-
-figure {
-	margin-inline-end: 0;
-	margin-inline-start: 0;
-}
 
 h1 {
 	font-size: var(--heading-size);
 	letter-spacing: -0.1rem;
-	;
-}
-
-body {
-	padding: 0;
-	margin: 0;
-	display: flex;
-	flex-direction: column;
-	width: 100vw;
-	min-height: 100vh;
-	align-content: center;
-}
-
-header {
-	width: 100vw;
 }
 
 header>nav {
@@ -166,9 +52,14 @@ header>nav {
 	min-height: 4.5rem;
 	background: var(--header-nav-bg);
 	color: var(--header-nav-color);
-	margin: 1rem;
+	margin: 1rem auto 0.5rem;
 	padding: 1rem;
 	border-radius: 0.25rem;
+	max-width: 90vw;
+}
+
+aside.thanks>a {
+	color: inherit;
 }
 
 header>nav a:first-of-type {
@@ -193,7 +84,7 @@ header>nav a:visited {
 }
 
 
-@media screen and (max-width: 40rem) {
+@media screen and (width <=40rem) {
 	header>nav {
 		flex-wrap: wrap;
 		justify-content: center;
@@ -211,7 +102,6 @@ main {
 }
 
 footer {
-	width: 100vw;
 	padding: 1rem;
 	align-items: center;
 	background: var(--header-nav-bg);
@@ -258,7 +148,7 @@ mark {
 	padding: 0.125rem;
 }
 
-@media screen and (min-width: 120rem) {
+@media screen and (width >=120rem) {
 	main {
 		max-width: 120rem;
 		margin: 0 auto;
@@ -287,7 +177,7 @@ pre[class*="language-"] {
 	margin: 0.5rem 0;
 }
 
-@media screen and (min-width: 120rem) {
+@media screen and (width >=120rem) {
 	pre[class*="language-"] {
 		max-width: var(--content-width);
 	}
@@ -300,6 +190,7 @@ pre>code {
 	font-size: 120%;
 	color: white;
 	width: 100%;
+	overflow-x: scroll;
 	padding: 1rem;
 }
 
@@ -309,14 +200,15 @@ video {
 }
 
 article.h-entry>footer {
-	width: min(var(--content-width), 80vw);
 	margin: 1rem auto;
-	padding: 2rem;
 	font-size: large;
+	max-width: var(--content-width);
 }
 
 article.h-entry>footer p {
 	margin: 0;
+	padding: 1rem;
+	max-width: var(--content-width);
 	line-height: 1.5;
 }
 
@@ -324,8 +216,11 @@ article.h-entry>footer a {
 	color: inherit;
 }
 
-@media print {
+p a {
+	word-wrap: break-word;
+}
 
+@media print {
 	body>header,
 	aside.thanks,
 	body>footer {
@@ -362,7 +257,7 @@ picture>img {
 	height: min-content;
 }
 
-@media screen and (max-width: 40rem) {
+@media screen and (width <=40rem) {
 	:root {
 		--txt-line-height: 1.4;
 		--content-width: max(40rem, 90vw);
@@ -377,6 +272,7 @@ p,
 dd,
 li {
 	max-width: var(--content-width);
+	font-family: var(--font-sans);
 }
 
 a {
@@ -468,7 +364,7 @@ artice.h-entry section.footnotes {
 	word-wrap: break-word;
 }
 
-@media screen and (max-width: 40rem) {
+@media screen and (width <=40rem) {
 	article.h-entry {
 		margin: 1rem 0;
 	}
@@ -489,10 +385,127 @@ artice.h-entry section.footnotes {
 	}
 }
 
-@import "./prism.css";
 
 @media print {
 	.print-hide {
 		display: none;
 	}
+}
+
+aside.thanks {
+	padding: 1rem;
+	color: var(--pull-color);
+	background-color: var(--pull-bg);
+	max-width: var(--content-width);
+	margin: 0 auto;
+}
+
+
+/** nabbed from https://piccalil.li/blog/a-more-modern-css-reset/ */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+	text-size-adjust: none;
+	color: var(--color);
+	background-color: var(--background-color);
+	border-top: 0.5rem solid var(--header-nav-bg);
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+ul,
+ol,
+li,
+dd {
+	margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+	list-style: none;
+}
+
+/* Set core body defaults */
+body {
+	min-height: 100vh;
+	line-height: 1.5;
+
+	/** my tweaks */
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	font-family: var(--font-family);
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+	line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+	text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+	color: currentcolor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+	max-width: 100%;
+	display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+	font-family: inherit;
+	font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+	min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+	scroll-margin-block: 5ex;
+}
+
+figure {
+	margin-inline: 0;
 }

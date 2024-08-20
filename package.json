@@ -6,7 +6,9 @@
     "dist": "bun x @11ty/eleventy"
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "stylelint": "^16.8.2",
+    "stylelint-config-standard": "^36.0.1"
   },
   "type": "module",
   "dependencies": {
@@ -14,6 +16,7 @@
     "@11ty/eleventy-img": "^4.0.2",
     "@11ty/eleventy-plugin-rss": "^2.0.2",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "@fontsource/fira-sans": "^5.0.21",
     "clean-css": "^5.3.3",
     "eleventy-plugin-compress": "^1.0.5",
     "eleventy-plugin-reading-time": "^0.0.1",
@@ -23,5 +26,8 @@
     "markdown-it-deflist": "^3.0.0",
     "markdown-it-footnote": "^4.0.0",
     "markdown-it-smartarrows": "^1.0.1"
+  },
+  "stylelint": {
+    "extends": "stylelint-config-standard"
   }
 }

@@ -9,7 +9,7 @@ masthead:
     title: A photo of a parked train at the Flatbush Ave stop in Brooklyn, New York. Shot by <a href="https://www.flickr.com/photos/jackyalcine/15556142996/">me</a>.
 description: |
     Thinking more about why and where I'm putting my thoughts and what I should be spending my online time on.
-tags: 
+tags:
     - essay
     - social web
 date: 2024-08-07 11:00:00 -05:00

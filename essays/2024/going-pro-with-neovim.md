@@ -98,7 +98,7 @@ push that change, all from within Neovim. This involved a few changes:
 [3]: https://neovim.io/doc/user/quickfix.html#quickfix
 [4]: /projects
 [5]: https://www.lazyvim.org/
-[6]:
+[6]: https://github.com/LazyVim/LazyVim/tree/main/lua/lazyvim/plugins
 [7]: https://github.com/LazyVim/LazyVim/blob/eed91a3e4c1521dd839d1a8bc09bdd98ac2fb874/lua/lazyvim/plugins/formatting.lua
 [8]: https://git.sr.ht/~jacky/vimrc/commit/632a5e01d7438879029e990d11cf22b6d9e3db81
 [9]: http://git.sr.ht/~jacky/livtet
@@ -106,5 +106,4 @@ push that change, all from within Neovim. This involved a few changes:
     brother is looking for a place to exchange his labor for the extended right
     to housing and food. Would you mind helping me out? You can visit
     <https://jacky.wtf/work> to learn how.
-
 
