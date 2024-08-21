@@ -9,7 +9,7 @@ og:
     image: /images/banners/iss068e036313_orig.jpg
 tags: essay
 date: 2024-08-03 13:45:00 -05:00
-audio: 
+audio:
     - src: post-on-social-media.mp3
       type: audio/mpeg
     - src: post-on-social-media.opus
