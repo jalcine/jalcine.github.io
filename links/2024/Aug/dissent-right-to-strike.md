@@ -8,7 +8,7 @@ date: 2024-08-24T02:15:00Z
 material:
     link: https://www.dissentmagazine.org/article/chipping-away-at-the-right-to-strike/
     source:
-        name: Dissent Magainze
+        name: Dissent Magazine
         url: https://www.dissentmagazine.org/
     title: "Chipping Away at the Right to Strike"
 ---
