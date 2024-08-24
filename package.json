@@ -28,6 +28,10 @@
     "markdown-it-smartarrows": "^1.0.1"
   },
   "stylelint": {
-    "extends": "stylelint-config-standard"
+    "extends": "stylelint-config-standard",
+    "ignoreFiles": [
+      "**/*.js",
+      ".eleventy.js"
+    ]
   }
 }

@@ -12,9 +12,7 @@ import { compress } from 'eleventy-plugin-compress';
 
 export default function(eleventyConfig) {
   let options = {
-    html: true,
-    breaks: false,
-    linkify: true,
+		  html: true, breaks: false, linkify: true,
   };
 
   const md = markdownIt(options)
@@ -29,6 +27,16 @@ export default function(eleventyConfig) {
     let date = DateTime.fromJSDate(dateObj).setZone('America/New_York');
     return date.toLocaleString(DateTime.DATE_FULL);
   });
+
+  eleventyConfig.addFilter("temporalUrl", (dateObj) => {
+    const date = DateTime.fromJSDate(dateObj).setZone('America/New_York');
+		  console.log(dateObj, date);
+    const year = date.getYear();
+    const month = date.getMonth();
+    const day = date.getDay();
+    return `${year}/${month}/${day}`;
+  });
+
 
   eleventyConfig.addPassthroughCopy("*.css");
   eleventyConfig.addPassthroughCopy("images/**/*");
