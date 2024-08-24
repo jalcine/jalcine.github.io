@@ -1,0 +1,25 @@
+---
+layout: page.html.njk
+title: "My notes on links I collect"
+changeFreq: "daily"
+---
+<article class="h-feed">
+	<header>
+		<h1 class="p-name">Links</h1>
+		<p class="e-content">
+			This is a place where I collect links from various places and track my public thoughts
+			on them.
+		</p>
+	</header>
+	<section>
+		<ul>
+			{%- for post in collections.link -%}
+			<li class="h-entry">
+				<time datetime="{{ post.date}}" class="dt-published">{{ post.date | postDate }}</time>:
+				<a class="u-url p-name" href="{{ post.url }}">{{ post.data.material.source.name
+					}} &mdash; {{ post.data.title }}</a>
+			</li>
+			{%- endfor -%}
+		</ul>
+	</section>
+</article>
