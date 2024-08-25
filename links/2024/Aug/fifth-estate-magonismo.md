@@ -37,7 +37,9 @@ genocide on "American" soil. This review continues with the journey and assaults
 brothers experienced during their efforts to liberate Mexico. Some motivations that pushed people
 were things like [labor repression in copper mines in 1906][4] as well as [the forced migration of
 Indigenous people to Yucatan][5] - all around 1906. This ties in with the _Brown Belt_ of Jim Crow
-like law ([Juan Crow][6], as it's called) being pushed on Mexican Americans.
+like law ([Juan Crow][6], as it's called) being pushed on Mexican Americans. It is disappointing but
+not surprising to see how a lack of development of sexuality and tolerance also led to the Magon's
+campaign &mdash; you'll have to check this out to understand more on that.
 
 There's so much more that this article goes into. I _really_ want to read this book! If there's
 one thing I don't know much about, it's definitely the rise and formation of Mexico and its
@@ -48,6 +50,6 @@ development as a country (as well as those who fight for liberation within it).
 [3]: https://bookwyrm.social/user/jacky/quotation/5151393#anchor-5151393
 [4]: https://en.wikipedia.org/wiki/Cananea_strike
 [5]: https://en.wikipedia.org/wiki/Henequen_industry_in_Yucat%C3%A1n
-[6]: https://en.wikipedia.org/wiki/Henequen_industry_in_Yucat%C3%A1n
+[6]: https://en.wikipedia.org/wiki/Juan_Crow
 [^1]: It sounded like he was afraid of dying after taking the highest seat in the land. What is it
     with people in power and being afraid of _letting_ go of it?

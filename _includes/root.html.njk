@@ -12,9 +12,9 @@
 	<meta name="author" content="Jacky Alciné" />
 	<meta name="generator" content="Eleventy v3.0.0">
 	{% if og.type -%}
-	<meta property="og:type" content="{{ og.type}}" />{%- endif %}{% if og.image -%}
-	<meta name="twitter:image" content="{{ og.image | url }}" />
-	<meta property="og:image" content="{{ og.image | url }}" />{%- endif %}{% if description -%}
+	<meta property="og:type" content="{{ og.type }}" />{%- endif %}{% if og.image -%}
+	<meta name="twitter:image" content="{{ og.image }}" />
+	<meta property="og:image" content="{{ og.image }}" />{%- endif %}{% if description -%}
 	<meta name="twitter:description" content="{{ description }}" />
 	<meta property="og:description" content="{{ description }}" />
 	<meta property="description" content="{{ description }}" />
@@ -22,12 +22,12 @@
 	{% set og_title = og.title | title -%}
 	<meta property="og:title" content="{{ title }} - Jacky Alciné" />
 	<meta name="twitter:title" content="{{ title }} - Jacky Alciné" />
-	<meta name="twitter:card" content="summary_image">
+	<meta name="twitter:card" content="summary_large_image">
 	<meta property="og:site_name" content="Jacky Alciné's website" />
 	<meta name="twitter:site" content="Jacky Alciné's website" />
 	<meta name="twitter:creator" content="@jackyalcine" />
 	<link rel="stylesheet" href="/site.css" type="text/css" />
-	<link rel="icon" href="{{ '/images/self.jpg' | url }}" type="images/jpeg" />
+	<link rel="icon" href="{{ '/images/self.jpg' }}" type="images/jpeg" />
 	{% block head %}{% endblock head %}
 	<link rel="me" href="https://github.com/jalcine" />
 	<script defer data-domain="jacky.wtf" src="https://plausible.io/js/script.js"></script>

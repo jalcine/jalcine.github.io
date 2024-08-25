@@ -28,9 +28,9 @@ Thankfully, this article does highlight some solutions that I agree with: bringi
 (funders) into spaces to have them understand the struggle at hand[^2]. That way, the funders don't
 feel like they're doing charity but are _direct partners_ in alleviating, if not eliminating, the
 problems at hand. I have some contention that's developed from something that reminds me of a post
-I've written on [my approach to reaching folks][3] on how the need to humanize funders is a missing
+I've written on [my approach to reaching folks][4] on how the need to humanize funders is a missing
 component and it has me wondering, again, if I'm reaching the wrong people as "goals". This also
-runs into slight conflict with something I've been reading [Kaba's book][4]; the need to focus on
+runs into slight conflict with something I've been reading [Kaba's book][5]; the need to focus on
 the _big_ picture of issues instead of working to organize for individual release in the case of
 prison abolition when we can. I think _both_ are necessary and that we have the people to do it;
 it's all about mobilizing folks so we can plant both of these trees at the same time and bear the
@@ -39,10 +39,11 @@ fruit for everyone.
 All in all, a great read with some strong takeaways!
 
 [1]: https://www.dissentmagazine.org/issue/fall-2023/
-[2]: https://statescoop.com/code-for-america-local-brigades-ending/
-[3]: /essays/wrong-ideas/
-[4]: https://bookwyrm.social/book/105067/s/we-do-this-til-we-free-us
-[^1]: This reminds me of [Code for America's bridage network that was disbanded in 2023][2]. The
+[2]: https://incite-national.org/beyond-the-non-profit-industrial-complex/
+[3]: https://statescoop.com/code-for-america-local-brigades-ending/
+[4]: /essays/wrong-ideas/
+[5]: https://bookwyrm.social/book/105067/s/we-do-this-til-we-free-us
+[^1]: This reminds me of [Code for America's bridage network that was disbanded in 2023][3]. The
     community was not approving of it in the community Slack.
 [^2]: The word _struggle_ has a strong weight behind it that's tainted by class politics. I'm sure
     someone's written about this at length: I'll find it and link it from this site soon.
