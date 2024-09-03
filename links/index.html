@@ -13,7 +13,7 @@ changeFreq: "daily"
 	</header>
 	<section>
 		<ul>
-			{%- for post in collections.link -%}
+			{%- for post in collections.link | reverse -%}
 			<li class="h-entry">
 				<time datetime="{{ post.date}}" class="dt-published">{{ post.date | postDate }}</time>:
 				<a class="u-url p-name" href="{{ post.url }}">{{ post.data.material.source.name

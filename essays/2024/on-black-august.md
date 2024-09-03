@@ -93,6 +93,7 @@ capitalism and its allies.
 [1]: https://en.wikipedia.org/wiki/Black_August_(commemoration)
 [2]: https://bookwyrm.social/list/3147/s/my-black-august-2024-reading-list
 [3]: /essays/2024/politics-soul/
+[4]: /essays/2024/pulling-from-fedi/
 [book:1]: https://openlibrary.org/books/OL28789327M
 [book:2]: https://openlibrary.org/books/OL32208260M
 [book:3]: https://openlibrary.org/books/OL32028148M
