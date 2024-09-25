@@ -4,10 +4,6 @@ changeFreq: monthly
 og:
   type: article
 ---
-{% set regExpCode = r/<pre class=(.|\n)*?<\/pre>/gm %}
-{% set fixedContent = content | replace(regExpCode, "") | striptags %}
-{% set wordCount = fixedContent | wordcount %}
-{% set readTime = fixedContent | readingTime %}
 <article class="h-entry">
   {% if masthead %}
     <figure class="masthead">
@@ -22,8 +18,6 @@ og:
       by <a class="u-author" href="/">Jacky Alciné</a>
       &bull; published
       <time class="dt-published" datetime="{{ page.date.toUTCString() }}">{{ page.date | postDate }}</time>
-      &bull;
-      <span>{{ readTime }} to read, {{ wordCount }} words </span>
     </aside>
   </header>
   {% if audio %}

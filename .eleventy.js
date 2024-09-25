@@ -10,60 +10,59 @@ import anchor from "markdown-it-anchor";
 import smartarrows from "markdown-it-smartarrows";
 import { compress } from 'eleventy-plugin-compress';
 
-export default function(eleventyConfig) {
-  let options = {
-		  html: true, breaks: false, linkify: true,
-  };
+export default function (eleventyConfig) {
+	let options = {
+		html: true, breaks: false, linkify: true,
+	};
 
-  const md = markdownIt(options)
-    .use(footnote)
-    .use(anchor)
-    .use(smartarrows)
-    ;
+	const md = markdownIt(options)
+		.use(footnote)
+		.use(anchor)
+		.use(smartarrows)
+		;
 
-  eleventyConfig.setLibrary("md", md);
+	eleventyConfig.setLibrary("md", md);
 
-  eleventyConfig.addFilter("postDate", (dateObj) => {
-    let date = DateTime.fromJSDate(dateObj).setZone('America/New_York');
-    return date.toLocaleString(DateTime.DATE_FULL);
-  });
+	eleventyConfig.addFilter("postDate", (dateObj) => {
+		let date = DateTime.fromJSDate(dateObj).setZone('America/New_York');
+		return date.toLocaleString(DateTime.DATE_FULL);
+	});
 
-  eleventyConfig.addFilter("temporalUrl", (dateObj) => {
-    const date = DateTime.fromJSDate(dateObj).setZone('America/New_York');
-		  console.log(dateObj, date);
-    const year = date.getYear();
-    const month = date.getMonth();
-    const day = date.getDay();
-    return `${year}/${month}/${day}`;
-  });
+	eleventyConfig.addFilter("temporalUrl", (dateObj) => {
+		const date = DateTime.fromJSDate(dateObj).setZone('America/New_York');
+		console.log(dateObj, date);
+		const year = date.getYear();
+		const month = date.getMonth();
+		const day = date.getDay();
+		return `${year}/${month}/${day}`;
+	});
 
+	eleventyConfig.addPassthroughCopy("*.css");
+	eleventyConfig.addPassthroughCopy("images/**/*");
+	eleventyConfig.addPassthroughCopy("videos/**/*");
+	eleventyConfig.addPassthroughCopy("files/**/*");
 
-  eleventyConfig.addPassthroughCopy("*.css");
-  eleventyConfig.addPassthroughCopy("images/**/*");
-  eleventyConfig.addPassthroughCopy("videos/**/*");
-  eleventyConfig.addPassthroughCopy("files/**/*");
+	eleventyConfig.addPlugin(syntaxHighlight);
+	eleventyConfig.addPlugin(readingTime);
+	eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
+	eleventyConfig.addPlugin(feedPlugin);
 
-  eleventyConfig.addPlugin(syntaxHighlight);
-  eleventyConfig.addPlugin(readingTime);
-  eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
-  eleventyConfig.addPlugin(feedPlugin);
+	eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+		extensions: "html",
+		formats: ["webp", "png"],
+		witdths: ["600", "1200", "1800"],
+		defaultAttributes: {
+			loading: "lazy",
+			decoding: "async",
+		},
+	});
 
-  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-    extensions: "html",
-    formats: ["webp", "png"],
-    witdths: ["600", "1200", "1800"],
-    defaultAttributes: {
-      loading: "lazy",
-      decoding: "async",
-    },
-  });
+	eleventyConfig.addPlugin(compress);
 
-  eleventyConfig.addPlugin(compress);
-
-  eleventyConfig.addGlobalData('generated', () => {
-    let now = new Date();
-    return new Intl.DateTimeFormat(
-      'en-US', { dateStyle: 'full', timeStyle: 'long' }
-    ).format(now);
-  });
+	eleventyConfig.addGlobalData('generated', () => {
+		let now = new Date();
+		return new Intl.DateTimeFormat(
+			'en-US', { dateStyle: 'full', timeStyle: 'long' }
+		).format(now);
+	});
 };
