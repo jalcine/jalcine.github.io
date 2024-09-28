@@ -41,6 +41,7 @@ export default function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("images/**/*");
 	eleventyConfig.addPassthroughCopy("videos/**/*");
 	eleventyConfig.addPassthroughCopy("files/**/*");
+	eleventyConfig.addPassthroughCopy("fonts/**/*");
 
 	eleventyConfig.addPlugin(syntaxHighlight);
 	eleventyConfig.addPlugin(readingTime);

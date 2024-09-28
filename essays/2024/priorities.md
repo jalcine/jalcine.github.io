@@ -1,8 +1,6 @@
 ---
 layout: essay.html.njk
-tags: essay
 title: "Priorities are Shifting"
-date: 2024-09-25T09:30:00-05:00:00
 ---
 I don't think I care anymore about the Web the way I used to. In 2019, I spent time giving a talk at
 [a small but mighty unconference-y event in San Francisco][1]. Laurie noted my advocacy about my

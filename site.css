@@ -1,7 +1,7 @@
 @import url("prism.css");
+@import url("fonts/all.css");
 
 :root {
-	--font-sans: 'Fira Sans', system-ui, -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, oxygen, ubuntu, cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	--header-nav-bg: #001f3f;
 	--header-nav-color: #FFF;
 	--link-color: #0060df;
@@ -16,8 +16,6 @@
 	--mark-background-color: #FFDC00;
 	--mark-color: #000;
 	--heading-size: 3rem;
-
-	font-family: var(--font-sans);
 }
 
 @media screen and (width >=60rem) {
@@ -221,6 +219,7 @@ p a {
 }
 
 @media print {
+
 	body>header,
 	aside.thanks,
 	body>footer {
