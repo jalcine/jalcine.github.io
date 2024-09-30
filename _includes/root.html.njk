@@ -30,14 +30,10 @@
 	<link rel="icon" href="{{ '/images/self.jpg' }}" type="images/jpeg" />
 	<link rel="hub" href="https://pubsubhubbub.superfeedr.com/" />
 	<link rel="self" href="https://www.jacky.wtf/" />
-	<link rel="alternate" href="/essays/feed.atom"
-			type="application/atom+xml" title="Jacky Alciné's essays" />
-	<link rel="alternate" href="/links/feed.atom"
-			type="application/atom+xml" title="Jacky Alciné's linklog" />
-	<link rel="alternate" href="/weeknotes/feed.atom"
-			type="application/atom+xml" title="Jacky Alciné's weeknotes" />
-	<link rel="alternate" href="/feed.atom"
-			type="application/atom+xml" title="Jacky Alciné" />
+	<link rel="alternate" href="/essays/feed.atom" type="application/atom+xml" title="Jacky Alciné's essays" />
+	<link rel="alternate" href="/links/feed.atom" type="application/atom+xml" title="Jacky Alciné's linklog" />
+	<link rel="alternate" href="/weeknotes/feed.atom" type="application/atom+xml"
+		title="Jacky Alciné's weeknotes" />
 	{% block head %}{% endblock head %}
 	<link rel="me" href="https://github.com/jalcine" />
 	<script defer data-domain="jacky.wtf" src="https://plausible.io/js/script.js"></script>
@@ -46,7 +42,10 @@
 <body>
 	<header>
 		<nav>
-			<a class="h-card" href="/" rel="me"><span>
+			<a class="h-card" href="/" rel="me">
+				<img class="u-photo" src="/images/self.jpg" height="32px"
+					alt="Jacky with gold-brimmed glasses looking to the left." />
+				<span class="p-name">
 					Jacky Alciné
 				</span></a>
 			<a class="h-feed u-url" href="/essays/">Essays</a>

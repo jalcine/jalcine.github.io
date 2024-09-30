@@ -2,18 +2,27 @@
 @import url("fonts/all.css");
 
 :root {
-	--header-nav-bg: #001f3f;
-	--header-nav-color: #FFF;
-	--link-color: #0060df;
+	--color-primary: hsl(3deg 39% 47%);
+	--color-foreground: hsl(73deg 12% 14%);
+	--color-foreground-light: hsl(73deg 12% 86.7%);
+	--color-region: hsl(33deg 31% 67%);
+	--color-region-light: hsl(32.6deg 29.4% 86.7%);
+	--color-secondary: hsl(7deg 32% 31%);
+	--color-heading: hsl(73deg 12% 14%);
+	--color-background: hsl(30deg 15% 95%);
+	--color-highlight: hsl(50deg 100% 50%);
+	--header-nav-bg: var(--color-primary);
+	--header-nav-color: var(--color-foreground-light);
+	--link-color: var(--color-secondary);
 	--visited-link-color: #B10DC9;
-	--pull-bg: #0074D9;
-	--pull-color: #fff;
+	--pull-bg: var(--color-region);
+	--pull-color: var(--color-foreground);
 	--content-width: max(50rem, 40vw);
 	--txt-line-height: 1.7;
 	--text-size: 120%;
 	--background-color: #fff;
 	--color: #000;
-	--mark-background-color: #FFDC00;
+	--mark-background-color: var(--color-highlight);
 	--mark-color: #000;
 	--heading-size: 3rem;
 }
@@ -63,6 +72,13 @@ aside.thanks>a {
 header>nav a:first-of-type {
 	font-weight: bolder;
 	width: 100%;
+	text-decoration: none;
+}
+
+header>nav a:first-of-type .u-photo {
+	height: 2rem;
+	width: 2rem;
+	margin-right: 0.5rem;
 }
 
 header>nav a>span {
@@ -100,16 +116,18 @@ main {
 }
 
 footer {
+	--bg: var(--color-region);
+	--color: var(--color-foreground);
 	padding: 1rem;
 	align-items: center;
-	background: var(--header-nav-bg);
-	color: var(--header-nav-color);
+	background: var(--bg);
+	color: var(--color);
 	margin-top: 2rem;
 }
 
 main+footer,
 header>nav {
-	border-top: 0.5rem solid var(--pull-bg);
+	border-top: 0.5rem solid var(--color-foreground);
 }
 
 footer a:visited {

@@ -7,6 +7,7 @@
   },
   "devDependencies": {
     "@types/bun": "latest",
+    "dotenv": "^16.4.5",
     "rollup": "^4.22.4",
     "stylelint": "^16.8.2",
     "stylelint-config-standard": "^36.0.1"

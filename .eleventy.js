@@ -9,6 +9,9 @@ import footnote from 'markdown-it-footnote';
 import anchor from "markdown-it-anchor";
 import smartarrows from "markdown-it-smartarrows";
 import { compress } from 'eleventy-plugin-compress';
+import 'dotenv/config'
+
+const BUTTONDOWN_API_KEY = process.env.BUTTONDOWN_API_KEY;
 
 export default function (eleventyConfig) {
 	let options = {
@@ -65,5 +68,17 @@ export default function (eleventyConfig) {
 		return new Intl.DateTimeFormat(
 			'en-US', { dateStyle: 'full', timeStyle: 'long' }
 		).format(now);
+	});
+
+	eleventyConfig.addGlobalData('emailSubscriberCount', () => {
+		const options = {
+			method: 'GET',
+			headers: { accept: 'application/json', authorization: `Token ${BUTTONDOWN_API_KEY}` }
+		};
+
+		return fetch('https://api.buttondown.com/v1/subscribers', options)
+			.then(response => response.json())
+			.then(response => response.count)
+			.catch(err => console.error(err))
 	});
 };

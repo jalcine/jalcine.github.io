@@ -46,4 +46,3 @@ websub:
 				-d hub.url\[\]=https://www.jacky.wtf/links/ \
 				-d hub.url\[\]=https://www.jacky.wtf/weeknotes/ \
 				-d hub.url\[\]=https://www.jacky.wtf/
-
