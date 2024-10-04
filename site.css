@@ -39,11 +39,7 @@
 	:root {
 		--color: #fff;
 		--background-color: #000;
-		--link-color: #7FDBFF;
-		--visited-link-color: #F012BE;
-		--header-nav-bg: #7FDBFF;
-		--header-nav-color: #000;
-		--mark-background-color: #FFDC00
+		--link-color: var(--color-primary);
 	}
 }
 
