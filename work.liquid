@@ -56,6 +56,29 @@ skills:
   <main>
     <h2>Work Experience</h2>
     <section
+      id="coforma"
+      class="p-experience p-current-experience"
+    >
+      <h3 class="p-org h-card">
+        <a
+          class="u-url p-name"
+          href="https://coforma.io/"
+        >Coforma</a>
+      </h3>
+      <aside>
+        <span class="p-role">Full Stack Software Engineer</span>
+        <span>
+          <time
+            title="15 Oct 2024"
+            datetime="2024-10-15"
+            class="dt-start"
+          >October 2024</time>
+		  to today
+        </span>
+      </aside>
+	  <p>More about what I'm doing here coming by <strong>January 2025</strong>!</p>
+    </section>
+    <section
       id="pluralpolicy"
       class="p-experience"
     >
@@ -507,6 +530,10 @@ skills:
     article.h-resume>header>p:first-of-type {
       max-width: inherit;
     }
+
+	.p-current-experience>h3 {
+		color: var(--color-accent);
+	}
 
     .p-experience>h3 {
       margin: 0;
