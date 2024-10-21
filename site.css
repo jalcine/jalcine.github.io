@@ -39,7 +39,7 @@
 	:root {
 		--color: #fff;
 		--background-color: #000;
-		--link-color: var(--color-primary);
+		--color-secondary: hsl(7deg 42% 70%);
 	}
 }
 
@@ -323,7 +323,9 @@ article.h-entry h1.p-name,
 article.h-feed h1.p-name {
 	margin-bottom: 1rem;
 	font-size: calc(var(--heading-size) * 1.2);
-	letter-spacing: -0.2rem;
+	letter-spacing: -0.1rem;
+	text-align: center;
+	width: 100%;
 }
 
 article.h-entry>header>h1+h2 {
