@@ -13,8 +13,8 @@
 	<meta name="generator" content="Eleventy v3.0.0">
 	{% if og.type -%}
 	<meta property="og:type" content="{{ og.type }}" />{%- endif %}{% if og.image -%}
-	<meta name="twitter:image" content="{{ og.image }}" />
-	<meta property="og:image" content="{{ og.image }}" />{%- endif %}{% if description -%}
+	<meta name="twitter:image" content="{{ og.image | url }}" />
+	<meta property="og:image" content="{{ og.image | url }}" />{%- endif %}{% if description -%}
 	<meta name="twitter:description" content="{{ description }}" />
 	<meta property="og:description" content="{{ description }}" />
 	<meta property="description" content="{{ description }}" />
@@ -27,7 +27,7 @@
 	<meta name="twitter:site" content="Jacky Alciné's digital place" />
 	<meta name="twitter:creator" content="@jackyalcine" />
 	<link rel="stylesheet" href="/site.css" type="text/css" />
-	<link rel="icon" href="{{ '/images/self.jpg' }}" type="images/jpeg" />
+	<link rel="icon" href="{{ '/images/self.jpg' | url }}" type="images/jpeg" />
 	<link rel="hub" href="https://pubsubhubbub.superfeedr.com/" />
 	<link rel="self" href="https://www.jacky.wtf/" />
 	<link rel="alternate" href="/essays/feed.atom" type="application/atom+xml" title="Jacky Alciné's essays" />
