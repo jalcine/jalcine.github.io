@@ -13,17 +13,7 @@ returned some time to playing video games! I also have some changing opinions on
 States presidential race after reading some links and reflecting on my goals as well as that of the
 collective.
 
-## Reading
-<figure>
-    <img
-        src="/images/weeknotes/2024-08-12-book-page.jpg"
-        alt=""
-        />
-    <figcaption>
-        An extremely common refrain refuted by even Einstein's comment on "insanity and
-    repetition".
-    </figcaption>
-</figure>
+# Reading
 
 ## Prison By Any Other Name
 [This book][2] was written by two abolitionists, one notably the EIC of Truthout. I'm finding this read to be more
@@ -142,7 +132,7 @@ Obsidian from here. Yet another thing to work on!
   incarcerated in Everglades Correctional Instution out here in Florida, writes [a lot about
   food][web_8.1].
 
-## Writing
+# Writing
 I wrote about feeling a bit drained about [how politics online][5] seems to devolve into mainly a praise
 of whoever s doing the least harm. Without objectivity, the nozzle of how much acceptable harm
 society seems to accept is growing. I also wrote about a want to [reduce my primary use of the
@@ -152,7 +142,7 @@ see that play out but it'll take time to design and actualize.
 
 I wrote something [about Livtet as well][livtet], with an interesting announcement at the end!
 
-## Coding
+# Coding
 I did a _lot_ of work around Livtet. Here's a short video of what it looks like:
 
 <figure>
@@ -172,7 +162,7 @@ plan, it's something I think I can help build some sort of a community around.
 Tangentially, I had a technical screen last week! I think it went well. I'm hoping for even better
 news by the end of the month.
 
-## Seeing
+# Seeing
 I took a shot inside a network switch I have strapped underneath my desk to give my laptop and home
 lab PC faster speeds as opposed to using WiFi. I used the wrong power cable for it and this explains
 why my laptop couldn't connect over Ethernet for some time. I'm confident that this is, as the kids
@@ -216,10 +206,3 @@ equipment. Not the end of the world but I did like pulling better speeds.
     on sharing _too much_ of the fiction I read, not out of disdain of the genre, but of my current
     need to supplement and defend stances I have with empirical information and evidence. I have a
     mission!
-
-
-
-
-
-
-

@@ -17,6 +17,11 @@
 <article class="h-entry">
   <header>
     <h1 class="p-name">{{ title }}</h1>
+    {% if og.image %}
+    <figure class="masthead">
+        <img src="{{ og.image | url }}" alt="The cover image for this week's notes" />
+    </figure>
+	{% endif %}
   </header>
   {% if audio %}
   <figure id="audio">
