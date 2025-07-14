@@ -1,8 +1,8 @@
 export default [
-	{
-		output: {
-			format: 'es',
-			sourcemap: false,
-		}
-	}
+  {
+    output: {
+      format: "es",
+      sourcemap: true,
+    },
+  },
 ];

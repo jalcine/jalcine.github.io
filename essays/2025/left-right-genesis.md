@@ -24,7 +24,7 @@ As with some things dealing with the modern logos of politics, this began in Fra
 of today to no irony, a deputy, the [Baron de Gauville][2], explained: "We began to recognize each
 other: those who were loyal to religion and the king took up positions to the right of the chair so
 as to avoid the shouts, oaths, and indecencies that enjoyed free rein in the opposing camp". This is
-part of the reason in legacy, you'll see some left-wing folks call Democrats within the United
+part of the reason in legacy media, you'll see some left-wing folks call Democrats within the United
 States a right-centrist party: their loyalties in the corpo-party routines align with these
 stances. However, the right-wing party double downs and embraces these stances as part of their
 identity.

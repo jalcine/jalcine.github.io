@@ -1,8 +1,8 @@
 ---
+date: 2025-03-01T09:00:00Z
 layout: link.html.njk
 tags: link
 title: "When the Empire Turns its Tools Within"
-date: 2025-03-01T09:00:00Z
 og:
     type: article
     image: https://cdn.sanity.io/images/3tzzh18d/production/1e68fdc429e85c76c6283e005f00f78e437d97df-1200x675.png

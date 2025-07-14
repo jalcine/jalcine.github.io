@@ -1,11 +1,11 @@
 ---
+date: 2025-03-03T11:15:00Z
 layout: link.html.njk
 tags: link
 title: "Democracy Now: Cory Doctrow on Tech Workers"
-date: 2025-03-03T11:15:00Z
 og:
     type: article
-    image: /images/links/2025-Feb-democracy-now.png
+    image: /images/links/2025-Mar-democracy-now.png
 material:
     link: https://youtu.be/tKV5GB6dN3o
     source:
