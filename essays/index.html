@@ -15,10 +15,11 @@ changeFreq: "daily"
 	<section>
 		<ul>
 			{%- for post in collections.essay | reverse -%}
-			{%if not post.draft %}
-			<li class="h-entry"><time datetime="{{ post.date}}" class="dt-published">{{ post.date | postDate
-					}}</time>: <a class="u-url p-name" href="{{ post.url }}">{{ post.data.title
-					}}</a></li>
+			{% if not post.draft and post.date is defined %}
+			<li class="h-entry">
+        <time datetime="{{ post.date }}" class="dt-published">{{ post.date | postDate }}</time>:
+          <a class="u-url p-name" href="{{ post.url }}">{{ post.data.title }}</a>
+      </li>
 			{% endif %}
 			{%- endfor -%}
 		</ul>
