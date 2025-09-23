@@ -1,7 +1,8 @@
 ---
 layout: essay.html.njk
-title: "Of Course Men Love AI: Why Would They Listen to Anything (or Anyone) Else?"
+title: "Of Course Men Love Generative AI: Why Would They Listen to Anything (or Anyone) Else?"
 date: 2025-04-03T17:00:00.000Z
+tags: essay
 description: >
   Despite the research, history and evidence alike; the fact that the current
   drive of artificial intelligence is yet another extension of whiteness run
@@ -10,24 +11,23 @@ description: >
 
 I work in the software industry[^1]. Currently, you can't walk more than 6 feet
 (less than the once-recommended social distance) on the Internet without
-running into someone corkscrewing their perspective or deployment around
-_generative AI_. Artificial intelligence technologies, as a whole, are things
+running into someone corkscrewing their perspective around or deployment of
+[_generative AI_][gai]. Artificial intelligence technologies, as a whole, are things
 we've lived with for some time. From computer vision to auto-correct, it
 "helps" to speed up or enhance our ability to use computers in whatever context
-that is &mdash; usually around production. Generative AI has provided those who
-owns platforms and the means of mass digital production a way to cheapen the
-act of content production itself. From my time last week in San Francisco, you
-couldn't avoid _in-person_ advertisements that would either make you question
-if your boss likes you[^2] or if that app you installed three weeks ago is part
-of a larger attempt to automate you out of your own life. There's also the rise
-of "content creation via AI" that I saw plastered a lot in New York City;
-around the difficulty of video production and how it's coming to make it
-easier. This isn't to say that the act of video production isn't difficult
-(depending on what you're trying to do) but we have to understand that there's
-a learning curve _to everything_ and by making the act of it so generic and so
-cookie cutter, it doesn't make the field more interesting or accessible; it
-cheapens the craft to a point of oblivion (if not general disregard; look at
-literature).
+that is. It has provided those who owns platforms and the means of mass digital
+production a way to cheapen the act of content production itself. From my time
+last week in San Francisco, you couldn't avoid _in-person_ advertisements that
+would either make you question if your boss likes you[^2] or if that app you
+installed three weeks ago is part of a larger attempt to automate you out of
+your own life. There's also the rise of "content creation via AI" that I saw
+plastered a lot in New York City; around the difficulty of video production and
+how it's coming to make it easier. This isn't to say that the act of video
+production isn't difficult (depending on what you're trying to do) but we have
+to understand that there's a learning curve _to everything_ and by making the
+act of it so generic and so cookie cutter, it doesn't make the field more
+interesting or accessible; it cheapens the craft to a point of oblivion (if not
+general disregard; look at literature).
 
 I'm not shy about my opinions and experiences with artificial intelligence. My
 seminal experience was when it tagged my friend in more than seventy photos as
@@ -55,3 +55,4 @@ with the new update (or device).
 
 [1]: https://techworkerscoalition.org/
 [2]: https://workerorganizing.org/
+[gai]: https://en.wikipedia.org/wiki/Generative_artificial_intelligence

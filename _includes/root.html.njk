@@ -11,29 +11,31 @@
 	<meta name="theme-color" content="#001f3f" />
 	<meta name="author" content="Jacky Alciné" />
 	<meta name="generator" content="Eleventy v3.0.0">
-	{% if og.type -%}
-	<meta property="og:type" content="{{ og.type }}" />{%- endif %}{% if og.image -%}
-	<meta name="twitter:image" content="{{ og.image | url }}" />
-	<meta property="og:image" content="{{ og.image | url }}" />{%- endif %}{% if description -%}
-	<meta name="twitter:description" content="{{ description }}" />
-	<meta property="og:description" content="{{ description }}" />
-	<meta property="description" content="{{ description }}" />
+	{% if og.type -%}<meta property="og:type" content="{{ og.type }}" />{%- endif %}
+  {%- if og.image %}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="{% imageUrl og.image  %}" />
+    <meta property="og:image" content="{% imageUrl og.image  %}" />
+  {%- endif %}
+  {%- if description %}
+    <meta name="twitter:description" content="{{- description -}}" />
+    <meta property="og:description" content="{{- description -}}" />
+    <meta property="description" content="{{- description -}}" />
 	{%- endif %}
 	{% set og_title = og.title | title -%}
 	<meta property="og:title" content="{{ title }} - Jacky Alciné" />
-	<meta name="twitter:title" content="{{ title }} - Jacky Alciné" />
-	<meta name="twitter:card" content="summary_large_image">
 	<meta property="og:site_name" content="Jacky Alciné's digital place to post, post, post!" />
+	<meta name="twitter:title" content="{{ title }} - Jacky Alciné" />
 	<meta name="twitter:site" content="Jacky Alciné's digital place" />
 	<meta name="twitter:creator" content="@jackyalcine" />
+  <meta name="fediverse:creator" content="@jalcine@todon.eu">
 	<link rel="stylesheet" href="/site.css" type="text/css" />
-	<link rel="icon" href="{{ '/images/self.jpg' | url }}" type="images/jpeg" />
+	<link rel="icon" href="https://www.jacky.wtf/images/self.jpg" type="images/jpeg" />
 	<link rel="hub" href="https://pubsubhubbub.superfeedr.com/" />
 	<link rel="self" href="https://www.jacky.wtf/" />
-	<link rel="alternate" href="/essays/feed.atom" type="application/atom+xml" title="Jacky Alciné's essays" />
-	<link rel="alternate" href="/links/feed.atom" type="application/atom+xml" title="Jacky Alciné's linklog" />
-	<link rel="alternate" href="/weeknotes/feed.atom" type="application/atom+xml"
-		title="Jacky Alciné's weeknotes" />
+	<link rel="alternate" href="/essays/feed.atom" type="application/atom+xml" title="Jacky Alciné's essays (over ATOM)" />
+	<link rel="alternate" href="/links/feed.atom" type="application/atom+xml" title="Jacky Alciné's linklog (over ATOM)" />
+	<link rel="alternate" href="/weeknotes/feed.atom" type="application/atom+xml" title="Jacky Alciné's weeknotes (over ATOM)" />
 	{% block head %}{% endblock head %}
 </head>
 

@@ -4,7 +4,7 @@ import feedPlugin from "@11ty/eleventy-plugin-rss";
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
 import readingTime from "eleventy-plugin-reading-time";
-import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import { Image, eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import footnote from "markdown-it-footnote";
 import anchor from "markdown-it-anchor";
 import smartarrows from "markdown-it-smartarrows";
@@ -13,7 +13,9 @@ import "dotenv/config";
 
 const BUTTONDOWN_API_KEY = process.env.BUTTONDOWN_API_KEY;
 
-export default function (eleventyConfig) {
+export default function (
+  /** @type {import('@11ty/eleventy').EleventyConfig  */ eleventyConfig,
+) {
   let options = {
     html: true,
     breaks: false,
@@ -28,18 +30,13 @@ export default function (eleventyConfig) {
     return date.toLocaleString(DateTime.DATE_FULL);
   });
 
-  eleventyConfig.addFilter("temporalUrl", (dateObj) => {
-    const date = DateTime.fromJSDate(dateObj).setZone("America/New_York");
-    console.log(dateObj, date);
-    const year = date.getYear();
-    const month = date.getMonth();
-    const day = date.getDay();
-    return `${year}/${month}/${day}`;
-  });
-
   eleventyConfig.addPassthroughCopy("*.css");
-  for (const folder in ["images", "videos", "files", "fonts"]) {
-    eleventyConfig.addPassthroughCopy(`${folder}/**/*`);
+  eleventyConfig.addPassthroughCopy("fonts");
+
+  for (const folderName in ["images", "videos", "files", "fonts"]) {
+    eleventyConfig.addPassthroughCopy(folderName);
+    eleventyConfig.addPassthroughCopy(`${folderName}/*`);
+    eleventyConfig.addPassthroughCopy(`${folderName}/**/*`);
   }
 
   eleventyConfig.addPlugin(syntaxHighlight);
@@ -47,17 +44,19 @@ export default function (eleventyConfig) {
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
   eleventyConfig.addPlugin(feedPlugin);
 
-  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-    extensions: "html",
-    formats: ["webp", "png"],
-    witdths: ["600", "1200", "1800"],
-    defaultAttributes: {
-      loading: "lazy",
-      decoding: "async",
-    },
-  });
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin);
 
   eleventyConfig.addPlugin(compress);
+
+  eleventyConfig.addShortcode("imageUrl", async function (src) {
+    const img = new Image(src, {
+      widths: ["480"],
+      formats: ["jpeg"],
+      returnType: "html", // new in v6.0
+    });
+    const stats = img.getFullStats({ width: 480 });
+    return stats.jpeg[0].url;
+  });
 
   eleventyConfig.addGlobalData("generated", () => {
     let now = new Date();
