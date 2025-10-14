@@ -13,14 +13,14 @@ LOCAL_IP := `ip addr show dev wlp170s0 | grep inet | xargs | cut -f 2 -d ' ' | c
 
 produce-resume-pdf:
   @rm $(pwd)/files/Jacky_Alcine-resume.pdf || echo ""
-  podman run -d --rm -p 3001:3000 docker.io/gotenberg/gotenberg:8.20 2>/dev/null || echo ""
-  echo "Calling ${LOCAL_IP}:3001 to generate resume.";
+  podman run -d --rm -p 4001:3000 docker.io/gotenberg/gotenberg:8.20 || echo ""
+  echo "Calling ${LOCAL_IP}:4001 to generate resume.";
   curl --request \
-    POST http://localhost:3001/forms/chromium/convert/url \
+    POST http://localhost:4001/forms/chromium/convert/url \
     --form url=http://${LOCAL_IP}:8080/work/ \
     --form marginTop="0.2in" \
     --form marginBottom="0.2in" \
-    -o $(pwd)/files/Jacky_Alcine-resume.pdf
+    --output $(pwd)/files/Jacky_Alcine-resume.pdf
 
 deploy: clean build produce-resume-pdf
   # Replace the files on the Web server.
