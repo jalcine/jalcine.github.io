@@ -2,419 +2,413 @@
 @import url("fonts/all.css");
 
 :root {
-	--color-primary: hsl(3deg 39% 47%);
-	--color-foreground: hsl(73deg 12% 14%);
-	--color-foreground-light: hsl(73deg 12% 86.7%);
-	--color-region: hsl(33deg 31% 67%);
-	--color-region-light: hsl(32.6deg 29.4% 86.7%);
-	--color-secondary: hsl(7deg 32% 31%);
-	--color-heading: hsl(73deg 12% 14%);
-	--color-background: hsl(30deg 15% 95%);
-	--color-highlight: hsl(50deg 100% 50%);
-	--header-nav-bg: var(--color-primary);
-	--header-nav-color: var(--color-foreground-light);
-	--link-color: var(--color-secondary);
-	--visited-link-color: #B10DC9;
-	--pull-bg: var(--color-region);
-	--pull-color: var(--color-foreground);
-	--content-width: max(50rem, 40vw);
-	--txt-line-height: 1.7;
-	--text-size: 120%;
-	--background-color: #fff;
-	--color: #000;
-	--mark-background-color: var(--color-highlight);
-	--mark-color: #000;
-	--heading-size: 3rem;
+  --color-primary: hsl(3deg 39% 47%);
+  --color-foreground: hsl(73deg 12% 14%);
+  --color-foreground-light: hsl(73deg 12% 86.7%);
+  --color-region: hsl(33deg 31% 67%);
+  --color-region-light: hsl(32.6deg 29.4% 86.7%);
+  --color-secondary: hsl(7deg 32% 31%);
+  --color-heading: hsl(73deg 12% 14%);
+  --color-background: hsl(30deg 15% 95%);
+  --color-highlight: hsl(50deg 100% 50%);
+  --header-nav-bg: var(--color-primary);
+  --header-nav-color: var(--color-foreground-light);
+  --link-color: var(--color-secondary);
+  --visited-link-color: #b10dc9;
+  --pull-bg: var(--color-region);
+  --pull-color: var(--color-foreground);
+  --content-width: max(50rem, 40vw);
+  --txt-line-height: 1.7;
+  --text-size: 120%;
+  --background-color: #fff;
+  --color: #000;
+  --mark-background-color: var(--color-highlight);
+  --mark-color: #000;
+  --heading-size: 3rem;
 }
 
 @media screen and (width >=60rem) {
-	:root {
-		--content-width: max(60rem, 40vw);
-		--text-size: 140%;
-	}
+  :root {
+    --content-width: max(60rem, 40vw);
+    --text-size: 140%;
+  }
 }
-
 
 @media (prefers-color-scheme: dark) {
-	:root {
-		--color: #fff;
-		--background-color: #000;
-		--color-secondary: hsl(7deg 42% 70%);
-	}
+  :root {
+    --color: #fff;
+    --background-color: #000;
+    --color-secondary: hsl(7deg 42% 70%);
+  }
 }
-
 
 h1 {
-	font-size: var(--heading-size);
-	letter-spacing: -0.1rem;
+  font-size: var(--heading-size);
+  letter-spacing: -0.1rem;
 }
 
-header>nav {
-	display: flex;
-	align-items: center;
-	min-height: 4.5rem;
-	background: var(--header-nav-bg);
-	color: var(--header-nav-color);
-	margin: 1rem auto 0.5rem;
-	padding: 1rem;
-	border-radius: 0.25rem;
-	max-width: 90vw;
+header > nav {
+  display: flex;
+  align-items: center;
+  min-height: 4.5rem;
+  background: var(--header-nav-bg);
+  color: var(--header-nav-color);
+  margin: 1rem auto 0.5rem;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  max-width: 90vw;
 }
 
-aside.thanks>a {
-	color: inherit;
+aside.thanks > a {
+  color: inherit;
 }
 
-header>nav a:first-of-type {
-	font-weight: bolder;
-	width: 100%;
-	text-decoration: none;
+header > nav a:first-of-type {
+  font-weight: bolder;
+  width: 100%;
+  text-decoration: none;
 }
 
-header>nav a:first-of-type .u-photo {
-	height: 2rem;
-	width: 2rem;
-	margin-right: 0.5rem;
+header > nav a:first-of-type .u-photo {
+  height: 2rem;
+  width: 2rem;
+  margin-right: 0.5rem;
 }
 
-header>nav a>span {
-	width: 100%;
+header > nav a > span {
+  width: 100%;
 }
 
-header>nav a {
-	color: var(--header-nav-color);
-	vertical-align: middle;
-	display: inline-flex;
-	align-items: center;
-	padding: 0.5rem;
+header > nav a {
+  color: var(--header-nav-color);
+  vertical-align: middle;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem;
 }
 
-header>nav a:visited {
-	color: var(--header-nav-color);
+header > nav a:visited {
+  color: var(--header-nav-color);
 }
-
 
 @media screen and (width <=40rem) {
-	header>nav {
-		flex-wrap: wrap;
-		justify-content: center;
-	}
+  header > nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-	header>nav a:first-of-type {
-		font-size: larger;
-		text-align: center;
-	}
+  header > nav a:first-of-type {
+    font-size: larger;
+    text-align: center;
+  }
 }
 
-
 main {
-	flex-grow: 3;
+  flex-grow: 3;
 }
 
 footer {
-	--bg: var(--color-region);
-	--color: var(--color-foreground);
-	padding: 1rem;
-	align-items: center;
-	background: var(--bg);
-	color: var(--color);
-	margin-top: 2rem;
+  --bg: var(--color-region);
+  --color: var(--color-foreground);
+  padding: 1rem;
+  align-items: center;
+  background: var(--bg);
+  color: var(--color);
+  margin-top: 2rem;
 }
 
-main+footer,
-header>nav {
-	border-top: 0.5rem solid var(--color-foreground);
+main + footer,
+header > nav {
+  border-top: 0.5rem solid var(--color-foreground);
 }
 
 footer a:visited {
-	color: inherit;
+  color: inherit;
 }
 
-footer>p:nth-of-type(2) picture {
-	width: 1.25rem;
-	display: inline;
-	vertical-align: middle;
-	margin: 0 0.25rem;
-	margin-top: -1rem;
-	overflow: auto;
+footer > p:nth-of-type(2) picture {
+  width: 1.25rem;
+  display: inline;
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  margin-top: -1rem;
+  overflow: auto;
 }
 
-footer picture>img {
-	vertical-align: middle;
-	margin: 0;
-	width: 1.5rem;
-	height: 1.5rem;
-	max-width: initial;
-	display: inline-block;
+footer picture > img {
+  vertical-align: middle;
+  margin: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  max-width: initial;
+  display: inline-block;
 }
 
 ul {
-	list-style: square;
-	max-width: calc(var(--content-width) * 0.9);
-	margin: 1rem auto;
+  list-style: square;
+  max-width: calc(var(--content-width) * 0.9);
+  margin: 1rem auto;
 }
 
 mark {
-	background-color: var(--mark-background-color);
-	color: var(--mark-color);
-	padding: 0.125rem;
+  background-color: var(--mark-background-color);
+  color: var(--mark-color);
+  padding: 0.125rem;
 }
 
 @media screen and (width >=120rem) {
-	main {
-		max-width: 120rem;
-		margin: 0 auto;
-	}
+  main {
+    max-width: 120rem;
+    margin: 0 auto;
+  }
 }
 
 main p a:not([class]),
 main li a:not([class]) {
-	color: var(--link-color);
+  color: var(--link-color);
 }
 
-figure>picture,
-figure>video {
-	margin: 0 auto;
+figure > picture,
+figure > video {
+  margin: 0 auto;
 }
 
-figure>picture+figcaption,
-figure>.embed+figcaption,
-figure>video+figcaption {
-	text-align: center;
-	font-style: oblique;
+figure > picture + figcaption,
+figure > .embed + figcaption,
+figure > video + figcaption {
+  font-style: oblique;
+  max-width: calc(var(--content-width) * 0.75);
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
 }
 
 pre[class*="language-"] {
-	width: 100%;
-	margin: 0.5rem 0;
+  width: 100%;
+  margin: 0.5rem 0;
 }
 
 @media screen and (width >=120rem) {
-	pre[class*="language-"] {
-		max-width: var(--content-width);
-	}
+  pre[class*="language-"] {
+    max-width: var(--content-width);
+  }
 }
 
-
-pre>code {
-	display: inline-block;
-	background-color: black;
-	font-size: 120%;
-	color: white;
-	width: 100%;
-	overflow-x: scroll;
-	padding: 1rem;
+pre > code {
+  display: inline-block;
+  background-color: black;
+  font-size: 120%;
+  color: white;
+  width: 100%;
+  overflow-x: scroll;
+  padding: 1rem;
 }
 
 video {
-	width: 100%;
-	max-width: 60rem;
+  width: 100%;
+  max-width: 60rem;
 }
 
-article.h-entry>footer {
-	margin: 1rem auto;
-	font-size: large;
-	max-width: var(--content-width);
+article.h-entry > footer {
+  margin: 1rem auto;
+  font-size: large;
+  max-width: var(--content-width);
 }
 
-article.h-entry>footer p {
-	margin: 0;
-	padding: 1rem;
-	max-width: var(--content-width);
-	line-height: 1.5;
+article.h-entry > footer p {
+  margin: 0;
+  padding: 1rem;
+  max-width: var(--content-width);
+  line-height: 1.5;
 }
 
-article.h-entry>footer a {
-	color: inherit;
+article.h-entry > footer a {
+  color: inherit;
 }
 
 p a {
-	word-wrap: break-word;
+  word-wrap: break-word;
 }
 
 @media print {
+  body > header,
+  aside.thanks,
+  body > footer {
+    display: none;
+  }
 
-	body>header,
-	aside.thanks,
-	body>footer {
-		display: none;
-	}
-
-	main {
-		margin: 0;
-		padding: 0;
-	}
-
+  main {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .mastodon-embed {
-	display: block;
-	border: none;
-	margin: 0.5rem auto;
-	width: min(100%, 35rem);
+  display: block;
+  border: none;
+  margin: 0.5rem auto;
+  width: min(100%, 35rem);
 }
 
-p>sup.footnote-ref,
+p > sup.footnote-ref,
 a.footnote-backref {
-	font-size: small;
-	color: var(--link-color);
-	text-decoration: none;
+  font-size: small;
+  color: var(--link-color);
+  text-decoration: none;
 }
 
-figure>picture:nth-child(n+1) {
-	margin-bottom: 0.25rem;
+figure > picture:nth-child(n + 1) {
+  margin-bottom: 0.25rem;
 }
 
-picture>img {
-	margin: 0 auto;
-	height: min-content;
+picture > img {
+  margin: 0 auto;
+  height: min-content;
 }
 
 @media screen and (width <=40rem) {
-	:root {
-		--txt-line-height: 1.4;
-		--content-width: max(40rem, 90vw);
-	}
+  :root {
+    --txt-line-height: 1.4;
+    --content-width: max(40rem, 90vw);
+  }
 
-	picture>img {
-		width: 100%;
-	}
+  picture > img {
+    width: 100%;
+  }
 }
 
 p,
 dd,
 li {
-	max-width: var(--content-width);
-	font-family: var(--font-sans);
+  max-width: var(--content-width);
+  font-family: var(--font-sans);
 }
 
 a {
-	color: var(--link-color);
+  color: var(--link-color);
 }
 
 a:visited {
-	color: var(--visited-link-color);
+  color: var(--visited-link-color);
 }
 
-p+hr {
-	margin: 2rem 0;
-	max-width: var(--content-width);
+p + hr {
+  margin: 2rem 0;
+  max-width: var(--content-width);
 }
 
 article.h-entry,
 article.h-resume,
 article.h-feed {
-	margin: 1rem auto;
-	padding: 0 1rem;
+  margin: 1rem auto;
+  padding: 0 1rem;
 }
 
-article.h-entry>header,
-article.h-feed>header {
-	margin: 0 auto;
-	width: 100%;
-	max-width: 50rem;
+article.h-entry > header,
+article.h-feed > header {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 50rem;
 }
 
-article.h-entry>header>aside {
-	text-align: center;
+article.h-entry > header > aside {
+  text-align: center;
 }
 
 article.h-entry h1.p-name,
 article.h-feed h1.p-name {
-	margin-bottom: 1rem;
-	font-size: calc(var(--heading-size) * 1.2);
-	letter-spacing: -0.1rem;
-	text-align: center;
-	width: 100%;
+  margin-bottom: 1rem;
+  font-size: calc(var(--heading-size) * 1.2);
+  letter-spacing: -0.1rem;
+  text-align: center;
+  width: 100%;
 }
 
-article.h-entry>header>h1+h2 {
-	margin-bottom: 1rem;
+article.h-entry > header > h1 + h2 {
+  margin-bottom: 1rem;
 }
 
 .h-entry .e-content,
-.h-feed>section {
-	max-width: var(--content-width);
-	margin: 0 auto;
+.h-feed > section {
+  max-width: var(--content-width);
+  margin: 0 auto;
 }
 
-article.h-entry>section>blockquote>p:first-of-type {
-	margin: 0;
+article.h-entry > section > blockquote > p:first-of-type {
+  margin: 0;
 }
 
-article.h-entry>section>blockquote {
-	max-width: var(--content-width);
-	line-height: var(--txt-line-height);
-	padding: 1.5rem;
-	font-size: 125%;
-	background: var(--pull-bg);
-	color: var(--pull-color);
-	margin: 1rem 0;
+article.h-entry > section > blockquote {
+  max-width: var(--content-width);
+  line-height: var(--txt-line-height);
+  padding: 1.5rem;
+  font-size: 125%;
+  background: var(--pull-bg);
+  color: var(--pull-color);
+  margin: 1rem 0;
 }
 
-article.h-entry>section>blockquote a {
-	color: var(--pull-color);
+article.h-entry > section > blockquote a {
+  color: var(--pull-color);
 }
 
 #audio {
-	margin: 1rem auto;
-	width: 100%;
-	max-width: 40rem;
-	text-align: center;
+  margin: 1rem auto;
+  width: 100%;
+  max-width: 40rem;
+  text-align: center;
 }
 
-#audio>audio {
-	width: 100%;
+#audio > audio {
+  width: 100%;
 }
 
-article.h-entry>section>p,
-article.h-entry>section>li,
-article.h-entry>section>ul,
-article.h-entry>section>ol,
+article.h-entry > section > p,
+article.h-entry > section > li,
+article.h-entry > section > ul,
+article.h-entry > section > ol,
 artice.h-entry section.footnotes {
-	max-width: var(--content-width);
-	line-height: var(--txt-line-height);
-	font-size: var(--text-size);
-	text-align-last: left;
-	word-wrap: break-word;
+  max-width: var(--content-width);
+  line-height: var(--txt-line-height);
+  font-size: var(--text-size);
+  text-align-last: left;
+  word-wrap: break-word;
 }
 
 @media screen and (width <=40rem) {
-	article.h-entry {
-		margin: 1rem 0;
-	}
+  article.h-entry {
+    margin: 1rem 0;
+  }
 
-	article.h-entry>header {
-		max-width: 100vw;
-		width: 100%;
-		margin: 0;
-	}
+  article.h-entry > header {
+    max-width: 100vw;
+    width: 100%;
+    margin: 0;
+  }
 
-	#audio>audio {
-		width: 100%;
-	}
+  #audio > audio {
+    width: 100%;
+  }
 
-	article.h-entry picture>img {
-		max-width: var(--content-width);
-		width: 100%;
-	}
+  article.h-entry picture > img {
+    max-width: var(--content-width);
+    width: 100%;
+  }
 }
 
-
 @media print {
-	.print-hide {
-		display: none;
-	}
+  .print-hide {
+    display: none;
+  }
 }
 
 aside.thanks {
-	padding: 1rem;
-	color: var(--pull-color);
-	background-color: var(--pull-bg);
-	max-width: var(--content-width);
-	margin: 0 auto;
+  padding: 1rem;
+  color: var(--pull-color);
+  background-color: var(--pull-bg);
+  max-width: var(--content-width);
+  margin: 0 auto;
 }
-
 
 /** nabbed from https://piccalil.li/blog/a-more-modern-css-reset/ */
 
@@ -422,15 +416,15 @@ aside.thanks {
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Prevent font size inflation */
 html {
-	text-size-adjust: none;
-	color: var(--color);
-	background-color: var(--background-color);
-	border-top: 0.5rem solid var(--header-nav-bg);
+  text-size-adjust: none;
+  color: var(--color);
+  background-color: var(--background-color);
+  border-top: 0.5rem solid var(--header-nav-bg);
 }
 
 /* Remove default margin in favour of better control in authored CSS */
@@ -447,27 +441,39 @@ ul,
 ol,
 li,
 dd {
-	margin-block-end: 0;
+  margin-block-end: 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2.25rem;
+}
+
+h4 {
+  font-size: 2rem;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
-	list-style: none;
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
 }
 
 /* Set core body defaults */
 body {
-	min-height: 100vh;
-	line-height: 1.5;
+  min-height: 100vh;
+  line-height: 1.5;
 
-	/** my tweaks */
-	padding: 0;
-	margin: 0;
-	display: flex;
-	flex-direction: column;
-	align-content: center;
-	font-family: var(--font-family);
+  /** my tweaks */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  font-family: var(--font-family);
 }
 
 /* Set shorter line heights on headings and interactive elements */
@@ -478,7 +484,7 @@ h4,
 button,
 input,
 label {
-	line-height: 1.1;
+  line-height: 1.1;
 }
 
 /* Balance text wrapping on headings */
@@ -486,20 +492,20 @@ h1,
 h2,
 h3,
 h4 {
-	text-wrap: balance;
+  text-wrap: balance;
 }
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-	text-decoration-skip-ink: auto;
-	color: currentcolor;
+  text-decoration-skip-ink: auto;
+  color: currentcolor;
 }
 
 /* Make images easier to work with */
 img,
 picture {
-	max-width: 100%;
-	display: block;
+  max-width: 100%;
+  display: block;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -507,28 +513,28 @@ input,
 button,
 textarea,
 select {
-	font-family: inherit;
-	font-size: inherit;
+  font-family: inherit;
+  font-size: inherit;
 }
 
 /* Make sure textareas without a rows attribute are not tiny */
 textarea:not([rows]) {
-	min-height: 10em;
+  min-height: 10em;
 }
 
 /* Anything that has been anchored to should have extra scroll margin */
 :target {
-	scroll-margin-block: 5ex;
+  scroll-margin-block: 5ex;
 }
 
 figure {
-	margin-inline: 0;
+  margin-inline: 0;
 }
 
 iframe.bandcamp-player {
-	width: 70%;
-	display: block;
-	height: calc((120/16) * 1rem);
-	margin: 0.5rem auto;
-	border: 0;
+  width: 70%;
+  display: block;
+  height: calc((120 / 16) * 1rem);
+  margin: 0.5rem auto;
+  border: 0;
 }

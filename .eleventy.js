@@ -51,11 +51,11 @@ export default function (
   eleventyConfig.addShortcode("imageUrl", async function (src) {
     const img = new Image(src, {
       widths: ["480"],
-      formats: ["jpeg"],
-      returnType: "html", // new in v6.0
+      formats: ["webp"],
+      returnType: "html",
     });
     const stats = img.getFullStats({ width: 480 });
-    return stats.jpeg[0].url;
+    return stats.webp[0].url;
   });
 
   eleventyConfig.addGlobalData("generated", () => {
