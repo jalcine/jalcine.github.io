@@ -36,6 +36,7 @@
 	<link rel="alternate" href="/essays/feed.atom" type="application/atom+xml" title="Jacky Alciné's essays (over ATOM)" />
 	<link rel="alternate" href="/links/feed.atom" type="application/atom+xml" title="Jacky Alciné's linklog (over ATOM)" />
 	<link rel="alternate" href="/weeknotes/feed.atom" type="application/atom+xml" title="Jacky Alciné's weeknotes (over ATOM)" />
+  <script src="/scripts/main.js" type="module" defer async></script>
 	{% block head %}{% endblock head %}
 </head>
 
@@ -60,7 +61,7 @@
 		{{- content | safe -}}
 	</main>
 	<footer>
-		<p>Site handrolled at {{ generated }} and built using <a href="https://www.11ty.dev/">11ty</a> (for now)
+      <p>Site handrolled <local-time><time datetime="{{ generated.ts }}">at {{ generated.human }}</time></local-time> and built using <a href="https://www.11ty.dev/">11ty</a> (for now)
 			&mdash; <a href="https://www.11ty.dev/blog/sustainability-fundraising/">support its
 				development</a>!
 			Check out <a href="/report/visitors.html">my access logs</a>. <a

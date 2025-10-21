@@ -33,7 +33,7 @@ export default function (
   eleventyConfig.addPassthroughCopy("*.css");
   eleventyConfig.addPassthroughCopy("fonts");
 
-  for (const folderName in ["images", "videos", "files", "fonts"]) {
+  for (const folderName in ["images", "videos", "files", "fonts", "scripts"]) {
     eleventyConfig.addPassthroughCopy(folderName);
     eleventyConfig.addPassthroughCopy(`${folderName}/*`);
     eleventyConfig.addPassthroughCopy(`${folderName}/**/*`);
@@ -60,10 +60,13 @@ export default function (
 
   eleventyConfig.addGlobalData("generated", () => {
     let now = new Date();
-    return new Intl.DateTimeFormat("en-US", {
-      dateStyle: "full",
-      timeStyle: "long",
-    }).format(now);
+    return {
+      human: new Intl.DateTimeFormat("en-US", {
+        dateStyle: "full",
+        timeStyle: "long",
+      }).format(now),
+      ts: now.valueOf(),
+    };
   });
 
   eleventyConfig.addGlobalData("emailSubscriberCount", async () => {
@@ -85,7 +88,8 @@ export default function (
       const json_resp = await response.json();
       return json_resp.count;
     } catch (err) {
-      return console.error(err);
+      console.error(err);
+      return 0;
     }
   });
 }
