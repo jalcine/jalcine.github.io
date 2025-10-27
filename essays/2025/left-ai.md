@@ -1,6 +1,6 @@
 ---
 layout: essay.html.njk
-title: "Can a leftist position on the use of generative AI be materially held?"
+title: "An exploration on what could be a leftist position on generative AI"
 masthead:
   src: /images/left-ai.jpg
   alt: >
@@ -110,8 +110,8 @@ time; the last thing you want to do is _rush ahead_ with a trend or sense of
 progress because Hacker News prescribes it. In fact, it's always wiser to give
 it time to iron out. However, there's more positions that lean towards
 something you'd expect Ptacek to agree with in a piece by Campos on the notion
-[that AI crticism has become lazy][31]. These stances tend to lean toward what
-you'd find as you read [_The Network State_][32]; a book that overindexes
+[that AI criticism has become lazy][31]. These stances tend to lean toward what
+you'd find as you read [_The Network State_][32]; a book that over indexes
 towards techno-solutionism as the end-all-be-all and a means of saving us from
 ourselves. Notably, this piece would fit in around the third chapter in
 Balaji's book, around [tripolarality in power][33] since points are declared
@@ -130,7 +130,7 @@ when it comes to generative AI, is China's introduction of smaller, cheaper and
 efficient LLMs that can, at times, outperform the American made ones. This
 seems to be a habit with Eastern technology &amp; from cars to computer
 manufacturing. The most notable one is the ones produced by its namesake,
-[DeepSeek][8]. As mentioned, I've been testing some usecases with these
+[DeepSeek][8]. As mentioned, I've been testing some use cases with these
 solutions at home, most recently with [`ollama`][9] and [`aider`][21], allowing
 me to flip between different downloaded models when working with them[^3]. The
 output is moderately okay &mdash; if I give it a "solved" problem, it can get
@@ -148,7 +148,7 @@ of what they're [doing with OpenAI's Sora][23] (emphasis mine):
 > training their video generation model. That’s all free labor _that would cost
 > millions_ to replicate in a controlled environment with paid testers. They’re
 > essentially getting millions of people to volunteer as unpaid quality
-> assurance testers, prompt engineers, and data labelers. **They have gamified
+> assurance testers, prompt engineers, and data labellers. **They have gamified
 > reinforcement learning at scale**.
 
 The focus here is what I see mirrored in public sector work: a want to
@@ -166,9 +166,9 @@ how the M45 MEUSOC semi-auto pistol can be used &mdash; especially in places
 like Iraq or by the Los Angeles Police Department.
 
 In none of the pieces mentioned above was there any strong considerations
-around how generative artificial intelligence has increased the dififculty of
+around how generative artificial intelligence has increased the difficulty of
 folks finding work due to the (now speculative but not improbable) case of
-lower ranking software engineering posoitions being made redundant. In fact, in
+lower ranking software engineering positions being made redundant. In fact, in
 Annie's aforementioned post, they needed to rewrite history just a bit in order
 to justify a transformation in labor (emphasis mine):
 
@@ -187,17 +187,17 @@ is doing is "guiding" the outputs of a machine without a requirement of
 understanding the depth of the craft &mdash; that's the whole premise of [vibe
 coding][43]. This rephrasing also helps to ignore what many workers of the
 Industrial Revolution were against: hyper-specialized machinery that _directly_
-threatened their ability _to work_ and _negogiate the terms of work_. This is
+threatened their ability _to work_ and _negotiate the terms of work_. This is
 discussed at length in Brian Merchant's latest book, [Blood in the
 Machine][44], in the brief chapter, "The Machinery Question" that discussed how
 this perspective on the impact of machines on work depended on one's
-positionality (and interest in placement) of class. In short, did one want to
-be a worker of merit or an entrpreneur of control? Software engineering, post
+position (and interest in placement) of class. In short, did one want to
+be a worker of merit or an entrepreneur of control? Software engineering, post
 the dot-com boom, has enjoyed a comfortable place in pay, especially in the
-United States, that has warped people's understanding of how [that loyality is
+United States, that has warped people's understanding of how [that loyalty is
 bought][45] (and can be easily retracted). Digging into the folks that helped
 craft the _concept_ of modern overseers, or the professional managerial class,
-we can see how [that also leaned on a system][46] that mimicked what Aristotlian
+we can see how [that also leaned on a system][46] that mimicked what Aristotelian
 philosophy on the need for human exploitation towards automation (warning for
 those uncomfortable with the linkage of technology and plantations due to their
 identity and nationality):
@@ -237,7 +237,7 @@ me, frankly, because I once did see technology as a means of giving folks more p
 in a world that has it held and hoarded by a few. It took me moving to
 California, closer to the American crux of technology worship to come to terms
 that it is largely an extension of the means in which American capitalism
-operates. In fact, [Ruha Benjamin][13]'s book, [Race As Technology][14] makes
+operates. In fact, [Ruha Benjamin][13]'s book, [Race After Technology][14] makes
 _many_ cases &mdash; new to many, old to some &mdash; about how the most
 immediate deployments of technology tend to have racial underpinnings to
 operate on behalf of a larger agenda of integrating what she calls [The New Jim
@@ -253,9 +253,9 @@ driven out of sight. Relying on the mimicry of capital to drive a new direction
 will result in its trend of burnout or worse for the founders and workers
 involved.
 
-There's quite a few folks working on this from a perspective that recenters
+There's quite a few folks working on this from a perspective that recenter
 people over the outputs of the machine. One of note is [_AI as Normal
-Technology_][48]; a longer read that yoyos between wanting a neoindustrial
+Technology_][48]; a longer read that yoyos between wanting a (neo-)industrial
 agenda to push us towards allowing AI to be more deeply integrated into society
 and development such that it's not necessarily controlled by a few industry
 titans. They're more honest about the progression of AI than more advocates:
@@ -279,7 +279,7 @@ titans. They're more honest about the progression of AI than more advocates:
 > will focus on tasks that are not yet automated, perhaps tasks that do not
 > exist today (in Part II we describe what those might look like).
 
-They highlight a forecasting of what job closure and restructing will
+They highlight a forecasting of what job closure and restructuring will
 eventually look like given how generative artificial intelligence operates as a
 "labor maximizer" towards the end of Part II:
 
@@ -315,7 +315,7 @@ artifical intelligence criticism being lazy: more on the point that a
 "moderate" position is nearly not possible/available in most spaces[^8]. I
 disagree with this for a number of reasons made clear by [the number of
 conferences][51], product launches if one scrolls on LinkedIn and capital
-raised _in favor_ of promoting generative artifical intelligence. They've
+raised _in favor_ of promoting generative artificial intelligence. They've
 written themselves in enthusiasm of retrofitting a API standard for models to
 communicate _as groundbreaking_ as Web 2.0 itself &mdash; disrespectful to the
 actual gains of that space since it was something done collectively (despite
@@ -339,14 +339,14 @@ The individual perspective also tends to be the limiting scope of most of the
 folks I've mentioned above are approaching it. There's been little mention of
 how we can reshape policy to handle this transition[^11]. Relying on executives
 down to middle management to take a firmer stance yoyos between being beholden
-to investors to executives that lean into that Aristotlian stance mentioned
+to investors to executives that lean into that Aristotelian stance mentioned
 earlier. So how does it move from that to one of a collectivist, people-centric
 position?
 
 ### From a Labor Organizing Perspective
 
 It is disappointing that [_AI As a Normal Technology_][48] danced around labor
-and softly ignored the impact of said productivty gains in relation to the
+and softly ignored the impact of said productivity gains in relation to the
 sociopolitical [evolution of the landscape][54] as well as what regions of the
 world [had to operate as the battery and labor][55][^13]. This tends to result
 in the inherent utopian perspective of trusting industry leaders (or
@@ -374,10 +374,10 @@ people-centric community events has been overtaken by corporate cosplay of the
 such. By cosplay, I mean the developer relations community spearheading, with
 corporate funding, the moves to "reboot" community spaces that went dormant
 during the (still ongoing) COVID-19 pandemic. Events like [WaffleJs][59] have
-been upsurped by Google Developer communities and the like. And with the advent
+been usurped by Google Developer communities and the like. And with the advent
 of generative AI, sidecar events are all about what folks are spending money on
 to make that they could have spent 30 more minutes developing themselves
-&mdash; or with a bit more curiousity.
+&mdash; or with a bit more curiosity.
 
 Instead, more work and effort needs to be spent on countering the systems that
 rely on the inputs of generative AI. This enters a level of "black-hat" work
@@ -388,13 +388,13 @@ this is necessary. More efforts in making things like [Glaze][60] and
 [Nightshade][61] more integrated in tools that folks use on a regular basis and
 a means of submitting content for extending the efficacy of said tools[^15].
 Social media networks can allow folks to opt-in into such protections as
-they've a hot target for non-consenual scraping. It's weird; these projects
+they've a hot target for non-consensual scraping. It's weird; these projects
 technically fall under generative AI since it also modifies images but since
-it's adversal to _further_ modifications, you'll rarely find any advocates
-pushing in favor of it. That highlights how the advent of such production isn't
-necessarily around making the act of "generating art" more accessible but
-mirrors the plantantion-like behavior mentioned before (though coded with race
-&mdash; as technology inherently is):
+it's in the adverse position to _further_ modifications, you'll rarely find any
+advocates pushing in favor of it. That highlights how the advent of such
+production isn't necessarily around making the act of "generating art" more
+accessible but mirrors the plantation-like behavior mentioned before (though
+coded with race &mdash; as technology inherently is):
 
 > The specter of the plantation that hangs over computation and industrial
 > labor regimes also speaks to the need to revisit the terms of "free"
