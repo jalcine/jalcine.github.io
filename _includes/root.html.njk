@@ -14,8 +14,8 @@
 	{% if og.type -%}<meta property="og:type" content="{{ og.type }}" />{%- endif %}
   {%- if og.image %}
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="{% imageUrl og.image  %}" />
-    <meta property="og:image" content="{% imageUrl og.image  %}" />
+    <meta name="twitter:image" content="https://www.jacky.wtf{% imageUrl og.image  %}" />
+    <meta property="og:image" content="https://www.jacky.wtf{% imageUrl og.image  %}" />
   {%- endif %}
   {%- if description %}
     <meta name="twitter:description" content="{{- description -}}" />
