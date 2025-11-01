@@ -350,7 +350,7 @@ and softly ignored the impact of said productivity gains in relation to the
 sociopolitical [evolution of the landscape][54] as well as what regions of the
 world [had to operate as the battery and labor][55][^13]. This tends to result
 in the inherent utopian perspective of trusting industry leaders (or
-developers) to do The Right Thing. This has doesn't tend to work out in favor
+developers) to do The Right Thing. This doesn't tend to work out in favor
 of the people who need it the most: folks who don't have a fleet of lawyers at
 their disposal or like me, folks who live in a state whose legislature down to
 the local level are against any sort of progressive stances. So that returns us
@@ -388,13 +388,13 @@ this is necessary. More efforts in making things like [Glaze][60] and
 [Nightshade][61] more integrated in tools that folks use on a regular basis and
 a means of submitting content for extending the efficacy of said tools[^15].
 Social media networks can allow folks to opt-in into such protections as
-they've a hot target for non-consensual scraping. It's weird; these projects
+they're a hot target for non-consensual scraping. It's weird; these projects
 technically fall under generative AI since it also modifies images but since
-it's in the adverse position to _further_ modifications, you'll rarely find any
-advocates pushing in favor of it. That highlights how the advent of such
-production isn't necessarily around making the act of "generating art" more
-accessible but mirrors the plantation-like behavior mentioned before (though
-coded with race &mdash; as technology inherently is):
+it's in the adverse position to prevent _further_ modifications, you'll rarely
+find any advocates pushing in favor of it. That highlights how the advent of
+such production isn't necessarily around making the act of "generating art"
+more accessible but mirrors the plantation-like behavior mentioned before
+(though coded with race &mdash; as technology inherently is):
 
 > The specter of the plantation that hangs over computation and industrial
 > labor regimes also speaks to the need to revisit the terms of "free"
@@ -416,7 +416,7 @@ critical lens at the industry, its impact and the players within in. If I had
 to propose a "critical" reading list on AI that's balanced on its development
 and denigration; the following would be a start:
 
-- [Race After Technology, 2017][14] by Dr. Ruha Benjamin
+- [Race After Technology][14] by Dr. Ruha Benjamin
 - [Empire of AI][book:1] by Karen Hao
 - [The Alignment Problem][book:2] by Brian Christian
 - [The AI Con][book:3] by Dr. Emily Bender and Dr. Alex Hanna
