@@ -16,7 +16,7 @@ masthead:
 og:
   type: article
   image: /images/my-website.jpg
-tags: essay
+# tags: essay
 date: 2025-10-15T11:00:00-05:00
 ---
 
