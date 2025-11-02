@@ -1,51 +1,8 @@
 <footer id="contentFooter">
-	<h2>Thanks for reading!</h2>
-	<p>
-		I have an infrequent <a href="https://jacky.wtf/newsletter">newsletter</a> that you can subscribe to (<a
-			href="https://buttondown.email/jackyalcine/archive/">check the archives</a>).
-		I send between one to three e-mails a month, usually expanding on posts like this one and
-		giving more updates on life and things I've engaged with. There's {{ emailSubscriberCount
-		}} people subscribed &mdash; come join us!
-	</p>
-	<form action="https://buttondown.com/api/emails/embed-subscribe/jackyalcine" method="post"
-		class="embeddable-buttondown-form">
-		<label for="email"><span>Email</span>
-			<input autocomplete="email" type="email" name="email"
-				placeholder="you.are.perfect@as.you.are" />
-		</label>
-		<input type="hidden" value="1" name="embed" />
-		<input type="submit" value="Subscribe" />
-	</form>
-	<style>
-		#contentFooter>h2 {
-			text-align: center;
-		}
-
-		form.embeddable-buttondown-form {
-			background-color: var(--color-primary);
-			color: var(--color-background);
-			padding: 1rem;
-			display: flex;
-			flex-direction: column;
-			max-width: 40rem;
-			margin: 0 auto;
-		}
-
-		form.embeddable-buttondown-form>label {
-			flex: 3;
-			display: flex;
-			flex-direction: column;
-			padding: 1rem;
-		}
-
-		form.embeddable-buttondown-form>label>span {
-			margin-bottom: 0.5rem;
-			text-align: center;
-		}
-
-		form.embeddable-buttondown-form>input[type=submit] {
-			height: max-content;
-			align-self: center;
-		}
-	</style>
+  <h2>Thanks for reading!</h2>
+  <p>
+    I'm open to feedback on the things I write. You can e-mail your thoughts to
+    <code>yo@jacky.wtf</code> at anytime.
+  </p>
+  {% include "./newsletter.html.njk" %}
 </footer>

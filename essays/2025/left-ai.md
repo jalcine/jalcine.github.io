@@ -12,6 +12,8 @@ masthead:
 og:
   type: article
   image: /images/left-ai.jpg
+syndication:
+  atproto: at://did:plc:e2ctbutx6kya6si4if5ngjmm/app.bsky.feed.post/3m46ltovsr22n
 tags: essay
 date: 2025-10-27T11:00:00-05:00
 description: >

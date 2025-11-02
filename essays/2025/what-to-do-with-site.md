@@ -111,14 +111,15 @@ how we can learn to mitigate it[^5].
     supporting me.
 
 [^5]:
-    The only exception to this _might_ be <https://blackskyweb.xyz/>. Its
-    founder, Rudy Fraser, makes clear of his stance and interest in his venture
+    The only exception to this (thought done in a part response to what the
+    platform initially claimed to profess) _might_ be <https://blackskyweb.xyz/>.
+    Its founder, Rudy Fraser, makes clear of his stance and interest in his venture
     into the Web3 space as a means of understanding digital mutuality as he spoke
     on Evan's podcast at <https://youtu.be/UA1DutGDVcs>. He's also made clear that
     some of the concepts mentioned in [Distributed Blackness][db], with its guiding
     analysis via CTDA (critical technocultural discourse analysis). My discontent
     with this is that it focuses on folks _surviving in spite_ of the violence that
     exists in the technosphere we exist in instead of prioritizing how we can look
-    to build a (frankly, separate and) secure space for folks to exist. It
-    reminds me of a response to a Black sociologist by Audre Lorde named "Sexism:
-    The Great American Disease" (available in [Sister Outsider][2]).
+    to build a (frankly, separate and) secure space for folks to exist. It reminds
+    me of a response to a Black sociologist by Audre Lorde named "Sexism: The Great
+    American Disease" (available in [Sister Outsider][2]).
