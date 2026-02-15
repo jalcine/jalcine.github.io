@@ -4,7 +4,7 @@ import feedPlugin from "@11ty/eleventy-plugin-rss";
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
 import readingTime from "eleventy-plugin-reading-time";
-import { Image, eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import footnote from "markdown-it-footnote";
 import anchor from "markdown-it-anchor";
 import smartarrows from "markdown-it-smartarrows";
@@ -47,16 +47,6 @@ export default function (
   eleventyConfig.addPlugin(eleventyImageTransformPlugin);
 
   eleventyConfig.addPlugin(compress);
-
-  eleventyConfig.addShortcode("imageUrl", function (src) {
-    const img = new Image(src, {
-      widths: [480],
-      formats: ["webp"],
-      returnType: "html",
-    });
-    const stats = img.getFullStatsSync({ width: 480 });
-    return stats.webp[0].url;
-  });
 
   eleventyConfig.addGlobalData("generated", () => {
     let now = new Date();
