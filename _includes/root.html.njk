@@ -13,18 +13,21 @@
 	<meta name="generator" content="Eleventy v3.0.0">
 	{% if og.type -%}<meta property="og:type" content="{{ og.type }}" />{%- endif %}
   {%- if og.image %}
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://www.jacky.wtf{% imageUrl og.image  %}" />
-    <meta property="og:image" content="https://www.jacky.wtf{% imageUrl og.image  %}" />
-  {%- endif %}
+    {% set ogImageUrl = imageUrl(og.image) %}
+  {% else %}
+    {% set ogImageUrl = "/images/self.jpg" %}
+  {%- endif -%}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.jacky.wtf{{ ogImageUrl }}" />
+  <meta property="og:image" content="https://www.jacky.wtf{{ ogImageUrl}}" />
   {%- if description %}
     <meta name="twitter:description" content="{{- description -}}" />
     <meta property="og:description" content="{{- description -}}" />
     <meta property="description" content="{{- description -}}" />
 	{%- endif %}
-	{% set og_title = og.title | title -%}
-	<meta property="og:title" content="{{ title }} - Jacky Alciné" />
+	<meta property="og:title" content="{{ og.title | default(title) }} - Jacky Alciné" />
 	<meta property="og:site_name" content="Jacky Alciné's digital place to post, post, post!" />
+	<meta property="og:url" content="https://www.jacky.wtf{{ page.url }}" />
 	<meta name="twitter:title" content="{{ title }} - Jacky Alciné" />
 	<meta name="twitter:site" content="Jacky Alciné's digital place" />
 	<meta name="twitter:creator" content="@jackyalcine" />
@@ -38,6 +41,12 @@
 	<link rel="alternate" href="/links/feed.atom" type="application/atom+xml" title="Jacky Alciné's linklog (over ATOM)" />
 	<link rel="alternate" href="/weeknotes/feed.atom" type="application/atom+xml" title="Jacky Alciné's weeknotes (over ATOM)" />
   <script src="/scripts/main.js" type="module" defer async></script>
+  <!-- Privacy-friendly analytics by Plausible -->
+  <script async src="https://plausible.io/js/pa-DosHWTTEpYQiGlr25PNp1.js"></script>
+  <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init()
+  </script>
 </head>
 
 <body>
