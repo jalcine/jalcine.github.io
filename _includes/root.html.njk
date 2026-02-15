@@ -13,13 +13,14 @@
 	<meta name="generator" content="Eleventy v3.0.0">
 	{% if og.type -%}<meta property="og:type" content="{{ og.type }}" />{%- endif %}
   {%- if og.image %}
-    {% set ogImageUrl = imageUrl(og.image) %}
-  {% else %}
-    {% set ogImageUrl = "/images/self.jpg" %}
-  {%- endif -%}
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://www.jacky.wtf{{ ogImageUrl }}" />
-  <meta property="og:image" content="https://www.jacky.wtf{{ ogImageUrl}}" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://www.jacky.wtf{{ og.image }}" />
+    <meta property="og:image" content="https://www.jacky.wtf{{ og.image }}" />
+  {%- else %}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://www.jacky.wtf/images/self.jpg" />
+    <meta property="og:image" content="https://www.jacky.wtf/images/self.jpg" />
+  {%- endif %}
   {%- if description %}
     <meta name="twitter:description" content="{{- description -}}" />
     <meta property="og:description" content="{{- description -}}" />

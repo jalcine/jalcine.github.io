@@ -48,13 +48,13 @@ export default function (
 
   eleventyConfig.addPlugin(compress);
 
-  eleventyConfig.addShortcode("imageUrl", async function (src) {
+  eleventyConfig.addShortcode("imageUrl", function (src) {
     const img = new Image(src, {
-      widths: ["480"],
+      widths: [480],
       formats: ["webp"],
       returnType: "html",
     });
-    const stats = img.getFullStats({ width: 480 });
+    const stats = img.getFullStatsSync({ width: 480 });
     return stats.webp[0].url;
   });
 
