@@ -22,7 +22,7 @@ produce-resume-pdf:
     --form marginBottom="0.2in" \
     --output $(pwd)/files/Jacky_Alcine-resume.pdf
 
-deploy: clean build produce-resume-pdf
+deploy: clean build
   # Replace the files on the Web server.
   # NOTE: Toggle some sort of "alert" about this happening.
   rsync --archive --delete-delay --verbose --recursive _site/* www.jacky.wtf:/var/www/html
