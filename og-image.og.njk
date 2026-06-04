@@ -1,0 +1,39 @@
+<style>
+  .root {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #001f3f 0%, #111 100%);
+    padding: 60px;
+    box-sizing: border-box;
+  }
+  .title {
+    color: #fff;
+    font-size: 64px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 1.2;
+    margin: 0;
+  }
+  .subtitle {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: 400;
+    margin-top: 24px;
+  }
+  .site {
+    color: #666;
+    font-size: 20px;
+    margin-top: auto;
+    position: absolute;
+    bottom: 40px;
+  }
+</style>
+<div class="root">
+  <h1 class="title">{{ title }}</h1>
+  {% if description %}<p class="subtitle">{{ description }}</p>{% endif %}
+  <p class="site">jacky.wtf</p>
+</div>

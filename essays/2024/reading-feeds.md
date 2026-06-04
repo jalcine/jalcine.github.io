@@ -11,7 +11,7 @@ description: >
     After some want to pull away from the rivers that make up my timelines across so many social
     networking sites
 og:
-    img: /images/invest-rss.jpg
+    image: /images/invest-rss.jpg
 ---
 I'm not denying it &mdash; I'm online _a lot_. If I'm not by my laptop (or PC), my phone isn't
 terribly far away. I like keeping a tab as to the going-ons of the Internet[^1]. However, I'm

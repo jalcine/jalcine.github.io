@@ -14,12 +14,11 @@
 	{% if og.type -%}<meta property="og:type" content="{{ og.type }}" />{%- endif %}
   {%- if og.image %}
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://www.jacky.wtf{{ og.image }}" />
-    <meta property="og:image" content="https://www.jacky.wtf{{ og.image }}" />
+    <meta name="twitter:image" content="{{ og.image | url }}" />
+    <meta property="og:image" content="{{ og.image | url }}" />
   {%- else %}
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://www.jacky.wtf/images/self.jpg" />
-    <meta property="og:image" content="https://www.jacky.wtf/images/self.jpg" />
+    {% ogImage "./og-image.og.njk" %}
   {%- endif %}
   {%- if description %}
     <meta name="twitter:description" content="{{- description -}}" />

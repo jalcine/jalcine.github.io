@@ -9,6 +9,8 @@ import footnote from "markdown-it-footnote";
 import anchor from "markdown-it-anchor";
 import smartarrows from "markdown-it-smartarrows";
 import { compress } from "eleventy-plugin-compress";
+import EleventyPluginOgImage from "eleventy-plugin-og-image";
+import { readFileSync } from "fs";
 import "dotenv/config";
 
 const BUTTONDOWN_API_KEY = process.env.BUTTONDOWN_API_KEY;
@@ -33,7 +35,7 @@ export default function (
   eleventyConfig.addPassthroughCopy("*.css");
   eleventyConfig.addPassthroughCopy("fonts");
 
-  for (const folderName in ["images", "videos", "files", "fonts", "scripts"]) {
+  for (const folderName of ["images", "videos", "files", "fonts", "scripts"]) {
     eleventyConfig.addPassthroughCopy(folderName);
     eleventyConfig.addPassthroughCopy(`${folderName}/*`);
     eleventyConfig.addPassthroughCopy(`${folderName}/**/*`);
@@ -47,6 +49,29 @@ export default function (
   eleventyConfig.addPlugin(eleventyImageTransformPlugin);
 
   eleventyConfig.addPlugin(compress);
+
+  eleventyConfig.addPlugin(EleventyPluginOgImage, {
+    satoriOptions: {
+      fonts: [
+        {
+          name: "Alegreya",
+          data: readFileSync("fonts/alegreya/webfonts/alegreya-latin-900-normal.woff"),
+          weight: 900,
+          style: "normal",
+        },
+        {
+          name: "Alegreya",
+          data: readFileSync("fonts/alegreya/webfonts/alegreya-latin-400-normal.woff"),
+          weight: 400,
+          style: "normal",
+        },
+      ],
+    },
+    async shortcodeOutput(ogImage) {
+      const url = await ogImage.outputUrl();
+      return `<meta name="twitter:image" content="${url}" />\n    <meta property="og:image" content="${url}" />`;
+    },
+  });
 
   eleventyConfig.addGlobalData("generated", () => {
     let now = new Date();
