@@ -43,7 +43,36 @@ stuff!
 But I think I'm just going to do something with this site until I get the new one going.
 In a way, I'm trying to prevent this site [from being too quiet][1]. This
 includes looking at my literal home lab seriously and writing more about it &mdash;
-[like Andrew did][2].
+[like Andrew did][2]. It's kind of silly that I've had this hodgepodge setup
+of a system for the last 6 years &mdash; might as well make it more useful.
+
+## Operation `ticaye`
+
+If you're someone who's on <https://lobste.rs> or
+<https://news.ycombinator.com>, you'll see (although less nowadays) about the
+perpetual site rewrite[^1]. The idea/hope is that I'll be concretely doing the
+following:
+
+- moving from <https://blacksky.app> as my [PDS][3] to my own home one
+- having my site also lean into the [ActivityPub API][4] and [other IndieWeb specs][5]
+- get more in-tune with the interface I want for publishing on my site
+
+This will be the side-project that I'll churn on over the next year on weekends
+when time permits. I _want this_ because I _like_ it. I'm in the same thinking
+that [Andre](https://staltz.com) has in this post about some folks wanting to
+[run some things at home][6] &mdash; some folks want to do their own gel nails,
+touch up their cars, cook their own meals - and others don't mind making things
+that they use that other people engage with (or at least perceive). If all else
+fails, I'll just come back to <https://www.11ty.dev> and call it defeat.
 
 [1]: https://seanvoisen.com/thinking/2026-06-01-dropping-to-blog-level/
 [2]: https://ahelwer.ca/post/2020-08-14-home-ergonomics/
+[3]: https://atproto.wiki/en/wiki/reference/core-architecture/pds
+[4]: https://github.com/swicg/activitypub-api
+[5]: https://spec.indieweb.org/
+[6]: https://staltz.com/some-people-want-to-run-their-own-servers
+
+[^1]:
+    I actually don't see a lot of posts about it nowadays &mdash; which
+    sucks! That's the closest thing to web dev whimsy but it's also one of the
+    highest sources of a nerd snipe that exists.
