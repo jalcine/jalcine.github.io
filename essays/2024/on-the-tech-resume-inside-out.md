@@ -8,6 +8,7 @@ description: |
     what I managed to take away from the book.
 tags: essay
 date: 2024-08-05 15:00:00 -05:00
+atUri: "at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3mnivfacfez2g"
 ---
 After [posting a request][1] for [Gergely][3]'s book on [the tech resume][2], I decided to try to write what I learned
 from it to both demonstrate what it's helped me with and to help other folks who are in a similar position as me:

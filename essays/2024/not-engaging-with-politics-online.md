@@ -4,6 +4,7 @@ title: "I'm Not Bothering with Electoral Politics Online Anymore"
 tags: essay
 date: 2024-07-28
 description: Like do we want change or do we want to be on America's Next Top Commander?
+atUri: "at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3mnivfals5z2g"
 ---
 The upcoming United States election to see who'll end up becoming the 47th president of the United States has been
 mentally draining. Conventionally, everything is going par the script. A lot of folks who aren't normally engaged in

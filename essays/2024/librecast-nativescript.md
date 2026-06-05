@@ -2,6 +2,7 @@
 layout: essay.html.njk
 title: "Trying out Librecast on Mobile"
 # tags: essay
+draft: true
 ---
 As part of an experiment for [Shock][], I wrote out a project to get Librecast working across a few devices in a mobile
 landscape. Initially, I wanted to do this using Kotlin to target Android directly, but reading the documentation seemed

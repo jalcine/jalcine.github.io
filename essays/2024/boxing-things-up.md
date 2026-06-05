@@ -3,6 +3,7 @@ layout: essay.html.njk
 title: "Boxing Up Common Parts of an App"
 tags: essay
 date: 2024-06-13
+atUri: "at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3mnivfbezrr2g"
 ---
 I've been working on [Shock][1] as I look for [work](/work/) to both keep my blades sharp and to try out some new
 stacks. Shock's written in Rust and JavaScript (and a _little bit_ of TypeScript)[^1] using [Tauri](https://tauri.app) to bind a system-provided Web browser

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://tangled.org/stevedylan.dev/sequoia/raw/main/sequoia.schema.json",
+  "siteUrl": "https://www.jacky.wtf/",
+  "contentDir": "./essays/",
+  "publicDir": ".",
+  "outputDir": "_site",
+  "pathPrefix": "/essays",
+  "publicationUri": "at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.publication/3mniussyp2d2g",
+  "frontmatter": {
+    "publishDate": "date",
+    "draft": "draft",
+    "tags": "tags",
+    "updatedAt": "updated"
+  },
+  "autoSync": true,
+  "publishContent": true,
+  "ui": {
+    "components": "scripts/components"
+  }
+}

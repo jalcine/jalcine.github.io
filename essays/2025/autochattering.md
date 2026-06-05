@@ -10,6 +10,7 @@ masthead:
   src: /images/flatbush.jpg
   alt: The end of the line of the 2/5 train in Brooklyn.
   title: The end of the line shot by me.
+atUri: "at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3mnivf53kej2g"
 ---
 
 For some time, I've wrestled with what to write on this blog. I'm currently

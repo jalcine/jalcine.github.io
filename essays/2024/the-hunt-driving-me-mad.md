@@ -3,6 +3,7 @@ layout: essay.html.njk
 title: "The Job Hunt is Driving me Mad"
 tags: essay
 date: 2024-07-24
+atUri: "at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3mnivfbpgrz2g"
 ---
 I've been looking for work since the layoffs at Code for America last September. Even when I briefly [secured a role at
 Plural][13], I didn't stop looking for work because of the climate I was alerted to _after_ taking on the role[^1]. I

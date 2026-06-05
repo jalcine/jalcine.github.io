@@ -3,6 +3,7 @@ layout: essay.html.njk
 title: "Why and how do I blog?"
 tags: essay
 date: 2025-03-01T08:30:00-05:00
+atUri: "at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3mnivf62fob2g"
 ---
 [Ethan][1] tagged me in an interesting [blog post][2] of theirs about blogging. I was hoping to
 actually finish backporting my entries from "way back" (aka 2009) and use that as a way to see how

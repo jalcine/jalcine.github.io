@@ -22,7 +22,13 @@ produce-resume-pdf:
     --form marginBottom="0.2in" \
     --output $(pwd)/files/Jacky_Alcine-resume.pdf
 
-deploy: clean build ship
+deploy: clean build sequoia-publish sequoia-inject ship
+
+sequoia-publish:
+  npx sequoia publish
+
+sequoia-inject:
+  npx sequoia inject -o _site
 
 ship:
   # Replace the files on the Web server.

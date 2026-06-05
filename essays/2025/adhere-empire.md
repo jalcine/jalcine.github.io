@@ -3,6 +3,7 @@ layout: essay.html.njk
 title: "Adherence to societal norms as a form of acceptable self harm"
 date: 2025-10-11T18:30:00-05:00
 tags: essay
+atUri: "at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3mnivf4qzhb2g"
 ---
 
 I have been struggling with feeling "okay". I talked a bit about my family's

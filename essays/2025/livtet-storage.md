@@ -2,6 +2,7 @@
 layout: essay.html.njk
 title: "Designing Livtet's Storage"
 date: 2025-03-17T19:15:00.000Z
+draft: true
 description: >
   Thinking out loud about how I'd want to store information in Livtet, a book
   management tool for (primarly) offline use.

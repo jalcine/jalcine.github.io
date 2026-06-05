@@ -5,6 +5,7 @@ date: 2024-11-23T19:00:00-05:00
 tags: essay
 description: >
     It's more important to make things that communicate the worlds that we want to see.
+atUri: "at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3mnivf66kib2g"
 ---
 For a bit of time, I've felt tension on figuring out what to write about. It's not unfamiliar
 from [some former tension][1] &mdash; what am I now throwing into the digital void? These spaces aim

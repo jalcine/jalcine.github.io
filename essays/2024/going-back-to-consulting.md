@@ -2,6 +2,7 @@
 layout: essay.html.njk
 title: "I'm Throwing my Hat Back into Consulting"
 date: 2024-09-27T14:30:00-05:00
+draft: true
 ---
 Technically, I've been consulting since the start of September 2024. But I'm writing this after I've done
 the paperwork and registered as a local company. The hope is to work with and help out organizations

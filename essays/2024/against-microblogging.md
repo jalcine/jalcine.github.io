@@ -9,6 +9,7 @@ masthead:
     src: /images/against-microblogging.jpg
     alt: A sunlint road with trees lining it and barbed wires
     title: <a href="https://www.loc.gov/resource/ppmsca.23812/">Curtis Edward (s. 1952)</a> took this shot somewhere in New York. Wonder I've walked down it before.
+atUri: "at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3mnivf6qqjb2g"
 ---
 I recently mentioned my want to distance [from the open social Web][1]. What I highlighted were
 underpinnings of routinely unaddressed and frequent hampering that pull me into dramatic

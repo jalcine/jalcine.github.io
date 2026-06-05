@@ -14,6 +14,7 @@ date: 2026-06-04T09:00:00-05:00
 description: >
   I don't want a static site anymore because it doesn't do or provide what I
   want anyore. But I also can't find what I'm looking for off the shelf.
+atUri: "at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3mnivf42qkr2g"
 ---
 
 I've had this version of my static site using [Eleventy](https://www.11ty.dev/)

@@ -8,6 +8,7 @@ description: |
     Given that places like X/Twitter, Meta/Threads/Instagram and the like are fully
     cemented in upholding the vices of capital and technology; how do people envision
     the open social Web to support the potential next generation of users?
+atUri: "at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3mnivf6ntqj2g"
 ---
 I'm waffling with a side project that's meant to replace this website as my means of publishing on
 the Web. As I do, I find issues with the word "publish" because it implies that I'm going to have

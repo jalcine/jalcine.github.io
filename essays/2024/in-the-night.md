@@ -5,6 +5,7 @@ tags: essay
 date: 2024-10-14T10:00:00-05:00
 description: |
     Some of the thoughts and experiences I had during Hurricane Milton.
+atUri: "at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3mnivf6fadz2g"
 ---
 This wasn't my first hurricane in Florida. It was the first one that caused enough damage for folks
 to be concerned about in the region I live at. I live in Sarasota County, a mix of _very_ wealthy

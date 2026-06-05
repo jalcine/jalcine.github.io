@@ -3,6 +3,7 @@ layout: essay.html.njk
 title: Society, Information and the Volume of it all
 description: >
     It's either I write a little about a lot or a lot about a little.
+draft: true
 ---
 I'm (forever) working on what I want this website to be like. I've stopped imagining it as some bastion of a
 "quantified digital self", as difficult as that's showing to be since blogs and the Web are designed

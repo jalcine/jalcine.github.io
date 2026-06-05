@@ -1,6 +1,7 @@
 ---
 layout: essay.html.njk
 title: "Priorities are Shifting"
+draft: true
 ---
 I don't think I care anymore about the Web the way I used to. In 2019, I spent time giving a talk at
 [a small but mighty unconference-y event in San Francisco][1]. Laurie noted my advocacy about my

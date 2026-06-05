@@ -9,6 +9,7 @@ description: >
     experience.
 og:
     image: /images/lua-livtet-library.png
+atUri: "at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3mnivf7nhhj2g"
 ---
 One of the goals I have with [Livtet][] is to incorporate a means of extensibility. I didn't want
 to deeply write support for things like Calibre, Goodreads or Bookwyrm because these services can

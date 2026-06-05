@@ -17,6 +17,7 @@ date: 2024-08-21T17:00:00Z
 description: |
     A bit of self-criticism and self-reflection on how I engage people in my personal life and
     circles around technoactivism, abolition and what it is that I need to do next.
+atUri: "at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3mnivf7kolr2g"
 ---
 ## The Personal
 Some time after working for Glitch, I've come to realize that I had a souring relationship

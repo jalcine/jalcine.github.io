@@ -3,6 +3,7 @@ layout: essay.html.njk
 title: "Find me at (my) home (server)"
 tags: essay
 date: 2024-07-31 10:00:00 -05:00
+atUri: "at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3mnivfbmlxr2g"
 ---
 The server I've "lived" at for some time in the Fediverse is currently down. No socket connection (meaning I can't
 travel to their machine from my home machine over the network I'm on). I thought it was an issue with my phone but then

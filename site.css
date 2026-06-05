@@ -25,6 +25,12 @@
   --mark-background-color: var(--color-highlight);
   --mark-color: #000;
   --heading-size: 3rem;
+  --sequoia-accent-color: var(--color-primary);
+  --sequoia-fg-color: var(--color-foreground);
+  --sequoia-bg-color: var(--color-background);
+  --sequoia-border-color: var(--color-region);
+  --sequoia-secondary-color: var(--color-secondary);
+  --sequoia-border-radius: 0.25rem;
 }
 
 @media screen and (width >=60rem) {

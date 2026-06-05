@@ -9,6 +9,7 @@ masthead:
     src: /images/subtle-divest-web.jpg
     alt: A view of cobble stone buildings and windows in New York's Fashion District
     title: I wonder what people are doing in there; by <a href="https://unsplash.com/photos/a-tall-building-with-many-windows-next-to-a-traffic-light-iHWtSLSDOyE">Timo Wielink</a>.
+atUri: "at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3mnivf6yhlj2g"
 ---
 I don't shy from the fact that I have strong feelings that guide my outlook. I make sure to not
 solely make those feelings my only facet of guidance and look for things that both defend and

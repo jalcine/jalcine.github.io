@@ -14,6 +14,7 @@ masthead:
     alt: The Firefox logo against a dark purple and pink background
     title: "Firefox's future is questionable: should it end?"
 date: 2025-03-02T09:30:00-05:00
+atUri: "at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3mnivf5vamz2g"
 ---
 I've been slogging through social networks with regards to the current situation with Mozilla and
 their ramping up of the commercialization of their flagship product, Firefox, as well as the

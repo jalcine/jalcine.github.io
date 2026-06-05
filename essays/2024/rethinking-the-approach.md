@@ -15,6 +15,7 @@ og:
 description: >
     Thoughts on how I try to approach a decolonialist lens to working in the tech industry, what's
     worked (and hasn't) and what I want to do going forward.
+atUri: "at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3mnivfairib2g"
 ---
 ## The Personal
 Some time after working for Glitch, I've come to realize that I had a different relationship

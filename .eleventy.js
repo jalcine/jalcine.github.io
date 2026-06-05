@@ -34,6 +34,7 @@ export default function (
 
   eleventyConfig.addPassthroughCopy("*.css");
   eleventyConfig.addPassthroughCopy("fonts");
+  eleventyConfig.addPassthroughCopy(".well-known");
 
   for (const folderName of ["images", "videos", "files", "fonts", "scripts"]) {
     eleventyConfig.addPassthroughCopy(folderName);
@@ -55,13 +56,17 @@ export default function (
       fonts: [
         {
           name: "Alegreya",
-          data: readFileSync("fonts/alegreya/webfonts/alegreya-latin-900-normal.woff"),
+          data: readFileSync(
+            "fonts/alegreya/webfonts/alegreya-latin-900-normal.woff",
+          ),
           weight: 900,
           style: "normal",
         },
         {
           name: "Alegreya",
-          data: readFileSync("fonts/alegreya/webfonts/alegreya-latin-400-normal.woff"),
+          data: readFileSync(
+            "fonts/alegreya/webfonts/alegreya-latin-400-normal.woff",
+          ),
           weight: 400,
           style: "normal",
         },

@@ -7,6 +7,7 @@ tags: essay
 date: 2026-06-02T13:00:00-05:00
 description: >
   Closing accounts, making backups and making choices.
+atUri: "at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3mnivf4c7sz2g"
 ---
 
 So I've done some things.

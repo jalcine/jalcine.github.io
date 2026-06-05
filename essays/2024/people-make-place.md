@@ -1,6 +1,8 @@
 ---
 layout: essay.html.njk
+title: People Make the Place
 date: 2025-01-04T09:15:00-05:00
+draft: true
 ---
 Since the 2024 United States election, we've all noticed a _dramatic_ shift in our social feeds.
 While I still subscribe and am backlogged to many feeds[^1]; I still jump over and spend at least an

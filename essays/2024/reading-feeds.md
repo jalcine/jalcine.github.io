@@ -12,6 +12,7 @@ description: >
     networking sites
 og:
     image: /images/invest-rss.jpg
+atUri: "at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3mnivf7ezwj2g"
 ---
 I'm not denying it &mdash; I'm online _a lot_. If I'm not by my laptop (or PC), my phone isn't
 terribly far away. I like keeping a tab as to the going-ons of the Internet[^1]. However, I'm

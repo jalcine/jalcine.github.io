@@ -9,6 +9,7 @@ masthead:
     src: /images/protocol-bicker.jpg
     alt: A sketch of a colorized Statue of Liberty requesting you to buy a goevrnemnt
     title: I wonder what people are doing in there; by <a href="https://unsplash.com/photos/a-tall-building-with-many-windows-next-to-a-traffic-light-iHWtSLSDOyE">Timo Wielink</a>.
+atUri: "at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3mnivf6u2xj2g"
 ---
 Sigh.
 

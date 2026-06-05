@@ -18,6 +18,7 @@ og:
   image: /images/my-website.jpg
 # tags: essay
 date: 2025-10-15T11:00:00-05:00
+atUri: "at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3mnivf4nn2j2g"
 ---
 
 Not too long ago, I mentioned that I wanted to [refashion my site in a way that

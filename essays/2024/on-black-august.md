@@ -10,6 +10,7 @@ tags:
     - essay
     - black august
 date: 2024-09-01T11:00:00-05:00
+atUri: "at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3mnivf7ax2z2g"
 ---
 Today's the first day of September, marking the end of [Black August][1] for 2024. The core tenants
 of studying, training, fasting and fighting were held up in _some_ levels of pedigree by me. From

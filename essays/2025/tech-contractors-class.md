@@ -3,6 +3,7 @@ layout: essay.html.njk
 title: "Tech Contractors Need to Recognize Class"
 tags: essay
 date: 2025-03-01T18:30:00-05:00
+atUri: "at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3mnivf5xsnz2g"
 ---
 
 I technically work "multiple" roles right now. I have a soon-to-be declared

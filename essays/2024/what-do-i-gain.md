@@ -17,6 +17,7 @@ audio:
 description: |
     What is it that I'm trying to get out of using social media? How does my past experiences and that of others
     influnece these decisions?
+atUri: "at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3mnivfaftqb2g"
 ---
 Some time ago, not that long ago, I made a post on my Mastodon account about feeling a sense of fear that social media
 itself is the true Torment Nexus; that its objective of attempting to connect people was one that would lead us to a

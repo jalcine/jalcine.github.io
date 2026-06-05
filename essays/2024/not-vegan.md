@@ -3,6 +3,7 @@ layout: essay.html.njk
 title: "Dropping the 'Vegan' Label from my Political Banner"
 tags: essay
 date: 2024-10-01
+atUri: "at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3mnivf6hrfr2g"
 ---
 > This is more personal and it's a development of politics and self-identity that I've had for a few
 > years now. I'm open to disagreement and the like &mdash; you can voice it to my e-mail and with your

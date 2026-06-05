@@ -13,6 +13,7 @@ masthead:
     src: /images/futures-writing.jpg
     alt: A statue of a lion in front of a library in New York.
     title: <a href="https://www.flickr.com/photos/melanzane1013/424710073/in/photostream/">The grand entry of a library</a> in New York City.
+atUri: "at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3mnivf6klar2g"
 ---
 I read quite a bit. It's how I like to spend time. If it's [via my feeds][8], a magazine
 subscription I've stacked up, an academic journal or a good ol' fashioned book; my face will show

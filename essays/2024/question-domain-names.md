@@ -8,6 +8,7 @@ audio:
       type: audio/mpeg
     - src: question-domain-names.opus
       type: audio/opus
+atUri: "at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3mnivfb37db2g"
 ---
 One tenant[^3] of the IndieWeb is the notion that [your URL is your canonical identity][1] online. This works well enough for folks if you'd 
 like to have multiple identities, be it to separate work from life or more pointedly, [if you're plural](https://www.pluralpride.com/). Domain names 

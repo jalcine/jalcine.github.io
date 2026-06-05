@@ -13,6 +13,7 @@ tags: essay
 date: 2026-05-13T09:00:00-05:00
 description: >
   First Olamaelcu. Next the neighborhood.
+atUri: "at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3mnivf4fhdj2g"
 ---
 
 I posted on [the site for Olamaelcu][1] and I wrote about it [in my

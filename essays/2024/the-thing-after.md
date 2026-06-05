@@ -1,6 +1,7 @@
 ---
 layout: essay.html.njk
 title: "The Thing After the Fixation on the Personal Website"
+draft: true
 ---
 
 I’ve been fighting with myself on what the “next generation” of my online presence would look like - and if I needed to

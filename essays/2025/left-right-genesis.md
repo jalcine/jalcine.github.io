@@ -10,6 +10,7 @@ og:
   image: /images/left-right-center.jpg
 tags: essay
 date: 2025-03-04T11:30:00-05:00
+atUri: "at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3mnivf5sgrz2g"
 ---
 
 This entry serves as a reference whenever someone replies to me saying that

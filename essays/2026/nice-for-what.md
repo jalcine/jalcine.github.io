@@ -13,6 +13,7 @@ tags: essay
 date: 2026-06-03T13:00:00-05:00
 description: >
   The only obligations I have are to be good to my people and to my community.
+atUri: "at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3mnivf45z2j2g"
 ---
 
 I _think_ I've managed to cultivate a online personality that makes it clear

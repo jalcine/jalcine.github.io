@@ -3,6 +3,7 @@ layout: essay.html.njk
 title: "Bringing back Bookmarks"
 tags: essay
 date: 2024-08-24T03:10:00Z
+atUri: "at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3mnivf7hqtr2g"
 ---
 I'm familiar with the idea of "social bookmarking", a practice where one could use a service like
 [del.icio.us][1] to capture things and links that they've found interesting. I used to have

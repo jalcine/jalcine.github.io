@@ -1,6 +1,7 @@
 ---
 layout: essay.html.njk
 title: "Tech doesn't 'spark joy' the same way anymore."
+draft: true
 ---
 
 Since my last (incomplete!) entry on holding [a leftist position on AI][1],

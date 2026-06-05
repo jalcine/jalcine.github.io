@@ -3,6 +3,7 @@ layout: essay.html.njk
 title: "Nation Sovereignity Only Matters When it's a Colonial One"
 tags: essay
 date: 2025-03-11T10:00:00-05:00
+atUri: "at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3mnivf5l6ej2g"
 ---
 
 Conversation around Trump's declaration of wanting [Canada to be the 51st

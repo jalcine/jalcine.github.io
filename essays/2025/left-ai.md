@@ -22,6 +22,7 @@ description: >
   materialistic way that moves the needle forward for progress without
   intrenching the power of capitalists and business folks who are adamant on
   exacerbating existing calamities within the technology sector.
+atUri: "at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3mnivf4kpcj2g"
 ---
 
 I posted a question [on Bluesky][1] about the placement that leftists

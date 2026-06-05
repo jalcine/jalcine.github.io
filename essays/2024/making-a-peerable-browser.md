@@ -2,6 +2,7 @@
 layout: essay.html.njk
 title: "Making a Peerable Browser using Veilid"
 # tags: essay
+draft: true
 ---
 
 [Veilid][] is a project that I've eyed for some time. I decided to make something slightly related to [Shock][] to

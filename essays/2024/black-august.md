@@ -14,6 +14,7 @@ audio:
       type: audio/opus
 
 date: 2024-08-01 11:00:00 -05:00
+atUri: "at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3mnivfb7rsr2g"
 ---
 [Black August][ba] is a month of remembrance and restoration for those who honor the memory of [George Jackson][gj], his
 brother and many other political prisoners of the United States incarceration system (and beyond). On the 45th

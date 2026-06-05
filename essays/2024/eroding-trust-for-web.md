@@ -5,6 +5,7 @@ tags: essay
 date: 2024-10-23T22:10:00-05:00
 description: |
     I deactivated my accounts and will be deactivated more.
+atUri: "at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3mnivf6bn4j2g"
 ---
 I've deactivated my accounts on more platforms today. I looked at the amount of time I spend on all of
 these platforms and it doesn't seem to matter if they're open or closed; I still burn so much time

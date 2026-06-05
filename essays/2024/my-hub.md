@@ -3,6 +3,7 @@ layout: "essay.html.njk"
 tags: "essay"
 title: "Making A Place for My Reading and Research"
 date: 2024-07-15 11:00:00 -05:00
+atUri: "at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3mnivfaolyz2g"
 ---
 I read [quite][1] a [bit][2]. I like talking and taking notes about what I read, what I'd want to read and build lists
 of this so I can refer to it later. I mentioned in [a previous newsletter entry][3] about the admiration I had for both

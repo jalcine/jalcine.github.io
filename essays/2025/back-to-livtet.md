@@ -6,6 +6,7 @@ tags: essay
 description: >
   Finding myself in need of a way to manage my book collection and my reference material, I've
   decided to revisit my ambitions with Livtet.
+atUri: "at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3mnivf5gqrb2g"
 ---
 
 In order to pull myself away from the more time consuming parts of the

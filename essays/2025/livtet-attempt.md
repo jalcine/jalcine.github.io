@@ -1,6 +1,7 @@
 ---
 layout: essay.html.njk
 title: "Untitled Post About Livtet"
+draft: true
 ---
 
 I was nudged recently about the status of Livtet. I've been a bit more focused

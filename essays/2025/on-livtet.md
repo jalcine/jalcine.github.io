@@ -6,6 +6,7 @@ tags: essay
 description: >
   It's been about half a year since I've "started" working on Livtet and I
   couldn't tell you what I'm doing with it.
+atUri: "at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3mnivf5aogj2g"
 ---
 
 I started working on [Livtet][] out of the annoyance of using Calibre. Sure,

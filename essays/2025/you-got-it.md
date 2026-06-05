@@ -6,6 +6,7 @@ description: >
     domestic and foreign policy &mdash; will keep it as the cobblestone of operations in the nation.
 tags: essay
 date: 2025-03-10T23:50:00-05:00
+atUri: "at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3mnivf5pkyj2g"
 ---
 I'm writing this way later than I'd care to. I saw a post that reiterated that it was _solely_ the
 action of voters of Trump that led to the formation of the Department of Homeland Security (DHS) and the

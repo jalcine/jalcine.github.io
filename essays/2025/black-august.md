@@ -7,6 +7,7 @@ description: >
   We return to the time of memorialization in those we've lost to the prison
   industrial complex and  work on personal growth to become more useful to the
   abolitionist movement.
+atUri: "at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3mnivf4y22r2g"
 ---
 
 [Black August][ba] is the time of year where abolitionists aim to align

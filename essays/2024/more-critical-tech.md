@@ -11,6 +11,7 @@ masthead:
     title: |
         A man looking out of the window at the garbage that is tech,
         by <a href="https://unsplash.com/photos/man-looking-through-the-window-blind-inside-room-05Oe0Z8Ls3k">Joshua O</a>.
+atUri: "at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3mnivf74lgb2g"
 ---
 I'm _sure_ someone out there, either in the past (near or far) or in the present, has written about
 the need for critique of establishments that you work and live within[^1]. My personal turn came

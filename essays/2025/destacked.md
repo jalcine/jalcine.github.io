@@ -14,6 +14,7 @@ masthead:
 og:
   type: article
   image: /images/destacked.jpg
+atUri: "at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3mnivf4uwhb2g"
 ---
 
 Substack is a company that started in 2017 and in less than a decade, has

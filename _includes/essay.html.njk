@@ -33,15 +33,10 @@ og:
   <section class="e-content">
     {{- content | safe -}}
   </section>
-  {% if syndication %}<bsky-comments post="{{ syndication.atproto }}"></bsky-comments>{% endif %}
+  <sequoia-comments></sequoia-comments>
   {% include "./content-footer.html" %}
 </article>
 
 {% block head %}
-  <script type="module" src="https://esm.sh/gh/loueed/bsky@v1.0.0/comments"></script>
-  <style>
-  comments {
-      max-width: var(--content-width);
-    }
-  </style>
+  <script type="module" src="/scripts/components/sequoia-comments.js"></script>
 {% endblock %}

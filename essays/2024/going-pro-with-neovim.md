@@ -1,6 +1,7 @@
 ---
 layout: essay.html.njk
 title: Going Pro with Neovim; Yet Another Reset
+draft: true
 ---
 As time is something of a slight abundance for me[^1], I decided to reset my
 Neovim setup. This meant wiping the dictionary of words I accurred, all of the

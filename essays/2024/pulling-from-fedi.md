@@ -13,6 +13,7 @@ tags:
     - essay
     - social web
 date: 2024-08-07 11:00:00 -05:00
+atUri: "at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3mnivf7y4br2g"
 ---
 I'm deciding to make more of my content more "ephemeral"; discarding months (if not years) of information I've posted
 there. I have backups from my Twitter, Facebook and Instagram accounts and I've been wrestling on how to pull them into
