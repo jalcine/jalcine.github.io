@@ -11,7 +11,7 @@ material:
   title: "AI Hiring Tools Can Yield Racial Bias and Systemic Rejection"
 ---
 
-Well, well, well - this is a bit of doozy. Not shocking or surprising, but a doozy nonetheless.
+Well, well, well - this is a bit of a doozy. Not shocking or surprising, but a doozy nonetheless.
 [This report from Stanford][1] highlights quite a few things:
 
 - AI hiring tools are helping folks break the (weakly enforced) law around hiring bias.
