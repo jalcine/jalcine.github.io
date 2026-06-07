@@ -4,7 +4,7 @@ tags: link
 title: "'For All Mankind' Is Great Until Season 3"
 og:
   image: https://is1-ssl.mzstatic.com/image/thumb/f4ZCC6dfJT8t6Vxm0rHlQw/2400x1350.webp
-date: 2026-06-07T09:05:00
+date: 2026-06-07T06:10:00
 material:
   link: https://tv.apple.com/us/show/for-all-mankind/umc.cmc.6wsi780sz5tdbqcf11k76mkp7
   source:
