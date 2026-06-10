@@ -25,10 +25,12 @@
 
 const styles = `
 :host {
-	display: inline-block;
+	display: block;
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 	color: var(--sequoia-fg-color, #1f2937);
 	line-height: 1.5;
+  text-align: center;
+  margin: 0 auto;
 }
 
 * {
@@ -110,27 +112,27 @@ const ATMOSPHERE_ICON = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11
 // ============================================================================
 
 const BUTTON_TYPES = {
-	sequoia: {
-		icon: SEQUOIA_ICON,
-		subscribe: "Subscribe on Sequoia",
-		unsubscribe: "Unsubscribe",
-	},
-	bluesky: {
-		icon: BLUESKY_ICON,
-		subscribe: "Subscribe on Bluesky",
-		unsubscribe: "Unsubscribe",
-	},
-	blacksky: {
-		icon: BLACKSKY_ICON,
-		subscribe: "Subscribe on Blacksky",
-		unsubscribe: "Unsubscribe",
-	},
-	atmosphere: {
-		icon: ATMOSPHERE_ICON,
-		subscribe: "Subscribe on Atmosphere",
-		unsubscribe: "Unsubscribe",
-	},
-	plain: { icon: "", subscribe: "Subscribe", unsubscribe: "Unsubscribe" },
+  sequoia: {
+    icon: SEQUOIA_ICON,
+    subscribe: "Subscribe on Sequoia",
+    unsubscribe: "Unsubscribe",
+  },
+  bluesky: {
+    icon: BLUESKY_ICON,
+    subscribe: "Subscribe on Bluesky",
+    unsubscribe: "Unsubscribe",
+  },
+  blacksky: {
+    icon: BLACKSKY_ICON,
+    subscribe: "Subscribe on Blacksky",
+    unsubscribe: "Unsubscribe",
+  },
+  atmosphere: {
+    icon: ATMOSPHERE_ICON,
+    subscribe: "Subscribe on Atmosphere",
+    unsubscribe: "Unsubscribe",
+  },
+  plain: { icon: "", subscribe: "Subscribe", unsubscribe: "Unsubscribe" },
 };
 
 // ============================================================================
@@ -138,40 +140,40 @@ const BUTTON_TYPES = {
 // ============================================================================
 
 const HEART_PATH =
-	"M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z";
+  "M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z";
 const HEART_ICON_OUTLINED = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="${HEART_PATH}"/></svg>`;
 const HEART_ICON_FILLED = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="${HEART_PATH}"/></svg>`;
 
 const STAR_PATH =
-	"M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z";
+  "M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z";
 const STAR_ICON_OUTLINED = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="${STAR_PATH}"/></svg>`;
 const STAR_ICON_FILLED = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"><path d="${STAR_PATH}"/></svg>`;
 
 const THUMBS_UP_RECT_PATH = "M1 21h4V9H1v12z";
 const THUMBS_UP_HAND_PATH =
-	"M23 10c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z";
+  "M23 10c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z";
 const THUMBS_UP_ICON_OUTLINED = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="${THUMBS_UP_RECT_PATH}" fill="currentColor"/><path d="${THUMBS_UP_HAND_PATH}" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>`;
 const THUMBS_UP_ICON_FILLED = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="${THUMBS_UP_RECT_PATH}"/><path d="${THUMBS_UP_HAND_PATH}"/></svg>`;
 
 const RECOMMEND_ICON_TYPES = {
-	heart: {
-		icon: HEART_ICON_OUTLINED,
-		iconActioned: HEART_ICON_FILLED,
-		action: "Recommend",
-		unaction: "Unrecommend",
-	},
-	star: {
-		icon: STAR_ICON_OUTLINED,
-		iconActioned: STAR_ICON_FILLED,
-		action: "Recommend",
-		unaction: "Unrecommend",
-	},
-	"thumbs-up": {
-		icon: THUMBS_UP_ICON_OUTLINED,
-		iconActioned: THUMBS_UP_ICON_FILLED,
-		action: "Recommend",
-		unaction: "Unrecommend",
-	},
+  heart: {
+    icon: HEART_ICON_OUTLINED,
+    iconActioned: HEART_ICON_FILLED,
+    action: "Recommend",
+    unaction: "Unrecommend",
+  },
+  star: {
+    icon: STAR_ICON_OUTLINED,
+    iconActioned: STAR_ICON_FILLED,
+    action: "Recommend",
+    unaction: "Unrecommend",
+  },
+  "thumbs-up": {
+    icon: THUMBS_UP_ICON_OUTLINED,
+    iconActioned: THUMBS_UP_ICON_FILLED,
+    action: "Recommend",
+    unaction: "Unrecommend",
+  },
 };
 
 // ============================================================================
@@ -183,20 +185,20 @@ const RECOMMEND_ICON_TYPES = {
  * @param {string} did
  */
 function storeSubscriberDid(did) {
-	try {
-		const expires = new Date(
-			Date.now() + 365 * 24 * 60 * 60 * 1000,
-		).toUTCString();
-		// biome-ignore lint/suspicious/noDocumentCookie: back-compat with older browsers
-		document.cookie = `sequoia_did=${encodeURIComponent(did)}; Expires=${expires}; Path=/; SameSite=Lax; Secure`;
-	} catch {
-		// Cookie write may fail in some embedded contexts
-	}
-	try {
-		localStorage.setItem("sequoia_did", did);
-	} catch {
-		// localStorage may be unavailable
-	}
+  try {
+    const expires = new Date(
+      Date.now() + 365 * 24 * 60 * 60 * 1000,
+    ).toUTCString();
+    // biome-ignore lint/suspicious/noDocumentCookie: back-compat with older browsers
+    document.cookie = `sequoia_did=${encodeURIComponent(did)}; Expires=${expires}; Path=/; SameSite=Lax; Secure`;
+  } catch {
+    // Cookie write may fail in some embedded contexts
+  }
+  try {
+    localStorage.setItem("sequoia_did", did);
+  } catch {
+    // localStorage may be unavailable
+  }
 }
 
 /**
@@ -204,40 +206,40 @@ function storeSubscriberDid(did) {
  * @returns {string | null}
  */
 function getStoredSubscriberDid() {
-	try {
-		const match = document.cookie.match(/(?:^|;\s*)sequoia_did=([^;]+)/);
-		if (match) {
-			const did = decodeURIComponent(match[1]);
-			if (did.startsWith("did:")) return did;
-		}
-	} catch {
-		// ignore
-	}
-	try {
-		const did = localStorage.getItem("sequoia_did");
-		if (did?.startsWith("did:")) return did;
-	} catch {
-		// ignore
-	}
-	return null;
+  try {
+    const match = document.cookie.match(/(?:^|;\s*)sequoia_did=([^;]+)/);
+    if (match) {
+      const did = decodeURIComponent(match[1]);
+      if (did.startsWith("did:")) return did;
+    }
+  } catch {
+    // ignore
+  }
+  try {
+    const did = localStorage.getItem("sequoia_did");
+    if (did?.startsWith("did:")) return did;
+  } catch {
+    // ignore
+  }
+  return null;
 }
 
 /**
  * Remove the stored subscriber DID from both cookie and localStorage.
  */
 function clearSubscriberDid() {
-	try {
-		// biome-ignore lint/suspicious/noDocumentCookie: back-compat with older browsers
-		document.cookie =
-			"sequoia_did=; Expires=Thu, 01 Jan 1970 00:00:00 GMT; Path=/; SameSite=Lax; Secure";
-	} catch {
-		// ignore
-	}
-	try {
-		localStorage.removeItem("sequoia_did");
-	} catch {
-		// ignore
-	}
+  try {
+    // biome-ignore lint/suspicious/noDocumentCookie: back-compat with older browsers
+    document.cookie =
+      "sequoia_did=; Expires=Thu, 01 Jan 1970 00:00:00 GMT; Path=/; SameSite=Lax; Secure";
+  } catch {
+    // ignore
+  }
+  try {
+    localStorage.removeItem("sequoia_did");
+  } catch {
+    // ignore
+  }
 }
 
 /**
@@ -245,32 +247,32 @@ function clearSubscriberDid() {
  * set by the subscribe redirect flow. Consumes them by removing from the URL.
  */
 function consumeReturnParams() {
-	const url = new URL(window.location.href);
-	const did = url.searchParams.get("sequoia_did");
-	const unsubscribed = url.searchParams.get("sequoia_unsubscribed");
+  const url = new URL(window.location.href);
+  const did = url.searchParams.get("sequoia_did");
+  const unsubscribed = url.searchParams.get("sequoia_unsubscribed");
 
-	let changed = false;
+  let changed = false;
 
-	if (unsubscribed === "1") {
-		clearSubscriberDid();
-		url.searchParams.delete("sequoia_unsubscribed");
-		changed = true;
-	}
+  if (unsubscribed === "1") {
+    clearSubscriberDid();
+    url.searchParams.delete("sequoia_unsubscribed");
+    changed = true;
+  }
 
-	if (did?.startsWith("did:")) {
-		storeSubscriberDid(did);
-		url.searchParams.delete("sequoia_did");
-		changed = true;
-	}
+  if (did?.startsWith("did:")) {
+    storeSubscriberDid(did);
+    url.searchParams.delete("sequoia_did");
+    changed = true;
+  }
 
-	if (changed) {
-		const cleanUrl = url.pathname + (url.search || "") + (url.hash || "");
-		try {
-			window.history.replaceState(null, "", cleanUrl);
-		} catch {
-			// ignore
-		}
-	}
+  if (changed) {
+    const cleanUrl = url.pathname + (url.search || "") + (url.hash || "");
+    try {
+      window.history.replaceState(null, "", cleanUrl);
+    } catch {
+      // ignore
+    }
+  }
 }
 
 // ============================================================================
@@ -283,29 +285,29 @@ function consumeReturnParams() {
  * @returns {Promise<string>} Publication AT URI
  */
 async function fetchPublicationUri(origin) {
-	const base = origin ?? window.location.origin;
-	const url = `${base}/.well-known/site.standard.publication`;
-	const response = await fetch(url);
-	if (!response.ok) {
-		throw new Error(`Could not fetch publication URI: ${response.status}`);
-	}
+  const base = origin ?? window.location.origin;
+  const url = `${base}/.well-known/site.standard.publication`;
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error(`Could not fetch publication URI: ${response.status}`);
+  }
 
-	// Accept either plain text (the AT URI itself) or JSON with a `uri` field.
-	const contentType = response.headers.get("content-type") ?? "";
-	if (contentType.includes("application/json")) {
-		const data = await response.json();
-		const uri = data?.uri ?? data?.atUri ?? data?.publication;
-		if (!uri) {
-			throw new Error("Publication response did not contain a URI");
-		}
-		return uri;
-	}
+  // Accept either plain text (the AT URI itself) or JSON with a `uri` field.
+  const contentType = response.headers.get("content-type") ?? "";
+  if (contentType.includes("application/json")) {
+    const data = await response.json();
+    const uri = data?.uri ?? data?.atUri ?? data?.publication;
+    if (!uri) {
+      throw new Error("Publication response did not contain a URI");
+    }
+    return uri;
+  }
 
-	const text = (await response.text()).trim();
-	if (!text.startsWith("at://")) {
-		throw new Error(`Unexpected publication URI format: ${text}`);
-	}
-	return text;
+  const text = (await response.text()).trim();
+  if (!text.startsWith("at://")) {
+    throw new Error(`Unexpected publication URI format: ${text}`);
+  }
+  return text;
 }
 
 // ============================================================================
@@ -322,249 +324,249 @@ const BaseElement = typeof HTMLElement !== "undefined" ? HTMLElement : class {};
  * to provide resource-specific behaviour.
  */
 class SequoiaActionBase extends BaseElement {
-	constructor() {
-		super();
-		const shadow = this.attachShadow({ mode: "open" });
+  constructor() {
+    super();
+    const shadow = this.attachShadow({ mode: "open" });
 
-		const styleTag = document.createElement("style");
-		styleTag.innerText = styles;
-		shadow.appendChild(styleTag);
+    const styleTag = document.createElement("style");
+    styleTag.innerText = styles;
+    shadow.appendChild(styleTag);
 
-		const wrapper = document.createElement("div");
-		shadow.appendChild(wrapper);
-		wrapper.part = "container";
+    const wrapper = document.createElement("div");
+    shadow.appendChild(wrapper);
+    wrapper.part = "container";
 
-		this.wrapper = wrapper;
-		this.actioned = false;
-		this.state = { type: "idle" };
-		this.abortController = null;
-		this.render();
-	}
+    this.wrapper = wrapper;
+    this.actioned = false;
+    this.state = { type: "idle" };
+    this.abortController = null;
+    this.render();
+  }
 
-	disconnectedCallback() {
-		this.abortController?.abort();
-	}
+  disconnectedCallback() {
+    this.abortController?.abort();
+  }
 
-	attributeChangedCallback() {
-		if (this.state.type === "error" || this.state.type === "no-resource") {
-			this.state = { type: "idle" };
-		}
-		this.render();
-	}
+  attributeChangedCallback() {
+    if (this.state.type === "error" || this.state.type === "no-resource") {
+      this.state = { type: "idle" };
+    }
+    this.render();
+  }
 
-	// ── Shared getters ───────────────────────────────────────────────────────
+  // ── Shared getters ───────────────────────────────────────────────────────
 
-	get callbackUri() {
-		return this.getAttribute("callback-uri") ?? this.defaultCallbackUri;
-	}
+  get callbackUri() {
+    return this.getAttribute("callback-uri") ?? this.defaultCallbackUri;
+  }
 
-	get hide() {
-		return this.getAttribute("hide") === "auto";
-	}
+  get hide() {
+    return this.getAttribute("hide") === "auto";
+  }
 
-	// ── Template methods (override in subclasses) ────────────────────────────
+  // ── Template methods (override in subclasses) ────────────────────────────
 
-	/** @returns {string} Default callback URI when the attribute is absent */
-	get defaultCallbackUri() {
-		return "";
-	}
+  /** @returns {string} Default callback URI when the attribute is absent */
+  get defaultCallbackUri() {
+    return "";
+  }
 
-	/** @returns {string} Query-parameter name for the resource URI */
-	get resourceParam() {
-		return "resourceUri";
-	}
+  /** @returns {string} Query-parameter name for the resource URI */
+  get resourceParam() {
+    return "resourceUri";
+  }
 
-	/**
-	 * Value of the `action` query-parameter used in the unaction redirect.
-	 * @returns {string}
-	 */
-	get unactionValue() {
-		return "unaction";
-	}
+  /**
+   * Value of the `action` query-parameter used in the unaction redirect.
+   * @returns {string}
+   */
+  get unactionValue() {
+    return "unaction";
+  }
 
-	/** @returns {string} Key in the /check response that signals the action was taken */
-	get actionedKey() {
-		return "actioned";
-	}
+  /** @returns {string} Key in the /check response that signals the action was taken */
+  get actionedKey() {
+    return "actioned";
+  }
 
-	/** @returns {string} CustomEvent name dispatched on success */
-	get actionedEventName() {
-		return "sequoia-actioned";
-	}
+  /** @returns {string} CustomEvent name dispatched on success */
+  get actionedEventName() {
+    return "sequoia-actioned";
+  }
 
-	/** @returns {string} CustomEvent name dispatched on error */
-	get errorEventName() {
-		return "sequoia-action-error";
-	}
+  /** @returns {string} CustomEvent name dispatched on error */
+  get errorEventName() {
+    return "sequoia-action-error";
+  }
 
-	/** @returns {string} Fallback error message when the thrown value has no message */
-	get defaultErrorMessage() {
-		return "Action failed";
-	}
+  /** @returns {string} Fallback error message when the thrown value has no message */
+  get defaultErrorMessage() {
+    return "Action failed";
+  }
 
-	/** @returns {string} SVG string for the button icon */
-	getIcon() {
-		return "";
-	}
+  /** @returns {string} SVG string for the button icon */
+  getIcon() {
+    return "";
+  }
 
-	/** @returns {string} Accessible label for the button (defaults to the visible label) */
-	getAriaLabel() {
-		return this.actioned
-			? (this.getUnactionLabel?.() ?? this.getDefaultUnactionLabel?.() ?? "")
-			: (this.label ?? this.getDefaultActionLabel?.() ?? "");
-	}
+  /** @returns {string} Accessible label for the button (defaults to the visible label) */
+  getAriaLabel() {
+    return this.actioned
+      ? (this.getUnactionLabel?.() ?? this.getDefaultUnactionLabel?.() ?? "")
+      : (this.label ?? this.getDefaultActionLabel?.() ?? "");
+  }
 
-	/**
-	 * Resolve the resource URI for this action. May perform async network calls.
-	 * @returns {Promise<string>}
-	 */
-	async resolveResourceUri() {
-		throw new Error("resolveResourceUri() must be implemented by subclass");
-	}
+  /**
+   * Resolve the resource URI for this action. May perform async network calls.
+   * @returns {Promise<string>}
+   */
+  async resolveResourceUri() {
+    throw new Error("resolveResourceUri() must be implemented by subclass");
+  }
 
-	// ── Shared logic ─────────────────────────────────────────────────────────
+  // ── Shared logic ─────────────────────────────────────────────────────────
 
-	/**
-	 * Check whether the current user has already taken this action for the
-	 * given resource URI. Updates this.actioned and re-renders on success.
-	 * @param {string} resourceUri
-	 */
-	async checkStatusFor(resourceUri) {
-		try {
-			const checkUrl = new URL(`${this.callbackUri}/check`);
-			checkUrl.searchParams.set(this.resourceParam, resourceUri);
+  /**
+   * Check whether the current user has already taken this action for the
+   * given resource URI. Updates this.actioned and re-renders on success.
+   * @param {string} resourceUri
+   */
+  async checkStatusFor(resourceUri) {
+    try {
+      const checkUrl = new URL(`${this.callbackUri}/check`);
+      checkUrl.searchParams.set(this.resourceParam, resourceUri);
 
-			// Pass the stored DID so the server can check without a session cookie
-			const storedDid = getStoredSubscriberDid();
-			if (storedDid) {
-				checkUrl.searchParams.set("did", storedDid);
-			}
+      // Pass the stored DID so the server can check without a session cookie
+      const storedDid = getStoredSubscriberDid();
+      if (storedDid) {
+        checkUrl.searchParams.set("did", storedDid);
+      }
 
-			const res = await fetch(checkUrl.toString(), {
-				credentials: "include",
-			});
-			if (!res.ok) return;
-			const data = await res.json();
-			if (data[this.actionedKey]) {
-				this.actioned = true;
-				this.render();
-			}
-		} catch {
-			// Ignore errors — show default action button
-		}
-	}
+      const res = await fetch(checkUrl.toString(), {
+        credentials: "include",
+      });
+      if (!res.ok) return;
+      const data = await res.json();
+      if (data[this.actionedKey]) {
+        this.actioned = true;
+        this.render();
+      }
+    } catch {
+      // Ignore errors — show default action button
+    }
+  }
 
-	async handleClick() {
-		if (this.state.type === "loading") {
-			return;
-		}
+  async handleClick() {
+    if (this.state.type === "loading") {
+      return;
+    }
 
-		// Unaction: redirect to the full-page unaction flow
-		if (this.actioned) {
-			const resourceUri = await this.resolveResourceUri();
-			window.location.href = `${this.callbackUri}?${this.resourceParam}=${encodeURIComponent(resourceUri)}&action=${this.unactionValue}`;
-			return;
-		}
+    // Unaction: redirect to the full-page unaction flow
+    if (this.actioned) {
+      const resourceUri = await this.resolveResourceUri();
+      window.location.href = `${this.callbackUri}?${this.resourceParam}=${encodeURIComponent(resourceUri)}&action=${this.unactionValue}`;
+      return;
+    }
 
-		this.state = { type: "loading" };
-		this.render();
+    this.state = { type: "loading" };
+    this.render();
 
-		try {
-			const resourceUri = await this.resolveResourceUri();
+    try {
+      const resourceUri = await this.resolveResourceUri();
 
-			const response = await fetch(this.callbackUri, {
-				method: "POST",
-				headers: { "Content-Type": "application/json" },
-				credentials: "include",
-				referrerPolicy: "no-referrer-when-downgrade",
-				body: JSON.stringify({ [this.resourceParam]: resourceUri }),
-			});
+      const response = await fetch(this.callbackUri, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        credentials: "include",
+        referrerPolicy: "no-referrer-when-downgrade",
+        body: JSON.stringify({ [this.resourceParam]: resourceUri }),
+      });
 
-			const data = await response.json();
+      const data = await response.json();
 
-			if (response.status === 401 && data.authenticated === false) {
-				// Redirect to the hosted action page to complete OAuth,
-				// passing the current page URL (without credentials) as returnTo.
-				const actionUrl = new URL(data.subscribeUrl);
-				const pageUrl = new URL(window.location.href);
-				pageUrl.username = "";
-				pageUrl.password = "";
-				actionUrl.searchParams.set("returnTo", pageUrl.toString());
-				window.location.href = actionUrl.toString();
-				return;
-			}
+      if (response.status === 401 && data.authenticated === false) {
+        // Redirect to the hosted action page to complete OAuth,
+        // passing the current page URL (without credentials) as returnTo.
+        const actionUrl = new URL(data.subscribeUrl);
+        const pageUrl = new URL(window.location.href);
+        pageUrl.username = "";
+        pageUrl.password = "";
+        actionUrl.searchParams.set("returnTo", pageUrl.toString());
+        window.location.href = actionUrl.toString();
+        return;
+      }
 
-			if (!response.ok) {
-				throw new Error(data.error ?? `HTTP ${response.status}`);
-			}
+      if (!response.ok) {
+        throw new Error(data.error ?? `HTTP ${response.status}`);
+      }
 
-			const { recordUri } = data;
+      const { recordUri } = data;
 
-			// Store the DID from the record URI (at://did:aaa:bbb/...)
-			if (recordUri) {
-				const didMatch = recordUri.match(/^at:\/\/(did:[^/]+)/);
-				if (didMatch) {
-					storeSubscriberDid(didMatch[1]);
-				}
-			}
+      // Store the DID from the record URI (at://did:aaa:bbb/...)
+      if (recordUri) {
+        const didMatch = recordUri.match(/^at:\/\/(did:[^/]+)/);
+        if (didMatch) {
+          storeSubscriberDid(didMatch[1]);
+        }
+      }
 
-			this.actioned = true;
-			this.state = { type: "idle" };
-			this.render();
+      this.actioned = true;
+      this.state = { type: "idle" };
+      this.render();
 
-			this.dispatchEvent(
-				new CustomEvent(this.actionedEventName, {
-					bubbles: true,
-					composed: true,
-					detail: { [this.resourceParam]: resourceUri, recordUri },
-				}),
-			);
-		} catch (error) {
-			if (this.state.type !== "loading") return;
+      this.dispatchEvent(
+        new CustomEvent(this.actionedEventName, {
+          bubbles: true,
+          composed: true,
+          detail: { [this.resourceParam]: resourceUri, recordUri },
+        }),
+      );
+    } catch (error) {
+      if (this.state.type !== "loading") return;
 
-			const message =
-				error instanceof Error ? error.message : this.defaultErrorMessage;
-			this.state = { type: "error", message };
-			this.render();
+      const message =
+        error instanceof Error ? error.message : this.defaultErrorMessage;
+      this.state = { type: "error", message };
+      this.render();
 
-			this.dispatchEvent(
-				new CustomEvent(this.errorEventName, {
-					bubbles: true,
-					composed: true,
-					detail: { message },
-				}),
-			);
-		}
-	}
+      this.dispatchEvent(
+        new CustomEvent(this.errorEventName, {
+          bubbles: true,
+          composed: true,
+          detail: { message },
+        }),
+      );
+    }
+  }
 
-	render() {
-		const { type } = this.state;
+  render() {
+    const { type } = this.state;
 
-		if (type === "no-resource") {
-			if (this.hide) {
-				this.wrapper.innerHTML = "";
-				this.wrapper.style.display = "none";
-			}
-			return;
-		}
+    if (type === "no-resource") {
+      if (this.hide) {
+        this.wrapper.innerHTML = "";
+        this.wrapper.style.display = "none";
+      }
+      return;
+    }
 
-		const isLoading = type === "loading";
-		const icon = isLoading
-			? `<span class="sequoia-loading-spinner"></span>`
-			: this.getIcon();
+    const isLoading = type === "loading";
+    const icon = isLoading
+      ? `<span class="sequoia-loading-spinner"></span>`
+      : this.getIcon();
 
-		const label = this.actioned
-			? (this.getUnactionLabel?.() ?? this.getDefaultUnactionLabel?.() ?? "")
-			: (this.label ?? this.getDefaultActionLabel?.() ?? "");
+    const label = this.actioned
+      ? (this.getUnactionLabel?.() ?? this.getDefaultUnactionLabel?.() ?? "")
+      : (this.label ?? this.getDefaultActionLabel?.() ?? "");
 
-		const ariaLabel = this.getAriaLabel();
+    const ariaLabel = this.getAriaLabel();
 
-		const errorHtml =
-			type === "error"
-				? `<span class="sequoia-error-message">${escapeHtml(this.state.message)}</span>`
-				: "";
+    const errorHtml =
+      type === "error"
+        ? `<span class="sequoia-error-message">${escapeHtml(this.state.message)}</span>`
+        : "";
 
-		this.wrapper.innerHTML = `
+    this.wrapper.innerHTML = `
 			<button
 				class="sequoia-button"
 				type="button"
@@ -578,200 +580,200 @@ class SequoiaActionBase extends BaseElement {
 			${errorHtml}
 		`;
 
-		const btn = this.wrapper.querySelector("button");
-		btn?.addEventListener("click", () => this.handleClick());
-	}
+    const btn = this.wrapper.querySelector("button");
+    btn?.addEventListener("click", () => this.handleClick());
+  }
 }
 
 class SequoiaSubscribe extends SequoiaActionBase {
-	static get observedAttributes() {
-		return [
-			"publication-uri",
-			"callback-uri",
-			"label",
-			"unsubscribe-label",
-			"button-type",
-			"hide",
-		];
-	}
+  static get observedAttributes() {
+    return [
+      "publication-uri",
+      "callback-uri",
+      "label",
+      "unsubscribe-label",
+      "button-type",
+      "hide",
+    ];
+  }
 
-	connectedCallback() {
-		consumeReturnParams();
-		this.checkPublication();
-	}
+  connectedCallback() {
+    consumeReturnParams();
+    this.checkPublication();
+  }
 
-	get publicationUri() {
-		return this.getAttribute("publication-uri") ?? null;
-	}
+  get publicationUri() {
+    return this.getAttribute("publication-uri") ?? null;
+  }
 
-	get label() {
-		return this.getAttribute("label") ?? null;
-	}
+  get label() {
+    return this.getAttribute("label") ?? null;
+  }
 
-	get buttonType() {
-		const val = this.getAttribute("button-type");
-		return val && val in BUTTON_TYPES ? val : "sequoia";
-	}
+  get buttonType() {
+    const val = this.getAttribute("button-type");
+    return val && val in BUTTON_TYPES ? val : "sequoia";
+  }
 
-	get unsubscribeLabel() {
-		return this.getAttribute("unsubscribe-label") ?? null;
-	}
+  get unsubscribeLabel() {
+    return this.getAttribute("unsubscribe-label") ?? null;
+  }
 
-	// ── Template method overrides ────────────────────────────────────────────
+  // ── Template method overrides ────────────────────────────────────────────
 
-	get defaultCallbackUri() {
-		return "https://sequoia.pub/subscribe";
-	}
-	get resourceParam() {
-		return "publicationUri";
-	}
-	get unactionValue() {
-		return "unsubscribe";
-	}
-	get actionedKey() {
-		return "subscribed";
-	}
-	get actionedEventName() {
-		return "sequoia-subscribed";
-	}
-	get errorEventName() {
-		return "sequoia-subscribe-error";
-	}
-	get defaultErrorMessage() {
-		return "Failed to subscribe";
-	}
+  get defaultCallbackUri() {
+    return "https://sequoia.pub/subscribe";
+  }
+  get resourceParam() {
+    return "publicationUri";
+  }
+  get unactionValue() {
+    return "unsubscribe";
+  }
+  get actionedKey() {
+    return "subscribed";
+  }
+  get actionedEventName() {
+    return "sequoia-subscribed";
+  }
+  get errorEventName() {
+    return "sequoia-subscribe-error";
+  }
+  get defaultErrorMessage() {
+    return "Failed to subscribe";
+  }
 
-	getDefaultActionLabel() {
-		return (BUTTON_TYPES[this.buttonType] ?? BUTTON_TYPES.sequoia).subscribe;
-	}
+  getDefaultActionLabel() {
+    return (BUTTON_TYPES[this.buttonType] ?? BUTTON_TYPES.sequoia).subscribe;
+  }
 
-	getDefaultUnactionLabel() {
-		return (BUTTON_TYPES[this.buttonType] ?? BUTTON_TYPES.sequoia).unsubscribe;
-	}
+  getDefaultUnactionLabel() {
+    return (BUTTON_TYPES[this.buttonType] ?? BUTTON_TYPES.sequoia).unsubscribe;
+  }
 
-	getUnactionLabel() {
-		return this.unsubscribeLabel;
-	}
+  getUnactionLabel() {
+    return this.unsubscribeLabel;
+  }
 
-	getIcon() {
-		return (BUTTON_TYPES[this.buttonType] ?? BUTTON_TYPES.sequoia).icon;
-	}
+  getIcon() {
+    return (BUTTON_TYPES[this.buttonType] ?? BUTTON_TYPES.sequoia).icon;
+  }
 
-	async resolveResourceUri() {
-		return this.publicationUri ?? (await fetchPublicationUri());
-	}
+  async resolveResourceUri() {
+    return this.publicationUri ?? (await fetchPublicationUri());
+  }
 
-	// ── SequoiaSubscribe-specific logic ──────────────────────────────────────
+  // ── SequoiaSubscribe-specific logic ──────────────────────────────────────
 
-	/** @returns {boolean} Whether the user is currently subscribed. Alias for this.actioned. */
-	get subscribed() {
-		return this.actioned;
-	}
+  /** @returns {boolean} Whether the user is currently subscribed. Alias for this.actioned. */
+  get subscribed() {
+    return this.actioned;
+  }
 
-	/**
-	 * Check whether the current user is subscribed to the given publication URI.
-	 * Forwards to the shared checkStatusFor() method.
-	 * @param {string} publicationUri
-	 */
-	checkSubscription(publicationUri) {
-		return this.checkStatusFor(publicationUri);
-	}
+  /**
+   * Check whether the current user is subscribed to the given publication URI.
+   * Forwards to the shared checkStatusFor() method.
+   * @param {string} publicationUri
+   */
+  checkSubscription(publicationUri) {
+    return this.checkStatusFor(publicationUri);
+  }
 
-	async checkPublication() {
-		this.abortController?.abort();
-		this.abortController = new AbortController();
+  async checkPublication() {
+    this.abortController?.abort();
+    this.abortController = new AbortController();
 
-		try {
-			const uri = await this.resolveResourceUri();
-			this.checkStatusFor(uri);
-		} catch {
-			this.state = { type: "no-resource" };
-			this.render();
-		}
-	}
+    try {
+      const uri = await this.resolveResourceUri();
+      this.checkStatusFor(uri);
+    } catch {
+      this.state = { type: "no-resource" };
+      this.render();
+    }
+  }
 }
 
 class SequoiaRecommend extends SequoiaActionBase {
-	static get observedAttributes() {
-		return ["document-uri", "callback-uri", "button-type", "hide"];
-	}
+  static get observedAttributes() {
+    return ["document-uri", "callback-uri", "button-type", "hide"];
+  }
 
-	connectedCallback() {
-		consumeReturnParams();
-		this.checkDocument();
-	}
+  connectedCallback() {
+    consumeReturnParams();
+    this.checkDocument();
+  }
 
-	get documentUri() {
-		const attrUri = this.getAttribute("document-uri");
-		if (attrUri) return attrUri;
-		const linkTag = document.querySelector(
-			'link[rel="site.standard.document"]',
-		);
-		return linkTag?.href ?? null;
-	}
+  get documentUri() {
+    const attrUri = this.getAttribute("document-uri");
+    if (attrUri) return attrUri;
+    const linkTag = document.querySelector(
+      'link[rel="site.standard.document"]',
+    );
+    return linkTag?.href ?? null;
+  }
 
-	get buttonType() {
-		const val = this.getAttribute("button-type");
-		return val && val in RECOMMEND_ICON_TYPES ? val : "heart";
-	}
+  get buttonType() {
+    const val = this.getAttribute("button-type");
+    return val && val in RECOMMEND_ICON_TYPES ? val : "heart";
+  }
 
-	// ── Template method overrides ────────────────────────────────────────────
+  // ── Template method overrides ────────────────────────────────────────────
 
-	get defaultCallbackUri() {
-		return "https://sequoia.pub/recommend";
-	}
-	get resourceParam() {
-		return "documentUri";
-	}
-	get unactionValue() {
-		return "remove";
-	}
-	get actionedKey() {
-		return "recommended";
-	}
-	get actionedEventName() {
-		return "sequoia-recommended";
-	}
-	get errorEventName() {
-		return "sequoia-recommend-error";
-	}
-	get defaultErrorMessage() {
-		return "Failed to recommend";
-	}
+  get defaultCallbackUri() {
+    return "https://sequoia.pub/recommend";
+  }
+  get resourceParam() {
+    return "documentUri";
+  }
+  get unactionValue() {
+    return "remove";
+  }
+  get actionedKey() {
+    return "recommended";
+  }
+  get actionedEventName() {
+    return "sequoia-recommended";
+  }
+  get errorEventName() {
+    return "sequoia-recommend-error";
+  }
+  get defaultErrorMessage() {
+    return "Failed to recommend";
+  }
 
-	getAriaLabel() {
-		const config =
-			RECOMMEND_ICON_TYPES[this.buttonType] ?? RECOMMEND_ICON_TYPES.heart;
-		return this.actioned ? config.unaction : config.action;
-	}
+  getAriaLabel() {
+    const config =
+      RECOMMEND_ICON_TYPES[this.buttonType] ?? RECOMMEND_ICON_TYPES.heart;
+    return this.actioned ? config.unaction : config.action;
+  }
 
-	getIcon() {
-		const config =
-			RECOMMEND_ICON_TYPES[this.buttonType] ?? RECOMMEND_ICON_TYPES.heart;
-		return this.actioned ? config.iconActioned : config.icon;
-	}
+  getIcon() {
+    const config =
+      RECOMMEND_ICON_TYPES[this.buttonType] ?? RECOMMEND_ICON_TYPES.heart;
+    return this.actioned ? config.iconActioned : config.icon;
+  }
 
-	async resolveResourceUri() {
-		const uri = this.documentUri;
-		if (!uri) throw new Error("No document URI found");
-		return uri;
-	}
+  async resolveResourceUri() {
+    const uri = this.documentUri;
+    if (!uri) throw new Error("No document URI found");
+    return uri;
+  }
 
-	// ── SequoiaRecommend-specific logic ──────────────────────────────────────
+  // ── SequoiaRecommend-specific logic ──────────────────────────────────────
 
-	async checkDocument() {
-		this.abortController?.abort();
-		this.abortController = new AbortController();
+  async checkDocument() {
+    this.abortController?.abort();
+    this.abortController = new AbortController();
 
-		const uri = this.documentUri;
-		if (!uri) {
-			this.state = { type: "no-resource" };
-			this.render();
-			return;
-		}
+    const uri = this.documentUri;
+    if (!uri) {
+      this.state = { type: "no-resource" };
+      this.render();
+      return;
+    }
 
-		this.checkStatusFor(uri);
-	}
+    this.checkStatusFor(uri);
+  }
 }
 
 /**
@@ -780,17 +782,17 @@ class SequoiaRecommend extends SequoiaActionBase {
  * @returns {string}
  */
 function escapeHtml(text) {
-	return text
-		.replace(/&/g, "&amp;")
-		.replace(/</g, "&lt;")
-		.replace(/>/g, "&gt;")
-		.replace(/"/g, "&quot;");
+  return text
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
 }
 
 // Register the custom elements
 if (typeof customElements !== "undefined") {
-	customElements.define("sequoia-subscribe", SequoiaSubscribe);
-	customElements.define("sequoia-recommend", SequoiaRecommend);
+  customElements.define("sequoia-subscribe", SequoiaSubscribe);
+  customElements.define("sequoia-recommend", SequoiaRecommend);
 }
 
 /**

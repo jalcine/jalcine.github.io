@@ -34,10 +34,7 @@ to [a list on Bookwyrm][2][^2]. I've added my notes on each book as well as revi
 Bookwyrm with a syndication of that to OpenLibrary, in hopes of getting them bumped up in
 algorithmic discovery and to simplify my online conversations about them.
 
-<iframe style="border-width:0;" id="bookwyrm_list_embed" width="100%" height="400"
-        title="My Black August 2024 Reading List, a list by jacky on BookWyrm"
-        src="http://bookwyrm.social/list/3147/embed/299a7d93cf9149c9b2de18d54e34eef2">
-</iframe>
+<bookwyrm-embed url="http://bookwyrm.social/list/3147/embed/299a7d93cf9149c9b2de18d54e34eef2" title="My Black August 2024 Reading List, a list by jacky on BookWyrm"></bookwyrm-embed>
 
 # Training
 Falling into the cliche of a nerd, I'm not the brawniest of the brunch. I prefer to run, something

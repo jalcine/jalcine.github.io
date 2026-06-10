@@ -59,21 +59,13 @@ What I've done instead is lean on soft "keyword stuffing" with skills adjusted t
 Having to rewrite _each_ region after optimizing it runs the high risk of making my resume sound less useful and wastes
 the effort of editing that I've gotten from many people. I asked folks on Mastodon about this:
 
-<iframe 
-    src="https://todon.eu/@jalcine/112904701881211814/embed" class="mastodon-embed" 
-    style="max-width: 100%; border: 0" width="400" allowfullscreen="allowfullscreen"></iframe>
-
-<script src="https://todon.eu/embed.js" async="async"></script>
+<mastodon-post url="https://todon.eu/@jalcine/112904701881211814"></mastodon-post>
 
 The methods that felt the most sustainable were the following:
 
-<iframe 
-    src="https://hachyderm.io/@haydencodes/112904730560839292/embed" class="mastodon-embed" 
-    style="max-width: 100%; border: 0" width="400" allowfullscreen="allowfullscreen"></iframe>
+<mastodon-post url="https://hachyderm.io/@haydencodes/112904730560839292"></mastodon-post>
 
-<iframe 
-    src="https://stefanbohacek.online/@stefan/112904718907055886/embed" class="mastodon-embed" 
-    style="max-width: 100%; border: 0" width="400" allowfullscreen="allowfullscreen"></iframe>
+<mastodon-post url="https://stefanbohacek.online/@stefan/112904718907055886"></mastodon-post>
 
 This recruiter's advice makes _even less_ sense if I'm only applying for the same _class_ of role across different
 companies. I can see the need to adjust the technologies, perhaps, but a _different_ resume? 🚫 Tangentially, this makes

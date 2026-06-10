@@ -249,10 +249,11 @@ p a {
   }
 }
 
+.text-post-media,
 .mastodon-embed {
   display: block;
   border: none;
-  margin: 0.5rem auto;
+  margin: 0.5rem auto !important;
   width: min(100%, 35rem);
 }
 
@@ -314,7 +315,7 @@ article.h-entry > header,
 article.h-feed > header {
   margin: 0 auto;
   width: 100%;
-  max-width: 50rem;
+  max-width: 70rem;
 }
 
 article.h-entry > header > aside {

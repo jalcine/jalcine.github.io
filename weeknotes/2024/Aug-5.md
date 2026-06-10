@@ -103,15 +103,7 @@ more relevant than I expected and this panel really stuck out to me.
 
 On top of everything else, this is the song of last week:
 <figure>
-    <div style="max-width:100%;" class="embed">
-        <div style="position:relative;padding-bottom:calc(56.25% + 52px);height: 0;">
-        <iframe style="position:absolute;top:0;left:0;" 
-                width="100%" height="100%" src="https://odesli.co/embed/?url=https%3A%2F%2Fsong.link%2Fi%2F1493469521&theme=light" 
-                frameborder="0" allowfullscreen 
-                sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox"
-                allow="clipboard-read; clipboard-write"></iframe>
-        </div>
-    </div>
+    <odesli-embed url="https://song.link/i/1493469521"></odesli-embed>
     <figcaption>Apologies for the aggressive permissions; still working on improving my music embeds.</figcaption>
 </figure>
 

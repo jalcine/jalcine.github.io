@@ -88,7 +88,7 @@ reproducing the same nation-state adjacent behavior we see offline. I close with
 seem pessimistic but is already underway, I think it's going to continue to happen if we all don't
 try to make this issue something of the past:
 
-<iframe src="https://todon.eu/@jalcine/113166996930347913/embed" class="mastodon-embed" style="max-width: 100%; border: 0" width="400" allowfullscreen="allowfullscreen"></iframe><script src="https://todon.eu/embed.js" async="async"></script>
+<mastodon-post url="https://todon.eu/@jalcine/113166996930347913"></mastodon-post>
 <noscript>
 <p>
     A post at <a

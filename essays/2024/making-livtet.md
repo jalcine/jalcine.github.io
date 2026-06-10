@@ -61,7 +61,8 @@ it both validates this project as being something interesting enough for people 
 me with a public display of engineering craftsmanship, something that's hard to do since most of the
 places I worked at didn't have a lot of opportunity to do the such.
 
-<script src="https://todon.eu/embed.js" async="async"></script>
+
+
 
 [tracker]: mailto:~jacky/livtet@todo.sr.ht
 [kofi]: https://ko-fi.com/jackyalcine

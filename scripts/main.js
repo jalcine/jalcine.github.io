@@ -1,3 +1,11 @@
+import "./custom-elements/bandcamp-player.js";
+import "./custom-elements/bluesky-post.js";
+import "./custom-elements/bookwyrm-embed.js";
+import "./custom-elements/mastodon-post.js";
+import "./custom-elements/odesli-embed.js";
+import "./custom-elements/substack-embed.js";
+import "./custom-elements/threads-post.js";
+
 class LocalTimePresentation extends HTMLDivElement {
   constructor() {
     const self = super();

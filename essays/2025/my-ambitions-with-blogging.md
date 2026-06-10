@@ -10,7 +10,7 @@ actually finish backporting my entries from "way back" (aka 2009) and use that a
 my writing has changed over time. No time like the present, though!
 
 To set a mood, as you read this, consider playing the following song by [Zvrra][]:
-<iframe class="bandcamp-player"  src="https://bandcamp.com/EmbeddedPlayer/album=2849109407/size=large/bgcol=ffffff/linkcol=de270f/tracklist=false/artwork=small/track=1156620348/transparent=true/" seamless><a href="https://zvrra.bandcamp.com/album/growth">Growth by Zvrra</a></iframe>
+<bandcamp-player src="https://bandcamp.com/EmbeddedPlayer/album=2849109407/size=large/bgcol=ffffff/linkcol=de270f/tracklist=false/artwork=small/track=1156620348/transparent=true/"></bandcamp-player>
 
 # Why did you start blogging in the first place?
 I found blogging to be as useful as journaling but available to the world and not needing to buy a

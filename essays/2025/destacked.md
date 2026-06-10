@@ -88,21 +88,7 @@ prelevant rise of Nazism on his company's platform. [Ars Technica writes][3]:
 A journalist on Substack noted recently how the _platform_ prompted many users
 of the such:
 
-<blockquote class="bluesky-embed"
-  data-bluesky-uri="at://did:plc:wo3lxbcfvdptzxyvq3qt2rgj/app.bsky.feed.post/3lv3dkqphis2e"
-  data-bluesky-cid="bafyreiglpl6vesj5ixt5aibpszqosh6l3qmvppby4gidr5pjwvweztnahe"
-  data-bluesky-embed-color-mode="system"><p lang="en">The Substack app
-    apparently push alert promoted a Nazi newsletter to several users. Users
-    have complained about it on Substack Notes but the company hasn’t
-    responded. Generally push alert promos are for content a user is likely to
-    interact with<br><br><a
-      href="https://bsky.app/profile/did:plc:wo3lxbcfvdptzxyvq3qt2rgj/post/3lv3dkqphis2e?ref_src=embed">[image
-      or embed]</a></p>&mdash; Taylor Lorenz (<a
-    href="https://bsky.app/profile/did:plc:wo3lxbcfvdptzxyvq3qt2rgj?ref_src=embed">@taylorlorenz.bsky.social</a>)
-  <a
-    href="https://bsky.app/profile/did:plc:wo3lxbcfvdptzxyvq3qt2rgj/post/3lv3dkqphis2e?ref_src=embed">July
-    29, 2025 at 1:07 AM</a></blockquote><script async
-src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>
+<bluesky-post uri="at://did:plc:wo3lxbcfvdptzxyvq3qt2rgj/app.bsky.feed.post/3lv3dkqphis2e" cid="bafyreiglpl6vesj5ixt5aibpszqosh6l3qmvppby4gidr5pjwvweztnahe"></bluesky-post>
 
 I'll note that push notifications a bit more varied: that _can_ be for what's
 optimized to a particular user. But it can be for _any_ reason; which is what
@@ -117,11 +103,7 @@ What's also not highlighted is Substack's disregard for plagraism. A Black
 write on the platform has noted an example that ends up being an experience
 that platforms that can be weaponized by content farms:
 
-<div class="substack-post-embed"><p lang="en">Muhammad please. Bar for BAR
-</p><p> - Shay ☆</p><a data-comment-link
-    href="https://substack.com/@notesonbeingg/note/c-141229115">Read on
-    Substack</a></div><script async src="https://substack.com/embedjs/embed.js"
-charset="utf-8"></script>
+<substack-embed url="https://substack.com/@notesonbeingg/note/c-141229115"></substack-embed>
 
 This is something that's endemic of _any_ platform that allows you to post
 content; it's not the easiest thing to combat either.
