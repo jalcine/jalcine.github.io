@@ -22,9 +22,9 @@ description: >
 A point that might be one of grievance [of a lost space never truly owned by
 Black people but still run by it][1] tends to pop up on my "Following" feed on
 Bluesky once a month. I don't see such conversations on places like Threads
-&mdash; it's really a insular space of "you see what the algorithm determines
+&mdash; it's really an insular space of "you see what the algorithm determines
 worthy of attention". It comes from a variation of folks but routinely from
-folks who seem to long for a space that no longer exist. Yes - Twitter, now X -
+folks who seem to long for a space that no longer exists. Yes - Twitter, now X -
 the company still exists, but there's a heavily undocumented[^1] shift in the
 entity that was once Black Twitter and how the next option for many was the
 once-dubbed [P92 project][p92], known as Threads to many today. A friend and expert,
@@ -49,9 +49,9 @@ communicate with one another in real time _in public_ without explicit
 oversight or control by school boards, the FCC, Hollywood and what have you.
 Ironically, events on Black Twitter have managed to transcend the space from
 which they began themselves - like [the Temecula incident][4] or the indie film
-that introduced [Taylour Paige][6] to use, [Zola][5]. This is backed by the
+that introduced [Taylour Paige][6] to us, [Zola][5]. This is backed by the
 research done by [Pew that showed Black users][7] to be _more active_ on these
-platforms than that other demographics.
+platforms than other demographics.
 
 I can continue to repeat the academic research that's been put into
 understanding Twitter as a concept when it came to Black people and I'll list
@@ -71,7 +71,7 @@ I'm not expecting _everyone_ to know of all of the works above &mdash; I work
 on [social media technologies][18] and have been in rooms _on behalf of_
 sections of Black Twitter &mdash; a burden and privilege that carries a weight
 in how the technologies we use to connect and relate are shaped. But by
-engaging in these institutions with these titles - it reinforces become a
+engaging in these institutions with these titles - it becomes a
 problem of phrasing and context when folks choose to bemoan the presence of
 Black people on the platform.
 
@@ -79,7 +79,7 @@ Black people on the platform.
 
 To use a computational metaphor &mdash; if there's 1,000 people in room A and
 100 of them are Black and in room B, there's 200 people and 10 of them are also
-Black; by numbers &mdash; there is more Black people in room A then they are in
+Black; by numbers &mdash; there are more Black people in room A than they are in
 room B. Using statistical language, this is a "raw count of absolute
 frequencies". It's also very apparent in a homogenized ecosystem. Bluesky PBLLC
 took a different approach in their invention of [the AT Protocol][19] that gave
@@ -130,11 +130,11 @@ other places having issues like this. Smaller ones, in comparison to places
 like Threads or Blacksky, don't seem to have this problem. It could be due to
 the fact that they didn't branch off from other spaces. The most prominent one
 that I pay attention to is Spill. They managed to secure funds in venture
-capital of [two million from Kerry Washington][23] in 2024. Ironically, they're
+capital of $2 million from Kerry Washington][23] in 2024. Ironically, they're
 part of the inspiration of my idea of [Spadat][24] for AT Protocol. But they're not
 honest about how they make money _literally_ off their analysis of the slice of
 digital Black experiences &mdash; not to their users, nor do these people who
-pay the executive times get paid out for this, [being able to pay back Kerry
+pay the executives get paid out for this, [being able to pay back Kerry
 $0.50 to the dollar][25] of her investment (if they paid it out quick):
 
 > According to Spill’s chief growth officer, Kenya Parham, the company
@@ -142,7 +142,7 @@ $0.50 to the dollar][25] of her investment (if they paid it out quick):
 > 2025 and had surpassed that mark by **the end of the third quarter of 2025**.
 
 I bring this up mainly because there's a similar objective from folks who "want
-to be where the Black people are" but ignore _any_ formation of the such (or
+to be where the Black people are" but ignore _any_ formation of such (or
 use the topic of it as material on other platforms). It's not really about
 building communities but **more about looking for ways to juice engagement back
 into things that they own and run**. We've seen it with Buzzfeed and Worldstar
@@ -183,7 +183,7 @@ dictates traffic but nothing stops producers from **explicitly sharing links**
 &mdash; the digital equivalent of the "word of mouth". In fact, this is _such_ a
 valuable means of traffic that platforms like Facebook and LinkedIn embed
 Urchin Tracking Module fields and now more evolved single tracking fields to
-determine who, what, where and from how a link go from their app to another
+determine who, what, where and from how a link goes from their app to another
 place. There's no reason why those who produce can't leverage this when
 "shooting into a void" of a new platform to see how people engage &mdash; if
 direct engagement is the goal. What tends to be the want is the
@@ -207,7 +207,7 @@ _actually_ use technology in a way that redirects power _back_ to people.
 
 So far, I think it's still early enough such that a perspective is to be seen as
 non-tangible and only as idealistic. The notions of Black capitalism reinforce
-the stances of metric-based community building (which incentivized folks from
+the stances of metric-based community building (which discouraged folks from
 working together) and instead focus on more negative-leading forms of community
 building (by way of dunking and dragging). I think Blacksky provides an
 opportunity for Black creators to _do something different_ and to actually live
@@ -260,10 +260,10 @@ people online to build community with, not just to make money off of them.
 
 [^1]:
     It's undocumented in the sense that we have no data on exit surveys to
-    determine _why_ people left, _where_ did people go, _what_ made them leave
+    determine _why_ people left, _where_ people went, _what_ made them leave
     now or if they had the want to leave before and many other things that'd help
     use to a very rare digital autopsy of a disperse and distributed community - if
-    it _actually_ fell apart of if it evolved.
+    it _actually_ fell apart or if it evolved.
 
 [^2]:
     I'm of the mind that had Facebook invested more into the Fediverse, it
@@ -272,7 +272,7 @@ people online to build community with, not just to make money off of them.
     portability_ &mdash; the thing that the open social Web is meant to enable, depending on who you ask.
 
 [^3]:
-    Notice how much more different this has been in comparison to the
+    Notice how much different this has been in comparison to the
     acquisition of WhatsApp. They didn't (couldn't) forcibly integrate every
     Facebook users to have a WhatsApp account. I have yet to dig more into the
     integration impact of Facebook's technology into WhatsApp but it has remained
