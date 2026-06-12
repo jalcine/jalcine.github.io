@@ -10,7 +10,7 @@ og:
   type: article
   image: /images/black-people-beach.jpg
 tags: essay
-date: 2026-06-10T09:00:00-05:00
+date: 2026-06-12T16:00:00-05:00
 draft: true
 description: >
   Of course there's more Black people on a platform that holds a billion people
@@ -176,6 +176,22 @@ what they owe to the investors who help them justify the platform's existence
 Black people - or their essence thereof - back to the system we exist in,
 _then_ we will see change).
 
+For those who are "producers of culture" &mdash; through news, media and things
+in between &mdash; it's up to _you_ to bring the people who will eventually
+engage with it. We speak about the "algorithm" as a digital entity that
+dictates traffic but nothing stops producers from **explicitly sharing links**
+&mdash; the digital equivalent of the "word of mouth". In fact, this is _such_ a
+valuable means of traffic that platforms like Facebook and LinkedIn embed
+Urchin Tracking Module fields and now more evolved single tracking fields to
+determine who, what, where and from how a link go from their app to another
+place. There's no reason why those who produce can't leverage this when
+"shooting into a void" of a new platform to see how people engage &mdash; if
+direct engagement is the goal. What tends to be the want is the
+_platform-specific_ measurements of engagement, which is also semi-proprietary
+information (beyond likes, things like Threads' post view count, demographic
+breakdown of one's race, age and location when viewing your posts) that's
+marginally useful if you're looking to sell things to people.
+
 ## Threads for Attention, Spill for Money, Blacksky for ... What?
 
 I write this as the maintainer of the Web experience of the revival of the
@@ -201,9 +217,18 @@ having to commit to the NDA-driven culture it demands. This requires investment
 come cheap. But the payout, the investment will be generative enough to make
 the effort spent seem insignificant.
 
-I just hope that folks have and move with stances that are just as generative
-and look for Black people online to build community with, not just to make
-money off of them.
+I imagine that Blacksky will be a frontier space in how one aims to build an
+organic audience around things that they share. They (members of Blacksky's PDS
+namely) have the advantage of not being restricted to _solely_ the Twitter-like
+experience of Bluesky: they can lean on long-form publishing (for a Medium-like
+experience) and eventually video (short- and long-form for a TikTok and
+YouTube-like experience), making their engagement signals _way more_ accurate,
+authentic and transparent than what can be provided by Google or Facebook
+&mdash; for free. The benefits for research in digital spaces is huge but also
+can allow for better guardrails around interaction - my mind is jumping in so
+many directions thinking about what levers we can enable here. I just hope that
+folks have and move with stances that are just as generative and look for Black
+people online to build community with, not just to make money off of them.
 
 [1]: https://www.yesmagazine.org/issue/connections/2024/03/04/in-memoriam-of-black-twitter
 [3]: https://archive.news.virginia.edu/content/black-twitter-101-what-it-where-did-it-originate-where-it-headed/
