@@ -2,7 +2,7 @@
   "name": "my-static-site",
   "module": "index.js",
   "scripts": {
-    "run": "eleventy --serve",
+    "run": "eleventy --serve --port 8081",
     "dist": "eleventy"
   },
   "devDependencies": {
