@@ -1,7 +1,7 @@
 ---
 layout: link.html.njk
 tags: link
-title: "Eren's giving apps a meaningful story"
+title: "Erin's giving apps a meaningful story"
 date: 2026-07-31T12:30:00
 material:
   link: https://www.wrecka.ge/launching-a-cloud-atlas/
