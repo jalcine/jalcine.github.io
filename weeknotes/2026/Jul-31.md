@@ -35,8 +35,6 @@ I've been reading a lot of what other people have been writing; here's a list:
 - [The End of Reading is Here][link:4]: Well. The title says it all but [I had
   more thoughts][reply:2] on this topic. It's hard reading this while working on
   an app focused on literate folks but never say never!
-- [People, Not Posts: Part I][link:6]: The first wave.
-- [People, Not Posts: Part II][link:5]: Another hit that focuses on some things
   [I felt worth expanding on][reply:3].
 - [A Social Filesystem][link:7]: Now this was one that affirmed some stuff I
   knew. Dan worked at Bluesky and Facebook and has the ears of the tech
@@ -75,8 +73,6 @@ to hit me up at <yo@jacky.wtf> and share my resume at
 [link:2]: https://www.wrecka.ge/launching-a-cloud-atlas/
 [link:3]: https://www.youtube.com/watch?v=D77GjVt0H6w
 [link:4]: https://www.theatlantic.com/magazine/2026/08/reading-crisis-postliterate-age/687618/
-[link:5]: https://standard-reader.app/a/did:plc:ad4m72ykh2evfdqen3qowxmg/3mrit2o5gpk2b
-[link:6]: https://standard-reader.app/a/did:plc:ad4m72ykh2evfdqen3qowxmg/3mqsznoy55k2s
 [link:7]: https://overreacted.io/a-social-filesystem/
 [link:8]: https://overreacted.io/where-its-at/
 [link:9]: https://brittany-ellich.offprint.app/a/3mrpzcvrhke23-ai-as-a-tool-for-the-mental-load
