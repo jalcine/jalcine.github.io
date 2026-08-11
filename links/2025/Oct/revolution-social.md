@@ -1,7 +1,7 @@
 ---
 date: 2025-10-22T19:15:00Z
 layout: link.html.njk
-# tags: link
+tags: link
 title: "Revolution.Social"
 og:
   type: article
@@ -30,22 +30,5 @@ systems (and not create a system of dual power) on the systems he claims to be
 against. To a degree, I wonder if the social ties (and access) is more
 important to him than the actual principles he espouses &mdash; that's
 problematic because that makes it easy to be sold.
-
-I found a few interviews _very_ interesting and I aim to highlight why below:
-
-- Talk about Jack Dorsey's interview. Note how Jack Dorsey mentions that he was
-  tied up by capital's demands to sell to Elon. Highlight also how Jack's
-  perspective on supporting folks with money focuses on the notion of
-  individualism instead of developing a collective approach; thus leaning into
-  the Eurocentric notions of one moving from a place of power. Also how Jack
-  Dorsey found the pulling of Trump to be problematic.
-- Talk about Cory Doctorow's interview. Mention how he warps what Audre Lorde
-  said about master's tools and the house and falls for the point that she made
-  in it about how reform itself is an extremely limited perspective and only can
-  enable a small few.
-- Mention how Chris Best, the CEO of Substack, made it clear that their goal
-  isn't necessarily to empower creatives but to take advantage of the output of
-  creatives for the sake of profit by any means necessary. And that he was
-  _against_ the need to pull Trump from an outlet.
 
 [1]: https://evan.henshaw-plath.com/about
