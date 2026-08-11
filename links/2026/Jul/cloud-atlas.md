@@ -39,4 +39,4 @@ This is the kind of work that keeps projects both alive _and_ afloat in the
 minds of many. I'm extremely curious to see how Erin pulls this off and kind of
 hoping that my own project, [Livtet][1] gets to be in this party.
 
-[1]: www.olamaelcu.net/projects/livtet
+[1]: https://www.olamaelcu.net/projects/livtet

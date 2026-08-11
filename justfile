@@ -9,15 +9,15 @@ clean:
 preview:
   npm run run
 
-LOCAL_IP := `ip addr show dev wlp170s0 | grep inet | xargs | cut -f 2 -d ' ' | cut -f 1 -d '/'`
+LOCAL_IP := `ip addr show dev docker0 | grep inet | xargs | cut -f 2 -d ' ' | cut -f 1 -d '/'`
 
 produce-resume-pdf:
   @rm $(pwd)/files/Jacky_Alcine-resume.pdf || echo ""
   podman run -d --rm -p 4001:3000 docker.io/gotenberg/gotenberg:8.20 || echo ""
-  echo "Calling ${LOCAL_IP}:4001 to generate resume.";
+  echo "Calling ${LOCAL_IP}:4001 to generate resume from ${LOCAL_IP}:8081/work.";
   curl --request \
     POST http://localhost:4001/forms/chromium/convert/url \
-    --form url=http://${LOCAL_IP}:8080/work/ \
+    --form url=http://${LOCAL_IP}:8081/work/ \
     --form marginTop="0.2in" \
     --form marginBottom="0.2in" \
     --output $(pwd)/files/Jacky_Alcine-resume.pdf
