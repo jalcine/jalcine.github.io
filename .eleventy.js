@@ -42,6 +42,34 @@ export default function (
     DateTime.fromJSDate(dateObj).setZone("America/New_York").day,
   );
 
+  eleventyConfig.addFilter("monthDay", (dateObj) =>
+    DateTime.fromJSDate(dateObj)
+      .setZone("America/New_York")
+      .toFormat("LLLL d"),
+  );
+
+  // Groups a post collection into [{ year, count, posts }], newest first.
+  // See the note on byYearAndMonth about {% assign %} in Liquid.
+  eleventyConfig.addFilter("byYear", (posts) => {
+    const years = new Map();
+
+    for (const post of posts) {
+      const { year } = DateTime.fromJSDate(post.date).setZone(
+        "America/New_York",
+      );
+      if (!years.has(year)) years.set(year, []);
+      years.get(year).push(post);
+    }
+
+    return [...years.entries()]
+      .sort((a, b) => b[0] - a[0])
+      .map(([year, posts]) => ({
+        year,
+        count: posts.length,
+        posts: [...posts].sort((a, b) => b.date - a.date),
+      }));
+  });
+
   // Groups a post collection into [{ year, count, months: [{ name, slug,
   // posts }] }], newest first throughout, for archive listings.
   // NOTE: in Liquid this must be applied via {% assign %} — filters written

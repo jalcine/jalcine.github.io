@@ -13,15 +13,28 @@ changeFreq: "daily"
 
 		</p>
 	</header>
-	<section>
-		<ul>
-			{%- for post in collections.link reversed -%}
-			<li class="h-entry">
-				<time datetime="{{ post.date}}" class="dt-published">{{ post.date | postDate }}</time>:
-				<a class="u-url p-name" href="{{ post.url }}">{{ post.data.material.source.name
-					}} &mdash; {{ post.data.title }}</a>
-			</li>
+	<section class="archive">
+		{%- assign years = collections.link | byYearAndMonth -%}
+		{%- for year in years -%}
+		<section class="archive-year" aria-labelledby="year-{{ year.year }}">
+			<h2 class="archive-year-heading" id="year-{{ year.year }}">
+				<a href="#year-{{ year.year }}">{{ year.year }}</a>
+				<span class="archive-year-count">{{ year.count }}{% if year.count == 1 %} link{% else %} links{% endif %}</span>
+			</h2>
+			{%- for month in year.months -%}
+			<div class="archive-month">
+				<h3 class="archive-month-heading" id="{{ month.slug }}">{{ month.name }}</h3>
+				<ul class="archive-list">
+					{%- for post in month.posts -%}
+					<li class="h-entry">
+						<time class="dt-published" datetime="{{ post.date | isoDate }}">{{ post.date | dayOfMonth }}</time>
+						<a class="u-url p-name" href="{{ post.url }}">{{ post.data.material.source.name }} &mdash; {{ post.data.title }}</a>
+					</li>
+					{%- endfor -%}
+				</ul>
+			</div>
 			{%- endfor -%}
-		</ul>
+		</section>
+		{%- endfor -%}
 	</section>
 </article>

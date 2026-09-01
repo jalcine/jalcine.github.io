@@ -4,7 +4,7 @@ byline: "A semi-biographical piece of reflection about being in tech, how and wh
 date: 2024-06-29
 title: "Do I Regret Focusing on 'Just Being' A Software Engineer?"
 og:
-    image: /images/regrets-with-tech-clef.jpg
+    image: /images/regret-with-tech-clef.jpg
 tags: essay
 audio: 
     - src: regret-with-tech.mp3
