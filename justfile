@@ -12,7 +12,7 @@ preview:
 LOCAL_IP := `ip addr show dev docker0 | grep inet | xargs | cut -f 2 -d ' ' | cut -f 1 -d '/'`
 
 produce-resume-pdf:
-  @rm $(pwd)/files/Jacky_Alcine-resume.pdf || echo ""
+  @rm $(pwd)/files/resume.pdf || echo ""
   podman run -d --rm -p 4001:3000 docker.io/gotenberg/gotenberg:8.20 || echo ""
   echo "Calling ${LOCAL_IP}:4001 to generate resume from ${LOCAL_IP}:8081/work.";
   curl --request \
@@ -20,7 +20,7 @@ produce-resume-pdf:
     --form url=http://${LOCAL_IP}:8081/work/ \
     --form marginTop="0.2in" \
     --form marginBottom="0.2in" \
-    --output $(pwd)/files/Jacky_Alcine-resume.pdf
+    --output $(pwd)/files/resume.pdf
 
 deploy: clean build sequoia-publish sequoia-inject ship
 
