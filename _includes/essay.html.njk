@@ -33,7 +33,7 @@ og:
   <section class="e-content">
     {{- content | safe -}}
   </section>
-  <sequoia-comments></sequoia-comments>
+  <sequoia-comments{% if atUri %} document-uri="{{ atUri }}"{% endif %}></sequoia-comments>
   {% include "./content-footer.html" %}
 </article>
 

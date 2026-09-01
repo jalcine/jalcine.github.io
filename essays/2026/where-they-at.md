@@ -11,7 +11,6 @@ og:
   image: /images/black-people-beach.jpg
 tags: essay
 date: 2026-06-12T16:00:00-05:00
-draft: true
 description: >
   Of course there's more Black people on a platform that holds a billion people
   and has been around for twenty years. Expecting the same experience across

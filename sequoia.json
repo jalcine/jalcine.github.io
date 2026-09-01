@@ -14,6 +14,10 @@
   },
   "autoSync": true,
   "publishContent": true,
+  "bluesky": {
+    "enabled": true,
+    "maxAgeDays": 365
+  },
   "ui": {
     "components": "scripts/components"
   }

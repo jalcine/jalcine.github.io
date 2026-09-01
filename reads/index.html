@@ -14,7 +14,7 @@ changeFreq: "weekly"
   </header>
   <section>
     <ul>
-      {%- for post in collections.read | reverse -%} {% if not post.draft and
+      {%- for post in collections.read reversed -%} {% if not post.draft and
       post.date is defined %}
       <li class="h-entry">
         <time datetime="{{ post.date }}" class="dt-published"

@@ -32,6 +32,46 @@ export default function (
     return date.toLocaleString(DateTime.DATE_FULL);
   });
 
+  // Machine-readable value for <time datetime="…">, which the dt-published
+  // microformat is parsed from.
+  eleventyConfig.addFilter("isoDate", (dateObj) =>
+    DateTime.fromJSDate(dateObj).setZone("America/New_York").toISO(),
+  );
+
+  eleventyConfig.addFilter("dayOfMonth", (dateObj) =>
+    DateTime.fromJSDate(dateObj).setZone("America/New_York").day,
+  );
+
+  // Groups a post collection into [{ year, count, months: [{ name, slug,
+  // posts }] }], newest first throughout, for archive listings.
+  // NOTE: in Liquid this must be applied via {% assign %} — filters written
+  // into a {% for %} tag are silently ignored.
+  eleventyConfig.addFilter("byYearAndMonth", (posts) => {
+    const years = new Map();
+
+    for (const post of posts) {
+      const date = DateTime.fromJSDate(post.date).setZone("America/New_York");
+      if (!years.has(date.year)) years.set(date.year, new Map());
+      const months = years.get(date.year);
+      if (!months.has(date.month)) months.set(date.month, []);
+      months.get(date.month).push(post);
+    }
+
+    const newestKeyFirst = (a, b) => b[0] - a[0];
+
+    return [...years.entries()].sort(newestKeyFirst).map(([year, months]) => ({
+      year,
+      count: [...months.values()].reduce((sum, posts) => sum + posts.length, 0),
+      months: [...months.entries()]
+        .sort(newestKeyFirst)
+        .map(([month, posts]) => ({
+          name: DateTime.fromObject({ year, month }).toFormat("LLLL"),
+          slug: `${year}-${String(month).padStart(2, "0")}`,
+          posts: [...posts].sort((a, b) => b.date - a.date),
+        })),
+    }));
+  });
+
   eleventyConfig.addPassthroughCopy("*.css");
   eleventyConfig.addPassthroughCopy("fonts");
   eleventyConfig.addPassthroughCopy(".well-known");

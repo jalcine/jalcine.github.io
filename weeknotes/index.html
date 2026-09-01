@@ -12,7 +12,7 @@ description: My notes that I push out once a week.
   </header>
   <section>
     <ul>
-      {%- for post in collections.weeknote | reverse -%}
+      {%- for post in collections.weeknote reversed -%}
       <li><a href="{{ post.url }}">{{ post.date | postDate }}</a></li>
       {%- endfor -%}
     </ul>

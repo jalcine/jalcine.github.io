@@ -6,7 +6,6 @@ description: >
   it as a tool of codification instead of democratization.
 tags: essay
 date: 2025-04-06T22:15:00-05:00
-draft: true
 ---
 
 I've finished [Distributed Blackness][1] earlier today and I was left with more
