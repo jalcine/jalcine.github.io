@@ -33,7 +33,9 @@ sequoia-inject:
 ship:
   # Replace the files on the Web server.
   # NOTE: Toggle some sort of "alert" about this happening.
-  rsync --archive --delete-delay --verbose --recursive _site/* www.jacky.wtf:/var/www/html
+  # cd into _site and rsync `.` so dotfiles like .well-known/ are included
+  # (a `_site/*` glob is shell-expanded and silently skips them).
+  (cd _site && rsync --archive --delete-delay --verbose --recursive . www.jacky.wtf:/var/www/html)
 
 websub:
 		# Send to Superfeeder.

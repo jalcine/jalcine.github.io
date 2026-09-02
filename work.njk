@@ -23,6 +23,11 @@ skills:
   url: https://www.ruby-lang.org/en/
 - name: the AWS Cloud
   url: https://aws.amazon.com/
+description: >
+  A collaborative software engineer that revels in being in high-impact environments and teams.
+  I'm looking for roles as a full-stack or backend engineer using <strong>Rust, Python or TypeScript/JavaScript</strong>.
+  I'm currently working on <a href="https://www.olamaelcu.net/projects/livtet">Livtet</a> and <a href="https://biblio.livtet.olamaelcu.net">Bibliograph</a>
+  in TypeScript to explore <strong>open social network engineering implementations</strong> of collaborative book reading and tracking.
 ---
 <article class="h-resume">
   <header class="p-summary">
@@ -35,19 +40,16 @@ skills:
         <a href="/files/resume.pdf">download as PDF</a>
       </span>
     </p>
-    <p>
-      A talented and collaborative software engineer that revels in being in high-impact environments and teams.
-      I'm looking for roles as a full-stack or backend engineer using <strong>Rust, Python or TypeScript/JavaScript</strong>.
-    </p>
+    <p>{{ description | safe }} </p>
     <p>
       <strong>Languages, technologies, systems and frameworks</strong> I'm familiar with include
       {% for skill in skills %}
-      {%- if forloop.last == true %} and {% endif -%}
+      {%- if loop.last %} and {% endif -%}
       <a
         class="p-skill"
         href="{{ skill.url }}"
       >{{ skill.name }}</a>
-      {%- if forloop.last == false %}, {% endif -%}
+      {%- if not loop.last %}, {% endif -%}
       {%- endfor %}.
     </p>
   </header>

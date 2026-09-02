@@ -16,6 +16,7 @@ description: >
   and has been around for twenty years. Expecting the same experience across
   different platforms with different profit (and sustainable) incentives is
   naive, disrespectful and dangerous.
+atUri: "at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3muhrvaq5ou26"
 ---
 
 A point that might be one of grievance [of a lost space never truly owned by
