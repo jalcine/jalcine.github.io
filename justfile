@@ -22,7 +22,9 @@ produce-resume-pdf:
     --form marginBottom="0.2in" \
     --output $(pwd)/files/resume.pdf
 
-deploy: clean build sequoia-publish sequoia-inject ship
+deploy: clean build sequoia ship
+
+sequoia: sequoia-publish sequoia-inject
 
 sequoia-publish:
   npx sequoia publish

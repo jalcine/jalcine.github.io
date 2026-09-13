@@ -20,5 +20,6 @@
   },
   "ui": {
     "components": "scripts/components"
-  }
+  },
+  "identity": "jacky.wtf"
 }
