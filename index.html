@@ -29,8 +29,13 @@ changeFreq: weekly
         commonly known as Twitter</a> as I continue to share and work on all
       things towards history, open digital technology, culture &mdash; and
       <mark>everything in between</mark>.
-      <br /><br />
-      <strong>I write <a href="/essays/">essays</strong> of varying length</a></strong>; most recently
+    </p>
+    <p class="lead">
+      I <a href="/work">write software</a> for a living across multiple frameworks and languages. <strong>I'm
+        currently available for contract and full-time work.</strong>
+    </p>
+    <p>
+      <strong>I write <a href="/essays/">posts</strong> of varying length; most recently
       <a href="{{collections.essay.last.url}}">I wrote
         "{{collections.essay.last.data.title}}"</a>.
       I keep <a href="/weeknotes">notes weekly</a> and <a href="/links">(near) daily links</a>.
@@ -169,8 +174,13 @@ changeFreq: weekly
       max-width: var(--content-width);
     }
 
-    section>p:first-of-type {
+    section>p {
       font-size: 125%;
+    }
+
+    p.lead {
+      background-color: var(--color-region);
+      padding: 1rem;
     }
 
     img.partial-height {
