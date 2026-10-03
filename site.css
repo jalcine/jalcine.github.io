@@ -287,6 +287,7 @@ picture>img {
 
 p,
 dd,
+dt,
 li {
   max-width: var(--content-width);
   font-family: var(--font-sans);
@@ -373,6 +374,9 @@ article.h-entry>section>blockquote a {
 
 article.h-entry>section>p,
 article.h-entry>section>li,
+article.h-entry>section>dd,
+article.h-entry>section>dt,
+article.h-entry>section>dl,
 article.h-entry>section>ul,
 article.h-entry>section>ol,
 artice.h-entry section.footnotes {

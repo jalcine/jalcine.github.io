@@ -24,7 +24,7 @@ changeFreq: weekly
       You can catch up by <a href="https://buttondown.email/jackyalcine">email</a> with {{
       emailSubscriberCount }} other folks, on
       a social network in the <a rel="me" href="https://www.threads.com/@jaydotwtf">Meta, commonly known as
-        Facebook, Threads</a>, <a rel="me" href="https://blacksky.community/profile/omg.jacky.wtf">Blacksky</a> in
+        Facebook, Threads</a>, <a rel="me" href="https://blacksky.community/profile/jacky.wtf">Blacksky</a> in
       the Atmosphere or <a rel="me " href="https://twitter.com/jackyalcine">X,
         commonly known as Twitter</a> as I continue to share and work on all
       things towards history, open digital technology, culture &mdash; and
@@ -35,9 +35,10 @@ changeFreq: weekly
         currently available for contract and full-time work.</strong>
     </p>
     <p>
+      {%- assign latestEssay = collections.essay | excludeDrafts | last -%}
       <strong>I write <a href="/essays/">posts</strong> of varying length; most recently
-      <a href="{{collections.essay.last.url}}">I wrote
-        "{{collections.essay.last.data.title}}"</a>.
+      <a href="{{latestEssay.url}}">I wrote
+        "{{latestEssay.data.title}}"</a>.
       I keep <a href="/weeknotes">notes weekly</a> and <a href="/links">(near) daily links</a>.
       Here's <a href="/uses/">what I use on the regular</a>.
     </p>
@@ -180,7 +181,12 @@ changeFreq: weekly
 
     p.lead {
       background-color: var(--color-region);
+      color: var(--color-foreground);
       padding: 1rem;
+    }
+
+    p.lead>a {
+      color: inherit !important;
     }
 
     img.partial-height {

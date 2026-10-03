@@ -42,6 +42,10 @@ export default function (
     DateTime.fromJSDate(dateObj).setZone("America/New_York").day,
   );
 
+  eleventyConfig.addFilter("excludeDrafts", (posts) =>
+    posts.filter((post) => !post.data.draft),
+  );
+
   eleventyConfig.addFilter("monthDay", (dateObj) =>
     DateTime.fromJSDate(dateObj)
       .setZone("America/New_York")
