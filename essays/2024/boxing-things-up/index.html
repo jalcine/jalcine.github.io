@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Boxing Up Common Parts of an App - Jacky Alciné</title>
+	<meta name="CCBot" content="nofollow">
+	<meta name="robots" content="noai, noimageai">
+	<meta name="tdm-reservation" content="1">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#001f3f">
+	<meta name="author" content="Jacky Alciné">
+	<meta name="generator" content="Eleventy v3.0.0">
+	<meta property="og:type" content="article">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="/og-images/4ee7b829.png">
+    <meta property="og:image" content="/og-images/4ee7b829.png">
+	<meta property="og:title" content="Boxing Up Common Parts of an App - Jacky Alciné">
+	<meta property="og:site_name" content="Jacky Alciné's digital place to post, post, post!">
+	<meta property="og:url" content="https://jalcine.github.io/essays/2024/boxing-things-up/">
+	<meta name="twitter:title" content="Boxing Up Common Parts of an App - Jacky Alciné">
+	<meta name="twitter:site" content="Jacky Alciné's digital place">
+	<meta name="twitter:creator" content="@jackyalcine">
+  <meta name="fediverse:creator" content="@jalcine@todon.eu">
+	
+	<link rel="stylesheet" href="/site.css" type="text/css">
+	<link rel="icon" href="https://jalcine.github.io/images/self.jpg" type="images/jpeg">
+	<link rel="hub" href="https://pubsubhubbub.superfeedr.com/">
+	<link rel="self" href="https://jalcine.github.io/">
+	<link rel="alternate" href="/essays/feed.atom" type="application/atom+xml" title="Jacky Alciné's essays (over ATOM)">
+	<link rel="alternate" href="/links/feed.atom" type="application/atom+xml" title="Jacky Alciné's linklog (over ATOM)">
+	<link rel="alternate" href="/weeknotes/feed.atom" type="application/atom+xml" title="Jacky Alciné's weeknotes (over ATOM)">
+  <script src="/scripts/main.js" type="module" defer="" async=""></script>
+  <!-- Privacy-friendly analytics by Plausible -->
+  <script async="" src="https://plausible.io/js/pa-DosHWTTEpYQiGlr25PNp1.js"></script>
+  <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init()
+  </script>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<a class="h-card" href="/" rel="me">
+				<picture><source type="image/webp" srcset="/img/j0P3XcNaLx-184.webp 184w"><img class="u-photo" src="/img/j0P3XcNaLx-184.jpeg" height="184" alt="Jacky with gold-brimmed glasses looking to the left." width="184"></picture>
+				<span class="p-name">
+					Jacky Alciné
+				</span></a>
+			<a class="h-feed u-url" href="/essays/">Essays</a>
+			<a class="h-feed u-url" href="/links/">Linklog</a>
+			<a class="h-feed u-url" href="/weeknotes/">Weeknotes</a>
+			<!-- <a class="h-feed u-url" href="/reads">Reads</a> -->
+			<a href="/work/">Work</a>
+		</nav>
+	</header>
+	<main><article class="h-entry">
+  
+  <header>
+    <h1 class="p-name">Boxing Up Common Parts of an App</h1>
+    
+    <aside>
+      by <a class="u-author" href="/">Jacky Alciné</a>
+      &bull; published
+      <time class="dt-published" datetime="Thu, 13 Jun 2024 00:00:00 GMT">June 12, 2024</time>
+    </aside>
+    <small style="text-align:center;width: 100%;display: inline-block; margin: 0.5rem auto;">
+      As I look <a href="/work">for work</a>, please
+      support me with a donation to the project development I'm spending in the
+      Atmosphere &mdash; <a href="https://www.olamaelcu.net/about/support">donate
+      here</a>
+    </small>
+  </header>
+  
+  <section class="e-content"><p>I've been working on <a href="https://git.sr.ht/~jacky/shock">Shock</a> as I look for <a href="/work/">work</a> to both keep my blades sharp and to try out some new
+stacks. Shock's written in Rust and JavaScript (and a <em>little bit</em> of TypeScript)<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup> using <a href="https://tauri.app">Tauri</a> to bind a system-provided Web browser
+view to a Rust library that provides IPC to a JavaScript &quot;frontend&quot;<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>. I had two moments where I could have kept
+things simple but wanted to experiment.</p>
+<h2 id="the-icons" tabindex="-1">The Icons</h2>
+<p>Shock is - first and foremost - an editor<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup>. It needs to know where to put and read things and with a sprinkle of
+SQLite, it's able to do that pretty well. In the flow for setting up a new site, I wanted to give people a way to have
+some sort of visual identifier for sites. The following <a href="https://git.sr.ht/~jacky/shock/tree/6118c3e53f32d931ddb18d71061a0a0bd5318e39/item/editor/shell/src/routes/+page.svelte#L1">truncated code</a> is how I implemented something for folks to
+select an icon.</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>aside</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>icons<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+{#each iconSet as icon}
+    &lt;a
+        href="?action=create"
+        class="icon"
+        class:selected-icon={selectedIcon == icon}
+        on:click={() => (selectedIcon = icon)}
+    >
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Icon</span> 
+            <span class="token attr-name">fw</span>
+            <span class="token attr-name">{icon}</span>
+            <span class="token attr-name">scale</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>1.5x<span class="token punctuation">"</span></span>
+            <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token value css language-css"><span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--color<span class="token punctuation">)</span></span><span class="token punctuation">"</span></span></span>
+        <span class="token punctuation">/></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+{/each}
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>aside</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style"><span class="token language-css">
+  <span class="token selector">aside.icons</span> <span class="token punctuation">{</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+    <span class="token property">flex-direction</span><span class="token punctuation">:</span> column<span class="token punctuation">;</span>
+    <span class="token property">flex-wrap</span><span class="token punctuation">:</span> wrap<span class="token punctuation">;</span>
+    <span class="token property">overflow</span><span class="token punctuation">:</span> scroll<span class="token punctuation">;</span>
+    <span class="token property">margin</span><span class="token punctuation">:</span> 1rem 0<span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 20rem<span class="token punctuation">;</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 50rem<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token selector">.icon</span> <span class="token punctuation">{</span>
+    <span class="token property">--color</span><span class="token punctuation">:</span> gray<span class="token punctuation">;</span>
+    <span class="token property">margin</span><span class="token punctuation">:</span> 0.5rem 0.6rem<span class="token punctuation">;</span>
+    <span class="token property">border</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span> transparent<span class="token punctuation">;</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token selector">.icons .icon.selected-icon</span> <span class="token punctuation">{</span>
+    <span class="token property">--color</span><span class="token punctuation">:</span> crimson<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
+  <span class="token keyword">let</span> allIcons <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">values</span><span class="token punctuation">(</span>fas<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">function</span><span class="token operator">*</span> <span class="token function">iconGen</span><span class="token punctuation">(</span><span class="token parameter">amount</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> count <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> pastIcons <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>selectedIcon<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      count <span class="token operator">+=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+      pastIcons<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>selectedIcon<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">let</span> icon<span class="token punctuation">;</span>
+
+    <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token operator">++</span>count <span class="token operator">&lt;=</span> amount<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> index <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">round</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">1900</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">const</span> currentIcon <span class="token operator">=</span> allIcons<span class="token punctuation">[</span>index<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+      <span class="token keyword">const</span> pastIndex <span class="token operator">=</span> pastIcons<span class="token punctuation">.</span><span class="token function">findIndex</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">pastIcon</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> pastIcon <span class="token operator">==</span> currentIcon<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>pastIndex <span class="token operator">===</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        icon <span class="token operator">=</span> allIcons<span class="token punctuation">[</span>index<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        pastIcons<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>icon<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">yield</span> allIcons<span class="token punctuation">[</span>index<span class="token punctuation">]</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token operator">--</span>count<span class="token punctuation">;</span>
+        <span class="token keyword">continue</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">function</span> <span class="token function">rollIcons</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    iconSet <span class="token operator">=</span> Array<span class="token punctuation">.</span><span class="token function">from</span><span class="token punctuation">(</span><span class="token function">iconGen</span><span class="token punctuation">(</span><span class="token number">144</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>selectedIcon<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      iconSet<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>selectedIcon<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">shuffle</span><span class="token punctuation">(</span>iconSet<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span></code></pre>
+<p>There's quite a bit going on here but before I explain, I want to show you what it results in.</p>
+<figure>
+    <video poster="/images/video-screencast-icon-selector.png" controls="" loop="">
+        <source src="/videos/screencast-icon-selector.webm">
+    </video>
+</figure>
+<p>As shown, this renders a region of icons. When you select an icon and choose to shuffle, your selection is kept (though
+not in the same place) while the rest of the surrounding icons are pulled from the imported icon set<sup class="footnote-ref"><a href="#fn4" id="fnref4">[4]</a></sup>. After I wrote
+this, I considered pulling it out into a separate component. An immediately naive answer would have been &quot;yes!&quot; since it
+&quot;provides value&quot;. But currently, this value is isolated to <em>only</em> this part of Shock. This information doesn't even get
+saved<sup class="footnote-ref"><a href="#fn5" id="fnref5">[5]</a></sup>. However, in implementing this, I got to use a few things I hadn't a real chance to use in work
+environments.</p>
+<h3 id="generators" tabindex="-1">Generators</h3>
+<p>While working with Rust code for education and (in the past) Clojure for work, my appreciation for programming that
+centered around streaming grew. I'm familiar with the concept of <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator">generators in JavaScript</a> but hadn't implemented
+one for something outside of learning until now. The code in reference is the following:</p>
+<pre class="language-javascript"><code class="language-javascript"><span class="token keyword">function</span><span class="token operator">*</span> <span class="token function">iconGen</span><span class="token punctuation">(</span><span class="token parameter">amount</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token operator">...</span>
+        <span class="token keyword">yield</span> allIcons<span class="token punctuation">[</span>index<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token operator">...</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>With these two lines, <code>iconGen</code> has gone from a pure function<sup class="footnote-ref"><a href="#fn6" id="fnref6">[6]</a></sup> to a <em>generative iterator</em>, which lightly explains
+what this allows you to do. I can use this generator to create a list of any number of icons.
+In an earlier (and buggier) version, I forgot to remove the currently selected icon from the list and so, made the
+generator to make the number of icons dynamically but keeping it isolated (to a degree). Fixing that, I can still
+change the number of icons. I didn't move this into a separate component because at the moment,
+there's no need to extract something that might require a different presentation implementation elsewhere. What I did
+plan on adjusting was the number of icons and keeping the generator allows me to focus on the presentation layer,
+refactor the generator out and keeps the functionality in both places - with some help<sup class="footnote-ref"><a href="#fn7" id="fnref7">[7]</a></sup>.</p>
+<h2 id="the-table" tabindex="-1">The Table</h2>
+<p>As with most software, some sort of list has to be shown. Shock deals with editing pages, themes and the sort so there's
+list abound. However, I haven't created a full-on fixture system to emulate dozens of pages so I'm almost always editing
+<code>index.html</code>. That didn't stop me from extracting the table used to present items. Excluding the styling and the few
+lines of associated JavaScript, here's how they're implemented at the moment:</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>aside</span><span class="token punctuation">></span></span>
+    {#if $$slots.filter}
+      &lt;button on:click={() => (showSearchPanel = !showSearchPanel)}
+        ><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Icon</span> <span class="token attr-name">icon</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>{faSearch}</span> <span class="token punctuation">/></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">></span></span>Filter<span class="token entity named-entity" title="&hellip;">&amp;hellip;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span>
+      <span class="token punctuation">></span></span>{/if}
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span>
+    {#if $$slots.actions}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>slot</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>actions<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>{/if}
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>aside</span><span class="token punctuation">></span></span>
+  {#if items &amp;&amp; items.length != 0}
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span><span class="token punctuation">></span></span>
+        {#each items as item}
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>slot</span> <span class="token attr-name">{item}</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>item<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>slot</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span>
+        {/each}
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+    {#if $$slots.filter}
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>searchPanel<span class="token punctuation">"</span></span> <span class="token attr-name">data-hide</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>{!showSearchPanel}</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>slot</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>filter<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+    {/if}
+  {:else}
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>slot</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>missing<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+  {/if}
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">></span></span></code></pre>
+<p>This provides a <em>very thin</em> wrapper on listing a set of items in a table. I wanted to avoid too much of <a href="https://alvaromontoro.com/blog/67843/divitis-and-other-itis">the divitis</a>
+while working on this<sup class="footnote-ref"><a href="#fn8" id="fnref8">[8]</a></sup> - still a work in progress. This implementation of a sortable table removes a <em>lot of</em> of
+styling constraints and leans into what I'm expecting to see the future of Web component development to look like out of
+the box. I'm a very big fan of using slots, in this case, <a href="https://svelte.dev/docs/special-elements">Svelte's implementation</a>, since they allow you to bring
+your own elements and styles and lean into reactivity to bridge between them. I found that having this out of the box
+have improved my ability to produce something both friendly to debugging (since it's state we're tracking and replacing) and
+simpler (since I can isolate things a lot more).</p>
+<p>With that code, I'm able to present the following:</p>
+<figure>
+    <picture><source type="image/webp" srcset="/img/2gyuMb_g6m-1280.webp 1280w"><img src="/img/2gyuMb_g6m-1280.jpeg" alt="" width="1280" height="1024"></picture>
+    <figcaption>A (meager) list of pages associated to my example site. Note the "New" button to the top
+    right.</figcaption>
+</figure>
+<figure>
+    <picture><source type="image/webp" srcset="/img/_oqMH4DiHc-1280.webp 1280w"><img src="/img/_oqMH4DiHc-1280.jpeg" alt="" width="1280" height="1024"></picture>
+    <figcaption>A (even more meager) list of themes associated to my example site. Note the two buttons to the top
+    right.</figcaption>
+</figure>
+<h2 id="next-steps" tabindex="-1">Next Steps</h2>
+<p>I see myself keeping this table abstraction and adding more styling to the table itself. Introducing some way to add
+per-row and whole-table behaviors will help for bulk actions. I'm glad that I kept the icons isolated because the way my
+yak has been asking for a fresh cut, it would have been completely tested with no purpose outside of watching some icon
+turn red.</p>
+<p>There's also a chance for me to bring this table interface to the <em>first</em> screen you see when you start Shock, which
+currently looks like:</p>
+<figure>
+    <picture><source type="image/webp" srcset="/img/YswhAeEsj1-1280.webp 1280w"><img src="/img/YswhAeEsj1-1280.jpeg" alt="" width="1280" height="1024"></picture>
+    <figcaption>A set of testing sites made locally, all trapped in a `&lt;select&gt;`.</figcaption>
+</figure>
+<p>There's <em>lots</em> of room for improvement, though still in its very early phases.</p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>While useful for locking in typing constraints in JavaScript, I find that TypeScript can obscure some of the newer
+functionality that we have in JavaScript when I'm working on it in a greenfield situation. That option softens when
+I'm in working contexts as there's more tooling in place but that seems to be part of the problem that's also
+shopped as the solution. <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p>I use &quot;frontend&quot; like this because the term is <em>overloaded</em>. I think of the ActiveX and JavaScript things I built
+using <a href="https://en.wikipedia.org/wiki/HTML_Application"><code>mshta.exe</code></a> when I last used Windows and that has shaped my perspective on these kind of applications. <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn3" class="footnote-item"><p>That's the case for now. Over time, you'll see more of the presentation side but I'm going to be focusing on the
+editor for this post. <a href="#fnref3" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn4" class="footnote-item"><p>There's nearly 2,000 icons in the solid set that I'm rolling through here. In the future, I plan to use a smaller, constrained set of icons that aren't so randomized. Suggestions on what icon set to use are welcome — especially friendly, warm and inviting ones. <a href="#fnref4" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn5" class="footnote-item"><p>It's not saved yet because I have to figure out <em>where</em> I want to save this information (locally in the
+application's index of sites? along the site's definition itself?) to both make it optional for use <em>and</em> if used,
+something that's useful. I personally want this feature since scanning icons versus text is a lot easier for me. <a href="#fnref5" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn6" class="footnote-item"><p>I told you I was Clojure-pilled, ha. <a href="#fnref6" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn7" class="footnote-item"><p>I didn't explain the <code>shuffle</code> method - I looked at <a href="https://javascript.info/task/shuffle">the second implementation</a> here; I initially wrote the first one before coming to that link! You can look <a href="https://git.sr.ht/~jacky/shock/tree/6118c3e53f32d931ddb19d71061a0a0bd5318e39/item/editor/shell/src/lib/util.js#L1">at its implementation</a> — open to suggestions to it. <a href="#fnref7" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn8" class="footnote-item"><p>Working on the frontend has taught me that there's definitely not too much respect for browsers provide out of the
+box. Lots of folks have spoken about <a href="https://archive.ph/szOng#30%25">our need to decenter
+and de-myth-ify ourselves</a> when we write for the Web. <a href="#fnref8" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+</section>
+  <sequoia-comments document-uri="at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3mnivfbezrr2g"></sequoia-comments>
+  <footer id="contentFooter">
+  <h2>Thanks for reading!</h2>
+  <p>
+    I'm open to feedback on the things I write. You can e-mail your thoughts to
+    <code>yo@jacky.wtf</code> at anytime.
+  </p>
+  <script type="module" src="/scripts/components/sequoia-subscribe.js"></script>
+<sequoia-subscribe button-type="atmosphere"></sequoia-subscribe>
+<p>
+If you enjoyed this post, please support me with a donation to the project development I'm spending in the Atmosphere &mdash;
+<a href="https://www.olamaelcu.net/about/support">donate here</a></p>
+<p>
+I have an infrequent <a href="/newsletter">newsletter</a> that you can subscribe to (<a href="https://buttondown.email/jackyalcine/archive/">check the archives</a>).
+I send between one to three e-mails a month, usually expanding on posts like this one and
+giving more updates on life and things I've engaged with. There's 117 people subscribed &mdash; come join us!
+</p>
+<form action="https://buttondown.com/api/emails/embed-subscribe/jackyalcine" method="post" class="embeddable-buttondown-form">
+<label for="email"><span>Email</span>
+<input autocomplete="email" type="email" name="email" placeholder="you.are.perfect@as.you.are">
+</label>
+<input type="hidden" value="1" name="embed">
+<input type="submit" value="Subscribe">
+</form>
+<style>
+#contentFooter>h2 {
+  text-align: center;
+}
+
+form.embeddable-buttondown-form {
+  background-color: var(--color-primary);
+color: var(--color-background);
+padding: 1rem;
+display: flex;
+         flex-direction: column;
+         max-width: 40rem;
+margin: 0 auto;
+}
+
+form.embeddable-buttondown-form>label {
+flex: 3;
+display: flex;
+         flex-direction: column;
+padding: 1rem;
+}
+
+form.embeddable-buttondown-form>label>span {
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+form.embeddable-buttondown-form>input[type=submit] {
+height: max-content;
+        align-self: center;
+}
+</style>
+
+
+</footer>
+
+</article>
+
+
+  <script type="module" src="/scripts/components/sequoia-comments.js"></script>
+
+</main>
+	<footer>
+      <p>Site handrolled <local-time><time datetime="1791641036205">at Saturday, October 10, 2026 at 10:03:56 AM EDT</time></local-time> and built using <a href="https://www.11ty.dev/">11ty</a> (for now)
+			&mdash; <a href="https://www.11ty.dev/blog/sustainability-fundraising/">support its
+				development</a>!
+			Check out <a href="/report/visitors.html">my access logs</a>. <a href="/disclaimer">Disclaimer</a>: I have opinions.
+      </p>
+      <p xmlns:cc="http://creativecommons.org/ns#">
+        You made it &mdash; <strong>congrats</strong>! I don't have much to tell you. Except that unless
+        otherwise stated,
+        the content I publish is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer">CC BY-NC 4.0<picture><source type="image/webp" srcset="/essays/2024/boxing-things-up/rlZNrnUzqj-64.webp 64w"><img src="/essays/2024/boxing-things-up/rlZNrnUzqj-64.jpeg" alt="CC" width="64" height="64"></picture><picture><source type="image/webp" srcset="/essays/2024/boxing-things-up/mfiZ3Oerkz-64.webp 64w"><img src="/essays/2024/boxing-things-up/mfiZ3Oerkz-64.jpeg" alt="BY" width="64" height="64"></picture><picture><source type="image/webp" srcset="/essays/2024/boxing-things-up/2rCFEV7ZgL-64.webp 64w"><img src="/essays/2024/boxing-things-up/2rCFEV7ZgL-64.jpeg" alt="SA" width="64" height="64"></picture></a>.
+      </p>
+    </footer>
+  </body>
+</html>

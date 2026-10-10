@@ -1,0 +1,38 @@
+article {
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+section#features p {
+  max-width: calc(var(--content-width) * 0.75);
+}
+
+
+@media screen and (min-width: 60rem) {
+  article {
+    flex-direction: row;
+  }
+
+  article>section {
+    width: 45vw;
+    word-wrap: break-word;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+li.finished::before {
+  content: "🚢 ";
+}
+
+li.workingOn::before {
+  content: "🧑🏾‍💻  ";
+}
+
+li.planned::before {
+  content: "🧠 ";
+}

@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Making Livtet: A Project for Book Lovers - Jacky Alciné</title>
+	<meta name="CCBot" content="nofollow">
+	<meta name="robots" content="noai, noimageai">
+	<meta name="tdm-reservation" content="1">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#001f3f">
+	<meta name="author" content="Jacky Alciné">
+	<meta name="generator" content="Eleventy v3.0.0">
+	<meta property="og:type" content="article">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="/og-images/4ee7b829.png">
+    <meta property="og:image" content="/og-images/4ee7b829.png">
+	<meta property="og:title" content="Making Livtet: A Project for Book Lovers - Jacky Alciné">
+	<meta property="og:site_name" content="Jacky Alciné's digital place to post, post, post!">
+	<meta property="og:url" content="https://jalcine.github.io/essays/2024/making-livtet/">
+	<meta name="twitter:title" content="Making Livtet: A Project for Book Lovers - Jacky Alciné">
+	<meta name="twitter:site" content="Jacky Alciné's digital place">
+	<meta name="twitter:creator" content="@jackyalcine">
+  <meta name="fediverse:creator" content="@jalcine@todon.eu">
+	
+	<link rel="stylesheet" href="/site.css" type="text/css">
+	<link rel="icon" href="https://jalcine.github.io/images/self.jpg" type="images/jpeg">
+	<link rel="hub" href="https://pubsubhubbub.superfeedr.com/">
+	<link rel="self" href="https://jalcine.github.io/">
+	<link rel="alternate" href="/essays/feed.atom" type="application/atom+xml" title="Jacky Alciné's essays (over ATOM)">
+	<link rel="alternate" href="/links/feed.atom" type="application/atom+xml" title="Jacky Alciné's linklog (over ATOM)">
+	<link rel="alternate" href="/weeknotes/feed.atom" type="application/atom+xml" title="Jacky Alciné's weeknotes (over ATOM)">
+  <script src="/scripts/main.js" type="module" defer="" async=""></script>
+  <!-- Privacy-friendly analytics by Plausible -->
+  <script async="" src="https://plausible.io/js/pa-DosHWTTEpYQiGlr25PNp1.js"></script>
+  <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init()
+  </script>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<a class="h-card" href="/" rel="me">
+				<picture><source type="image/webp" srcset="/img/j0P3XcNaLx-184.webp 184w"><img class="u-photo" src="/img/j0P3XcNaLx-184.jpeg" height="184" alt="Jacky with gold-brimmed glasses looking to the left." width="184"></picture>
+				<span class="p-name">
+					Jacky Alciné
+				</span></a>
+			<a class="h-feed u-url" href="/essays/">Essays</a>
+			<a class="h-feed u-url" href="/links/">Linklog</a>
+			<a class="h-feed u-url" href="/weeknotes/">Weeknotes</a>
+			<!-- <a class="h-feed u-url" href="/reads">Reads</a> -->
+			<a href="/work/">Work</a>
+		</nav>
+	</header>
+	<main><article class="h-entry">
+  
+  <header>
+    <h1 class="p-name">Making Livtet: A Project for Book Lovers</h1>
+    
+    <aside>
+      by <a class="u-author" href="/">Jacky Alciné</a>
+      &bull; published
+      <time class="dt-published" datetime="Mon, 12 Aug 2024 17:00:00 GMT">August 12, 2024</time>
+    </aside>
+    <small style="text-align:center;width: 100%;display: inline-block; margin: 0.5rem auto;">
+      As I look <a href="/work">for work</a>, please
+      support me with a donation to the project development I'm spending in the
+      Atmosphere &mdash; <a href="https://www.olamaelcu.net/about/support">donate
+      here</a>
+    </small>
+  </header>
+  
+  <section class="e-content"><p>I wrote a bit about my goal with <a href="/essays/2024/my-hub">a project for books</a> and the things that led to its inspiration. Now I'd like to
+share it with you all. In short, it's a project that's meant to replace my use of <a href="https://calibre-ebook.com/">Calibre</a>, a venerable solution for
+folks wanting to work with their book collections. If you haven't, I suggest reading a bit <a href="https://calibre-ebook.com/about#history">about its history</a>;
+there's a reason it's the go-to solution for a lot of people. However, my want and use for Calibre extends beyond its
+current capacity<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>. I've created <a href="/projects/livtet/">a page for it</a> with its feature list. So far, I've managed to make something that
+can pull in the books I have in my Calibre collection. That led me to <a href="https://git.sr.ht/~jacky/livtet/tree/next/item/calibre-content-server-api">develop a small create</a> around doing so<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>.
+What I have built so far is what I'm hoping will encourage folks to noodle around the code to help flesh things out.</p>
+<h1 id="what-there's-now" tabindex="-1">What there's now</h1>
+<p>Here's what it looks like today; with some changes I've made:</p>
+<figure>
+    <video poster="/images/weeknotes/2024-08-15-livtet.png" controls="" loop="" muted="">
+        <source src="/videos/weeknote-08-15-2024-livtet.webm">
+    </video>
+</figure>
+<p>The most notable changes include the use of <a href="https://lib.rs/cacache"><code>cacache</code></a> to store information from Calibre; it doesn't seem to allow
+for fetching individual information about books so this avoids that by storing the main index to disk<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup>. I've also
+managed to get a consistent enough interface to view books in a library from a search and view an individual book as
+well.</p>
+<h1 id="what-i'm-working-on" tabindex="-1">What I'm working on</h1>
+<p>I'm eager to continuing working on this; some things I'm actively working on are:</p>
+<ul>
+<li>Introducing a plugin-system: I want to have support for pulling in libraries from different locations. A
+personal goal is to get my audiobooks from <a href="https://libro.fm/">Libro.fm</a> to show up here! You can throw some ideas for it at
+<a href="https://todo.sr.ht/~jacky/livtet/2">https://todo.sr.ht/~jacky/livtet/2</a>.</li>
+<li>Keeping things within SQLite and the file system: I'm banking hard on SQLite as the &quot;means of storage&quot; for things like
+search as it's pretty decent at that. I have an experimental module of code that's using <a href="https://github.com/quickwit-oss/tantivy">tantivy</a> that needs some
+more love.</li>
+<li>Expanding the visual experience: I am not a visual designer 😆 but I have opinions on how I want things like books to
+appear.</li>
+</ul>
+<p>I'm open to feedback about this and would like to hear your thoughts! Feel free to <a href="mailto:~jacky/livtet@todo.sr.ht">e-mail them</a>!</p>
+<h1 id="what-i'd-like-to-see-next" tabindex="-1">What I'd like to see next</h1>
+<p>I'm <em>really</em> interested, after working on the above to start exploring the following:</p>
+<ul>
+<li>Synchronization: At first, I'd want to see if I can have an instance of Livtet on desktop sync with a headless
+instance <em>somewhere</em>. I'm thinking about doing this to help encourage folks to make their own Web interfaces</li>
+<li>A reference Web interface: As I tend to mention books a lot in my <a href="/weeknotes">weeknotes</a>, having a way to pull in the
+exact parts I mention in a book and the notes around will be super helpful. That's influencing how I'm thinking about
+its Web interface.</li>
+</ul>
+<h1 id="keeping-it-going" tabindex="-1">Keeping it Going</h1>
+<p>Now, it's pretty early for me to even consider this but I figure now's better than never. I've launched this project as
+one to be funded via <a href="https://comradery.co/">Comradery</a> <em>primarily</em>. I'll be posting more in the moment updates about how Livtet is growing
+on there and I'd love to help expand the use of cooperatively owned software to help software I'd eventually like to see
+mature to be the such as well! If you want to help support the development, please help out by either <a href="mailto:~jacky/livtet@todo.sr.ht">e-mailing
+ideas</a> or going to the funding page at <a href="https://comradery.co/livtet">https://comradery.co/livtet</a>. You can also support me on <a href="https://ko-fi.com/jackyalcine">Ko-Fi</a>, if that's easier. <strong>Thank you so much</strong>!</p>
+<p>I know that it might seem to be early for me to set up funding for this project. I'm hoping that by doing so,
+it both validates this project as being something interesting enough for people to fund and provides
+me with a public display of engineering craftsmanship, something that's hard to do since most of the
+places I worked at didn't have a lot of opportunity to do the such.</p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>Truthfully, it was either I work on making a super advanced plugin for my needs into the Calibre ecosystem <em>or</em> I
+work on something to replace it altogether. I host my own website and use a vanity e-mail address; I'm
+working on my own solution! <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p>I <em>might</em> publish this one day because Calibre's API is interesting (using things like digest authentication, not really
+following a convention for paths, etc). Ideally, I'd want to make it a bit more like other content pagination APIs;
+in the sense that it doesn't provide async support, no caching, etc - <em>you</em> can figure that out! Hazel's
+described this a <a href="https://hachyderm.io/@hazelweakly/112536923490036820">lot more explicitly</a>. <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn3" class="footnote-item"><p>There's a small issue with this that I'm okay with (for now). While this decreases the response time, the cache
+gets thrashed when a new book is added (as well as the search index being updated). Since this is all local, this is
+fine but will love to hear reports about this on other peoples' systems. <a href="#fnref3" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+</section>
+  <sequoia-comments document-uri="at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3mnivf7rdib2g"></sequoia-comments>
+  <footer id="contentFooter">
+  <h2>Thanks for reading!</h2>
+  <p>
+    I'm open to feedback on the things I write. You can e-mail your thoughts to
+    <code>yo@jacky.wtf</code> at anytime.
+  </p>
+  <script type="module" src="/scripts/components/sequoia-subscribe.js"></script>
+<sequoia-subscribe button-type="atmosphere"></sequoia-subscribe>
+<p>
+If you enjoyed this post, please support me with a donation to the project development I'm spending in the Atmosphere &mdash;
+<a href="https://www.olamaelcu.net/about/support">donate here</a></p>
+<p>
+I have an infrequent <a href="/newsletter">newsletter</a> that you can subscribe to (<a href="https://buttondown.email/jackyalcine/archive/">check the archives</a>).
+I send between one to three e-mails a month, usually expanding on posts like this one and
+giving more updates on life and things I've engaged with. There's 117 people subscribed &mdash; come join us!
+</p>
+<form action="https://buttondown.com/api/emails/embed-subscribe/jackyalcine" method="post" class="embeddable-buttondown-form">
+<label for="email"><span>Email</span>
+<input autocomplete="email" type="email" name="email" placeholder="you.are.perfect@as.you.are">
+</label>
+<input type="hidden" value="1" name="embed">
+<input type="submit" value="Subscribe">
+</form>
+<style>
+#contentFooter>h2 {
+  text-align: center;
+}
+
+form.embeddable-buttondown-form {
+  background-color: var(--color-primary);
+color: var(--color-background);
+padding: 1rem;
+display: flex;
+         flex-direction: column;
+         max-width: 40rem;
+margin: 0 auto;
+}
+
+form.embeddable-buttondown-form>label {
+flex: 3;
+display: flex;
+         flex-direction: column;
+padding: 1rem;
+}
+
+form.embeddable-buttondown-form>label>span {
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+form.embeddable-buttondown-form>input[type=submit] {
+height: max-content;
+        align-self: center;
+}
+</style>
+
+
+</footer>
+
+</article>
+
+
+  <script type="module" src="/scripts/components/sequoia-comments.js"></script>
+
+</main>
+	<footer>
+      <p>Site handrolled <local-time><time datetime="1791641036205">at Saturday, October 10, 2026 at 10:03:56 AM EDT</time></local-time> and built using <a href="https://www.11ty.dev/">11ty</a> (for now)
+			&mdash; <a href="https://www.11ty.dev/blog/sustainability-fundraising/">support its
+				development</a>!
+			Check out <a href="/report/visitors.html">my access logs</a>. <a href="/disclaimer">Disclaimer</a>: I have opinions.
+      </p>
+      <p xmlns:cc="http://creativecommons.org/ns#">
+        You made it &mdash; <strong>congrats</strong>! I don't have much to tell you. Except that unless
+        otherwise stated,
+        the content I publish is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer">CC BY-NC 4.0<picture><source type="image/webp" srcset="/essays/2024/making-livtet/rlZNrnUzqj-64.webp 64w"><img src="/essays/2024/making-livtet/rlZNrnUzqj-64.jpeg" alt="CC" width="64" height="64"></picture><picture><source type="image/webp" srcset="/essays/2024/making-livtet/mfiZ3Oerkz-64.webp 64w"><img src="/essays/2024/making-livtet/mfiZ3Oerkz-64.jpeg" alt="BY" width="64" height="64"></picture><picture><source type="image/webp" srcset="/essays/2024/making-livtet/2rCFEV7ZgL-64.webp 64w"><img src="/essays/2024/making-livtet/2rCFEV7ZgL-64.jpeg" alt="SA" width="64" height="64"></picture></a>.
+      </p>
+    </footer>
+  </body>
+</html>

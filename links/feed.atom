@@ -1,0 +1,1394 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <title>Jacky Alciné&#39;s linklog</title>
+  <subtitle></subtitle>
+  <link href="https://jalcine.github.io/links/feed.atom" rel="self" />
+  <link href="https://jalcine.github.io/links/" />
+  <updated>2026-10-10T14:04:10Z</updated>
+  <id>https://jalcine.github.io/links/</id>
+  <author>
+    <name>Jacky Alciné</name>
+  </author>
+  <entry>
+    <title>The Era of Product Engineers is Here | Laurie Voss</title>
+    <link href="https://jalcine.github.io/links/2026/Sep/ai-product-engineer-seldo/" />
+    <updated>2026-09-24T14:25:00Z</updated>
+    <id>https://jalcine.github.io/links/2026/Sep/ai-product-engineer-seldo/</id>
+    <content type="html">&lt;p&gt;As I continue to look for work in this &lt;a href=&quot;https://jalcine.github.io/essays/2026/kicked-out.md&quot;&gt;poisoned
+industry&lt;/a&gt;, I&#39;ve tried to pay attention to what
+folks in the space are saying about it and determine if I really need to
+consider stepping out. Laurie&#39;s interview highlights quite a few things that I
+found poignant:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;quot;only white guys can afford not to go to college&amp;quot;: I never went to college
+because my family didn&#39;t understand it (non-English, uneducated immigrants)
+and because of how my high school life went, I was immediately written off.
+Software engineering as a trade &lt;em&gt;saved&lt;/em&gt; me &lt;a href=&quot;https://jalcine.github.io/essays/2024/regrets-with-tech.md&quot;&gt;in some
+capacity&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&amp;quot;the thing we found in senior engineering has become central to the job&amp;quot;:
+this &lt;em&gt;means&lt;/em&gt; that there&#39;s no longer any space for on-the-job training of the
+skills that would have normally skilled people up; there&#39;s &lt;em&gt;negative&lt;/em&gt;
+incentive to have folks become articulate into these roles&lt;/li&gt;
+&lt;li&gt;&amp;quot;we don&#39;t know who the big players are&amp;quot;: the &lt;em&gt;AI vendors&lt;/em&gt;. They literally are
+the biggest players; operating like Stripe when it comes to understanding which
+smaller businesses are rising or falling since we&#39;re submitting &lt;em&gt;all&lt;/em&gt; of our
+information (the new data/product) over to them.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There&#39;s a very different perspective that folks who are &lt;em&gt;invested&lt;/em&gt; in this
+industry&#39;s bubble &lt;em&gt;not happening within the next five years&lt;/em&gt; versus those who
+might be a bit more like me, who doesn&#39;t completely mind the death of the role
+(at least in its capital hoarding way) but is concerned about the lever that&#39;s
+been released in favor of letting statistical models drive business decisions.&lt;/p&gt;
+&lt;p&gt;It is a &lt;em&gt;lot easier&lt;/em&gt; to be optimistic about generative AI when you&#39;re:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;comfortably employed&lt;/li&gt;
+&lt;li&gt;have sonority that allows them to move through interviews faster&lt;/li&gt;
+&lt;li&gt;have already been in the industry for at least twenty years (or ten)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This makes them ignorant to the day-to-day&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://jalcine.github.io/links/2026/Sep/ai-product-engineer-seldo/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt; that they &lt;em&gt;never&lt;/em&gt; have to engage
+in; making these optimistic stances reductive. What&#39;s more likely to happen is
+&lt;em&gt;what&#39;s&lt;/em&gt; happening now: increased ramps on layoff cycles as technologists are
+submitting their knowledge to machines that&#39;ll produce a lot more &lt;em&gt;closed
+source&lt;/em&gt; technologies (there&#39;s no point of contributing to the commons - there&#39;s
+less of a competitive advantage if you can throw Jev, Muse and Gemini at the
+monster of a codebase). This is even &lt;em&gt;mentioned&lt;/em&gt; in the podcast - the rise of
+&amp;quot;(generated) personalized software&amp;quot;.&lt;/p&gt;
+&lt;p&gt;I suggest you read more of Laurie&#39;s stances so you can see the gap (or rather
+the executive perspective) in how this is and how this works in real life (no
+matter what Markdown files scanning spreadsheets show you):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://seldo.com/posts/do-ai-enabled-companies-need-fewer-people/&quot;&gt;https://seldo.com/posts/do-ai-enabled-companies-need-fewer-people/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://seldo.com/posts/ai-has-torched-the-market-for-junior-programmers/&quot;&gt;https://seldo.com/posts/ai-has-torched-the-market-for-junior-programmers/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://seldo.com/posts/we-are-all-product-engineers-now/&quot;&gt;https://seldo.com/posts/we-are-all-product-engineers-now/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Then come up, watch that video and tell me how much money, thought and concern
+is &lt;em&gt;actually&lt;/em&gt; being put into junior software development (none), employment
+stability (none) and the durability of the career path that is software
+engineering (very little). Feeding into the hype is no different that investing
+in the wet labs!&lt;/p&gt;
+&lt;hr class=&quot;footnotes-sep&quot;&gt;
+&lt;section class=&quot;footnotes&quot;&gt;
+&lt;ol class=&quot;footnotes-list&quot;&gt;
+&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;If not ignorant, it makes them less likely to take the sentiment of the
+thousands of people around them at a lower value. It makes it easier to devalue
+people they could even call peers into EINs that are plugged into aggregates
+of information from &lt;a href=&quot;https://fred.stlouisfed.org/&quot;&gt;https://fred.stlouisfed.org/&lt;/a&gt;. &lt;a href=&quot;https://jalcine.github.io/links/2026/Sep/ai-product-engineer-seldo/#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Dorsey for the People</title>
+    <link href="https://jalcine.github.io/links/2026/Aug/dorsey-bluetooth/" />
+    <updated>2026-08-11T12:30:00Z</updated>
+    <id>https://jalcine.github.io/links/2026/Aug/dorsey-bluetooth/</id>
+    <content type="html">&lt;p&gt;Ever since listening to &lt;a href=&quot;https://jalcine.github.io/links/2025/Oct/revolution-social/&quot;&gt;the first episode of Revolution Social with rabble and
+Jack Dorsey&lt;/a&gt;, my opinions on Dorsey have slightly changed. I didn&#39;t understand -
+not fully - why he allowed the sale of Twitter to Elon, but that episode talks
+more about it (tl;dr: capitalism wins over logic every time). That capital has
+been one he&#39;s been sitting on but as of late, he&#39;s been funding a lot of
+projects that are anti-cenorship, something I&#39;m adamant about, which is
+different from moderation, something Dorsey inherently disagrees with as a
+concept (to my understanding, at least global moderation; selectively imposable
+moderation like &lt;a href=&quot;https://atproto.com/&quot;&gt;ATProto&lt;/a&gt; is more of his speed, though he had angsts with it
+being built in).&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Across the globe, state-enforced internet blackouts have become a primary
+weapon against protests and independent journalism during political crises.
+Beyond silencing dissent, these measures serve to block real-time
+documentation and evade international scrutiny of official misconduct.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The next time someone tells you that the Internet isn&#39;t real life; point them
+to this article. If they&#39;re still apathetic, they don&#39;t need their opinions to
+be taken that seriously.&lt;/p&gt;
+&lt;p&gt;This report is compelling. The now-fascist Indian state has been attempting
+to silence protestors for some time now. I&#39;ve only learned of the state of
+India by way of the amazing work of &lt;a href=&quot;https://en.wikipedia.org/wiki/Arundhati_Roy&quot;&gt;Arundhati Roy&lt;/a&gt;. But having a government
+attempt to block access to code that is legally free has a bad way of
+precedents — imagine if the United States&#39; president passed an executive
+order blocking any code that helps promotes critical race theory?! Wikipedia,
+Google, the whole Internet would be out!&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Bitchat reached an all-time high of 430,000 daily active users in India on
+July 26, according to market intelligence firm Sensor Tower. Between July 20 and
+July 26, India accounted for 74% of the app’s global downloads.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;If this is not a market signal that the app is ripe for revolutionary (if not
+counter-state insurgency) action, then I don&#39;t know what is. Those paying
+attention will most definitely be looking to see how they can expand this with
+things like mesh networking or WiFi repeaters to boost up what&#39;s available over
+Bluetooth. Dorsey going as far as &lt;em&gt;posting the government order&lt;/em&gt; on his old
+platform (ironically, I don&#39;t think he did it on Primal, the Nostr equivalent
+of Twitter/X) took me out.&lt;/p&gt;
+&lt;p&gt;As someone building &lt;a href=&quot;https://livtet.olamaelcu.net&quot;&gt;a social network&lt;/a&gt; for readers, especially those who
+want to read radically, I can only imagine that it&#39;s a matter of time before
+this reaches other places and becomes a new battlefield of sorts.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Yeah, 16% of people are reading. We&#39;re cooked.</title>
+    <link href="https://jalcine.github.io/links/2026/Jul/end-of-reading/" />
+    <updated>2026-07-31T12:30:00Z</updated>
+    <id>https://jalcine.github.io/links/2026/Jul/end-of-reading/</id>
+    <content type="html">&lt;p&gt;According to this piece, reading rates in America have collapsed - fewer than
+half of adults read a book in 2022 (which - eh - I feel like this is hard to
+assess), daily pleasure reading fell from 28% to 16% (which is both real and
+wild; if reading is dead then folks are going to be just told what to think)
+across (and this hurts me to repeat) &lt;em&gt;every age, gender, and education level&lt;/em&gt;,
+even as total words consumed explode via texts, posts, and feeds. Reading built
+and freed the modern mind (logic, sustained attention, rational analysis), and
+its erosion is reshaping cognition, politics (Trump as the first &amp;quot;postliterate
+president,&amp;quot; whose rhetorical style suits oral culture and yet challenges a
+truly democratic one, even those with a farce of an existence as that of
+America), and democratic institutions that assumed informed, literate citizens.
+Generative AI now threatens writing itself - which is how people figure out
+what they think - risking the loss of deep thinking and independent judgment,
+making the literate era look like a brief anomaly between the oral and digital
+ages. This has been hard for me to assess with even my own heavy use of
+generative AI but damn does the prospect of folks just &lt;em&gt;not&lt;/em&gt; giving a fuck
+anymore is scaring me.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Erin&#39;s giving apps a meaningful story</title>
+    <link href="https://jalcine.github.io/links/2026/Jul/cloud-atlas/" />
+    <updated>2026-07-31T12:30:00Z</updated>
+    <id>https://jalcine.github.io/links/2026/Jul/cloud-atlas/</id>
+    <content type="html">&lt;p&gt;Erin Kissane is launching &amp;quot;Cloud Atlas&amp;quot; — an interview-based guide to the
+apps and projects emerging on the AT Protocol/Atmosphere, intended to make
+decentralized social media infrastructure &lt;em&gt;more legible&lt;/em&gt; to people interested
+in alternatives to centralized platforms. This is something I haven&#39;t seen done
+from &lt;em&gt;the outside&lt;/em&gt; — developers of these apps and services tend to be
+their own marketing departments and PR teams but this isn&#39;t (solely) &lt;em&gt;that&lt;/em&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The human texture and qualitative specificity of projects in the Atmosphere
+are as interesting to me as any set of technical and design specifications
+could possibly be. Interesting for their own sake, and also for the ways
+they’re shaping each project’s current state and its likely futures. I also
+believe in just getting out there and gathering foundational knowledge.
+There&#39;s value in offering classification systems even when they&#39;re
+provisional and even when they’re only one among many. I read a lot of oral
+histories and interviews and human-textured research from older social
+movements and periods in technology that inflects my understanding of the
+world now—the ACT UP oral history project that kept me sane in during the
+Covid Tracking project, the very human testimonies of the Combahee River
+Collective, even the (delightful) work that came out of the early stumbles of
+the Worm Community System. I like to think that if things go even halfway
+well, the work we’re all doing to make new online social systems legible will
+help in the present and be a useful ship’s log for the people who come after
+us. Understanding what we’re trying do—and why—will matter later, is the bet.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This is the kind of work that keeps projects both alive &lt;em&gt;and&lt;/em&gt; afloat in the
+minds of many. I&#39;m extremely curious to see how Erin pulls this off and kind of
+hoping that my own project, &lt;a href=&quot;https://www.olamaelcu.net/projects/livtet&quot;&gt;Livtet&lt;/a&gt; gets to be in this party.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Dissent&#39;s Sizzling the Block with this Summer Issue</title>
+    <link href="https://jalcine.github.io/links/2026/Jun/dissent-summer/" />
+    <updated>2026-06-17T03:30:00Z</updated>
+    <id>https://jalcine.github.io/links/2026/Jun/dissent-summer/</id>
+    <content type="html">&lt;p&gt;Patrick Iber opened up this issue in an almost prophetic way with &lt;a href=&quot;https://dissentmagazine.org/article/summer-2026-editors-page/&quot;&gt;the editor&#39;s opening&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The semiquincentennial celebrations planned by the White House will not be a
+demonstration of unity. They will celebrate the domination of one part of the
+country over the other. Donald Trump’s 250th will be a carnival, complete
+with a barker-in-chief, attempting to sell the idea that the United States is
+winning like never before. Outside of MAGA-land, there will not be so much
+celebrating. It is hard to cheer when Trump will insist that the festivities
+are made into a reflection of his glory.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This section was &lt;em&gt;immediately&lt;/em&gt; highlighted because it couldn&#39;t have been
+phrased any better. I do wish that the lawsuit to &lt;a href=&quot;https://apnews.com/article/white-house-ufc-fight-lawsuit-trump-birthday-da95554d7137ca297dd47951a3b95cc8&quot;&gt;stop the event from
+happening&lt;/a&gt; landed but relying on the legal system to enforce any sort of
+justice is like asking CitiBank nicely to &lt;a href=&quot;https://www.fordhamilj.org/volume-48-issue-3/2025/3/31/banking-on-empire-citibank-haiti-and-the-fight-for-corporate-accountability&quot;&gt;return the money they stole from the
+Haitian National Bank&lt;/a&gt; — a joke all around. I disagree with quite a
+bit of what Iber continues on to say because it clings to this idea that we can
+just refactor the &amp;quot;bad parts&amp;quot; of the American project and lean on &amp;quot;small-d
+democratic control, not big-D Democratic control&amp;quot; to fix the ailments of this
+project. The first essay after the note operates like a palette cleanser
+because it&#39;s &lt;em&gt;way more honest&lt;/em&gt; and direct about the place that the United
+States has in its evolution as a global power that&#39;s attempting to drag the
+rest of the world down with it.&lt;/p&gt;
+&lt;h2 id=&quot;the-american-revolution-in-global-retreat&quot; tabindex=&quot;-1&quot;&gt;&lt;a href=&quot;https://dissentmagazine.org/article/american-revolutionary-tradition-self-determination/&quot;&gt;The American Revolution in Global Retreat&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://jalcine.github.io/links/2026/Jun/dissent-summer/I6mkOpC4pC-666.webp 666w&quot;&gt;&lt;img src=&quot;https://jalcine.github.io/links/2026/Jun/dissent-summer/I6mkOpC4pC-666.jpeg&quot; alt=&quot;An illustration of the American flag by Anna Sorokina&quot; width=&quot;666&quot; height=&quot;375&quot;&gt;&lt;/picture&gt;
+This essay prompted a few posts I made on Bluesky as I was reading it on my
+flight to ATL Monday evening&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://jalcine.github.io/links/2026/Jun/dissent-summer/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt;. I found it a great way to reframe the way
+other countries try to get the favor of the United States in their own
+political ventures - like India and Indonesia:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In his 1949 speech to the U.S. Congress two years after Indian independence,
+Prime Minister Jawaharlal Nehru called the American founders the
+“torchbearers of freedom, not only for this country but for the world.”
+Indonesian President Sukarno opened the famed 1955 Bandung Conference of
+Asian and African states by highlighting the anniversary of Paul Revere’s
+midnight ride, which informed settler militias of advancing British forces
+prior to the battles of Lexington and Concord. Sukarno declared the Third
+World’s anticolonial struggle to be the culmination of a “battle which began
+180 years ago” with “the American War of Independence, the first successful
+anti-colonial war in history.”&lt;/p&gt;
+&lt;p&gt;During the twentieth century, U.S. independence became a symbolic touchstone
+for many communities in the Global South that would have been excluded from
+that revolt. It stood for the idea that all people have the right to govern
+themselves and to fundamentally change the conditions of their own societies.
+For all the flaws of the American Century, its great attraction was the
+degree to which economic, political, and cultural life seemed to exist in a
+dynamic relationship with the will of its changing people. Above all, it was
+this relationship that gave world-historical significance to the events of
+1776 for outsiders. Rather than a local political conflict unleashed by
+restive settlers, the long-term engine of American renewal meant that an
+eighteenth-century spark could be linked to an unfolding global story of
+human freedom.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The focus it brought to the global conversation: that the American Revolution
+was &lt;em&gt;the grandest&lt;/em&gt; and most noteworthy is refuted by C.L.R James, as mentioned
+in this piece. If the mission of independence, of freedom - as described by
+Thomas Jefferson and F.W. Reitz - is tied to one&#39;s &lt;em&gt;authority&lt;/em&gt; to &amp;quot;exterminate
+the brutes&amp;quot; and invoke &amp;quot;manifest day&amp;quot;, it makes sense why then the ceiling of
+political understanding that Black capitalist and celebrities have are that of
+house Negro-esque ideas: staying as close to whiteness and mimicing its talking
+points (despite the cementing in history of cultural production it might have
+brought - the cost is intellectual and communal damage for the profit of a
+few):&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The State Department may have sponsored jazz tours, but in the era of
+Coltrane such art often remained inflected with global anticolonial
+solidarity in ways that challenged any easy Cold War purpose. These
+oppositional connections certainly did not disappear, but by the
+twenty-first-century age of Black billionaires like Jay-Z and Oprah,
+commercial creativity seemed to fit far more comfortably with both American
+capital and power.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;I&#39;m still working my way through this issue but &lt;em&gt;best believe&lt;/em&gt; I&#39;ll be
+following up; it&#39;s been full of bangers so far.&lt;/p&gt;
+&lt;hr class=&quot;footnotes-sep&quot;&gt;
+&lt;section class=&quot;footnotes&quot;&gt;
+&lt;ol class=&quot;footnotes-list&quot;&gt;
+&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;Namely &lt;a href=&quot;https://blacksky.community/profile/did:plc:e2ctbutx6kya6si4if5ngjmm/post/3moektfcjekjm&quot;&gt;this one&lt;/a&gt; but also &lt;a href=&quot;https://blacksky.community/profile/did:plc:e2ctbutx6kya6si4if5ngjmm/post/3moele55qd7z4&quot;&gt;this one&lt;/a&gt; because of how my &lt;em&gt;ethnic&lt;/em&gt;
+and &lt;em&gt;national&lt;/em&gt; identities tend to collide (or be selected for me by an
+observer) and the way that spoken language and accentuation plays into that
+(and what conversations folks assume I&#39;m allowed to partake in). &lt;a href=&quot;https://jalcine.github.io/links/2026/Jun/dissent-summer/#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content>
+  </entry>
+  <entry>
+    <title>&#39;I Love Boosters&#39; Is a Black Marxist Movie</title>
+    <link href="https://jalcine.github.io/links/2026/Jun/i-love-boosters/" />
+    <updated>2026-06-16T05:30:00Z</updated>
+    <id>https://jalcine.github.io/links/2026/Jun/i-love-boosters/</id>
+    <content type="html">&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://jalcine.github.io/img/Rod_OloDOq-2048.webp 2048w&quot;&gt;&lt;img src=&quot;https://jalcine.github.io/img/Rod_OloDOq-2048.jpeg&quot; alt=&quot;Boots Riley being interviewed for this movie&quot; width=&quot;2048&quot; height=&quot;1152&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;I enjoyed every moment of &lt;a href=&quot;https://en.wikipedia.org/wiki/I_Love_Boosters&quot;&gt;I Love Boosters&lt;/a&gt;. From Lakeith Stanfield&#39;s
+attempt to woo our lead character to the &lt;em&gt;literal&lt;/em&gt; heightening of contradiction
+that led to a global workers&#39; revolt — &lt;em&gt;this&lt;/em&gt; is the kind of media that
+makes plain the difficulty of the people who are ignored and belabored for the
+comfort of the upper class. It focused on the production of &lt;em&gt;fast fashion&lt;/em&gt;, the
+industry that&#39;s the underacknowledged child of the industralization of attire
+and the elitism of what it means to be &amp;quot;in style&amp;quot; (&lt;a href=&quot;https://en.wikipedia.org/wiki/Haute_couture&quot;&gt;Haute couture&lt;/a&gt;, for
+example).&lt;/p&gt;
+&lt;p&gt;I&#39;m glad that they took time to explain something every baby Marxist
+(or serious leftist, that is) &lt;em&gt;has&lt;/em&gt; to understand: &lt;a href=&quot;https://en.wikipedia.org/wiki/Dialectical_materialism&quot;&gt;dialectical
+materialism&lt;/a&gt;. The most ridiculous moment of this is quite literally a scene
+of .. well, sex but second to that was a moment when Taylour Paige&#39;s character
+was blasted by the &amp;quot;situational accelerator&amp;quot; that works as a way to exacerbate
+conflict of a situation or to deconstruct every element of material that
+produces the object. One example of this was the aforementioned sex scene -
+which was very abrupt - but also her donning a suit that heightened her senses:&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://jalcine.github.io/img/ppspMqnYsc-413.webp 413w&quot;&gt;&lt;img src=&quot;https://jalcine.github.io/img/ppspMqnYsc-413.jpeg&quot; alt=&quot;Taylour in a body suit&quot; width=&quot;413&quot; height=&quot;386&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;This movie is one I&#39;m adding to my personal DVD collection and will throw on
+when I want something to remind me that you can make a funny, zany and
+educational film for the left all in one go.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://jalcine.github.io/img/BQwN9lD5Po-1920.webp 1920w&quot;&gt;&lt;img src=&quot;https://jalcine.github.io/img/BQwN9lD5Po-1920.jpeg&quot; alt=&quot;Naomi Ackie, Taylour Paige and Keke Palmer&quot; width=&quot;1920&quot; height=&quot;1080&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>&#39;For All Mankind&#39; Is Great Until Season 3</title>
+    <link href="https://jalcine.github.io/links/2026/Jun/for-all-mankind/" />
+    <updated>2026-06-07T06:10:00Z</updated>
+    <id>https://jalcine.github.io/links/2026/Jun/for-all-mankind/</id>
+    <content type="html">&lt;p&gt;This will have spoilers for the TV show, &lt;em&gt;For All Mankind&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;I&#39;ve been enjoying my binge watching of this show. My friend&#39;s wife suggested
+it and I&#39;ve been hooked since. There&#39;s points of the show that make my leftist
+brain itch too much but it&#39;s part of the narrative of what makes America
+&lt;em&gt;America&lt;/em&gt; - its jingoistic, racist but ever-curious, persistently curious and
+overly ambitious goal to get ahead by any means necessary.&lt;/p&gt;
+&lt;p&gt;Now Season 3 is where things get &lt;em&gt;very&lt;/em&gt; interesting. Due to the work of the
+public sector, the private sector is able to capitalize on the development of
+space travel and end up competing with two national superpowers to make it to
+Mars. At this point, the show enters full-on fantasy (one - folks are going to
+Mars and we elected a woman President who&#39;s bad at hiding that she&#39;s gayer than
+a chaise lounge). We also get to see the exceedingly annoying hubris of a man
+be the guiding factor of NASA finally be matched by his inability to be a
+decent role model for men leading to him being indirectly cucked by his best
+friend&#39;s son.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://jalcine.github.io/img/spdSfZcxC3-480.webp 480w&quot;&gt;&lt;img src=&quot;https://jalcine.github.io/img/spdSfZcxC3-480.jpeg&quot; alt=&quot;A scene from the Boondocks where a waiter says &amp;quot;wouldn&#39;t let that happen to me though.&amp;quot; as he walks off&quot; width=&quot;480&quot; height=&quot;270&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;The science of the show is &lt;em&gt;very&lt;/em&gt; cool including things not yet fully proven or
+has failed in the past like &lt;a href=&quot;https://jalcine.github.io/links/2026/Jun/for-all-mankind/(https:/en.wikipedia.org/wiki/Helium-3)&quot;&gt;helium-3&lt;/a&gt; and &lt;a href=&quot;https://en.wikipedia.org/wiki/Sea_Dragon_(rocket)&quot;&gt;underwater rocket launches&lt;/a&gt;.
+I also learned about the deep-faking technology they used for &lt;a href=&quot;https://www.theringer.com/2021/03/05/tv/for-all-mankind-season-2-deepfakes-ronald-reagan-john-lennon-johnny-carson&quot;&gt;the Reagan and
+Nixon era&lt;/a&gt;. It&#39;s an interesting show because it&#39;s clearly science fiction
+but also is toying on the edge of literal fiction. I will say though - this
+show both reinforces the tropes of how the Soviet Union depicted themselves in
+yesteryear and has me &lt;em&gt;way more curious&lt;/em&gt; on watching older Russian television
+to see how they were &lt;em&gt;actually&lt;/em&gt; depicted. At times, it feels like there&#39;s some
+directive by the State Department that all TV production studios are required
+to produce a uniform depiction of what Russians look like. I feel like it was
+one of the &lt;em&gt;cheapest&lt;/em&gt; parts of the show.&lt;/p&gt;
+&lt;p&gt;With all my misgivings, I think this show is great. I&#39;m planning on finishing it!&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>It&#39;s Biased Bullshit all the Way Down</title>
+    <link href="https://jalcine.github.io/links/2026/Jun/bias-built-in/" />
+    <updated>2026-06-04T12:30:00Z</updated>
+    <id>https://jalcine.github.io/links/2026/Jun/bias-built-in/</id>
+    <content type="html">&lt;p&gt;Well, well, well - this is a bit of a doozy. Not shocking or surprising, but a doozy nonetheless.
+&lt;a href=&quot;https://algorithmichiring.github.io/&quot;&gt;This report from Stanford&lt;/a&gt; highlights quite a few things:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;AI hiring tools are helping folks break the (weakly enforced) law around hiring bias.&lt;/li&gt;
+&lt;li&gt;Blackbox (proprietary) systems help shield companies from this bias-as-a-service.&lt;/li&gt;
+&lt;li&gt;&amp;quot;Black applicants are the most likely to be adversely impacted: &lt;strong&gt;30% of Black applicants apply to at least one position that demonstrates adverse impact against Black applicants&lt;/strong&gt;.&amp;quot; For tech companies, this number is definitely &lt;em&gt;way higher&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I wrote about my frustration, despite having a tenured background, in &lt;a href=&quot;https://jalcine.github.io/essays/2024/on-the-tech-resume-inside-out.md&quot;&gt;reading
+a book on &amp;quot;tech resumes&amp;quot;&lt;/a&gt; and &lt;a href=&quot;https://jalcine.github.io/essays/2024/the-hunt-driving-me-mad.md&quot;&gt;on the job hunt itself&lt;/a&gt;. I don&#39;t &lt;em&gt;believe&lt;/em&gt;
+folks are entitled to a job - I do think that if we&#39;re not going to provide
+durable and reliable employment, that we need to have society provide a social
+net with &lt;em&gt;all of this excess capital&lt;/em&gt; such that we don&#39;t end up criminalizing
+them for things that jobs provide like the means of paying for rent, buying
+food and at this point not being sick. That&#39;s the silent part of the idea of
+labor: we&#39;re not entitled to security but we are &lt;em&gt;guaranteed&lt;/em&gt; social exile (by
+homelessness) at best and prison at worst when forced to make moves undesirable
+to the &amp;quot;job makers.&amp;quot;&lt;/p&gt;
+&lt;p&gt;A bit extreme from the realm of tech workers - especially the highly paid ones
+like myself (perhaps when you&#39;re not floating two families) - but it&#39;s the
+truth of the system that we silently enable by not doing anything about it. I
+do &lt;em&gt;not&lt;/em&gt; expect people whose job is largely to speak on the greatness of
+industry (&lt;a href=&quot;https://www.versobooks.com/products/28-liberalism-at-large&quot;&gt;Lenin was right&lt;/a&gt; about &lt;a href=&quot;https://www.economist.com/&quot;&gt;https://www.economist.com/&lt;/a&gt;, as a subscriber
+for two years now) to seriously address this. That&#39;s a problem because they
+become the &lt;em&gt;canonical&lt;/em&gt; voice of industry and there&#39;s a class of peers - kinfolk
+or not - who use them as a barometer of how good the industry is going despite
+reported issues being held up elsewhere.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Revolution.Social</title>
+    <link href="https://jalcine.github.io/links/2025/Oct/revolution-social/" />
+    <updated>2025-10-22T19:15:00Z</updated>
+    <id>https://jalcine.github.io/links/2025/Oct/revolution-social/</id>
+    <content type="html">&lt;p&gt;Over the last few days, I&#39;ve been speed running (at 1.75x) a podcast by
+&lt;a href=&quot;https://evan.henshaw-plath.com/about&quot;&gt;Evan&lt;/a&gt; called &lt;a href=&quot;https://revolution.social/&quot;&gt;https://revolution.social/&lt;/a&gt;, which is a bit of a build-up to
+what his company is building; a &amp;quot;permission-less&amp;quot; social media network. I am a
+bearish person by trait and do not move under the notion of &amp;quot;assuming positive
+intent&amp;quot; — that has to be earned. That had me struggle with some of the
+insight that Evan provided during his podcast due to what I&#39;d label as a &lt;em&gt;very&lt;/em&gt;
+utopian, &lt;em&gt;&amp;quot;moun nan mond li a&amp;quot;&lt;/em&gt; (people only of his world), perspective on the
+future of social media. Due to his career, access and social circles, he&#39;s been
+able to host a genre of folks to talk and probe questions about their
+perspectives on social media and how it&#39;s impacted them as well as a bit of a
+biographical dump for each person. It&#39;s also preventing him from seeing the
+locked-in levers of comfort that he sits in and how it still reinforces the
+systems (and not create a system of dual power) on the systems he claims to be
+against. To a degree, I wonder if the social ties (and access) is more
+important to him than the actual principles he espouses — that&#39;s
+problematic because that makes it easy to be sold.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Ghost is a Concrete Success Story</title>
+    <link href="https://jalcine.github.io/links/2025/Aug/ghost-6/" />
+    <updated>2025-08-04T10:00:00Z</updated>
+    <id>https://jalcine.github.io/links/2025/Aug/ghost-6/</id>
+    <content type="html">&lt;p&gt;Ghost is demonstrating the power of independent media being able to fight in a
+landscape of venture capital capture and corporate consolidation. The shape of
+the organization running Ghost is a non-profit, which is more common for open
+source projects to take on; another example of the lack of the need to run to
+the explicit for-profit model to make change.&lt;/p&gt;
+&lt;p&gt;The excuses I tend to see about the &amp;quot;lock-in&amp;quot; &lt;a href=&quot;https://jalcine.github.io/essays/2025/destacked/&quot;&gt;of using Substack&lt;/a&gt; lean on
+the very things that Ghost provides — even before this release. This has
+me believing that, in some cases, publishers — be it large or small
+— don&#39;t &lt;em&gt;mind cohabiting with Nazi content&lt;/em&gt;. &lt;a href=&quot;https://post.substack.com/p/a-new-media-order-is-emerging&quot;&gt;The access they gain in
+these circles&lt;/a&gt; seems to more important than the integrity of what they report
+on. I&#39;ve seen a few publishers, namely Taylor Lorenz, call this call to leave
+Substack a form of virtue signaling, from those who are in her comments about
+it&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://jalcine.github.io/links/2025/Aug/ghost-6/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt;. I have a bit of a qualm with the concept of &lt;a href=&quot;https://jalcine.github.io/essays/2024/oh-aral/&quot;&gt;digital virtue
+signaling&lt;/a&gt; but I can see how folks who aren&#39;t funding you but wanting to
+give you executive direction as a way of &amp;quot;yelling from outside of the club&amp;quot;.&lt;/p&gt;
+&lt;p&gt;Looks like there&#39;s less reason to stick in the NaziStack, though!&lt;/p&gt;
+&lt;hr class=&quot;footnotes-sep&quot;&gt;
+&lt;section class=&quot;footnotes&quot;&gt;
+&lt;ol class=&quot;footnotes-list&quot;&gt;
+&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;I don&#39;t necessarily follow her &lt;em&gt;explicitly&lt;/em&gt; for journalistic purposes (or
+in general). It came across my feed on Bluesky. &lt;a href=&quot;https://jalcine.github.io/links/2025/Aug/ghost-6/#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Open Source eInk is a Step Towards Healthy Technologies</title>
+    <link href="https://jalcine.github.io/links/2025/Aug/modos-dev-kit/" />
+    <updated>2025-08-04T09:00:00Z</updated>
+    <id>https://jalcine.github.io/links/2025/Aug/modos-dev-kit/</id>
+    <content type="html">&lt;p&gt;I&#39;ve been paying attention to changes in this company&#39;s attempt to create &lt;em&gt;open
+e-paper technology&lt;/em&gt;. I&#39;m quite a fan of the concept; it makes technology less
+encroaching on one&#39;s attention and helps with reading in low light and low
+power situations. In a world where everything is racing to (and passing!) 4K
+imagery, it&#39;s great to see folks focused on keeping our eyesight and focus
+intact.&lt;/p&gt;
+&lt;p&gt;Unfortunately, I don&#39;t have an immediate development use-case to purchase such
+a device. I do hope this finds its way into those who are making things for
+folks!&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Communal Instructure is the Path</title>
+    <link href="https://jalcine.github.io/links/2025/Aug/not-self-hosted/" />
+    <updated>2025-08-03T21:00:00Z</updated>
+    <id>https://jalcine.github.io/links/2025/Aug/not-self-hosted/</id>
+    <content type="html">&lt;p&gt;Drew makes a lot of good points in this piece regarding self-hosting. In a way,
+we see sprinkles of this when public universities keep e-mail infrastructure
+for those who are alumni. In a way, even looking at the postal office and its
+ability to support &amp;quot;virtual&amp;quot; mailboxes, allowing folks to operate public
+proxies to store information. The point Drew makes about libraries being
+critical in this aspect of infrastructure building is important too: public
+libraries are &lt;em&gt;designed&lt;/em&gt; to provide us with the basis of this. It would require
+more funding from the state to make it an actuality in a few places:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Libraries to operate as local data centers&lt;/strong&gt;, optimized around local power
+demands and made more efficient, versus our current approach of data farms the
+size of cities that require equivalent means of cooling and powering.&lt;/li&gt;
+&lt;li&gt;Each state to &lt;strong&gt;provide an ISP&lt;/strong&gt; to allow folks to pick between the commercial
+offerings and what&#39;s available in the private sector. This isn&#39;t difficult in
+theory; we have this today with broadcast television, although &lt;a href=&quot;https://archive.ph/MkMbL&quot;&gt;this is
+losing its backbone of funding&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;A public specification for durable computing and storage that one can use for
+holding this. This is probably the &amp;quot;extra&amp;quot; part of this but having a
+specification for the baseline of &amp;quot;home compute&amp;quot; can help people build with
+reference hardware &lt;em&gt;and&lt;/em&gt; equalize the playing field for access. This can allow
+folks to borrow equipment to host but keep the actual storage of data to
+themselves by means of portable storage (like a USB drive)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;https://hazelweakly.me&quot;&gt;Hazel&lt;/a&gt; wrote &lt;a href=&quot;https://bsky.app/profile/hazelweakly.me/post/3lvjpczwr4s2d&quot;&gt;a thread on Bluesky&lt;/a&gt; that I agreed with - in some parts.
+The subsitence farming model worked - to a degree - in places that are allowed
+to exist communally. The closest form of that that we can get to today would be
+via policy that does some of the things I&#39;m thinking about above (or in some
+form that enables people to allow themselves a hybrid network setup).&lt;/p&gt;
+&lt;p&gt;This conversation is great because it&#39;s not one in isolation. There&#39;s a hope
+amongst Black archivists to help build out a means of connecting one another
+that can be almost as resilient as the ways we&#39;ve always kept our stories and
+experiences alive. Conventionally, this was kept by way of oration: we&#39;ll tell
+our stories to one another, pass it down with song, imagery and the like and
+that&#39;d be part of our archival traditions. Instagram and Facebook have upsurped
+this for my generation and the need of us to return (or introduce) a system
+that honors the people who contribute to it is one we need to look to investing
+in.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>So We&#39;re Just Going All In on Microsoft&#39;s AI for Code</title>
+    <link href="https://jalcine.github.io/links/2025/Apr/web-dev-ai-2025/" />
+    <updated>2025-04-23T17:00:00Z</updated>
+    <id>https://jalcine.github.io/links/2025/Apr/web-dev-ai-2025/</id>
+    <content type="html">&lt;p&gt;This thing opened up with something that I couldn&#39;t relate to: putting
+questions, big or small, into a generative text tool to get an answer from. I
+understand that Google, Microsoft and Apple are educating as many people as
+possible that this is an &lt;em&gt;okay thing&lt;/em&gt; but we don&#39;t have to keep parroting it.&lt;/p&gt;
+&lt;p&gt;Anyway.&lt;/p&gt;
+&lt;p&gt;I recommend walking through the results: the &lt;a href=&quot;https://2025.stateofai.dev/en-US/demographics/&quot;&gt;demographics&lt;/a&gt;, the &lt;a href=&quot;https://2025.stateofai.dev/en-US/demographics/#disability_status&quot;&gt;disabilities
+markers&lt;/a&gt; and the like. I was a bit shocked to see Neovim on there but it &lt;em&gt;is&lt;/em&gt;
+a pretty flexible editor. As expected and dictated by market dynamics,
+Microsoft&#39;s tooling — through GitHub CoPilot, ChatGPT and the like, all
+dominate in usage and deployment. When you can make it free and use said free
+input to refine their work, it begins to pay for itself — according to
+economist/trickle-down &amp;quot;theory&amp;quot; logic. There&#39;s also a bit of a bias in that most
+people &lt;em&gt;only&lt;/em&gt; have &lt;a href=&quot;https://2025.stateofai.dev/en-US/coding-assistants/#coding_assistants_cardinalities&quot;&gt;used one coding &amp;quot;agent&amp;quot;&lt;/a&gt; and you can&#39;t filter against that&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://jalcine.github.io/links/2025/Apr/web-dev-ai-2025/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;Something I expected was that it&#39;d be predominately &lt;a href=&quot;https://2025.stateofai.dev/en-US/other-tools/#ai_programming_languages&quot;&gt;the language that&#39;s the most
+difficult to document&lt;/a&gt; that&#39;d be at the top of this list. I &lt;em&gt;believe&lt;/em&gt; that
+languages that have baked in documentation have less of a need of discovery for
+tools like it. That and the difficulty of building for the Web puts that
+language higher on the list of &amp;quot;how the fuck do I do this&amp;quot; (the whole point of
+generative code tool). Accessibility to the runtime is another factor, perhaps,
+but negligible. More folks need to use &lt;a href=&quot;https://typedoc.org&quot;&gt;TypeDoc&lt;/a&gt;; my $0.10
+(ignoring tariffs and stagflation).&lt;/p&gt;
+&lt;p&gt;Half of &lt;a href=&quot;https://2025.stateofai.dev/en-US/usage/#ai_code_refactoring_reasons&quot;&gt;the use of refactoring use&lt;/a&gt; is either because folks can&#39;t read the
+code or they want to rename variables (which folds into the first, IMO). That
+explains why the happiness marker seems &lt;em&gt;way more optimistic&lt;/em&gt; than it should be.
+The note on &amp;quot;strong consensus&amp;quot; of AI integration into workflows is notable as
+well as folks mentioning increasing productivity. Does productivity means more
+time spent &amp;quot;doing things&amp;quot; or less time getting to something &amp;quot;productive&amp;quot;?
+Additionally, removing the neutral option to be a 4-opinion split regarding &lt;a href=&quot;https://2025.stateofai.dev/en-US/opinions/#existential_risk&quot;&gt;AI
+existential risk&lt;/a&gt; might have leaned it towards more of a &amp;quot;no&amp;quot; just on the
+fact that developers tend to underestimate things. The reaching AGI part is just
+embarrassing, tbh.&lt;/p&gt;
+&lt;p&gt;This ending with a AI-promoted-in-young-classrooms note told me what I needed to
+know about this survey: a soft means of reaffirming Microsoft&#39;s tool
+integration into the lives of developers (since we collectively refuse to leave
+the ecosystem) by means of labor automation.&lt;/p&gt;
+&lt;p&gt;Thank you, next.&lt;/p&gt;
+&lt;hr class=&quot;footnotes-sep&quot;&gt;
+&lt;section class=&quot;footnotes&quot;&gt;
+&lt;ol class=&quot;footnotes-list&quot;&gt;
+&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;The magic is &lt;em&gt;so&lt;/em&gt; wide, it probably makes it statistically irrelevant but
+it does beg a question of inspection: if it&#39;s &lt;em&gt;only&lt;/em&gt; CoPilot, then does the
+market space really breed competition? &lt;em&gt;Can&lt;/em&gt; you compete with a company that
+keeps inhaling everything around it? &lt;a href=&quot;https://jalcine.github.io/links/2025/Apr/web-dev-ai-2025/#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Free software is for folks who enjoy the terminal</title>
+    <link href="https://jalcine.github.io/links/2025/Mar/tante-foss-objective/" />
+    <updated>2025-03-06T09:15:00Z</updated>
+    <id>https://jalcine.github.io/links/2025/Mar/tante-foss-objective/</id>
+    <content type="html">&lt;p&gt;Provocative title aside, Tante&#39;s derived point about free software being optimized for those who are
+comfortable for hackers is astute. It&#39;s definitely a big factor as to why you don&#39;t see folks in
+BestBuy or Target asking clerks, &amp;quot;does that come with Linux pre-installed&amp;quot;? Part of the experience
+is the expectation that folks will and can &amp;quot;do it themselves&amp;quot;. Organizations &lt;em&gt;have&lt;/em&gt; tried to combat
+this&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://jalcine.github.io/links/2025/Mar/tante-foss-objective/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt; but cultural &lt;em&gt;and&lt;/em&gt; corporate expectations of computing in the United States lean against
+things that allow for anti-degradability, repair and autonomy — this is the country of maximal
+convenience and minimal engagement, after all, if you can afford it. Folks might want to point out
+that we&#39;ve recently reached a point where all of the states have introduced &lt;a href=&quot;https://www.ifixit.com/News/108371/right-to-repair-laws-have-now-been-introduced-in-all-50-us-states&quot;&gt;bills for right
+to repair&lt;/a&gt;. The word &amp;quot;introduced&amp;quot; is important here, as it&#39;s hopeful (but personally unlikely) to
+this become a federal mandate once enough states go for it. This is in part of a push to reduce the
+economic burden of constant production and &lt;em&gt;will&lt;/em&gt; end up creating a market where companies can
+forcefully sell their parts with only OEM blessings. Apple&#39;s an expert in this kind of work.&lt;/p&gt;
+&lt;p&gt;In the case of software, it&#39;s less important. Because of the reforming of the Web browser into the
+now-fabled &amp;quot;omni operating system layer&amp;quot;, the underlying operating system seems to matter less and
+less to &amp;quot;casual&amp;quot; users. They can open up their preferred-by-suggestion browser, Google Chrome, and
+get to their places like Facebook, Reddit, or what have you. What does software freedom matter to
+people who just want to connect with family, watch a movie or play video games?&lt;/p&gt;
+&lt;p&gt;Ironically, a lot. In the same way that the average American &lt;a href=&quot;https://www.cnn.com/2017/09/13/politics/poll-constitution/index.html&quot;&gt;isn&#39;t versed in the
+Constitution&lt;/a&gt; that (kinda) governs our lands and a bit more understand (recently) how and where
+the people who &lt;a href=&quot;https://www.pewresearch.org/short-reads/2023/11/07/what-americans-know-about-their-government/&quot;&gt;make up our governing bodies move&lt;/a&gt;, folks wouldn&#39;t know that it&#39;s more important
+to keep your hardware as long as possible to offset the impact of its production&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://jalcine.github.io/links/2025/Mar/tante-foss-objective/#fn2&quot; id=&quot;fnref2&quot;&gt;[2]&lt;/a&gt;&lt;/sup&gt;. That becomes
+difficult as some folks note how even the most expensive and revered companies &lt;a href=&quot;https://www.forbes.com/sites/ewanspence/2017/12/20/apple-iphone-kill-switch-ios-degrade-cripple-performance-battery/&quot;&gt;forcibly encourages
+device replacement&lt;/a&gt;. This makes them more money in the long term instead of investing in methods
+that can expand device life from the perspective of the device owner&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://jalcine.github.io/links/2025/Mar/tante-foss-objective/#fn3&quot; id=&quot;fnref3&quot;&gt;[3]&lt;/a&gt;&lt;/sup&gt;. In the case of software,
+we can see that we&#39;ve entered the golden era of forced upgrades and non-backward compatibility as a
+service.&lt;/p&gt;
+&lt;p&gt;Open source developers have a chance, especially if they develop for the expensive and
+American-centric Apple ecosystem, to build escape hatches for their software such that folks aren&#39;t
+tied aggressively to the Apple walled garden. There&#39;s little incentive to do so for the same reason
+that folks don&#39;t ask questions when they go into Target: it&#39;s &amp;quot;easier&amp;quot; to go with the script. Apple
+doesn&#39;t make it terribly easy to use their services outside of their ecosystem, so the fault isn&#39;t
+entirely in the hands of developers: once again, it&#39;s the means of production.&lt;/p&gt;
+&lt;hr class=&quot;footnotes-sep&quot;&gt;
+&lt;section class=&quot;footnotes&quot;&gt;
+&lt;ol class=&quot;footnotes-list&quot;&gt;
+&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;Remember &lt;a href=&quot;https://help.ubuntu.com/community/Wubi&quot;&gt;WUBI&lt;/a&gt;? God, that was a hell of a time. The fact you could sidecar it with Windows
+XP is a big contributing factor to how I began with Ubuntu in those days. &lt;a href=&quot;https://jalcine.github.io/links/2025/Mar/tante-foss-objective/#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&quot;fn2&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;The cost of pollution and ecocide when it comes to developing technology is mostly in the act
+of manufacturing. You can read about this in &lt;a href=&quot;https://www.hachettebookgroup.com/titles/brian-merchant/the-one-device/9780316546119/?lens=little-brown&quot;&gt;The One Device&lt;/a&gt; in the chapters where the
+author travels to each location of mineral extraction and development for Apple&#39;s iPhone (and
+other products). &lt;a href=&quot;https://jalcine.github.io/links/2025/Mar/tante-foss-objective/#fnref2&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&quot;fn3&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;One approach here would be allowing for simpler replacement of batteries as they atrophy,
+adaptable cables for use and the like. The technology was available but Apple notably was more
+focused on controlling the aesthetic appeal of the device over &lt;em&gt;anything&lt;/em&gt; else. &lt;a href=&quot;https://jalcine.github.io/links/2025/Mar/tante-foss-objective/#fnref3&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Do you remember how to search for things?</title>
+    <link href="https://jalcine.github.io/links/2025/Mar/tech-connections-human-search/" />
+    <updated>2025-03-03T11:15:00Z</updated>
+    <id>https://jalcine.github.io/links/2025/Mar/tech-connections-human-search/</id>
+    <content type="html">&lt;p&gt;The video&#39;s creator warns early that this is a &amp;quot;old man yelling at cloud&amp;quot; kind of video and I think
+they do themselves a disservice with that. The ability to search for information &lt;em&gt;is&lt;/em&gt; a skill on
+decline and that&#39;s a big &amp;quot;winning&amp;quot; attribute of technology: to remove as much labor as possible
+from humans, regardless of the task. Need a house cleaner? There&#39;s an app for that! Need to dig your
+heels into generational racist neighborhood watch policing? There&#39;s &lt;em&gt;multiple apps&lt;/em&gt; for that!
+Looking to determine which women to prosecute based on their ovulation cycles? There&#39;s a plethora of
+apps for that. Surveillance aside, technology is an amplifier of the underlying behaviors we have. It
+can also introduce new ones that supplant others that we&#39;ve developed along the way — like
+searching.&lt;/p&gt;
+&lt;p&gt;The video goes on to explain how despite this, YouTube still provides a way out for folks. I avoid
+using the YouTube app directly and use [FreeTube]&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://jalcine.github.io/links/2025/Mar/tech-connections-human-search/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt; to follow folks I&#39;m wanting to stay up to date
+with and to open any YouTube links as a whole. Most of the money made from YouTube isn&#39;t from ads
+either; it&#39;s largely paid members and views (which are tied together; you&#39;re more likely to get the
+former when you can juice the latter — an extremely equitable platform)&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://jalcine.github.io/links/2025/Mar/tech-connections-human-search/#fn2&quot; id=&quot;fnref2&quot;&gt;[2]&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;hr class=&quot;footnotes-sep&quot;&gt;
+&lt;section class=&quot;footnotes&quot;&gt;
+&lt;ol class=&quot;footnotes-list&quot;&gt;
+&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;&lt;a href=&quot;https://freetubeapp.io/&quot;&gt;https://freetubeapp.io/&lt;/a&gt; runs in most places, thanks to the power of Web browser engines. &lt;a href=&quot;https://jalcine.github.io/links/2025/Mar/tech-connections-human-search/#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&quot;fn2&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;According to &lt;a href=&quot;https://blog.hootsuite.com/how-much-does-youtube-pay-per-view/#How_much_does_YouTube_pay_per_view&quot;&gt;Hootsuite&lt;/a&gt;, this is the case. This justifies my personal move to places like
+&lt;a href=&quot;https://nebula.tv&quot;&gt;Nebula&lt;/a&gt;; where I can seemingly both support creators and watch ad-free content. Like how we
+used to. Want to learn about Alfred Hitchcock&#39;s &lt;a href=&quot;https://nebula.tv/videos/bekindrewind-hitchcocks-hair-obsession-blondes-vs-brunettes&quot;&gt;white woman fetish&lt;/a&gt;? &lt;a href=&quot;https://jalcine.github.io/links/2025/Mar/tech-connections-human-search/#fnref2&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Democracy Now: Cory Doctrow on Tech Workers</title>
+    <link href="https://jalcine.github.io/links/2025/Mar/democracy-now-cory-doctrow-tech-workers/" />
+    <updated>2025-03-03T11:15:00Z</updated>
+    <id>https://jalcine.github.io/links/2025/Mar/democracy-now-cory-doctrow-tech-workers/</id>
+    <content type="html">&lt;p&gt;Cory&#39;s interview with DemocracyNow came across my reader this morning and I was glad to hear someone
+speak on the internal class struggle of tech workers: especially software engineers. One only needs
+to look for a reference as to how technology under capitalist society works very marginally to
+improve the lives of the few who can afford it and cannibalize the labor of those who keep it up.
+In this case, he speaks to tech workers who are beginning to encourage the picking away of their own
+colleagues by way of AI.&lt;/p&gt;
+&lt;p&gt;I&#39;ve clipped the part that more tech folks need to internalize and understand with their advertising
+of corporate AI:&lt;/p&gt;
+&lt;figure&gt;
+    &lt;video poster=&quot;https://jalcine.github.io/images/links/2025-Mar-democracy-now.png&quot; controls=&quot;&quot; loop=&quot;&quot; muted=&quot;&quot;&gt;
+        &lt;source src=&quot;https://jalcine.github.io/videos/vlc-record-2025-03-03-11h10m17s-tKV5GB6dN3o.mp4&quot;&gt;
+    &lt;/video&gt;
+&lt;/figure&gt;
+&lt;p&gt;He continues on tangible approaches of protest that workers can engage in. I have waning hope in
+tech workers wanting to engage in this due to the heavy internalized liberalism of workers as a
+whole. They find that the business of the company is more important than any sort of harm
+(perceived, actualized or otherwise) for the sake of soaring to the top of Hacker News or getting a
+blessing from some venture capitalist firm. One day, computers will be less important.&lt;/p&gt;
+&lt;p&gt;Watching that after &lt;a href=&quot;https://www.youtube.com/watch?v=uRuLgar5XZw&quot;&gt;watching an interview&lt;/a&gt; with &lt;a href=&quot;https://simonwillison.net/&quot;&gt;Simon Willison&lt;/a&gt; on The Pragmatic Engineer that
+endorses the means of destabilization that&#39;s described above. Ardent folks for genAI will
+see this as a reach and I remind them to read &lt;em&gt;anything&lt;/em&gt; by &lt;em&gt;anyone&lt;/em&gt; who&#39;s written extensively about
+the harms that have come to pass and will continue to pass as this continues to roll around.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>When the Empire Turns its Tools Within</title>
+    <link href="https://jalcine.github.io/links/2025/Mar/us-domestic-data-colonialism/" />
+    <updated>2025-03-01T09:00:00Z</updated>
+    <id>https://jalcine.github.io/links/2025/Mar/us-domestic-data-colonialism/</id>
+    <content type="html">&lt;p&gt;The concept of colonialism, the expanding of control of a people, their environment and culture, is
+foreign to the American populace; at least those who are &amp;quot;citizen-native&amp;quot;&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://jalcine.github.io/links/2025/Mar/us-domestic-data-colonialism/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt;. This article is
+co-authored by the same authors of &lt;a href=&quot;https://www.penguin.co.uk/books/455862/data-grab-by-couldry-ulises-a-mejias-and-nick/9780753560204&quot;&gt;Data Grab&lt;/a&gt;. It&#39;s a succient explainer of what many folks have
+been chided as &amp;quot;extreme&amp;quot;, &amp;quot;ridiculous&amp;quot; or &amp;quot;outlandish&amp;quot; for: the &lt;em&gt;core&lt;/em&gt; purpose of the companies of
+the Silicon Valley collective is to absorb, quantify and monetize as much information as possible
+about &lt;em&gt;everyone&lt;/em&gt; who touches their systems. It defeats the breadth and scope of privacy that one
+could advocate for&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://jalcine.github.io/links/2025/Mar/us-domestic-data-colonialism/#fn2&quot; id=&quot;fnref2&quot;&gt;[2]&lt;/a&gt;&lt;/sup&gt;. I&#39;m appreciative of this article. I&#39;m also confident that the folks who need
+to read this &lt;em&gt;won&#39;t&lt;/em&gt; or will allow their corporate alliances to prevent them from understanding that
+they aren&#39;t a comrade or even a customer to these companies: &lt;em&gt;they&#39;re a cog&lt;/em&gt;.&lt;/p&gt;
+&lt;hr class=&quot;footnotes-sep&quot;&gt;
+&lt;section class=&quot;footnotes&quot;&gt;
+&lt;ol class=&quot;footnotes-list&quot;&gt;
+&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;These are people who either have immigrated without any sort of duress from land seizure or
+capture directed caused by a Western force. &lt;a href=&quot;https://jalcine.github.io/links/2025/Mar/us-domestic-data-colonialism/#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&quot;fn2&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;Folks will declare that things like end-to-end encryption is a viable stopgap and many privacy
+advocates more wiser than I have confirmed that. With the recent capitulation of Apple to the
+UK, it&#39;s clear that if and when the 5/9 Eyes collective need such a tap; they can (and will)
+create it outside of the press: &lt;a href=&quot;https://en.wikipedia.org/wiki/Room_641A&quot;&gt;it&#39;s already happened&lt;/a&gt;. &lt;a href=&quot;https://jalcine.github.io/links/2025/Mar/us-domestic-data-colonialism/#fnref2&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Framework Is Giving Folks Options</title>
+    <link href="https://jalcine.github.io/links/2025/Feb/framework-2nd-gen/" />
+    <updated>2025-02-26T13:15:00Z</updated>
+    <id>https://jalcine.github.io/links/2025/Feb/framework-2nd-gen/</id>
+    <content type="html">&lt;p&gt;The CEO opening with a statement that &amp;quot;we&#39;re the only company that can announce a product and it
+look the same each year with applause&amp;quot; made me smile but Apple has definitely locked in that title.
+To their credit, as a Framework 13&amp;quot; owner, these machines are &lt;em&gt;built&lt;/em&gt; such that you won&#39;t have to
+keep replacing it over and over. Because of things I&#39;m working on the side, I immediately
+noticed a few mentions of companies in the hardware. Namely, Honeywell; a household brand that keeps
+you cool and also working on &lt;a href=&quot;https://aerospace.honeywell.com/us/en/about-us/blogs/advancing-directed-energy-weapons&quot;&gt;literal &lt;em&gt;energy&lt;/em&gt; weapons&lt;/a&gt; — once sci-fi shit, but now they&#39;re
+in the new Framework 13 boards to keep them cool. Cool?&lt;/p&gt;
+&lt;figure&gt;
+    &lt;picture&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://jalcine.github.io/img/kVzP8rYeSo-1189.webp 1189w&quot;&gt;&lt;img src=&quot;https://jalcine.github.io/img/kVzP8rYeSo-1189.jpeg&quot; alt=&quot;A screenshot of the CEO standing in front of a projector with information about the AMD board&quot; width=&quot;1189&quot; height=&quot;675&quot;&gt;&lt;/picture&gt;
+    &lt;figcaption&gt;These laptops just keep getting faster and faster.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;They mentioned that the stock shipping versions will come with a Microsoft CoPilot button and the
+DIY versions will be without. I understand that Microsoft has the weight of manufacturing control
+when it comes to this but I do wish that, in a different world, more PC makers would push back
+against Microsoft in &lt;em&gt;some&lt;/em&gt; capacity.&lt;/p&gt;
+&lt;h2 id=&quot;curiosity-and-ambition&quot; tabindex=&quot;-1&quot;&gt;Curiosity and Ambition&lt;/h2&gt;
+&lt;figure&gt;
+    &lt;picture&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://jalcine.github.io/img/wa6Gd6nnUk-1628.webp 1628w&quot;&gt;&lt;img src=&quot;https://jalcine.github.io/img/wa6Gd6nnUk-1628.jpeg&quot; alt=&quot;A screenshot of the CEO standing with the Framework Desktop in view&quot; width=&quot;1628&quot; height=&quot;994&quot;&gt;&lt;/picture&gt;
+&lt;/figure&gt;
+&lt;p&gt;I was extremely eager to see the new desktop release by Framework. I have no need for such a device
+— I already own enough machines reflective of my class in society. The novelity of a small PC, especially
+one small enough to port around is attractive — as someone who needs to have a separate
+machine when doing presentations or tech work in the community, this would help out quite a bit.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;picture&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://jalcine.github.io/img/QO0vnj7aCl-1968.webp 1968w&quot;&gt;&lt;img src=&quot;https://jalcine.github.io/img/QO0vnj7aCl-1968.jpeg&quot; alt=&quot;A screenshot of the AI specification of the AMD base board&quot; width=&quot;1968&quot; height=&quot;1027&quot;&gt;&lt;/picture&gt;
+&lt;/figure&gt;
+&lt;p&gt;The &amp;quot;AI&amp;quot; advertising is lazy. This is not Framework&#39;s fault but it&#39;s potentially clear that
+AMD is pushing hard to get more &amp;quot;AI&amp;quot;-centric cards into the world, perhaps to challenge NVIDIA (in
+some capacity). And it seems like this is the only approach for boards available as all of them are
+branded &amp;quot;AI&amp;quot;. In a different world, I&#39;d be more interested in a more &lt;em&gt;generic&lt;/em&gt; board (which doesn&#39;t
+feel too impossible — look at the &lt;a href=&quot;https://frame.work/marketplace/mainboards?compatibility%5B%5D=11th_gen_intel_core&amp;amp;compatibility%5B%5D=12th_gen_intel_core&amp;amp;compatibility%5B%5D=chromebook&amp;amp;compatibility%5B%5D=13th_gen_intel_core&amp;amp;compatibility%5B%5D=amd_ryzen_7040_series&amp;amp;compatibility%5B%5D=ultra_series_1_intel_core&amp;amp;compatibility%5B%5D=amd_ryzen_ai300_series&quot;&gt;laptop board offerings&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Marketing language aside, it&#39;s clear that this is something that they can still push to tinkerers
+since the casing for the PC is relatively standard: with &lt;a href=&quot;https://frame.work/products/deep-computing-risc-v-mainboard&quot;&gt;their experimental RISC-V board&lt;/a&gt;, I&#39;d be
+eager to see them consider developing an equivalent to allow for truly open computing - from the
+silicion to the software.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Tangentially, I do loathe the adoption of the &amp;quot;elevated keynote&amp;quot; thing that the tech industry
+adopted from Apple. I can&#39;t give Apple the full share of blame — Microsoft and IBM did this
+in the past. At the end of the day, they all want you to buy — regardless of need.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure&gt;
+    &lt;picture&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://jalcine.github.io/img/vuy6VXTvPy-1920.webp 1920w&quot;&gt;&lt;img src=&quot;https://jalcine.github.io/img/vuy6VXTvPy-1920.jpeg&quot; alt=&quot;An CGI illustration of a 12&#39; Framework with its stylus and repairment tool&quot; width=&quot;1920&quot; height=&quot;1080&quot;&gt;&lt;/picture&gt;
+&lt;/figure&gt;
+&lt;p&gt;The 2-in-1 12&amp;quot; laptop is a &lt;em&gt;really&lt;/em&gt; interesting product offering. It&#39;s extremely niche of a idea
+— and it&#39;s definitely something that can help folks escape the Apple ecosystem if they&#39;re
+aggressively locked into the portable computing landscape. I would &lt;em&gt;love&lt;/em&gt; this as my introduction
+machine; I have a now-defunct Dell XPS 2-in-1 that got a lot of use in its tent and tablet mode for
+reading and watching media.&lt;/p&gt;
+&lt;h2 id=&quot;things-i&#39;m-interested-in&quot; tabindex=&quot;-1&quot;&gt;Things I&#39;m Interested In&lt;/h2&gt;
+&lt;figure&gt;
+    &lt;picture&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://jalcine.github.io/img/U_8zK2Gfzt-1716.webp 1716w&quot;&gt;&lt;img src=&quot;https://jalcine.github.io/img/U_8zK2Gfzt-1716.jpeg&quot; alt=&quot;A screenshot of the CEO holding a Framework 13&#39; with a translucent purple bezel&quot; width=&quot;1716&quot; height=&quot;1015&quot;&gt;&lt;/picture&gt;
+&lt;/figure&gt;
+&lt;p&gt;I&#39;m personally considering getting the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;a href=&quot;https://frame.work/products/bezel?v=FRANCB0009&quot;&gt;purple translucent bezel&lt;/a&gt; for the Framework 13&amp;quot;: I already have the solid one and my
+machine&#39;s dominantely this color so it feels apt.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://frame.work/products/ethernet-expansion-card?v=FRACCTBZ00&quot;&gt;An Ethernet expansion card&lt;/a&gt; for personal projects around wired systems.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://frame.work/products/ram?v=P2032&quot;&gt;A 32GB RAM stick&lt;/a&gt;; I&#39;ve been great with a solo 32GB for virtualization work but I&#39;d like to give
+my host machine more breathing room as I work on things, like media editing and game development.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://frame.work/products/battery?v=FRANGWAT01&quot;&gt;A bigger battery&lt;/a&gt; because my battery life over the last two years has taken a nose dive. I do
+use this as my primary machine and I rarely shut it down (it&#39;s usually in suspension, docked or
+completely off when I travel).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://frame.work/products/display-kit?v=FRANGX0001&quot;&gt;The 2.8k display&lt;/a&gt; also feels like a necessary bump with the media and game work I&#39;m doing as
+well.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://frame.work/products/framework-hat?v=FRANHN0002&quot;&gt;A hat&lt;/a&gt; because my hair&#39;s finally short enough that I can wear caps and I like the logo.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Some of these parts will lead to me having spares, which the community tends to have plenty of. When
+I do retire this PCB, if not because of wear, I&#39;ll turn it into a HDTV receiver or donate compute
+cycles for some sort of &lt;a href=&quot;https://en.wikipedia.org/wiki/List_of_volunteer_computing_projects&quot;&gt;open computing project&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Trump&#39;s The President and Tech Loves it</title>
+    <link href="https://jalcine.github.io/links/2024/Nov/maga-tech-ceo/" />
+    <updated>2024-11-06T22:15:00Z</updated>
+    <id>https://jalcine.github.io/links/2024/Nov/maga-tech-ceo/</id>
+    <content type="html">&lt;p&gt;If you&#39;ve been in the industry since &lt;em&gt;2020&lt;/em&gt;, the notion of the leading executives in the industry
+being in favor of right-wing policies shouldn&#39;t be surprising. If since 2000, it should actually be
+part of your canon history how you&#39;ve seen it shift right. So far, the executives who are openly in
+favor of Trump being president (as far as congratulating his new victory) are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Apple: Tim Cook&lt;/li&gt;
+&lt;li&gt;Facebook: Mark Zuckerberg&lt;/li&gt;
+&lt;li&gt;Google: Sundar Pichai&lt;/li&gt;
+&lt;li&gt;Amazon/Washington Post/Blue Origins: Jeff Bezos&lt;/li&gt;
+&lt;li&gt;Amazon: Andy Jassy&lt;/li&gt;
+&lt;li&gt;Microsoft: Satya Nadella&lt;/li&gt;
+&lt;li&gt;OpenAI: Sam Altman&lt;/li&gt;
+&lt;li&gt;Intel: Pat Gelsinger&lt;/li&gt;
+&lt;li&gt;Qualcomm: Cristiano Amon&lt;/li&gt;
+&lt;li&gt;Goldman Sachs: David Solomon — &lt;a rel=&quot;noopener noreferrer nofollow&quot; href=&quot;https://www.reuters.com/world/us/goldman-sachs-ceo-congratulates-trump-election-victory-calls-unity-2024-11-06/&quot;&gt;reference&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Mark Cuban — &lt;a rel=&quot;noopener noreferrer nofollow&quot; href=&quot;https://x.com/mcuban/status/1854046994345382034&quot;&gt;reference&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Yammer, David Sacks; &lt;a href=&quot;https://x.com/DavidSacks/status/1854106203225272379&quot;&gt;reference&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;a16z, Marc Andreessen&lt;/li&gt;
+&lt;li&gt;Blue Origin: Dave Limp&lt;/li&gt;
+&lt;li&gt;Vercel: Guillermo Rauch; &lt;a href=&quot;https://x.com/rauchg/status/1854206133776388461&quot;&gt;reference&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Who else should be added to this list? Elon Musk gets an honorable mention.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Muan&#39;s Life Update</title>
+    <link href="https://jalcine.github.io/links/2024/Oct/muan-update/" />
+    <updated>2024-10-04T14:30:00Z</updated>
+    <id>https://jalcine.github.io/links/2024/Oct/muan-update/</id>
+    <content type="html">&lt;p&gt;I appreciate that Muan&#39;s so transparent about this post. Some of what they mention are things I
+yearn for as well. I have their #3 handled with Stella but her age does increase the difficulty of
+having a pet — she&#39;ll be 12 next year. I&#39;m glad that they&#39;ve taken this leap.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Cory Doctorow Talks about Enshittification</title>
+    <link href="https://jalcine.github.io/links/2024/Oct/youtube-defcon32-cory-dcotorow/" />
+    <updated>2024-10-03T02:45:00Z</updated>
+    <id>https://jalcine.github.io/links/2024/Oct/youtube-defcon32-cory-dcotorow/</id>
+    <content type="html">&lt;p&gt;One thing I find about authors; good ones, is that they can give a good talk. Doctorow&#39;s one of
+them. While I have gripes with his work on &lt;a href=&quot;https://openlibrary.org/books/OL36647432M/Chokepoint_Capitalism&quot;&gt;Chokepoint Capitalism&lt;/a&gt;, it&#39;d be disrespectful to
+ignore the research and accessibility of the book itself. This talk opens up with a quick retelling
+and explaining as to how finance began taking control of then-utility-centric companies became more
+degraded experiences over time.&lt;/p&gt;
+&lt;p&gt;People have mentioned that he&#39;s a good orator and I see why — again, I attribute this to being
+a good writer. He swiftly highlights the coupling of state and corporations working to milk every
+ounce of value from people and manufacturing even more value by crafting &lt;em&gt;more&lt;/em&gt; value from
+commodifying every aspect of our lives. As someone, for a very brief moment, who played into the
+idea of the &lt;a href=&quot;https://en.wikipedia.org/wiki/Quantified_self&quot;&gt;quantitative self&lt;/a&gt;, this was something I bought into. It wasn&#39;t an explicitly
+selling of myself but it was a public &lt;em&gt;validation&lt;/em&gt; of the mass quantification of behavior that we
+see companies now sell as a new flagship feature, as opposed to making things like replaceable
+batteries or alternative application distribution channels.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=q118B_QdP2k&quot;&gt;Cory&#39;s video from the year prior&lt;/a&gt; is also good and it&#39;s clear that he picked up exactly where he
+left off.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Is School the Place to Find Oneself?</title>
+    <link href="https://jalcine.github.io/links/2024/Sep/on-being-haitian/" />
+    <updated>2024-09-24T10:00:00Z</updated>
+    <id>https://jalcine.github.io/links/2024/Sep/on-being-haitian/</id>
+    <content type="html">&lt;p&gt;Jose Vilson&#39;s reflection on the role of how education, as a marker of status, of identity and of
+self-direction gave me a bit to think about. I&#39;m not the &lt;em&gt;popular&lt;/em&gt; type of Haitian; I don&#39;t folllow
+any organized religions, I don&#39;t have any form of heavy accrediations and I don&#39;t optimize myself
+around making a lot of money. For many migrants and children thereof, there is a pressure to
+assimiliate heavily into what conservative Black America deems as the &amp;quot;way forward&amp;quot;: buying our way
+to respect. However, Vilson breaks away from that a bit here with the focus on education: one of the
+career paths that&#39;s routinely discouraged because it&#39;s not as profitable as being a doctor or
+lawyer&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://jalcine.github.io/links/2024/Sep/on-being-haitian/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;His reference to teachers being the vanguard of society is something I resonate with and it comes as
+the antithesis of the aforementioned: instead of an obsession with building a golden calf today, we
+work to ensure more stable and fertile lands for the future. It&#39;s not to fall in the path of
+longtermism but to understand what things we are doing today that we have seen yesterday that&#39;ll
+make tomorrow more challenging for those who are going to be in our positions.&lt;/p&gt;
+&lt;p&gt;What his cousin said is something I&#39;m considering heavily, provided life and resources align; on the
+idea that school can be a place to return if one is seeking guidance or feeling lost in life.
+Perhaps.&lt;/p&gt;
+&lt;hr class=&quot;footnotes-sep&quot;&gt;
+&lt;section class=&quot;footnotes&quot;&gt;
+&lt;ol class=&quot;footnotes-list&quot;&gt;
+&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;The exception to teaching in this capacity would be if you were a high-ranking (thus more
+highly paid) official within academia. It&#39;s less about what you do for the children and more
+aobut how much you get paid. &lt;a href=&quot;https://jalcine.github.io/links/2024/Sep/on-being-haitian/#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content>
+  </entry>
+  <entry>
+    <title>AI Burns Private Funding in the United States</title>
+    <link href="https://jalcine.github.io/links/2024/Sep/crunchbase-ai-funding/" />
+    <updated>2024-09-06T15:00:00Z</updated>
+    <id>https://jalcine.github.io/links/2024/Sep/crunchbase-ai-funding/</id>
+    <content type="html">&lt;p&gt;As much as I understand some folks for wanting computers to reduce the amount of rote tasks we
+employ, I &lt;em&gt;still&lt;/em&gt; can&#39;t shake the pending nature of violence that&#39;s happening with the reallocation
+of funds in favor (or rather, at the whims) of corporate propganda that &lt;em&gt;this&lt;/em&gt; is the best use of
+capital in society. I&#39;ve mentioned it a few times on Mastodon, but we&#39;ve (re)entered a point in
+society where people who could be either replaced (or at best, defunded) by genAI are strongly
+picking up the tools of their potenital demise. Call it alarmist — I&#39;d rather be wrong about a
+storm than be caught off about a torando.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Mainstream Tech Journalism Works to Maintain Tech&#39;s Corruption</title>
+    <link href="https://jalcine.github.io/links/2024/Aug/baffler-miseducation-swisher/" />
+    <updated>2024-08-30T18:45:00Z</updated>
+    <id>https://jalcine.github.io/links/2024/Aug/baffler-miseducation-swisher/</id>
+    <content type="html">&lt;p&gt;I have no intention in reading &lt;a href=&quot;https://www.simonandschuster.com/books/Burn-Book/Kara-Swisher/9781982163891&quot;&gt;Swisher&#39;s book&lt;/a&gt;. I make it a personal policy to read things that
+work to expand my understanding and after &lt;a href=&quot;https://www.techwontsave.us/episode/215_kara_swisher_shows_tech_journalisms_flaws_w_edward_ongweso_jr&quot;&gt;listening to an episode of Tech Won&#39;t Save Us&lt;/a&gt; where the
+author of this article was invited to speak, this book doesn&#39;t seem like it&#39;d do so. Something
+Edward mentions her is how I felt about other journalists when it came to handling things like the
+situation of willingly platforming Nazis:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The long and short of it is that Swisher is not a good journalist—or, framed more generously,
+that she thrived in an industry with remarkably low standards for which we are still paying
+the price. For decades, tech journalism and criticism has primarily consisted of glowing
+gadget reviews, laudatory profiles, and reprinted press releases, all of it colored by Silicon
+Valley’s self-aggrandizing vision of itself as a laboratory of a brighter future.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This is effectively what outlets like The Verge, TechCrunch and other flowery outlets of the
+industry have become (or always were). It&#39;s fair to say that these organizations are tightly
+beholden to what&#39;s allowed to be printed; but that&#39;s not necessarily an excuse for those who can
+(and have) gone independent to continue beating the same drum. I briefly got chastised online for
+announcing my unsubscribing from a journalist who effectively did this. It took them to &lt;em&gt;privately&lt;/em&gt;
+address them to finally have them shift their stances&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://jalcine.github.io/links/2024/Aug/baffler-miseducation-swisher/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt;. There&#39;s really one way this happens and
+Edward says it plainly:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is a compelling narrative only if you ignore every available fact.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I&#39;ve written a bit about my disdain for companies like Apple that take advantage of overseas labor
+and have an operating capacity that mimics that of the more abusive companies in the tech industry,
+a mantle now taken up by Elon Musk. However, in my &lt;em&gt;personal experience&lt;/em&gt;, I found that things like
+this matter less depending on one&#39;s investment into a company. For example, I&#39;ve been told that I
+should focus more on Google or Microsoft instead of Apple because of the value they provide. It
+strikes me as a narrow perspective to note that when I have in the past (and currently still am)
+critical of both of these places. Edward mentions, in the same podcast episode, about the importance
+of listening to the people whose labor &lt;em&gt;craft&lt;/em&gt; these companies; the contractors instead of the
+C-suite, the manual labors instead of the marketing teams. &lt;strong&gt;By directly and uncritically consuming
+the party line of a company, you&#39;re doing their work for them&lt;/strong&gt;&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://jalcine.github.io/links/2024/Aug/baffler-miseducation-swisher/#fn2&quot; id=&quot;fnref2&quot;&gt;[2]&lt;/a&gt;&lt;/sup&gt;. That&#39;s what folks like Swisher
+and (from my own reading and review) Casey Newton enable. We need to end the worship of the
+executive, consider business journalism to be no more than tabloid material and focus on people and
+their needs. Swisher&#39;s note of being the &amp;quot;tech whisperer&amp;quot; makes her &lt;em&gt;nearly&lt;/em&gt; as responsible for
+stroking the egos of these men&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://jalcine.github.io/links/2024/Aug/baffler-miseducation-swisher/#fn3&quot; id=&quot;fnref3&quot;&gt;[3]&lt;/a&gt;&lt;/sup&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The first thing Swisher did after learning about this was to call up Yahoo chief executive
+and cofounder Jerry Yang. “You need to get them off your platform,” she warned, before turning
+to the audience to note that “I did not often warn companies, but I had seen this so many
+times before that I could not keep it to myself.” Other potential ethical lapses abound:
+Swisher advises Rupert Murdoch not to invest in Vice Media, Mark Zuckerberg calls her late
+one night for her feedback on an essay he is writing, Page asks Swisher for help writing
+an essay extolling the virtues of Google—including its long-ignored “Don’t Be Evil”
+commandment—and Elon Musk asks Swisher for her thoughts on what to do with Twitter
+shortly after acquiring it.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;If Elon Musk is calling you for advice — you&#39;re not someone I can take seriously. Edward ends
+this with something that reminds me of something Anil Dash has written about &lt;a href=&quot;https://jalcine.github.io/links/2024/Aug/anil-dash-money/&quot;&gt;the ultra-wealthy
+and their need to exist in a bubble&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I use “we” loosely because Swisher’s intended audience is not you or me, but instead those with
+power: she writes about and for them. Over the course of a long and storied career closely reporting
+on the tech industry and its titans, she has aped their motions, sat at their dinner tables,
+drunk their wine, gone to their weird parties, played with their baubles, repeated their lies,
+and offered them counsel. Swisher may style herself as Silicon Valley’s critic laureate, but
+she’s much closer to the court fool.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr class=&quot;footnotes-sep&quot;&gt;
+&lt;section class=&quot;footnotes&quot;&gt;
+&lt;ol class=&quot;footnotes-list&quot;&gt;
+&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;The underlying issue being that, in this big age of 2024, we &lt;em&gt;still&lt;/em&gt; have to have people
+relearn why it&#39;s &lt;em&gt;not good&lt;/em&gt; to give space to bigotry. I imagine that a level of para-sociality is
+at play here as well as a level of false optimism: that folks will eventually see their way.
+This is a largely privileged (and secure) stance to take. It&#39;s so due to the &lt;em&gt;lack&lt;/em&gt; of that
+being the case in the industry, demerits the efforts of journalism that challenges the envelope
+and works to trivialize the issues that sparked discourse to begin with. &lt;a href=&quot;https://jalcine.github.io/links/2024/Aug/baffler-miseducation-swisher/#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&quot;fn2&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;A bit of a callback to a frustration I had about wrestling with &lt;a href=&quot;https://jalcine.github.io/essays/2024/wrong-ideas&quot;&gt;the wrong
+ideas&lt;/a&gt;. &lt;a href=&quot;https://jalcine.github.io/links/2024/Aug/baffler-miseducation-swisher/#fnref2&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&quot;fn3&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;Which is more evidence of how woman can play into the egotistical side of patriarchy; as
+researched and documented by &lt;a href=&quot;https://web.archive.org/web/20210108230404/http://www.bellhooksinstitute.com/&quot;&gt;bell hooks&lt;/a&gt;, specifically in the case of Black people. &lt;a href=&quot;https://jalcine.github.io/links/2024/Aug/baffler-miseducation-swisher/#fnref3&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content>
+  </entry>
+  <entry>
+    <title>The Mindset of the Wealthy Is Inverted</title>
+    <link href="https://jalcine.github.io/links/2024/Aug/anil-dash-money/" />
+    <updated>2024-08-30T18:30:00Z</updated>
+    <id>https://jalcine.github.io/links/2024/Aug/anil-dash-money/</id>
+    <content type="html">&lt;p&gt;Dash opens this piece with level setting about his position of wealth&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://jalcine.github.io/links/2024/Aug/anil-dash-money/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt; and balances that with his
+own background. He grounds it with the notion that rich people are willing to potentially forego a
+tight bond with their families in order to accumulate wealth. This is historically accurate&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://jalcine.github.io/links/2024/Aug/anil-dash-money/#fn2&quot; id=&quot;fnref2&quot;&gt;[2]&lt;/a&gt;&lt;/sup&gt;.
+It&#39;s short but the closing point about the storage and accumulation of money versus the ability to
+direct a stream of money is something that stood out to me:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Put more cynically, you can&#39;t exert control over something if you&#39;ve already stopped paying for it.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This can explain a number of things:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Why tech CEOs are incapable of not aligning with right-wing stances on finance, labor and ethics:
+to do so will &lt;em&gt;remove&lt;/em&gt; the control they have over people lives like the ability of them to
+support themselves. Elizabeth Anderson notes this in &lt;a href=&quot;https://press.princeton.edu/books/hardcover/9780691176512/private-government&quot;&gt;Private Government&lt;/a&gt; as a way to control a
+worker&#39;s autonomy (emphasis mine):&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Exercising autonomy — directing oneself in tasks, no matter how exacting and relentless they
+are — is no ordinary good. It is &lt;em&gt;a basic human need&lt;/em&gt;. No production process is inherently
+so constrained as to eliminate all exercise of autonomy. Elimination of room for autonomy is the
+product of social design, not nature. It is not merely &amp;quot;unpleasant&amp;quot; to be denied a rest break
+when one needs it. When some authority denies it (as opposed to when some natural constraint
+prevents it), the restriction demeans one&#39;s agency.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This is what folks like Bezos enabled &lt;a href=&quot;https://gizmodo.com/amazon-is-getting-sued-for-failing-to-give-warehouse-wo-1846571080&quot;&gt;at his warehouses&lt;/a&gt; or Kalanick (and the Doordash,
+Taskrabbit and Lyft executives) with their misclassified employees by denying them benefits and
+simple human dignity.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Why we see more tech companies more willing to &lt;em&gt;shoot down&lt;/em&gt; collective organizing: doing so forces
+workers (at worst, into a state of fear and apathy, and at best) into a place of &lt;em&gt;defending&lt;/em&gt;
+executives who routinely will put the needs of the ultra-wealthy over them.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Dash&#39;s point on repositioning the perspective is a good starting point to begin challenging what and
+what the rich are aiming to do. However, there&#39;s more that we need to do: especially around becoming
+more horizontally aligned in what we need workplaces to model and who&#39;s even &lt;em&gt;considered&lt;/em&gt; a worker.
+Things to address in another post.&lt;/p&gt;
+&lt;hr class=&quot;footnotes-sep&quot;&gt;
+&lt;section class=&quot;footnotes&quot;&gt;
+&lt;ol class=&quot;footnotes-list&quot;&gt;
+&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;As a former CEO and now executive at one of the largest Internet companies and a history of
+being in places that few can be, it&#39;s understandable to assume that &lt;em&gt;some level&lt;/em&gt; of stability
+and wealth has accumulated. He even notes this to manage to &lt;em&gt;remain&lt;/em&gt; living in New York; despite
+the rising costs and tides. There&#39;s a reason why I haven&#39;t managed to move back. &lt;a href=&quot;https://jalcine.github.io/links/2024/Aug/anil-dash-money/#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&quot;fn2&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;For example, many of the wealthy African slave holders, including one who had a plantation in
+now-named Montecello, had no issue with infidelity despite being a God-fearing man and routinely
+&lt;a href=&quot;https://www.smithsonianmag.com/history/the-dark-side-of-thomas-jefferson-35976004/&quot;&gt;raped his foribly enslaved captives&lt;/a&gt; &lt;a href=&quot;https://jalcine.github.io/links/2024/Aug/anil-dash-money/#fnref2&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content>
+  </entry>
+  <entry>
+    <title>BlockParty&#39;s Goal in Making Privacy a Right</title>
+    <link href="https://jalcine.github.io/links/2024/Aug/1password-tracy-chou/" />
+    <updated>2024-08-30T11:15:00Z</updated>
+    <id>https://jalcine.github.io/links/2024/Aug/1password-tracy-chou/</id>
+    <content type="html">&lt;p&gt;I listened to this episode while doing some cleaning this morning. &lt;a href=&quot;https://triketora.com/about/&quot;&gt;Tracy&#39;s someone&lt;/a&gt; I know of during
+my time in California. I learned more about her from this interview than I anticipated&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://jalcine.github.io/links/2024/Aug/1password-tracy-chou/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt;. Her work
+with &lt;a href=&quot;https://www.blockpartyapp.com/&quot;&gt;BlockParty&lt;/a&gt; is something I&#39;ve mentioned to friends and I&#39;m glad to see that it survived the
+mayhem wrought by Musk and has expanded beyond that platform. I do have to say, I&#39;m slightly
+disappointed in how little questioning (or the lack of depth) that I found with the interviewers had
+with Tracy. She&#39;s a really sharp person and I would have loved to hear more about how she&#39;s managed
+to settle on the practices that BlockParty promotes through its use.&lt;/p&gt;
+&lt;p&gt;You can jump about 19 minutes in to hear her segment&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://jalcine.github.io/links/2024/Aug/1password-tracy-chou/#fn2&quot; id=&quot;fnref2&quot;&gt;[2]&lt;/a&gt;&lt;/sup&gt; and what she speaks on. I hope that such a
+platform is something that grows to become less necessary as companies begin to give people more
+levers for autonomy, a necessary component for privacy, and people begin to take their own privacy
+more seriously.&lt;/p&gt;
+&lt;hr class=&quot;footnotes-sep&quot;&gt;
+&lt;section class=&quot;footnotes&quot;&gt;
+&lt;ol class=&quot;footnotes-list&quot;&gt;
+&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;But she&#39;s also both a private person and I realized I&#39;ve never been to her personal website before,
+which mentions what she describes on the show. &lt;em&gt;Exposed&lt;/em&gt;. &lt;a href=&quot;https://jalcine.github.io/links/2024/Aug/1password-tracy-chou/#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&quot;fn2&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;No offense to the people at 1Password but I didn&#39;t really care for the introduction bit. And
+the lackadaisical tone to &lt;a href=&quot;https://www.malwarebytes.com/blog/news/2024/08/stolen-data-from-scraping-service-national-public-data-leaked-online&quot;&gt;the USDoD leak&lt;/a&gt; and 1Password&#39;s own history of leaks made it
+hard to take it seriously. Something here about surveillance capitalism would be apt, but I&#39;d
+let the person &lt;a href=&quot;https://en.wikipedia.org/wiki/Surveillance_capitalism&quot;&gt;who coined that term explain more&lt;/a&gt;. &lt;a href=&quot;https://jalcine.github.io/links/2024/Aug/1password-tracy-chou/#fnref2&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content>
+  </entry>
+  <entry>
+    <title>The Inherent Right-Wing Nature of Billionaires</title>
+    <link href="https://jalcine.github.io/links/2024/Aug/anil-dash-vc-qanon/" />
+    <updated>2024-08-28T04:05:00Z</updated>
+    <id>https://jalcine.github.io/links/2024/Aug/anil-dash-vc-qanon/</id>
+    <content type="html">&lt;p&gt;Anil writes briefly about the nature of billionaires and tech venture capitalists from his
+experience around them. Folks who seem to imagine themselves as the new Rockfellers and the ilk,
+with near-full control over industry and policy when it comes to tech. Tech, both as a concept and
+an identity (to some), effectively moves to their whim. He concludes mentioning his faith in those
+working outside of this insular realm to help counteract their actions.&lt;/p&gt;
+&lt;p&gt;I&#39;d believe one of those forms of action to be in the form of collective organizing: where workers
+recognize and pool their labor-power to both reign in power and reclaim it from those who control
+our ability to support ourselves. However, it&#39;s important to peek a bit closer at what this means.
+The once-glamor child of the tech industry and social networking space, Jack Dorsey, has taken a
+pretty hard turn towards the right. He&#39;s gone from attempting to help foster the open social Web with some
+initial funding for BlueSky but now has become the silent and invisible contender in the space of
+cryptocurrency work under the moniker, &lt;a href=&quot;https://www.tbd.website/&quot;&gt;TBD&lt;/a&gt;. Quite annoying to search. I do believe that
+&lt;em&gt;solely&lt;/em&gt; focusing on these people, the VC QAnon, is doing the same amount of unncessary narrowing of
+focus as we saw with Donald Trump and focusing &lt;em&gt;solely&lt;/em&gt; on him as the source of American issues.&lt;/p&gt;
+&lt;p&gt;We need to be more honest and broaden our understanding of &lt;em&gt;why&lt;/em&gt; this industry is so easily capable
+of producing people like this. It&#39;s not because money corrupts. One of the reasons is that it&#39;s
+extremely profitable to work &lt;em&gt;against&lt;/em&gt; the needs of people. A prime example of this shows up in
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Malcolm_Harris&quot;&gt;Malcolm Harris&lt;/a&gt;&#39; &lt;a href=&quot;https://search.worldcat.org/title/1368052722?oclcNum=1368052722&quot;&gt;Palo Alto&lt;/a&gt;; a working history in the development of the &amp;quot;Silicon Valley&amp;quot; as
+he recounts how tech is yet the expansion of how this country &lt;em&gt;demands&lt;/em&gt; production at the cost of
+people here and abroad. As Netscape grew, computer manufactures worked with state governments for
+fast track access to handle the fabrication of the personal computers and ship it back to the United
+States at a premium to citizens. This is now the model used by &lt;em&gt;every&lt;/em&gt; company: from Apple to
+Samsung, as described in &lt;a href=&quot;https://dyingforaniphone.com/&quot;&gt;Dying for an iPhone&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Yes, these former nerds now billionaires are on one &lt;em&gt;and&lt;/em&gt; the systems we use everyday that we are
+committed to upholding further entrench their power. That&#39;s as long as we allow it to. Reclaiming
+control of our lives can take on many forms, from labor organizing to progressive lobbying to direct
+action. But we can&#39;t keep it as just the off-shoot of a few folks wanting control over everyone
+else. We also live on this planet — on this Web.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>When people in the movement replicate the power structures</title>
+    <link href="https://jalcine.github.io/links/2024/Aug/medium-toxic-everyday-domination/" />
+    <updated>2024-08-27T15:05:00Z</updated>
+    <id>https://jalcine.github.io/links/2024/Aug/medium-toxic-everyday-domination/</id>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://karlitaliliana.medium.com/&quot;&gt;Karla&#39;s&lt;/a&gt; piece finally came on my radar after reading about &lt;a href=&quot;https://www.nytimes.com/2024/08/25/us/brandon-anderson-rahim-ai.html&quot;&gt;the grift of the founder of
+Raheem AI&lt;/a&gt;. I &lt;em&gt;did not&lt;/em&gt; expect this to come out such of an organization, but as I&#39;ve &lt;a href=&quot;https://bsky.app/profile/jacky.wtf/post/3l2ohzbd42q2d&quot;&gt;mentioned to
+her on BlueSky in response&lt;/a&gt;, this is a subtle growing (if not already metastasizing) issue within
+leftist coalitions and how we deal with money. I can&#39;t lie, someone using organizational funds to
+blow $50,000 on ridesharing is &lt;em&gt;wild&lt;/em&gt; to me: was he paying for himself &lt;em&gt;and&lt;/em&gt; the community? We&#39;ll
+never know.&lt;/p&gt;
+&lt;p&gt;Karla&#39;s point here is something that resonates with me (emphasis mine):&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;For as much as the left — which I’m defining loosely for the purposes of this writing as a coalition
+of people fighting for MRC Democracy — would deny &lt;strong&gt;we were culturally impacted by that movement&lt;/strong&gt;, we
+have taken up a few of its toxic cultural tendencies. A very human thing to do when you are surrounded
+by toxicity. I am most concerned with &lt;strong&gt;the use of domination as a primary tool to get what we want and
+even as a form of entertainment&lt;/strong&gt;. This toxicity has infected our friends, families, communities, and
+institutions. It is a poison that will silo us and have us reject coalition at every turn.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;That bit about using domination as a form of entertainment is &lt;em&gt;really&lt;/em&gt; deeply ingrained in so much
+of how we approach life: we&#39;re exposed to it as a concept since our early youth. Compeition, though
+seemingly healthy for growth, in my opinion, plays a big role in this, when it spirals to be mainly
+a competition of the &amp;quot;biggest, best and boldest&amp;quot;. Something that&#39;s a core component of Silicon
+Valley&#39;s culture (and what American culture is at large).&lt;/p&gt;
+&lt;p&gt;The four points Karla makes around the forms of domination give me echos of experiences I&#39;ve seen
+(and have engaged in) online across the Fediverse and Twitter&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://jalcine.github.io/links/2024/Aug/medium-toxic-everyday-domination/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt;. I also see examples of it in how
+conversations unfold about who and what is allowed in one&#39;s perception of the &amp;quot;greater community&amp;quot;.&lt;/p&gt;
+&lt;p&gt;Another point she makes reminds of something I&#39;m learning in &lt;a href=&quot;https://openlibrary.org/books/OL27227134M/No_more_heroes&quot;&gt;&amp;quot;No More Heros&amp;quot;&lt;/a&gt;: the idea of having a
+spokesperson of your toxic stance (emphasis mine):&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;That being said, when those tradeoffs are made, we tend to villainize each other. We also &lt;strong&gt;tend to
+elevate someone who is either a grifter or seeking attention who says we can have everything we want
+without pain or sacrifice.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A singular human is never the reason big sweeping glorious change happens. Equally, a singular human
+is not how big, life-destroying pain happens — unless you have THAT much power and your blast radius
+is just that wide. This means that making those tradeoffs cannot be how we come to write each other
+off. I don’t mean a sustained pattern where the same people are paying the cost of tradeoffs over
+and over isn’t immoral and shouldn’t be called out. We should. I mean boiling every situation down
+to — they made that tradeoff that impacted me and that means they must be evil. I am not saying this
+tool shouldn’t be used either — I find it quite useful for known bad actors like white supremacists
+trying to change Overton windows. But not everything is that, &lt;strong&gt;some things require depth of conversation
+and negotiation in a diverse society&lt;/strong&gt; — or as sociologist Tressie McMillan Cottom calls them —
+thick conversations.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;One point of emphasis that I do appreciate is her highlighting of this angle of a singular point (or
+person) being the cause of something (notwithstanding a sort of gravitional pull). This is something
+media (social or broadcast) leans into &lt;em&gt;a lot&lt;/em&gt; due to the simplification of the message. It&#39;s a lot
+more digestable of a sound bite to understand something like Donald Trump being the source of racism
+in the United States versus parsing the last century&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://jalcine.github.io/links/2024/Aug/medium-toxic-everyday-domination/#fn2&quot; id=&quot;fnref2&quot;&gt;[2]&lt;/a&gt;&lt;/sup&gt; and the racism that has now become &amp;quot;normal behavior&amp;quot;.&lt;/p&gt;
+&lt;p&gt;Karla&#39;s point on the use of identity as a potential anchor that prevents deeper conversation is
+something I have to admit I&#39;ve subscribed to (and am aggressively working to stop):&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Using the label does &lt;strong&gt;not get us to the change we seek, it calcifies the conversation&lt;/strong&gt; — freezing it
+in place because even talking about it somehow makes us immoral. Naming the behavior that is upsetting
+us and how it is influenced by our social biases gives us more room to learn in community. It is not
+the strategy for the far enemy that I’m talking about, it is the needs of coalitions I’m concerned about.
+I understand many of us have not had language for this kind of specificity but the shortcuts we used to
+take are not going to work in a world where leaders of color have consequential power.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This is why I&#39;ve spent &lt;em&gt;so much time&lt;/em&gt; over the last three years reading more from folks who&#39;ve been
+doing this before I came to be (let alone moved into this space). It&#39;s a responsiblity to use this
+position and space wisely&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://jalcine.github.io/links/2024/Aug/medium-toxic-everyday-domination/#fn3&quot; id=&quot;fnref3&quot;&gt;[3]&lt;/a&gt;&lt;/sup&gt;. Her final point is the one I&#39;m working on the &lt;em&gt;hardest&lt;/em&gt; and was what
+inspired my post on &lt;a href=&quot;https://jalcine.github.io/essays/2024/wrong-ideas/&quot;&gt;the wrong ideas&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I get what I want or I take all my marbles with me is &lt;strong&gt;not a way to create democratic governance&lt;/strong&gt;.
+It creates smaller and smaller groups run through authoritarian norms. That [accustoms] people to
+authoritarianism in the small ways, not prepares them for shared power in the big ways we will
+need to build necessary muscles around.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This is hard for me because I believe I needed to draw &lt;em&gt;very clear lines&lt;/em&gt; in the sand as to where
+people can bring me and where I was willing to do. But I forget that it&#39;s &lt;em&gt;sand&lt;/em&gt;: that these lines
+can be redrawn, that people are not single-issue and it&#39;s possible to work across lines. Don&#39;t get
+me wrong, this isn&#39;t easy. It&#39;s sorely needed when &lt;a href=&quot;https://jalcine.github.io/links/2024/Aug/dissent-money-power/&quot;&gt;it comes to how the Left handles and approaches
+money&lt;/a&gt;, for example, but it&#39;s a process in relationship building that&#39;s needed if we actually
+want to build power.&lt;/p&gt;
+&lt;hr class=&quot;footnotes-sep&quot;&gt;
+&lt;section class=&quot;footnotes&quot;&gt;
+&lt;ol class=&quot;footnotes-list&quot;&gt;
+&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;I&#39;m on BlueSky but my engagement with it is lower due to a smaller community of folks that
+engage with me. I&#39;m not able to see things go down unless the algorithm feeds it back to me and
+the people I follow. &lt;a href=&quot;https://jalcine.github.io/links/2024/Aug/medium-toxic-everyday-domination/#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&quot;fn2&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;It&#39;s not common knowledge, for example, that &lt;a href=&quot;https://en.wikipedia.org/wiki/The_New_Jim_Crow&quot;&gt;the modern from of Jim Crow&lt;/a&gt; ended in &lt;em&gt;1975&lt;/em&gt; and
+that we&#39;ve transitioned into something folks call &lt;a href=&quot;https://hyperallergic.com/593074/how-racial-bias-in-tech-has-developed-the-new-jim-code/&quot;&gt;&lt;em&gt;Jim Code&lt;/em&gt;&lt;/a&gt;; a more exportable and
+replication-friendly form of the same forms of oppression but now applicable over class as well. &lt;a href=&quot;https://jalcine.github.io/links/2024/Aug/medium-toxic-everyday-domination/#fnref2&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&quot;fn3&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;This is what &lt;a href=&quot;https://jalcine.github.io/essays/2024/oh-aral/&quot;&gt;I was trying to explain to Aral&lt;/a&gt; some time ago but I do think a level of
+xenophobia is potentially at play and prevented him from grasping what I was saying. I also
+don&#39;t believe I communicated it well enough — no one is perfect. &lt;a href=&quot;https://jalcine.github.io/links/2024/Aug/medium-toxic-everyday-domination/#fnref3&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content>
+  </entry>
+  <entry>
+    <title>When Pacifism and Anarchism Meet: Fighting the Highest form of State Violence</title>
+    <link href="https://jalcine.github.io/links/2024/Aug/fifth-estate-anarchism-pacifism-struggle/" />
+    <updated>2024-08-25T00:15:00Z</updated>
+    <id>https://jalcine.github.io/links/2024/Aug/fifth-estate-anarchism-pacifism-struggle/</id>
+    <content type="html">&lt;p&gt;Pacifism as a concept perplexes me&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://jalcine.github.io/links/2024/Aug/fifth-estate-anarchism-pacifism-struggle/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt; so this reading of the role that these two concepts,
+anarchism and pacifism, had in contributing to the anti-war movement was interesting. However, this
+review has made some statements that I can&#39;t disagree with. It opens up strong:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Violence is not all the same. Context matters. There’s something much worse about violence
+when it’s perpetrated by or with the tacit acceptance of the State. It’s not just that governments
+and their allies in the capitalist class and the patriarchy have more resources, more weapons, and
+fewer ethical qualms about killing than most. Beyond these obvious assets, they can hide behind
+the veil of legitimacy that the State (allegedly) offers them. Hitler, George W. Bush, and Derek
+Chauvin may not have a lot in common personally, but all committed their crimes under the reasonable
+presumption that the social and political order sanctioned such behavior.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This statement is bold and can cause a knee-jerk reaction depending on who you are. If you&#39;re
+accepting of American violence, putting George W. Bush wouldn&#39;t make sense until you consider that
+his war led to &lt;em&gt;three million&lt;/em&gt; innocent Iraqis dying over a lie on weapons of mass destruction.
+Chauvin had a twisted agenda&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://jalcine.github.io/links/2024/Aug/fifth-estate-anarchism-pacifism-struggle/#fn2&quot; id=&quot;fnref2&quot;&gt;[2]&lt;/a&gt;&lt;/sup&gt; but would be considered a villian to most Americans, especially
+because of his figure, the mask falling.&lt;/p&gt;
+&lt;p&gt;This book is interesting but not compelling enough for me to engage. I respect pacifism as a concept
+but I have yet to see a concrete example of it working outside of the West&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://jalcine.github.io/links/2024/Aug/fifth-estate-anarchism-pacifism-struggle/#fn3&quot; id=&quot;fnref3&quot;&gt;[3]&lt;/a&gt;&lt;/sup&gt;. How do you suppose
+the &lt;a href=&quot;https://en.wikipedia.org/wiki/Sahel&quot;&gt;Sahel belt&lt;/a&gt; practice pacifism, for example? This is a reminder, for me and readers, that
+solutions aren&#39;t (can&#39;t!) be universal. But that doesn&#39;t mean that they shouldn&#39;t be taken (if
+viable). The review continues, however, with an indication of post-World War II America:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Repeatedly in Akst’s book and the contemporary writings of people like Muste and Dellinger, pacifists
+made the inconvenient point that in the name of winning an all-out war against Hitler, the U.S. was
+adopting many aspects of Hitlerism itself.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The astute reader who expands the perspective to be beyond the West will note that &lt;em&gt;it is&lt;/em&gt; valid.
+This was also a time when the US government and its allies also were manipulating so many African and
+Asiatic countries in attempts to maintain their control over the land. The reviewer seems to have a
+particular ignorance towards anything that non-white folks (sans Martin Luther King Jr and Bayard
+Rustin) were doing. They write, at the time, &amp;quot;the new radicals of the 1960s never [finding] a
+way to engage the American labor movement in their struggle, or generate an alternative for
+working-class people in their increasingly complacent and ineffective mainstream union
+establishment&amp;quot;. Questions like &amp;quot;who were able to make up union representation at this time&amp;quot; come to
+mind. Bayard Rustin was also a very prominent figure for labor as a high ranking representative for
+AFL-CIO; who, around this time, gave way for police to be more concretely recognized as workers. No
+one is perfect.&lt;/p&gt;
+&lt;hr class=&quot;footnotes-sep&quot;&gt;
+&lt;section class=&quot;footnotes&quot;&gt;
+&lt;ol class=&quot;footnotes-list&quot;&gt;
+&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;There&#39;s a level of both security and sacrifice to be a moral witness willing to threaten one&#39;s
+own life in favor of the collective. It&#39;s the ultimate form of moral upholding; the choice to
+&lt;em&gt;never&lt;/em&gt; take a life. I find it hard to wrangle with given how violence itself is almost endemic
+to human nature. I imagine that depends on what you believe to be &amp;quot;human nature&amp;quot;. &lt;a href=&quot;https://jalcine.github.io/links/2024/Aug/fifth-estate-anarchism-pacifism-struggle/#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&quot;fn2&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;Chauvin&#39;s approach, while targeted, still didn&#39;t get the result of exposing institutional police
+corruption. It&#39;s hard to wrestle with this because such institutions exist to cause violence.
+And for Black people to exist in them require a level of soul murder and disassociation from
+Black solidarity that I can&#39;t align with; a different form of violence. &lt;a href=&quot;https://jalcine.github.io/links/2024/Aug/fifth-estate-anarchism-pacifism-struggle/#fnref2&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&quot;fn3&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;In before a mention of Gandhi, the English didn&#39;t have the resources to fight off natives at a
+number of 200 to 1. It wasn&#39;t pacifism but a decision made to not be made into a fool in front
+of the world. Gandhi also has … complications; from my understanding. &lt;a href=&quot;https://jalcine.github.io/links/2024/Aug/fifth-estate-anarchism-pacifism-struggle/#fnref3&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Facebook&#39;s Threads Preps to Introduce Advertising</title>
+    <link href="https://jalcine.github.io/links/2024/Aug/techcrunch-threads-ad/" />
+    <updated>2024-08-24T18:15:00Z</updated>
+    <id>https://jalcine.github.io/links/2024/Aug/techcrunch-threads-ad/</id>
+    <content type="html">&lt;p&gt;Facebook is an advertising company. It makes a considerable amount of money from advertising&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://jalcine.github.io/links/2024/Aug/techcrunch-threads-ad/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt;.
+This is not to be shocking but a warning. The fact that someone has managed to flip it in the app is
+indicative of whatever soft attempt that they had with &amp;quot;joining the Fediverse&amp;quot; could introduce them
+scooping up the open social Web as part of a larger advertising network &lt;em&gt;beyond&lt;/em&gt; their walls. App
+developers of the Fediverse &lt;em&gt;need&lt;/em&gt; to brace themselves for this.&lt;/p&gt;
+&lt;p&gt;The head of product &lt;a href=&quot;https://www.threads.net/@mosseri/post/C5erGYZPShe?hl=en&quot;&gt;mentioned this intent&lt;/a&gt;. If anything, we need to get more serious about
+enabling &lt;em&gt;some&lt;/em&gt; means of &amp;quot;creator sustainability&amp;quot; in the Fediverse; being open isn&#39;t enough now. The
+infection of surveillance capitalism into the open social Web has been here.&lt;/p&gt;
+&lt;hr class=&quot;footnotes-sep&quot;&gt;
+&lt;section class=&quot;footnotes&quot;&gt;
+&lt;ol class=&quot;footnotes-list&quot;&gt;
+&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;They say that they&#39;re &amp;quot;reliant&amp;quot; on the such in their most recent &lt;a href=&quot;https://investor.fb.com/investor-news/press-release-details/2024/Meta-Reports-Second-Quarter-2024-Results/default.aspx&quot;&gt;earnings report&lt;/a&gt;. &lt;a href=&quot;https://jalcine.github.io/links/2024/Aug/techcrunch-threads-ad/#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content>
+  </entry>
+  <entry>
+    <title>AI Photo Editing Brings Propaganda Production to the Masses</title>
+    <link href="https://jalcine.github.io/links/2024/Aug/the-verge-ai-photos/" />
+    <updated>2024-08-24T18:02:00Z</updated>
+    <id>https://jalcine.github.io/links/2024/Aug/the-verge-ai-photos/</id>
+    <content type="html">&lt;p&gt;I understand (to a degree) how photo editing works. I also (to a even lesser degree) understand this
+for AI photo editing. But now Google, being the alleged arbitor of truth and knowledge has given
+society a tool that can effectively &lt;em&gt;rewrite history&lt;/em&gt; if folks aren&#39;t paying attention. And we&#39;re
+really too tired too because we, as a society, are continuing to accept empty promises as policy
+notes.&lt;/p&gt;
+&lt;p&gt;The examples of the imagery shown is scary and yet to be expected in a piece like this. But it shows
+Google&#39;s disregard for launching such a product. The teams invovled will get promotions, down to the
+ICs and we&#39;ll see more instances of abuse via image editing rise. The need for markers of undoctored
+images will rise but it&#39;ll be a cat-and-mouse raise as anyone with enough drive will find a way to
+break through this.&lt;/p&gt;
+&lt;p&gt;This will now make me &lt;em&gt;extremely&lt;/em&gt; distrustful of random imagery and I really don&#39;t like that.
+There&#39;s so much to be provided with the power of imagery (and also to be considered in its role of
+mobilizing people) and now we&#39;ve been given a form of naplam to the whole space.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Anarchy, the Rise of the early FBI and the Mexican Revolution</title>
+    <link href="https://jalcine.github.io/links/2024/Aug/fifth-estate-magonismo/" />
+    <updated>2024-08-24T08:15:00Z</updated>
+    <id>https://jalcine.github.io/links/2024/Aug/fifth-estate-magonismo/</id>
+    <content type="html">&lt;p&gt;This book review &lt;em&gt;immediately&lt;/em&gt; introduced me to quite a bit that I had to look up. Before we had the FBI
+as it stood today, we had the National Bureau of Criminal Identification in 1896. It was seemingly formed
+in response (if not to help track) the rise of anarchism in the United States, specifically after
+the &lt;a href=&quot;https://en.wikipedia.org/wiki/William_McKinley&quot;&gt;assassination of President McKinley&lt;/a&gt;. I didn&#39;t know a president outside of JFK was killed and
+for it to be specifically an anarchist is huge, given the way America&#39;s strength against dissent
+is heavily curtailed today. All of this seemed to be at the &lt;em&gt;strong&lt;/em&gt; urges of President Theodore
+Roosevelt.&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://jalcine.github.io/links/2024/Aug/fifth-estate-magonismo/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;What freaked me out is how this was effectively &lt;em&gt;instrumental&lt;/em&gt; in the formation of the modern day
+police force. As mentioned in &lt;a href=&quot;https://openlibrary.org/books/OL32208260M&quot;&gt;Prisons By Any Other Name&lt;/a&gt;, there&#39;s a history of Texan rangers
+attacking Indigenous people (who are the modern day ancestors of Mexicans). I quoted a portion about
+this on &lt;a href=&quot;https://bookwyrm.social/user/jacky/quotation/5151393#anchor-5151393&quot;&gt;Bookwyrm&lt;/a&gt;, but below is what came to mind:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Volunteer police helpers also have a long history in the United States of facilitating Indigenous
+genocide. In the nineteenth and early twentieth centuries, for example, the Texas Rangers chased
+down and killed Native people rumored to have attacked colonizers, and they lynched Tejanos, or
+Texans of Mexican descent. But the Texas Rangers were not actual police, military or even militia
+forces; instead, these volunteer vigilantes were essentially &amp;quot;community members&amp;quot; playing a
+collaborating role in policing and protecting newly arriving white colonizers.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;It&#39;s truly horrifying to understand that the symbolism of that badge comes from a history of
+genocide on &amp;quot;American&amp;quot; soil. This review continues with the journey and assaults that the Magon
+brothers experienced during their efforts to liberate Mexico. Some motivations that pushed people
+were things like &lt;a href=&quot;https://en.wikipedia.org/wiki/Cananea_strike&quot;&gt;labor repression in copper mines in 1906&lt;/a&gt; as well as &lt;a href=&quot;https://en.wikipedia.org/wiki/Henequen_industry_in_Yucat%C3%A1n&quot;&gt;the forced migration of
+Indigenous people to Yucatan&lt;/a&gt; - all around 1906. This ties in with the &lt;em&gt;Brown Belt&lt;/em&gt; of Jim Crow
+like law (&lt;a href=&quot;https://en.wikipedia.org/wiki/Juan_Crow&quot;&gt;Juan Crow&lt;/a&gt;, as it&#39;s called) being pushed on Mexican Americans. It is disappointing but
+not surprising to see how a lack of development of sexuality and tolerance also led to the Magon&#39;s
+campaign — you&#39;ll have to check this out to understand more on that.&lt;/p&gt;
+&lt;p&gt;There&#39;s so much more that this article goes into. I &lt;em&gt;really&lt;/em&gt; want to read this book! If there&#39;s
+one thing I don&#39;t know much about, it&#39;s definitely the rise and formation of Mexico and its
+development as a country (as well as those who fight for liberation within it).&lt;/p&gt;
+&lt;hr class=&quot;footnotes-sep&quot;&gt;
+&lt;section class=&quot;footnotes&quot;&gt;
+&lt;ol class=&quot;footnotes-list&quot;&gt;
+&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;It sounded like he was afraid of dying after taking the highest seat in the land. What is it
+with people in power and being afraid of &lt;em&gt;letting&lt;/em&gt; go of it? &lt;a href=&quot;https://jalcine.github.io/links/2024/Aug/fifth-estate-magonismo/#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Donors, Funding and the Left</title>
+    <link href="https://jalcine.github.io/links/2024/Aug/dissent-money-power/" />
+    <updated>2024-08-24T06:15:00Z</updated>
+    <id>https://jalcine.github.io/links/2024/Aug/dissent-money-power/</id>
+    <content type="html">&lt;p&gt;This is another hit from &lt;a href=&quot;https://www.dissentmagazine.org/issue/fall-2023/&quot;&gt;the Fall 2023 issue of Dissent&lt;/a&gt;; following the previous one about the
+Supreme Court and union striking power. Money and the Left in the United States &lt;em&gt;is such a sticky
+topic&lt;/em&gt;. This article does a better job than I can on explaining the situation specifically from the
+non-profit angle. It references &lt;a href=&quot;https://incite-national.org/beyond-the-non-profit-industrial-complex/&quot;&gt;a book I&#39;m eager to dive in&lt;/a&gt; on the topic raised by women and
+femmes of color on the role that non-profits have in stifling grassroot movements. It goes on to mention
+that this process is a bit of a double-edged sword: without guidance, these organizations can&#39;t spend
+well. It seems like more often than not, &amp;quot;the disparity was especially apparent in coalitions, where funder
+darlings (often national organizations that claimed to be &amp;quot;connective tissue&amp;quot; between local
+affiliates)&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://jalcine.github.io/links/2024/Aug/dissent-money-power/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt; contributed just the occassional meeting attendance, while low-paid organizers at
+base-building organizations worked more than &lt;em&gt;seventy hours&lt;/em&gt; hours a week&amp;quot;. This isn&#39;t sustainable
+and I can see why this kind of work turns a lot of people away by default.&lt;/p&gt;
+&lt;p&gt;Thankfully, this article does highlight some solutions that I agree with: bringing these people
+(funders) into spaces to have them understand the struggle at hand&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://jalcine.github.io/links/2024/Aug/dissent-money-power/#fn2&quot; id=&quot;fnref2&quot;&gt;[2]&lt;/a&gt;&lt;/sup&gt;. That way, the funders don&#39;t
+feel like they&#39;re doing charity but are &lt;em&gt;direct partners&lt;/em&gt; in alleviating, if not eliminating, the
+problems at hand. I have some contention that&#39;s developed from something that reminds me of a post
+I&#39;ve written on &lt;a href=&quot;https://jalcine.github.io/essays/wrong-ideas/&quot;&gt;my approach to reaching folks&lt;/a&gt; on how the need to humanize funders is a missing
+component and it has me wondering, again, if I&#39;m reaching the wrong people as &amp;quot;goals&amp;quot;. This also
+runs into slight conflict with something I&#39;ve been reading &lt;a href=&quot;https://bookwyrm.social/book/105067/s/we-do-this-til-we-free-us&quot;&gt;Kaba&#39;s book&lt;/a&gt;; the need to focus on
+the &lt;em&gt;big&lt;/em&gt; picture of issues instead of working to organize for individual release in the case of
+prison abolition when we can. I think &lt;em&gt;both&lt;/em&gt; are necessary and that we have the people to do it;
+it&#39;s all about mobilizing folks so we can plant both of these trees at the same time and bear the
+fruit for everyone.&lt;/p&gt;
+&lt;p&gt;All in all, a great read with some strong takeaways!&lt;/p&gt;
+&lt;hr class=&quot;footnotes-sep&quot;&gt;
+&lt;section class=&quot;footnotes&quot;&gt;
+&lt;ol class=&quot;footnotes-list&quot;&gt;
+&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;This reminds me of &lt;a href=&quot;https://statescoop.com/code-for-america-local-brigades-ending/&quot;&gt;Code for America&#39;s bridage network that was disbanded in 2023&lt;/a&gt;. The
+community was not approving of it in the community Slack. &lt;a href=&quot;https://jalcine.github.io/links/2024/Aug/dissent-money-power/#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&quot;fn2&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;The word &lt;em&gt;struggle&lt;/em&gt; has a strong weight behind it that&#39;s tainted by class politics. I&#39;m sure
+someone&#39;s written about this at length: I&#39;ll find it and link it from this site soon. &lt;a href=&quot;https://jalcine.github.io/links/2024/Aug/dissent-money-power/#fnref2&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content>
+  </entry>
+  <entry>
+    <title>The Right to Strike</title>
+    <link href="https://jalcine.github.io/links/2024/Aug/dissent-right-to-strike/" />
+    <updated>2024-08-24T02:15:00Z</updated>
+    <id>https://jalcine.github.io/links/2024/Aug/dissent-right-to-strike/</id>
+    <content type="html">&lt;p&gt;This piece by &lt;a href=&quot;https://en.wikipedia.org/wiki/Veena_Dubal&quot;&gt;Veena Dubal&lt;/a&gt; for Dissent has been the &lt;em&gt;longest&lt;/em&gt; read in this issue for me. So many
+moments where they&#39;ve expanded on how, even despite Justice Jackson&#39;s work to highlight how striking
+is necessary for workers in a democratic society, the majority opinion is increasinlgy swaying
+towards corporate control. They include a quote from Sean O&#39;Brien after &lt;a href=&quot;https://en.wikipedia.org/wiki/Glacier_Northwest%2C_Inc._v._Teamsters&quot;&gt;the case of Glacier vs
+Teamsters&lt;/a&gt; that &amp;quot;people cannot rely on their governments or their courts to protect them ... We
+must rely on each other&amp;quot;. This, despite being nearly a year old, is a good call to action for those
+interested or adjacent to organizing to understand that we, in the United States, are fighting a
+system that is inherently &lt;em&gt;against&lt;/em&gt; workers at every turn.&lt;/p&gt;
+&lt;p&gt;As mentioned, wildcat strikes&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://jalcine.github.io/links/2024/Aug/dissent-right-to-strike/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt; are our strongest weapon. They demonstrate a truer form of
+workplace solidarity that&#39;ll be needed regardless of who takes office in January 2025. It&#39;s humbling
+to know that even despite &lt;a href=&quot;https://en.wikipedia.org/wiki/Ronald_Reagan_1980_presidential_campaign&quot;&gt;the anti-worker and anti-Black presidental campaign&lt;/a&gt; (nee administration) of
+the 1980s and its push to reduce worker organizing, there&#39;s been growth. &amp;quot;According to the Economic
+Policy Institute, U.S. strike activity increased by nearly 50 percent last year — even as the
+percentage of workers represented by a union dropped one-third of a percentage point&amp;quot;, writes Dubal.&lt;/p&gt;
+&lt;p&gt;If you&#39;re a worker, &lt;em&gt;especially&lt;/em&gt; if you&#39;re in tech, the best time to get organized was yesterday.
+The next best is today. If you&#39;re able to come to San Francisco in October, there&#39;s a conference
+&lt;a href=&quot;https://techworkerscoalition.org/circuit-breakers/&quot;&gt;&lt;em&gt;just for you&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;hr class=&quot;footnotes-sep&quot;&gt;
+&lt;section class=&quot;footnotes&quot;&gt;
+&lt;ol class=&quot;footnotes-list&quot;&gt;
+&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;These are strikes that are either unconsidered unlawful or can bring heightened risk to the
+company or institution being striked against. &lt;a href=&quot;https://jalcine.github.io/links/2024/Aug/dissent-right-to-strike/#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content>
+  </entry>
+</feed>

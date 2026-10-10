@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>rv is the new kid in town - Jacky Alciné</title>
+	<meta name="CCBot" content="nofollow">
+	<meta name="robots" content="noai, noimageai">
+	<meta name="tdm-reservation" content="1">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#001f3f">
+	<meta name="author" content="Jacky Alciné">
+	<meta name="generator" content="Eleventy v3.0.0">
+	<meta property="og:type" content="article">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="/og-images/4ee7b829.png">
+    <meta property="og:image" content="/og-images/4ee7b829.png">
+    <meta name="twitter:description" content="Some of the work I&#39;ve been doing on `rv` around syntax checking, documentation testing and type checking has been worthy of note. I&#39;m looking for feedback.
+">
+    <meta property="og:description" content="Some of the work I&#39;ve been doing on `rv` around syntax checking, documentation testing and type checking has been worthy of note. I&#39;m looking for feedback.
+">
+    <meta property="description" content="Some of the work I&#39;ve been doing on `rv` around syntax checking, documentation testing and type checking has been worthy of note. I&#39;m looking for feedback.
+">
+	<meta property="og:title" content="rv is the new kid in town - Jacky Alciné">
+	<meta property="og:site_name" content="Jacky Alciné's digital place to post, post, post!">
+	<meta property="og:url" content="https://jalcine.github.io/essays/2026/rv/">
+	<meta name="twitter:title" content="rv is the new kid in town - Jacky Alciné">
+	<meta name="twitter:site" content="Jacky Alciné's digital place">
+	<meta name="twitter:creator" content="@jackyalcine">
+  <meta name="fediverse:creator" content="@jalcine@todon.eu">
+	
+	<link rel="stylesheet" href="/site.css" type="text/css">
+	<link rel="icon" href="https://jalcine.github.io/images/self.jpg" type="images/jpeg">
+	<link rel="hub" href="https://pubsubhubbub.superfeedr.com/">
+	<link rel="self" href="https://jalcine.github.io/">
+	<link rel="alternate" href="/essays/feed.atom" type="application/atom+xml" title="Jacky Alciné's essays (over ATOM)">
+	<link rel="alternate" href="/links/feed.atom" type="application/atom+xml" title="Jacky Alciné's linklog (over ATOM)">
+	<link rel="alternate" href="/weeknotes/feed.atom" type="application/atom+xml" title="Jacky Alciné's weeknotes (over ATOM)">
+  <script src="/scripts/main.js" type="module" defer="" async=""></script>
+  <!-- Privacy-friendly analytics by Plausible -->
+  <script async="" src="https://plausible.io/js/pa-DosHWTTEpYQiGlr25PNp1.js"></script>
+  <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init()
+  </script>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<a class="h-card" href="/" rel="me">
+				<picture><source type="image/webp" srcset="/img/j0P3XcNaLx-184.webp 184w"><img class="u-photo" src="/img/j0P3XcNaLx-184.jpeg" height="184" alt="Jacky with gold-brimmed glasses looking to the left." width="184"></picture>
+				<span class="p-name">
+					Jacky Alciné
+				</span></a>
+			<a class="h-feed u-url" href="/essays/">Essays</a>
+			<a class="h-feed u-url" href="/links/">Linklog</a>
+			<a class="h-feed u-url" href="/weeknotes/">Weeknotes</a>
+			<!-- <a class="h-feed u-url" href="/reads">Reads</a> -->
+			<a href="/work/">Work</a>
+		</nav>
+	</header>
+	<main><article class="h-entry">
+  
+  <header>
+    <h1 class="p-name">rv is the new kid in town</h1>
+    
+    <aside>
+      by <a class="u-author" href="/">Jacky Alciné</a>
+      &bull; published
+      <time class="dt-published" datetime="Wed, 23 Sep 2026 15:00:00 GMT">September 23, 2026</time>
+    </aside>
+    <small style="text-align:center;width: 100%;display: inline-block; margin: 0.5rem auto;">
+      As I look <a href="/work">for work</a>, please
+      support me with a donation to the project development I'm spending in the
+      Atmosphere &mdash; <a href="https://www.olamaelcu.net/about/support">donate
+      here</a>
+    </small>
+  </header>
+  
+  <section class="e-content"><p>Recently, I've been helping the fine folk at <a href="https://spinel.coop">Spinel</a> work on <a href="https://rv.dev/">rv</a>, the
+well-known Ruby version manager written in Rust. I've made some small fixes<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>
+but I am working on something a bit larger: introducing something akin to
+documentation testing found in Rust to Ruby. You can check the stacked PRs
+<a href="https://github.com/spinel-coop/rv/pull/786">starting here</a>. This is the first time I've used the <a href="https://docs.github.com/en/pull-requests/how-tos/stacked-pull-requests">Stacked Pull
+Request</a> feature on GitHub; it feels like operational sugar over something
+I've done manually - it's cool!</p>
+<p>Working on <code>rv</code> has been fun. Ruby's also the language that got me cemented in
+my professional software journey. I do have a question for you (if you write
+Ruby often): <strong>how do you structure your code comments</strong>? I'm talking about
+things akin to:</p>
+<pre class="language-ruby"><code class="language-ruby"><span class="token comment"># The collection of foods you shouldn't eat because of their</span>
+<span class="token comment"># non-nutritional properties.</span>
+<span class="token comment">#</span>
+<span class="token comment"># ```ruby</span>
+<span class="token comment"># bean = MagicFoods.BeanTower.new()</span>
+<span class="token comment"># bean.sprout()</span>
+<span class="token comment"># ```</span>
+<span class="token keyword">module</span> <span class="token class-name">MagicFoods</span>
+
+  <span class="token comment"># A bean to architectural artifact. Do not use in chili.</span>
+  <span class="token comment">#</span>
+  <span class="token comment"># ```ruby</span>
+  <span class="token comment"># tower = BeanTower.new()</span>
+  <span class="token comment"># ```</span>
+  <span class="token keyword">class</span> <span class="token class-name">BeanTower</span>
+    <span class="token keyword">def</span> <span class="token method-definition"><span class="token function">new</span></span><span class="token punctuation">(</span><span class="token symbol">height</span><span class="token operator">:</span> <span class="token number">30</span>_000<span class="token punctuation">)</span>
+      <span class="token keyword">self</span><span class="token punctuation">.</span>height <span class="token operator">=</span> height
+    <span class="token keyword">end</span>
+
+    <span class="token keyword">def</span> <span class="token method-definition"><span class="token function">sprout</span></span>
+      puts <span class="token string-literal"><span class="token string">"I _am_ a magic bean sprout at </span><span class="token interpolation"><span class="token delimiter punctuation">#{</span><span class="token content"><span class="token keyword">self</span><span class="token punctuation">.</span>height</span><span class="token delimiter punctuation">}</span></span><span class="token string">!"</span></span>
+    <span class="token keyword">end</span>
+  <span class="token keyword">end</span>
+
+  <span class="token keyword">class</span> <span class="token class-name">PumpkinVehicle</span>
+
+    <span class="token comment"># A vehicle to drive around in.</span>
+    <span class="token comment">#</span>
+    <span class="token comment"># ```ruby</span>
+    <span class="token comment"># vehicle = PumpkinVehicle.new()</span>
+    <span class="token comment">#</span>
+    <span class="token comment"># ```</span>
+    <span class="token keyword">def</span> <span class="token method-definition"><span class="token function">drive</span></span><span class="token punctuation">(</span><span class="token symbol">distance</span><span class="token operator">:</span> <span class="token number">30</span>_000<span class="token punctuation">)</span>
+      puts <span class="token string-literal"><span class="token string">"Let's go </span><span class="token interpolation"><span class="token delimiter punctuation">#{</span><span class="token content">distance</span><span class="token delimiter punctuation">}</span></span><span class="token string">!"</span></span>
+    <span class="token keyword">end</span>
+  <span class="token keyword">end</span>
+<span class="token keyword">end</span></code></pre>
+<p>I'm hoping to have the PR adapt to as many styles as possible but if we stick
+to a convention, it'll be possible to run code blocks of Ruby code and have it
+operate as <em>living</em> documentation. Things like <a href="https://yardoc.org/">YARD</a> make this a bit easier
+because of the stricter organization of comment information and with the advent
+of <a href="https://github.com/ruby/rbs">RBS</a>, we might even get a means of having types <em>and</em> documentation
+living in sidecar files if not immediately in the code itself (I'd prefer the
+documentation to live <em>with</em> the code, to be frank).</p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>One security <a href="https://github.com/spinel-coop/rv/pull/780">fix</a>, improving
+<a href="https://github.com/spinel-coop/rv/pull/760">probing of Rubies</a> and adding
+in <a href="https://github.com/spinel-coop/rv/pull/778">editorconfig</a> for the
+Vim-inclined folks in the community. <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+</section>
+  <sequoia-comments document-uri="at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3mw7ipwz4azcp"></sequoia-comments>
+  <footer id="contentFooter">
+  <h2>Thanks for reading!</h2>
+  <p>
+    I'm open to feedback on the things I write. You can e-mail your thoughts to
+    <code>yo@jacky.wtf</code> at anytime.
+  </p>
+  <script type="module" src="/scripts/components/sequoia-subscribe.js"></script>
+<sequoia-subscribe button-type="atmosphere"></sequoia-subscribe>
+<p>
+If you enjoyed this post, please support me with a donation to the project development I'm spending in the Atmosphere &mdash;
+<a href="https://www.olamaelcu.net/about/support">donate here</a></p>
+<p>
+I have an infrequent <a href="/newsletter">newsletter</a> that you can subscribe to (<a href="https://buttondown.email/jackyalcine/archive/">check the archives</a>).
+I send between one to three e-mails a month, usually expanding on posts like this one and
+giving more updates on life and things I've engaged with. There's 117 people subscribed &mdash; come join us!
+</p>
+<form action="https://buttondown.com/api/emails/embed-subscribe/jackyalcine" method="post" class="embeddable-buttondown-form">
+<label for="email"><span>Email</span>
+<input autocomplete="email" type="email" name="email" placeholder="you.are.perfect@as.you.are">
+</label>
+<input type="hidden" value="1" name="embed">
+<input type="submit" value="Subscribe">
+</form>
+<style>
+#contentFooter>h2 {
+  text-align: center;
+}
+
+form.embeddable-buttondown-form {
+  background-color: var(--color-primary);
+color: var(--color-background);
+padding: 1rem;
+display: flex;
+         flex-direction: column;
+         max-width: 40rem;
+margin: 0 auto;
+}
+
+form.embeddable-buttondown-form>label {
+flex: 3;
+display: flex;
+         flex-direction: column;
+padding: 1rem;
+}
+
+form.embeddable-buttondown-form>label>span {
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+form.embeddable-buttondown-form>input[type=submit] {
+height: max-content;
+        align-self: center;
+}
+</style>
+
+
+</footer>
+
+</article>
+
+
+  <script type="module" src="/scripts/components/sequoia-comments.js"></script>
+
+</main>
+	<footer>
+      <p>Site handrolled <local-time><time datetime="1791641036205">at Saturday, October 10, 2026 at 10:03:56 AM EDT</time></local-time> and built using <a href="https://www.11ty.dev/">11ty</a> (for now)
+			&mdash; <a href="https://www.11ty.dev/blog/sustainability-fundraising/">support its
+				development</a>!
+			Check out <a href="/report/visitors.html">my access logs</a>. <a href="/disclaimer">Disclaimer</a>: I have opinions.
+      </p>
+      <p xmlns:cc="http://creativecommons.org/ns#">
+        You made it &mdash; <strong>congrats</strong>! I don't have much to tell you. Except that unless
+        otherwise stated,
+        the content I publish is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer">CC BY-NC 4.0<picture><source type="image/webp" srcset="/essays/2026/rv/rlZNrnUzqj-64.webp 64w"><img src="/essays/2026/rv/rlZNrnUzqj-64.jpeg" alt="CC" width="64" height="64"></picture><picture><source type="image/webp" srcset="/essays/2026/rv/mfiZ3Oerkz-64.webp 64w"><img src="/essays/2026/rv/mfiZ3Oerkz-64.jpeg" alt="BY" width="64" height="64"></picture><picture><source type="image/webp" srcset="/essays/2026/rv/2rCFEV7ZgL-64.webp 64w"><img src="/essays/2026/rv/2rCFEV7ZgL-64.jpeg" alt="SA" width="64" height="64"></picture></a>.
+      </p>
+    </footer>
+  </body>
+</html>
