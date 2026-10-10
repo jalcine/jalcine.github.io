@@ -70,3 +70,37 @@ From my experience, building something for the Fediverse required:
 
 - an always connected-to-the-public-Internet service (if you wanted it to be
   relatively available)
+- isolation in the kind of content you create; apps are aggressively focused on
+  singular content types (mainly due to the difficulty of making parallel media
+  types)
+- _extreme_ difficulty testing federation
+
+Seeing each of these, by itself, kept me from building in the space.
+
+## Culture
+
+Despite the goal of a community for federated social networking, it seemed like
+the ecosystem built around the Fediverse was inherently European. This might be
+due to the large push against "American Big Tech"[^1]. That made it hard for me
+to find people, outside of what Ro built with PlayVicious, that I would want to
+virtually hang out with.
+
+It doesn't help that PlayVicious had [a hard time _existing_ in the
+Fediverse][1] and little effort by peers outside of words of commiseration
+&mdash; leaving a sour taste in my mouth personally.
+
+---
+
+With all that said, I do hope the changes come to ActivityPub, in its next
+version, that make it more viable as a protocol for social networking and
+communication.
+
+[1]: https://logicmag.io/policy/blackness-in-the-fediverse-a-conversation-with-marcia-x/
+
+[^1]:
+    I don't know how or if folks take into consideration that these companies
+    are _multi-national_ and that there's little interest to _ban_ a company
+    that brings these jobs and commercial traffic that countries _want by
+    design_. There's work being done to reduce the dependencies on American
+    technologies that actually challenge them but it's a contender on par to an
+    anarchist fight against a nation-state with industrial power.

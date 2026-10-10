@@ -17,7 +17,7 @@ og:
     <aside>
       by <a class="u-author" href="/">Jacky Alciné</a>
       &bull; published
-      <time class="dt-published" datetime="{{ page.date.toUTCString() }}">{{ page.date | postDate }}</time>
+      <time class="dt-published" datetime="{{ page.date | isoDate }}">{{ page.date | postDate }}</time>
     </aside>
     <small style="text-align:center;width: 100%;display: inline-block; margin: 0.5rem auto;">
       As I look <a href="/work">for work</a>, please
@@ -40,9 +40,6 @@ og:
     {{- content | safe -}}
   </section>
   <sequoia-comments{% if atUri %} document-uri="{{ atUri }}"{% endif %}></sequoia-comments>
+  <script type="module" src="/scripts/components/sequoia-comments.js"></script>
   {% include "./content-footer.html" %}
 </article>
-
-{% block head %}
-  <script type="module" src="/scripts/components/sequoia-comments.js"></script>
-{% endblock %}

@@ -4,7 +4,7 @@ title: "My long(ish)-form writings"
 changeFreq: "daily"
 ---
 <article class="h-feed">
-	{%- assign publishedEssays = collections.essay | excludeDrafts -%}
+	{%- set publishedEssays = collections.essay | excludeDrafts -%}
 	<header>
 		<h1 class="p-name">Essays</h1>
 		<p class="e-content">I keep my long(ish)-form writing here &mdash; ideally. Some other forms of it end
@@ -14,7 +14,7 @@ changeFreq: "daily"
 		</p>
 	</header>
 	<section class="archive">
-		{%- assign years = publishedEssays | byYearAndMonth -%}
+		{%- set years = publishedEssays | byYearAndMonth -%}
 		{%- for year in years -%}
 		<section class="archive-year" aria-labelledby="year-{{ year.year }}">
 			<h2 class="archive-year-heading" id="year-{{ year.year }}">
@@ -30,7 +30,7 @@ changeFreq: "daily"
 						<time class="dt-published" datetime="{{ post.date | isoDate }}">{{ post.date | dayOfMonth }}</time>
 						<div class="archive-entry">
 							<a class="u-url p-name" href="{{ post.url }}">{{ post.data.title }}</a>
-							{%- assign cover = post.data.og.image | default: post.data.masthead.src -%}
+							{%- set cover = post.data.og.image | default(post.data.masthead.src) -%}
 							{%- if cover -%}
 							<a class="archive-thumb" href="{{ post.url }}" tabindex="-1" aria-hidden="true">
 								<img src="{{ cover }}" alt="" loading="lazy" decoding="async" />

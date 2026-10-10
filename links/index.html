@@ -14,7 +14,7 @@ changeFreq: "daily"
 		</p>
 	</header>
 	<section class="archive">
-		{%- assign years = collections.link | byYearAndMonth -%}
+		{%- set years = collections.link | byYearAndMonth -%}
 		{%- for year in years -%}
 		<section class="archive-year" aria-labelledby="year-{{ year.year }}">
 			<h2 class="archive-year-heading" id="year-{{ year.year }}">

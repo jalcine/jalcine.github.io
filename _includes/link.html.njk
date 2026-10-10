@@ -11,7 +11,7 @@ og:
 	</h1>
     <aside>
 		by <a href="{{ material.source.url }}">{{ material.source.name }}</a> &mdash;
-		bookmarked <time class="dt-published" datetime="{{ page.date.toUTCString() }}">{{ page.date | postDate }}</time>
+		bookmarked <time class="dt-published" datetime="{{ page.date | isoDate }}">{{ page.date | postDate }}</time>
     </aside>
   </header>
   <section class="e-content">

@@ -105,7 +105,6 @@ export default function (
   });
 
   eleventyConfig.addPassthroughCopy("*.css");
-  eleventyConfig.addPassthroughCopy("fonts");
   eleventyConfig.addPassthroughCopy(".well-known");
 
   for (const folderName of ["images", "videos", "files", "fonts", "scripts"]) {
@@ -119,7 +118,15 @@ export default function (
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
   eleventyConfig.addPlugin(feedPlugin);
 
-  eleventyConfig.addPlugin(eleventyImageTransformPlugin);
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+    formats: ["avif", "webp", "jpeg"],
+    widths: [320, 640, 960, 1280, "auto"],
+    defaultAttributes: {
+      loading: "lazy",
+      decoding: "async",
+      sizes: "(min-width: 60rem) 60rem, 100vw",
+    },
+  });
 
   eleventyConfig.addPlugin(compress);
 
@@ -157,6 +164,7 @@ export default function (
         dateStyle: "full",
         timeStyle: "long",
       }).format(now),
+      iso: now.toISOString(),
       ts: now.valueOf(),
     };
   });
@@ -184,4 +192,9 @@ export default function (
       return 0;
     }
   });
+
+  return {
+    htmlTemplateEngine: "njk",
+    markdownTemplateEngine: "njk",
+  };
 }

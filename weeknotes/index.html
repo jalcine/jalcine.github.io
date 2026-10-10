@@ -11,7 +11,7 @@ description: My notes that I push out once a week.
       noteworthy.</p>
   </header>
   <section class="archive">
-    {%- assign years = collections.weeknote | excludeDrafts | byYear -%}
+    {%- set years = collections.weeknote | excludeDrafts | byYear -%}
     {%- for year in years -%}
     <section class="archive-year" aria-labelledby="year-{{ year.year }}">
       <h2 class="archive-year-heading" id="year-{{ year.year }}">

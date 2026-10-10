@@ -16,6 +16,7 @@ SQLite, it's able to do that pretty well. In the flow for setting up a new site,
 some sort of visual identifier for sites. The following [truncated code][2] is how I implemented something for folks to
 select an icon.
 
+{% raw %}
 ```html
 <aside class="icons">
 {#each iconSet as icon}
@@ -97,6 +98,7 @@ select an icon.
   }
 </script>
 ```
+{% endraw %}
 There's quite a bit going on here but before I explain, I want to show you what it results in.
 
 <figure>
@@ -140,6 +142,7 @@ list abound. However, I haven't created a full-on fixture system to emulate doze
 `index.html`. That didn't stop me from extracting the table used to present items. Excluding the styling and the few
 lines of associated JavaScript, here's how they're implemented at the moment:
 
+{% raw %}
 ```html
 <form>
   <aside>
@@ -172,6 +175,7 @@ lines of associated JavaScript, here's how they're implemented at the moment:
   {/if}
 </form>
 ```
+{% endraw %}
 
 This provides a _very thin_ wrapper on listing a set of items in a table. I wanted to avoid too much of [the divitis][4]
 while working on this[^8] - still a work in progress. This implementation of a sortable table removes a _lot of_ of

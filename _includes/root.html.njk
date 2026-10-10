@@ -21,9 +21,9 @@
     {% ogImage "./og-image.og.njk" %}
   {%- endif %}
   {%- if description %}
+    <meta name="description" content="{{- description -}}" />
     <meta name="twitter:description" content="{{- description -}}" />
     <meta property="og:description" content="{{- description -}}" />
-    <meta property="description" content="{{- description -}}" />
 	{%- endif %}
 	<meta property="og:title" content="{{ og.title | default(title) }} - Jacky Alciné" />
 	<meta property="og:site_name" content="Jacky Alciné's digital place to post, post, post!" />
@@ -32,9 +32,8 @@
 	<meta name="twitter:site" content="Jacky Alciné's digital place" />
 	<meta name="twitter:creator" content="@jackyalcine" />
   <meta name="fediverse:creator" content="@jalcine@todon.eu">
-	{% block head %}{% endblock head %}
 	<link rel="stylesheet" href="/site.css" type="text/css" />
-	<link rel="icon" href="{{ site.url }}/images/self.jpg" type="images/jpeg" />
+	<link rel="icon" href="{{ site.url }}/images/self.jpg" type="image/jpeg" />
 	<link rel="hub" href="https://pubsubhubbub.superfeedr.com/" />
 	<link rel="self" href="{{ site.url }}/" />
 	<link rel="alternate" href="/essays/feed.atom" type="application/atom+xml" title="Jacky Alciné's essays (over ATOM)" />
@@ -69,7 +68,7 @@
 		{{- content | safe -}}
 	</main>
 	<footer>
-      <p>Site handrolled <local-time><time datetime="{{ generated.ts }}">at {{ generated.human }}</time></local-time> and built using <a href="https://www.11ty.dev/">11ty</a> (for now)
+      <p>Site handrolled <local-time><time datetime="{{ generated.iso }}">at {{ generated.human }}</time></local-time> and built using <a href="https://www.11ty.dev/">11ty</a> (for now)
 			&mdash; <a href="https://www.11ty.dev/blog/sustainability-fundraising/">support its
 				development</a>!
 			Check out <a href="/report/visitors.html">my access logs</a>. <a

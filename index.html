@@ -35,7 +35,7 @@ changeFreq: weekly
         currently available for contract and full-time work.</strong>
     </p>
     <p>
-      {%- assign latestEssay = collections.essay | excludeDrafts | last -%}
+      {%- set latestEssay = collections.essay | excludeDrafts | last -%}
       <strong>I write <a href="/essays/">posts</strong> of varying length; most recently
       <a href="{{latestEssay.url}}">I wrote
         "{{latestEssay.data.title}}"</a>.
