@@ -15,11 +15,11 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="/images/fediverse-masthead.jpg">
     <meta property="og:image" content="/images/fediverse-masthead.jpg">
+    <meta name="description" content="Some time ago, I deleted my Mastodon account as a grand declaration of me &quot;leaving the Fediverse&quot;. Recent questions led me to wanting to write a longer treatise as to why I did it and what I hope to see come from the Fediverse going forward.
+">
     <meta name="twitter:description" content="Some time ago, I deleted my Mastodon account as a grand declaration of me &quot;leaving the Fediverse&quot;. Recent questions led me to wanting to write a longer treatise as to why I did it and what I hope to see come from the Fediverse going forward.
 ">
     <meta property="og:description" content="Some time ago, I deleted my Mastodon account as a grand declaration of me &quot;leaving the Fediverse&quot;. Recent questions led me to wanting to write a longer treatise as to why I did it and what I hope to see come from the Fediverse going forward.
-">
-    <meta property="description" content="Some time ago, I deleted my Mastodon account as a grand declaration of me &quot;leaving the Fediverse&quot;. Recent questions led me to wanting to write a longer treatise as to why I did it and what I hope to see come from the Fediverse going forward.
 ">
 	<meta property="og:title" content="More reasons as to why I left the Fediverse - Jacky Alciné">
 	<meta property="og:site_name" content="Jacky Alciné's digital place to post, post, post!">
@@ -28,9 +28,8 @@
 	<meta name="twitter:site" content="Jacky Alciné's digital place">
 	<meta name="twitter:creator" content="@jackyalcine">
   <meta name="fediverse:creator" content="@jalcine@todon.eu">
-	
 	<link rel="stylesheet" href="/site.css" type="text/css">
-	<link rel="icon" href="https://jalcine.github.io/images/self.jpg" type="images/jpeg">
+	<link rel="icon" href="https://jalcine.github.io/images/self.jpg" type="image/jpeg">
 	<link rel="hub" href="https://pubsubhubbub.superfeedr.com/">
 	<link rel="self" href="https://jalcine.github.io/">
 	<link rel="alternate" href="/essays/feed.atom" type="application/atom+xml" title="Jacky Alciné's essays (over ATOM)">
@@ -49,7 +48,7 @@
 	<header>
 		<nav>
 			<a class="h-card" href="/" rel="me">
-				<picture><source type="image/webp" srcset="/img/j0P3XcNaLx-184.webp 184w"><img class="u-photo" src="/img/j0P3XcNaLx-184.jpeg" height="184" alt="Jacky with gold-brimmed glasses looking to the left." width="184"></picture>
+				<picture><source type="image/avif" srcset="/img/j0P3XcNaLx-184.avif 184w" sizes="(min-width: 60rem) 60rem, 100vw"><source type="image/webp" srcset="/img/j0P3XcNaLx-184.webp 184w" sizes="(min-width: 60rem) 60rem, 100vw"><img loading="lazy" decoding="async" class="u-photo" src="/img/j0P3XcNaLx-184.jpeg" height="184" alt="Jacky with gold-brimmed glasses looking to the left." width="184"></picture>
 				<span class="p-name">
 					Jacky Alciné
 				</span></a>
@@ -63,7 +62,7 @@
 	<main><article class="h-entry">
   
     <figure class="masthead">
-        <picture><source type="image/webp" srcset="/img/EBLXYyuxd9-1200.webp 1200w"><img src="/img/EBLXYyuxd9-1200.jpeg" alt="" width="1200" height="800"></picture>
+        <picture><source type="image/avif" srcset="/img/EBLXYyuxd9-320.avif 320w, /img/EBLXYyuxd9-640.avif 640w, /img/EBLXYyuxd9-960.avif 960w, /img/EBLXYyuxd9-1200.avif 1200w" sizes="(min-width: 60rem) 60rem, 100vw"><source type="image/webp" srcset="/img/EBLXYyuxd9-320.webp 320w, /img/EBLXYyuxd9-640.webp 640w, /img/EBLXYyuxd9-960.webp 960w, /img/EBLXYyuxd9-1200.webp 1200w" sizes="(min-width: 60rem) 60rem, 100vw"><img loading="lazy" decoding="async" src="/img/EBLXYyuxd9-320.jpeg" alt="" width="1200" height="800" srcset="/img/EBLXYyuxd9-320.jpeg 320w, /img/EBLXYyuxd9-640.jpeg 640w, /img/EBLXYyuxd9-960.jpeg 960w, /img/EBLXYyuxd9-1200.jpeg 1200w" sizes="(min-width: 60rem) 60rem, 100vw"></picture>
         <figcaption>Laptop on white desk, <a href="https://unsplash.com/photos/a-laptop-computer-sitting-on-top-of-a-white-desk-ISmVDb_20_g">Unsplash</a>.
 </figcaption>
     </figure>
@@ -74,7 +73,7 @@
     <aside>
       by <a class="u-author" href="/">Jacky Alciné</a>
       &bull; published
-      <time class="dt-published" datetime="Sat, 26 Sep 2026 22:00:00 GMT">September 26, 2026</time>
+      <time class="dt-published" datetime="2026-09-26T18:00:00.000-04:00">September 26, 2026</time>
     </aside>
     <small style="text-align:center;width: 100%;display: inline-block; margin: 0.5rem auto;">
       As I look <a href="/work">for work</a>, please
@@ -129,9 +128,40 @@ innovative in any right.</p>
 <ul>
 <li>an always connected-to-the-public-Internet service (if you wanted it to be
 relatively available)</li>
+<li>isolation in the kind of content you create; apps are aggressively focused on
+singular content types (mainly due to the difficulty of making parallel media
+types)</li>
+<li><em>extreme</em> difficulty testing federation</li>
 </ul>
+<p>Seeing each of these, by itself, kept me from building in the space.</p>
+<h2 id="culture" tabindex="-1">Culture</h2>
+<p>Despite the goal of a community for federated social networking, it seemed like
+the ecosystem built around the Fediverse was inherently European. This might be
+due to the large push against &quot;American Big Tech&quot;<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>. That made it hard for me
+to find people, outside of what Ro built with PlayVicious, that I would want to
+virtually hang out with.</p>
+<p>It doesn't help that PlayVicious had <a href="https://logicmag.io/policy/blackness-in-the-fediverse-a-conversation-with-marcia-x/">a hard time <em>existing</em> in the
+Fediverse</a> and little effort by peers outside of words of commiseration
+— leaving a sour taste in my mouth personally.</p>
+<hr>
+<p>With all that said, I do hope the changes come to ActivityPub, in its next
+version, that make it more viable as a protocol for social networking and
+communication.</p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>I don't know how or if folks take into consideration that these companies
+are <em>multi-national</em> and that there's little interest to <em>ban</em> a company
+that brings these jobs and commercial traffic that countries <em>want by
+design</em>. There's work being done to reduce the dependencies on American
+technologies that actually challenge them but it's a contender on par to an
+anarchist fight against a nation-state with industrial power. <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
 </section>
   <sequoia-comments></sequoia-comments>
+  <script type="module" src="/scripts/components/sequoia-comments.js"></script>
   <footer id="contentFooter">
   <h2>Thanks for reading!</h2>
   <p>
@@ -192,13 +222,9 @@ height: max-content;
 </footer>
 
 </article>
-
-
-  <script type="module" src="/scripts/components/sequoia-comments.js"></script>
-
 </main>
 	<footer>
-      <p>Site handrolled <local-time><time datetime="1791641036205">at Saturday, October 10, 2026 at 10:03:56 AM EDT</time></local-time> and built using <a href="https://www.11ty.dev/">11ty</a> (for now)
+      <p>Site handrolled <local-time><time datetime="2026-10-10T23:27:33.793Z">at Saturday, October 10, 2026 at 7:27:33 PM EDT</time></local-time> and built using <a href="https://www.11ty.dev/">11ty</a> (for now)
 			&mdash; <a href="https://www.11ty.dev/blog/sustainability-fundraising/">support its
 				development</a>!
 			Check out <a href="/report/visitors.html">my access logs</a>. <a href="/disclaimer">Disclaimer</a>: I have opinions.
@@ -206,7 +232,7 @@ height: max-content;
       <p xmlns:cc="http://creativecommons.org/ns#">
         You made it &mdash; <strong>congrats</strong>! I don't have much to tell you. Except that unless
         otherwise stated,
-        the content I publish is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer">CC BY-NC 4.0<picture><source type="image/webp" srcset="/essays/2026/fediverse/rlZNrnUzqj-64.webp 64w"><img src="/essays/2026/fediverse/rlZNrnUzqj-64.jpeg" alt="CC" width="64" height="64"></picture><picture><source type="image/webp" srcset="/essays/2026/fediverse/mfiZ3Oerkz-64.webp 64w"><img src="/essays/2026/fediverse/mfiZ3Oerkz-64.jpeg" alt="BY" width="64" height="64"></picture><picture><source type="image/webp" srcset="/essays/2026/fediverse/2rCFEV7ZgL-64.webp 64w"><img src="/essays/2026/fediverse/2rCFEV7ZgL-64.jpeg" alt="SA" width="64" height="64"></picture></a>.
+        the content I publish is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer">CC BY-NC 4.0<picture><source type="image/avif" srcset="/essays/2026/fediverse/rlZNrnUzqj-64.avif 64w, /essays/2026/fediverse/rlZNrnUzqj-320.avif 320w, /essays/2026/fediverse/rlZNrnUzqj-640.avif 640w, /essays/2026/fediverse/rlZNrnUzqj-960.avif 960w, /essays/2026/fediverse/rlZNrnUzqj-1280.avif 1280w" sizes="(min-width: 60rem) 60rem, 100vw"><source type="image/webp" srcset="/essays/2026/fediverse/rlZNrnUzqj-64.webp 64w, /essays/2026/fediverse/rlZNrnUzqj-320.webp 320w, /essays/2026/fediverse/rlZNrnUzqj-640.webp 640w, /essays/2026/fediverse/rlZNrnUzqj-960.webp 960w, /essays/2026/fediverse/rlZNrnUzqj-1280.webp 1280w" sizes="(min-width: 60rem) 60rem, 100vw"><img loading="lazy" decoding="async" src="/essays/2026/fediverse/rlZNrnUzqj-64.jpeg" alt="CC" width="1280" height="1280" srcset="/essays/2026/fediverse/rlZNrnUzqj-64.jpeg 64w, /essays/2026/fediverse/rlZNrnUzqj-320.jpeg 320w, /essays/2026/fediverse/rlZNrnUzqj-640.jpeg 640w, /essays/2026/fediverse/rlZNrnUzqj-960.jpeg 960w, /essays/2026/fediverse/rlZNrnUzqj-1280.jpeg 1280w" sizes="(min-width: 60rem) 60rem, 100vw"></picture><picture><source type="image/avif" srcset="/essays/2026/fediverse/mfiZ3Oerkz-64.avif 64w, /essays/2026/fediverse/mfiZ3Oerkz-320.avif 320w, /essays/2026/fediverse/mfiZ3Oerkz-640.avif 640w, /essays/2026/fediverse/mfiZ3Oerkz-960.avif 960w, /essays/2026/fediverse/mfiZ3Oerkz-1280.avif 1280w" sizes="(min-width: 60rem) 60rem, 100vw"><source type="image/webp" srcset="/essays/2026/fediverse/mfiZ3Oerkz-64.webp 64w, /essays/2026/fediverse/mfiZ3Oerkz-320.webp 320w, /essays/2026/fediverse/mfiZ3Oerkz-640.webp 640w, /essays/2026/fediverse/mfiZ3Oerkz-960.webp 960w, /essays/2026/fediverse/mfiZ3Oerkz-1280.webp 1280w" sizes="(min-width: 60rem) 60rem, 100vw"><img loading="lazy" decoding="async" src="/essays/2026/fediverse/mfiZ3Oerkz-64.jpeg" alt="BY" width="1280" height="1280" srcset="/essays/2026/fediverse/mfiZ3Oerkz-64.jpeg 64w, /essays/2026/fediverse/mfiZ3Oerkz-320.jpeg 320w, /essays/2026/fediverse/mfiZ3Oerkz-640.jpeg 640w, /essays/2026/fediverse/mfiZ3Oerkz-960.jpeg 960w, /essays/2026/fediverse/mfiZ3Oerkz-1280.jpeg 1280w" sizes="(min-width: 60rem) 60rem, 100vw"></picture><picture><source type="image/avif" srcset="/essays/2026/fediverse/2rCFEV7ZgL-64.avif 64w, /essays/2026/fediverse/2rCFEV7ZgL-320.avif 320w, /essays/2026/fediverse/2rCFEV7ZgL-640.avif 640w, /essays/2026/fediverse/2rCFEV7ZgL-960.avif 960w, /essays/2026/fediverse/2rCFEV7ZgL-1280.avif 1280w" sizes="(min-width: 60rem) 60rem, 100vw"><source type="image/webp" srcset="/essays/2026/fediverse/2rCFEV7ZgL-64.webp 64w, /essays/2026/fediverse/2rCFEV7ZgL-320.webp 320w, /essays/2026/fediverse/2rCFEV7ZgL-640.webp 640w, /essays/2026/fediverse/2rCFEV7ZgL-960.webp 960w, /essays/2026/fediverse/2rCFEV7ZgL-1280.webp 1280w" sizes="(min-width: 60rem) 60rem, 100vw"><img loading="lazy" decoding="async" src="/essays/2026/fediverse/2rCFEV7ZgL-64.jpeg" alt="SA" width="1280" height="1280" srcset="/essays/2026/fediverse/2rCFEV7ZgL-64.jpeg 64w, /essays/2026/fediverse/2rCFEV7ZgL-320.jpeg 320w, /essays/2026/fediverse/2rCFEV7ZgL-640.jpeg 640w, /essays/2026/fediverse/2rCFEV7ZgL-960.jpeg 960w, /essays/2026/fediverse/2rCFEV7ZgL-1280.jpeg 1280w" sizes="(min-width: 60rem) 60rem, 100vw"></picture></a>.
       </p>
     </footer>
   </body>
