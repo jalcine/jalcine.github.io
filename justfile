@@ -40,6 +40,21 @@ ship:
   # (a `_site/*` glob is shell-expanded and silently skips them).
   (cd _site && rsync --archive --delete-delay --verbose --recursive . www.jacky.wtf:/var/www/html)
 
+GH_PAGES_REMOTE := "https://github.com/jalcine/jalcine.github.io.git"
+
+# Build and force-push _site to the gh-pages branch, bypassing CI.
+# Requires Pages Source to be set to "Deploy from a branch: gh-pages"
+# (mutually exclusive with the GitHub Actions workflow source).
+publish-gh-pages: clean build
+  # _site is gitignored, so give it a throwaway repo, push it, then drop it.
+  cd _site && \
+    touch .nojekyll && \
+    git init -q -b gh-pages && \
+    git add -A && \
+    git commit -q -m "Manual deploy $(date -u +%Y-%m-%dT%H:%M:%SZ)" && \
+    git push -f ${GH_PAGES_REMOTE} gh-pages:gh-pages && \
+    rm -rf .git
+
 websub:
 		# Send to Superfeeder.
 		@curl https://pubsubhubbub.superfeedr.com \

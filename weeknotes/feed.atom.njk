@@ -4,7 +4,7 @@
   "metadata": {
     "title": "Jacky Alciné's weeknotes",
     "language": "en",
-    "base": "https://www.jacky.wtf/weeknotes/",
+    "path": "/weeknotes/",
     "author": {
       "name": "Jacky Alciné",
       "email": "yo@jacky.wtf"
@@ -13,24 +13,25 @@
 }
 ---
 <?xml version="1.0" encoding="utf-8"?>
+{%- set base = site.url + metadata.path -%}
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="{{ metadata.language or page.lang }}">
   <title>{{ metadata.title }}</title>
   <subtitle>{{ metadata.description }}</subtitle>
-  <link href="{{ permalink | htmlBaseUrl(metadata.base) }}" rel="self" />
-  <link href="{{ metadata.base | addPathPrefixToFullUrl }}" />
+  <link href="{{ permalink | htmlBaseUrl(base) }}" rel="self" />
+  <link href="{{ base | addPathPrefixToFullUrl }}" />
   <updated>{{ collections.posts | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
-  <id>{{ metadata.base | addPathPrefixToFullUrl }}</id>
+  <id>{{ base | addPathPrefixToFullUrl }}</id>
   <author>
     <name>{{ metadata.author.name }}</name>
   </author>
   {%- for post in collections.weeknote | excludeDrafts | reverse %}
-  {%- set absolutePostUrl %}{{ post.url | htmlBaseUrl(metadata.base) }}{% endset %}
+  {%- set absolutePostUrl %}{{ post.url | htmlBaseUrl(base) }}{% endset %}
   <entry>
     <title>{{ post.data.title }}</title>
     <link href="{{ absolutePostUrl }}" />
     <updated>{{ post.date | dateToRfc3339 }}</updated>
     <id>{{ absolutePostUrl }}</id>
-    <content type="html">{{ post.content | renderTransforms(post.data.page, metadata.base) }}</content>
+    <content type="html">{{ post.content | renderTransforms(post.data.page, base) }}</content>
   </entry>
   {%- endfor %}
 </feed>

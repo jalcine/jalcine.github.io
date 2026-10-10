@@ -27,16 +27,16 @@
 	{%- endif %}
 	<meta property="og:title" content="{{ og.title | default(title) }} - Jacky Alciné" />
 	<meta property="og:site_name" content="Jacky Alciné's digital place to post, post, post!" />
-	<meta property="og:url" content="https://www.jacky.wtf{{ page.url }}" />
+	<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
 	<meta name="twitter:title" content="{{ title }} - Jacky Alciné" />
 	<meta name="twitter:site" content="Jacky Alciné's digital place" />
 	<meta name="twitter:creator" content="@jackyalcine" />
   <meta name="fediverse:creator" content="@jalcine@todon.eu">
 	{% block head %}{% endblock head %}
 	<link rel="stylesheet" href="/site.css" type="text/css" />
-	<link rel="icon" href="https://www.jacky.wtf/images/self.jpg" type="images/jpeg" />
+	<link rel="icon" href="{{ site.url }}/images/self.jpg" type="images/jpeg" />
 	<link rel="hub" href="https://pubsubhubbub.superfeedr.com/" />
-	<link rel="self" href="https://www.jacky.wtf/" />
+	<link rel="self" href="{{ site.url }}/" />
 	<link rel="alternate" href="/essays/feed.atom" type="application/atom+xml" title="Jacky Alciné's essays (over ATOM)" />
 	<link rel="alternate" href="/links/feed.atom" type="application/atom+xml" title="Jacky Alciné's linklog (over ATOM)" />
 	<link rel="alternate" href="/weeknotes/feed.atom" type="application/atom+xml" title="Jacky Alciné's weeknotes (over ATOM)" />
