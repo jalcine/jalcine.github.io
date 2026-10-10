@@ -41,19 +41,36 @@ ship:
   (cd _site && rsync --archive --delete-delay --verbose --recursive . www.jacky.wtf:/var/www/html)
 
 GH_PAGES_REMOTE := "https://github.com/jalcine/jalcine.github.io.git"
+GH_PAGES_WORKTREE := ".gh-pages"
 
-# Build and force-push _site to the gh-pages branch, bypassing CI.
+# Build and publish _site to the local gh-pages branch, then push it, bypassing CI.
+# Checks the gh-pages branch out into a scratch worktree (no throwaway repo),
+# mirrors the freshly built site onto it, commits and pushes. History on the
+# branch is preserved across deploys.
 # Requires Pages Source to be set to "Deploy from a branch: gh-pages"
 # (mutually exclusive with the GitHub Actions workflow source).
 publish-gh-pages: clean build
-  # _site is gitignored, so give it a throwaway repo, push it, then drop it.
-  cd _site && \
-    touch .nojekyll && \
-    git init -q -b gh-pages && \
-    git add -A && \
-    git commit -q -m "Manual deploy $(date -u +%Y-%m-%dT%H:%M:%SZ)" && \
-    git push -f ${GH_PAGES_REMOTE} gh-pages:gh-pages && \
-    rm -rf .git
+  #!/usr/bin/env bash
+  set -euo pipefail
+  touch _site/.nojekyll
+  # Drop any stale worktree, then attach one to the gh-pages branch, creating
+  # the branch (from the remote, or as a fresh orphan) if it does not exist yet.
+  git worktree remove --force {{GH_PAGES_WORKTREE}} 2>/dev/null || true
+  git worktree prune
+  if git show-ref --verify --quiet refs/heads/gh-pages; then
+    git worktree add {{GH_PAGES_WORKTREE}} gh-pages
+  elif git ls-remote --exit-code --heads {{GH_PAGES_REMOTE}} gh-pages >/dev/null 2>&1; then
+    git fetch {{GH_PAGES_REMOTE}} gh-pages:gh-pages
+    git worktree add {{GH_PAGES_WORKTREE}} gh-pages
+  else
+    git worktree add --orphan -b gh-pages {{GH_PAGES_WORKTREE}}
+  fi
+  # Mirror the built site onto the branch (dropping files it no longer produces).
+  rsync --archive --delete --exclude .git _site/ {{GH_PAGES_WORKTREE}}/
+  git -C {{GH_PAGES_WORKTREE}} add --all
+  git -C {{GH_PAGES_WORKTREE}} commit --message "Manual deploy $(date -u +%Y-%m-%dT%H:%M:%SZ)" || echo "Nothing new to deploy."
+  git -C {{GH_PAGES_WORKTREE}} push {{GH_PAGES_REMOTE}} gh-pages:gh-pages
+  git worktree remove --force {{GH_PAGES_WORKTREE}}
 
 websub:
 		# Send to Superfeeder.

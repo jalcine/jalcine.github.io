@@ -176,3 +176,6 @@ dist
 
 _site/
 .sequoia-state.json
+
+# gh-pages publish worktree (just publish-gh-pages)
+.gh-pages/
