@@ -106,6 +106,7 @@ export default function (
 
   eleventyConfig.addPassthroughCopy("*.css");
   eleventyConfig.addPassthroughCopy(".well-known");
+  eleventyConfig.addPassthroughCopy("CNAME");
 
   for (const folderName of ["images", "videos", "files", "fonts", "scripts"]) {
     eleventyConfig.addPassthroughCopy(folderName);
