@@ -15,6 +15,7 @@ description: >
   declaration of me "leaving the Fediverse". Recent questions led me to wanting
   to write a longer treatise as to why I did it and what I hope to see come from
   the Fediverse going forward.
+atUri: "at://did:plc:e2ctbutx6kya6si4if5ngjmm/site.standard.document/3mygo3ymaw3ii"
 ---
 
 I wrote in a prior piece that I was ["over" the

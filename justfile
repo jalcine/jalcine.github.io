@@ -23,7 +23,7 @@ produce-resume-pdf:
     --form marginBottom="0.2in" \
     --output $(pwd)/files/Jacky-Alcine_resume.pdf
 
-deploy: clean build produce-resume-pdf sequoia ship
+deploy: clean build produce-resume-pdf sequoia ship-nfs websub
 
 sequoia: sequoia-publish sequoia-inject
 
@@ -33,16 +33,8 @@ sequoia-publish:
 sequoia-inject:
   npx sequoia inject -o _site
 
-ship:
-  # Replace the files on the Web server.
-  # NOTE: Toggle some sort of "alert" about this happening.
-  # cd into _site and rsync `.` so dotfiles like .well-known/ are included
-  # (a `_site/*` glob is shell-expanded and silently skips them).
-  (cd _site && rsync --archive --delete-delay --verbose --recursive . www.jacky.wtf:/home/public)
-
 websub:
-		# Send to Superfeeder.
-		@curl https://pubsubhubbub.superfeedr.com \
+		curl https://pubsubhubbub.superfeedr.com \
 				-d hub.mode=publish \
 				-d hub.url\[\]=https://www.jacky.wtf/essays/feed.atom \
 				-d hub.url\[\]=https://www.jacky.wtf/links/feed.atom \
@@ -53,6 +45,5 @@ websub:
 				-d hub.url\[\]=https://www.jacky.wtf/
 
 ship-nfs:
-	# Upload to NearlyFreeSpeech via SSH config (uses ~/.ssh/config identity).
-	(cd _site && rsync --archive --delete-delay --verbose --recursive . jacky.wtf:/home/public/)
+	(cd _site && rsync --archive --delete-delay --verbose --recursive . jacky.wtf:/home/public/ --exclude=vendor/bundle)
 

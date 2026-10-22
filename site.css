@@ -715,3 +715,12 @@ iframe.bandcamp-player {
 bluesky-post {
   margin: 0 auto;
 }
+
+.constellation-stats {
+  text-align: center;
+}
+
+.constellation-stats .stat,
+.constellation-stats .stat .l {
+  padding: 0 0.5rem;
+}
