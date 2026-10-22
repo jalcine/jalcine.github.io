@@ -179,3 +179,4 @@ _site/
 
 # gh-pages publish worktree (just publish-gh-pages)
 .gh-pages/
+vendor/

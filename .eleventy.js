@@ -107,6 +107,12 @@ export default function (
   eleventyConfig.addPassthroughCopy("*.css");
   eleventyConfig.addPassthroughCopy(".well-known");
   eleventyConfig.addPassthroughCopy("CNAME");
+  eleventyConfig.addPassthroughCopy("api.cgi");
+  eleventyConfig.addPassthroughCopy(".htaccess");
+  eleventyConfig.addPassthroughCopy("Gemfile");
+  eleventyConfig.addPassthroughCopy("Gemfile.lock");
+  eleventyConfig.addPassthroughCopy("vendor/bundle/**/*");
+  eleventyConfig.addPassthroughCopy("api/**/*");
 
   for (const folderName of ["images", "videos", "files", "fonts", "scripts"]) {
     eleventyConfig.addPassthroughCopy(folderName);

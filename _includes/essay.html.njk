@@ -41,5 +41,7 @@ og:
   </section>
   <sequoia-comments{% if atUri %} document-uri="{{ atUri }}"{% endif %}></sequoia-comments>
   <script type="module" src="/scripts/components/sequoia-comments.js"></script>
+  <constellation-stats url="{{ site.url }}{{ page.url }}" class="post-stats"></constellation-stats>
+  <script type="module" src="/scripts/components/constellation-stats.js"></script>
   {% include "./content-footer.html" %}
 </article>
